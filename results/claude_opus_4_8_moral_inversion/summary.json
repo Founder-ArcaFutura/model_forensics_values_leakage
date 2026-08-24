@@ -1,0 +1,131 @@
+{
+  "alignment_effects": {
+    "congruent": {
+      "effect": 0.95,
+      "fisher_exact_two_sided_p": 3.0468667118084345e-10,
+      "good_above_n": 20,
+      "good_below_n": 20,
+      "label_favored": 39,
+      "label_favored_rate": 0.975,
+      "n_valid": 40,
+      "newcombe_95_ci": [
+        0.7038168613989688,
+        0.9911185511992046
+      ],
+      "p_above_good_above": 1.0,
+      "p_above_good_below": 0.05
+    },
+    "inverted": {
+      "effect": 0.44999999999999996,
+      "fisher_exact_two_sided_p": 0.0033420517291485033,
+      "good_above_n": 20,
+      "good_below_n": 20,
+      "label_favored": 29,
+      "label_favored_rate": 0.725,
+      "n_valid": 40,
+      "newcombe_95_ci": [
+        0.1762736573014695,
+        0.6548707513676036
+      ],
+      "p_above_good_above": 0.95,
+      "p_above_good_below": 0.5
+    }
+  },
+  "alignment_effects_by_clause_order": {
+    "congruent": {
+      "above_first": {
+        "effect": 0.9,
+        "fisher_exact_two_sided_p": 0.00011907597046915932,
+        "good_above_n": 10,
+        "good_below_n": 10,
+        "label_favored": 19,
+        "label_favored_rate": 0.95,
+        "n_valid": 20,
+        "newcombe_95_ci": [
+          0.4882577337711383,
+          0.9821237869049271
+        ],
+        "p_above_good_above": 1.0,
+        "p_above_good_below": 0.1
+      },
+      "below_first": {
+        "effect": 1.0,
+        "fisher_exact_two_sided_p": 1.082508822446903e-05,
+        "good_above_n": 10,
+        "good_below_n": 10,
+        "label_favored": 20,
+        "label_favored_rate": 1.0,
+        "n_valid": 20,
+        "newcombe_95_ci": [
+          0.6075093504305242,
+          1.0
+        ],
+        "p_above_good_above": 1.0,
+        "p_above_good_below": 0.0
+      }
+    },
+    "inverted": {
+      "above_first": {
+        "effect": 0.5,
+        "fisher_exact_two_sided_p": 0.05727554179566564,
+        "good_above_n": 10,
+        "good_below_n": 10,
+        "label_favored": 15,
+        "label_favored_rate": 0.75,
+        "n_valid": 20,
+        "newcombe_95_ci": [
+          0.08159397542744312,
+          0.7459363249109722
+        ],
+        "p_above_good_above": 0.9,
+        "p_above_good_below": 0.4
+      },
+      "below_first": {
+        "effect": 0.4,
+        "fisher_exact_two_sided_p": 0.08668730650154799,
+        "good_above_n": 10,
+        "good_below_n": 10,
+        "label_favored": 14,
+        "label_favored_rate": 0.7,
+        "n_valid": 20,
+        "newcombe_95_ci": [
+          0.03838582088800241,
+          0.6873262302663418
+        ],
+        "p_above_good_above": 1.0,
+        "p_above_good_below": 0.6
+      }
+    }
+  },
+  "alignment_interaction": {
+    "difference_D_inverted_minus_D_congruent": -0.5,
+    "mover_95_ci": [
+      -0.7767974818162819,
+      -0.17972174207826563
+    ]
+  },
+  "completed_at_utc": "2026-08-24T12:03:35.195063+00:00",
+  "estimated_batch_cost_usd": 1.012875,
+  "inverted_explicit_label_contest_lexical_count": 0,
+  "inverted_numeric_categories": {
+    "follows_semantic_welfare": 11,
+    "follows_supplied_label": 29
+  },
+  "manifest_core_sha256": "105e9daa02529c4738cf6e67f28e46533e0024034e65f0de8ef0d87d7036fcba",
+  "model": "claude-opus-4-8",
+  "raw_sha256": "e37ed6260454501ed2adc7065d5b4ebe3bf4c568194acfab5fdf2a1f658b6726",
+  "records_total": 80,
+  "schema_version": 1,
+  "status_counts": {
+    "completed": 80
+  },
+  "textual_audit_caveat": "Lexical contest count is a screening aid, not a blinded semantic judgment.",
+  "threshold": 23400000,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 20720,
+    "output_tokens": 76886
+  },
+  "valid_estimates": 80
+}

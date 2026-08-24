@@ -1,0 +1,53 @@
+{
+  "batch": {
+    "cancelled_at": null,
+    "cancelling_at": null,
+    "completed_at": null,
+    "completion_window": "24h",
+    "created_at": 1787515200,
+    "endpoint": "/v1/responses",
+    "error_file_id": null,
+    "errors": null,
+    "expired_at": null,
+    "expires_at": 1787601600,
+    "failed_at": null,
+    "finalizing_at": null,
+    "id": "batch_6a8b514095588190af570c01b975ad8f",
+    "in_progress_at": null,
+    "input_file_id": "file-LY3inEXPM5bi9FEzndmp5K",
+    "metadata": {
+      "description": "orig-donation-sol-high intervention"
+    },
+    "model": null,
+    "object": "batch",
+    "output_file_id": null,
+    "request_counts": {
+      "completed": 0,
+      "failed": 0,
+      "total": 0
+    },
+    "status": "validating",
+    "usage": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 0
+    }
+  },
+  "input_file": {
+    "bytes": 75920,
+    "created_at": 1787515199,
+    "expires_at": 1790107199,
+    "filename": "intervention_batch_input.jsonl",
+    "id": "file-LY3inEXPM5bi9FEzndmp5K",
+    "object": "file",
+    "purpose": "batch",
+    "status": "processed",
+    "status_details": null
+  }
+}

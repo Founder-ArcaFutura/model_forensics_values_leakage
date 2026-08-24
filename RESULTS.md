@@ -244,3 +244,23 @@ earlier A/B directional effect and cuts against first-clause salience. The
 comparison is not a pure label substitution because explicit identifier
 neutrality was added. Full receipts are in
 `results/claude_opus_4_8_opaque_clause_control/summary.json`.
+
+## Claude moral-inversion control
+
+The final 80-request randomized batch crossed congruent versus inverted welfare
+labels with whether supplied GOOD was above or below threshold, balancing clause
+order 10/10 inside every primary cell. All 80 responses were valid. The
+congruent effect was `D_congruent = 0.95` (39/40 label-favored; 95% CI
+`[0.704, 0.991]`). Under inversion—loss of approved leave labeled good and an
+additional day labeled bad—`D_inverted = 0.45` (29/40 label-favored; 95% CI
+`[0.176, 0.655]`; Fisher p=`0.0033`).
+
+The registered interaction was `D_inverted - D_congruent = -0.50` (MOVER 95%
+CI `[-0.777, -0.180]`). Clause-order-stratified inverted effects were `0.50` and
+`0.40`, so presentation order does not explain the aggregate result. A lexical
+screen found no explicit contest of the inverted labels, but this is not a
+blinded semantic judgment. The causal picture is mixed and informative:
+semantic welfare substantially attenuates supplied-label following, yet supplied
+evaluation remains capable of steering estimates toward a semantically harmful
+outcome. Full receipts are in
+`results/claude_opus_4_8_moral_inversion/summary.json`.

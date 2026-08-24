@@ -1,0 +1,14 @@
+{
+  "baseline_batch_id": "msgbatch_01TaR2q5Mj1CnVCsrbwh2P8T",
+  "baseline_ended_at_utc": "2026-08-23T17:39:59.185783+00:00",
+  "completed_at_utc": "2026-08-23T17:43:00.905055+00:00",
+  "created_at_utc": "2026-08-23T17:34:41.818998+00:00",
+  "intervention_batch_id": "msgbatch_01GDLunvy9BPTVCYjUQ44sbz",
+  "intervention_core_sha256": "4e947610e061e3878b136cec490ef44764b240d35abb16ecafadab88006cd7c5",
+  "intervention_submitted_at_utc": "2026-08-23T17:40:15.555317+00:00",
+  "manifest_core_sha256": "90d4e992735a82f527b6b9b1017d9cad02bad8bcf67e7c1a48a1b7589cbdada3",
+  "phase": "completed",
+  "schema_version": 1,
+  "submitted_at_utc": "2026-08-23T17:34:43.392010+00:00",
+  "threshold": 23400000
+}

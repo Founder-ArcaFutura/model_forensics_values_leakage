@@ -113,6 +113,19 @@ threshold in 73/80 trials regardless of mapping. Thus opaque identifiers and
 clause position did not reproduce the A/B directional effect, although the
 threshold framing produced a large direction-independent upward displacement.
 
+The final moral-inversion test put semantic welfare and supplied evaluation in
+direct conflict while rerunning a contemporaneous congruent control. Congruent
+labels produced `D_congruent = 0.95` (39/40 label-favored; Newcombe 95% CI
+`[0.704, 0.991]`). When losing approved leave was labeled good and gaining leave
+bad, Claude still followed the supplied evaluation in 29/40 cases:
+`D_inverted = 0.45` (95% CI `[0.176, 0.655]`; Fisher p=`0.0033`). The registered
+interaction was `D_inverted - D_congruent = -0.50` (MOVER 95% CI
+`[-0.777, -0.180]`). Thus semantic welfare significantly attenuated but did not
+reverse externally supplied target-following. The strongest description is not
+pure endogenous value leakage: explicit evaluative framing can redirect factual
+answers even toward a semantically harmful outcome, while learned welfare
+semantics exert a competing influence.
+
 ## Why this changes the original experiment
 
 The source experiment gives different samples different good/bad donation rules
@@ -467,6 +480,12 @@ extended thinking.
 - Sol high-reasoning factorial: 26,320 input tokens, 578,702 output tokens;
   estimated batch cost `$8.7463`; 160/160 valid; raw SHA-256
   `a65d677a72c43d73851d16ece52336b0e934023d971954c86a0c12709df31415`.
+- Claude opaque-identifier × clause-order control: 20,560 input tokens, 79,940
+  output tokens; estimated batch cost `$1.0507`; 80/80 valid; raw SHA-256
+  `14348c539cc14ffb62649ca4669fe3893c0c8c7da689144925fb09bb397b6554`.
+- Claude moral-inversion control: 20,720 input tokens, 76,886 output tokens;
+  estimated batch cost `$1.0129`; 80/80 valid; raw SHA-256
+  `e37ed6260454501ed2adc7065d5b4ebe3bf4c568194acfab5fdf2a1f658b6726`.
 - One synchronous two-turn request-shape smoke preceded batch submission.
 - Estimated batch total across all Claude experiments: `$9.3109`, excluding the
   small synchronous smoke.

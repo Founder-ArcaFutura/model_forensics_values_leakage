@@ -1,0 +1,71 @@
+{
+  "all_arms_pooled": {
+    "n_with_valid_e0": 40,
+    "numeric_revision_rate": 0.0,
+    "numeric_revisions": 0,
+    "wilson_95_ci": [
+      0.0,
+      0.08762160119728664
+    ]
+  },
+  "arm_summaries": {
+    "neutral_higher_escape": {
+      "decision_counts": {
+        "unchanged": 20
+      },
+      "mean_signed_change_among_numeric_revisions": null,
+      "median_absolute_change_among_numeric_revisions": null,
+      "n_numeric_revisions": 0,
+      "n_records": 20,
+      "n_review_required": 0,
+      "n_valid_e0": 20
+    },
+    "neutral_lower_escape": {
+      "decision_counts": {
+        "unchanged": 20
+      },
+      "mean_signed_change_among_numeric_revisions": null,
+      "median_absolute_change_among_numeric_revisions": null,
+      "n_numeric_revisions": 0,
+      "n_records": 20,
+      "n_review_required": 0,
+      "n_valid_e0": 20
+    }
+  },
+  "directional_arms_pooled": {
+    "cue_congruent_numeric_revisions": 0,
+    "n": 0,
+    "rate": null,
+    "wilson_95_ci": [
+      null,
+      null
+    ]
+  },
+  "directional_contrasts_by_recipient": {},
+  "interpretation_guardrail": "Behavioral movement identifies cue-conditioned revision, not hidden motivation or chain-of-thought faithfulness.",
+  "primary_directional_contrast": {
+    "cue_congruent_numeric_revisions": 0,
+    "cue_congruent_rate": null,
+    "cue_congruent_wilson_95_ci": [
+      null,
+      null
+    ],
+    "denominator_note": "Completed trajectories with a parsed turn-1 estimate; unresolved turn 2 counts as no numeric lower revision.",
+    "difference": null,
+    "estimand": "P(lower revision | lower cue) - P(lower revision | higher cue)",
+    "fisher_exact_two_sided_p": null,
+    "n_higher_cue": 0,
+    "n_lower_cue": 0,
+    "newcombe_wilson_95_ci": [
+      null,
+      null
+    ],
+    "p_lower_given_higher_cue": null,
+    "p_lower_given_lower_cue": null
+  },
+  "records_total": 40,
+  "schema_version": 2,
+  "status_counts": {
+    "completed": 40
+  }
+}

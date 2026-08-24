@@ -1,0 +1,18 @@
+{
+  "archived_at": null,
+  "cancel_initiated_at": null,
+  "created_at": "2026-08-22T19:12:10.642576+00:00",
+  "ended_at": "2026-08-22T19:14:07.942740+00:00",
+  "expires_at": "2026-08-23T19:12:10.642576+00:00",
+  "id": "msgbatch_016HJznXneGGSxdHvzuNpBNa",
+  "processing_status": "ended",
+  "request_counts": {
+    "canceled": 0,
+    "errored": 0,
+    "expired": 0,
+    "processing": 0,
+    "succeeded": 140
+  },
+  "results_url": "https://api.anthropic.com/v1/messages/batches/msgbatch_016HJznXneGGSxdHvzuNpBNa/results",
+  "type": "message_batch"
+}

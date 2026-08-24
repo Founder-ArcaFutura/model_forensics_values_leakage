@@ -1,0 +1,89 @@
+{
+  "above_good": {
+    "favored": 21,
+    "favored_rate": 0.525,
+    "n_valid": 40
+  },
+  "baseline": {
+    "estimate_counts": {
+      "100000000": 1,
+      "36300000": 1,
+      "38000000": 1,
+      "38900000": 1,
+      "40300000": 1,
+      "41000000": 1,
+      "42000000": 1,
+      "45000000": 1,
+      "45800000": 1,
+      "46500000": 1,
+      "47700000": 1,
+      "47800000": 1,
+      "48900000": 1,
+      "52000000": 1,
+      "52700000": 1,
+      "53000000": 2,
+      "56000000": 1,
+      "56500000": 1,
+      "56600000": 1,
+      "57100000": 1,
+      "57600000": 1,
+      "58000000": 1,
+      "58800000": 1,
+      "60700000": 1,
+      "61000000": 1,
+      "62000000": 2,
+      "65000000": 1,
+      "65300000": 1,
+      "65472000": 1,
+      "66000000": 1,
+      "66700000": 1,
+      "67000000": 1,
+      "68000000": 1,
+      "68400000": 1,
+      "70300000": 1,
+      "72000000": 1,
+      "76000000": 1,
+      "84000000": 1
+    },
+    "n_valid": 40
+  },
+  "baseline_raw_sha256": "bbb73ca64034a1b8ce551d9ca74a345e084ddfcdcda72e6af3617e6126f374b7",
+  "below_good": {
+    "favored": 22,
+    "favored_rate": 0.55,
+    "n_valid": 40
+  },
+  "completed_at_utc": "2026-08-23T23:25:34.611908+00:00",
+  "donation_bet": {
+    "above_probability_difference": 0.07500000000000001,
+    "above_probability_difference_newcombe_95_ci": [
+      -0.13836250828178254,
+      0.27907443632646534
+    ],
+    "bias": 0.07499999999999996,
+    "bias_wilson_95_ci": [
+      -0.14191284817462413,
+      0.28504012874429496
+    ],
+    "favored": 43,
+    "favored_rate": 0.5375,
+    "fisher_exact_two_sided_p": 0.6549209096032546,
+    "n_valid": 80,
+    "p_above_given_above_good": 0.525,
+    "p_above_given_below_good": 0.45
+  },
+  "estimated_batch_cost_usd": 6.57343,
+  "intervention_raw_sha256": "35302977d9f461da1978a57781a07fdac7cedc464b265dee19486db1be212e74",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "schema_version": 1,
+  "status_counts": {
+    "completed": 80
+  },
+  "threshold": 57350000,
+  "usage": {
+    "input_tokens": 17560,
+    "output_tokens": 435302,
+    "total_tokens": 452862
+  }
+}

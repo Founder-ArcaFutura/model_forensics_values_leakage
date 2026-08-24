@@ -1,0 +1,9 @@
+{
+  "batch_id": "msgbatch_01Fk8MEiyZYqNoC43BfVzavC",
+  "completed_at_utc": "2026-08-23T19:24:53.120461+00:00",
+  "created_at_utc": "2026-08-23T19:20:18.513283+00:00",
+  "manifest_core_sha256": "38ff02236cdf7f4be9c7de87d7e173da464a09f334b0ccca1c87e323845770ad",
+  "phase": "completed",
+  "schema_version": 1,
+  "submitted_at_utc": "2026-08-23T19:20:20.088496+00:00"
+}

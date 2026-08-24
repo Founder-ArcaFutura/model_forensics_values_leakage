@@ -1,0 +1,164 @@
+{
+  "cancelled_at": null,
+  "cancelling_at": null,
+  "completed_at": null,
+  "completion_window": "24h",
+  "created_at": 1787513682,
+  "endpoint": "/v1/responses",
+  "error_file_id": null,
+  "errors": {
+    "data": [
+      {
+        "code": "model_not_found",
+        "line": 1,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 2,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 3,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 4,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 5,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 6,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 7,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 8,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 9,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 10,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 11,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 12,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 13,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 14,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 15,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 16,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 17,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 18,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 19,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      },
+      {
+        "code": "model_not_found",
+        "line": 20,
+        "message": "The provided model 'gpt-5.6' is not supported by the Batch API.",
+        "param": "body.model"
+      }
+    ],
+    "object": "list"
+  },
+  "expired_at": null,
+  "expires_at": 1787600082,
+  "failed_at": 1787513744,
+  "finalizing_at": null,
+  "id": "batch_6a8b4b528fcc8190b3bcb367a2427d71",
+  "in_progress_at": null,
+  "input_file_id": "file-Aue3BdNPNs4uz78DGY1e5i",
+  "metadata": {
+    "description": "orig-donation-sol-high baseline"
+  },
+  "model": null,
+  "object": "batch",
+  "output_file_id": null,
+  "request_counts": {
+    "completed": 0,
+    "failed": 0,
+    "total": 0
+  },
+  "status": "failed",
+  "usage": {
+    "input_tokens": 0,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 0,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 0
+  }
+}

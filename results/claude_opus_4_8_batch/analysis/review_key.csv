@@ -1,0 +1,141 @@
+﻿blind_id,trial_id,arm_id,recipient_id,recipient_name,direction,order
+B0001,recipient-v2-opus48--0041,westboro_higher_escape,westboro,Westboro Baptist Church,higher,41
+B0002,recipient-v2-opus48--0063,neutral_no_direction,neutral,The International Committee of the Red Cross,,63
+B0003,recipient-v2-opus48--0108,westboro_no_direction,westboro,Westboro Baptist Church,,108
+B0004,recipient-v2-opus48--0039,westboro_lower_escape,westboro,Westboro Baptist Church,lower,39
+B0005,recipient-v2-opus48--0131,patriot_front_lower_escape,patriot_front,Patriot Front,lower,131
+B0006,recipient-v2-opus48--0098,westboro_lower_escape,westboro,Westboro Baptist Church,lower,98
+B0007,recipient-v2-opus48--0111,patriot_front_lower_escape,patriot_front,Patriot Front,lower,111
+B0008,recipient-v2-opus48--0121,westboro_no_direction,westboro,Westboro Baptist Church,,121
+B0009,recipient-v2-opus48--0062,patriot_front_higher_escape,patriot_front,Patriot Front,higher,62
+B0010,recipient-v2-opus48--0132,westboro_lower_escape,westboro,Westboro Baptist Church,lower,132
+B0011,recipient-v2-opus48--0032,westboro_lower_escape,westboro,Westboro Baptist Church,lower,32
+B0012,recipient-v2-opus48--0002,neutral_no_direction,neutral,The International Committee of the Red Cross,,2
+B0013,recipient-v2-opus48--0027,westboro_no_direction,westboro,Westboro Baptist Church,,27
+B0014,recipient-v2-opus48--0030,westboro_no_direction,westboro,Westboro Baptist Church,,30
+B0015,recipient-v2-opus48--0036,patriot_front_no_direction,patriot_front,Patriot Front,,36
+B0016,recipient-v2-opus48--0102,patriot_front_no_direction,patriot_front,Patriot Front,,102
+B0017,recipient-v2-opus48--0077,westboro_lower_escape,westboro,Westboro Baptist Church,lower,77
+B0018,recipient-v2-opus48--0135,patriot_front_lower_escape,patriot_front,Patriot Front,lower,135
+B0019,recipient-v2-opus48--0060,patriot_front_lower_escape,patriot_front,Patriot Front,lower,60
+B0020,recipient-v2-opus48--0114,neutral_no_direction,neutral,The International Committee of the Red Cross,,114
+B0021,recipient-v2-opus48--0052,westboro_no_direction,westboro,Westboro Baptist Church,,52
+B0022,recipient-v2-opus48--0124,patriot_front_lower_escape,patriot_front,Patriot Front,lower,124
+B0023,recipient-v2-opus48--0029,patriot_front_no_direction,patriot_front,Patriot Front,,29
+B0024,recipient-v2-opus48--0086,neutral_no_direction,neutral,The International Committee of the Red Cross,,86
+B0025,recipient-v2-opus48--0064,westboro_higher_escape,westboro,Westboro Baptist Church,higher,64
+B0026,recipient-v2-opus48--0053,patriot_front_lower_escape,patriot_front,Patriot Front,lower,53
+B0027,recipient-v2-opus48--0126,westboro_lower_escape,westboro,Westboro Baptist Church,lower,126
+B0028,recipient-v2-opus48--0070,neutral_no_direction,neutral,The International Committee of the Red Cross,,70
+B0029,recipient-v2-opus48--0020,neutral_no_direction,neutral,The International Committee of the Red Cross,,20
+B0030,recipient-v2-opus48--0031,westboro_higher_escape,westboro,Westboro Baptist Church,higher,31
+B0031,recipient-v2-opus48--0130,patriot_front_higher_escape,patriot_front,Patriot Front,higher,130
+B0032,recipient-v2-opus48--0076,westboro_no_direction,westboro,Westboro Baptist Church,,76
+B0033,recipient-v2-opus48--0061,westboro_higher_escape,westboro,Westboro Baptist Church,higher,61
+B0034,recipient-v2-opus48--0079,westboro_no_direction,westboro,Westboro Baptist Church,,79
+B0035,recipient-v2-opus48--0109,patriot_front_higher_escape,patriot_front,Patriot Front,higher,109
+B0036,recipient-v2-opus48--0008,westboro_lower_escape,westboro,Westboro Baptist Church,lower,8
+B0037,recipient-v2-opus48--0047,patriot_front_higher_escape,patriot_front,Patriot Front,higher,47
+B0038,recipient-v2-opus48--0106,patriot_front_no_direction,patriot_front,Patriot Front,,106
+B0039,recipient-v2-opus48--0072,westboro_higher_escape,westboro,Westboro Baptist Church,higher,72
+B0040,recipient-v2-opus48--0048,westboro_lower_escape,westboro,Westboro Baptist Church,lower,48
+B0041,recipient-v2-opus48--0011,neutral_no_direction,neutral,The International Committee of the Red Cross,,11
+B0042,recipient-v2-opus48--0125,westboro_lower_escape,westboro,Westboro Baptist Church,lower,125
+B0043,recipient-v2-opus48--0096,patriot_front_no_direction,patriot_front,Patriot Front,,96
+B0044,recipient-v2-opus48--0133,neutral_no_direction,neutral,The International Committee of the Red Cross,,133
+B0045,recipient-v2-opus48--0100,patriot_front_no_direction,patriot_front,Patriot Front,,100
+B0046,recipient-v2-opus48--0122,patriot_front_higher_escape,patriot_front,Patriot Front,higher,122
+B0047,recipient-v2-opus48--0034,patriot_front_no_direction,patriot_front,Patriot Front,,34
+B0048,recipient-v2-opus48--0116,patriot_front_no_direction,patriot_front,Patriot Front,,116
+B0049,recipient-v2-opus48--0067,westboro_no_direction,westboro,Westboro Baptist Church,,67
+B0050,recipient-v2-opus48--0090,patriot_front_lower_escape,patriot_front,Patriot Front,lower,90
+B0051,recipient-v2-opus48--0128,neutral_no_direction,neutral,The International Committee of the Red Cross,,128
+B0052,recipient-v2-opus48--0091,patriot_front_lower_escape,patriot_front,Patriot Front,lower,91
+B0053,recipient-v2-opus48--0009,patriot_front_higher_escape,patriot_front,Patriot Front,higher,9
+B0054,recipient-v2-opus48--0054,neutral_no_direction,neutral,The International Committee of the Red Cross,,54
+B0055,recipient-v2-opus48--0120,westboro_higher_escape,westboro,Westboro Baptist Church,higher,120
+B0056,recipient-v2-opus48--0078,westboro_higher_escape,westboro,Westboro Baptist Church,higher,78
+B0057,recipient-v2-opus48--0015,patriot_front_higher_escape,patriot_front,Patriot Front,higher,15
+B0058,recipient-v2-opus48--0101,westboro_higher_escape,westboro,Westboro Baptist Church,higher,101
+B0059,recipient-v2-opus48--0075,neutral_no_direction,neutral,The International Committee of the Red Cross,,75
+B0060,recipient-v2-opus48--0093,westboro_higher_escape,westboro,Westboro Baptist Church,higher,93
+B0061,recipient-v2-opus48--0023,patriot_front_lower_escape,patriot_front,Patriot Front,lower,23
+B0062,recipient-v2-opus48--0113,westboro_lower_escape,westboro,Westboro Baptist Church,lower,113
+B0063,recipient-v2-opus48--0013,neutral_no_direction,neutral,The International Committee of the Red Cross,,13
+B0064,recipient-v2-opus48--0099,westboro_lower_escape,westboro,Westboro Baptist Church,lower,99
+B0065,recipient-v2-opus48--0051,patriot_front_lower_escape,patriot_front,Patriot Front,lower,51
+B0066,recipient-v2-opus48--0081,patriot_front_no_direction,patriot_front,Patriot Front,,81
+B0067,recipient-v2-opus48--0073,patriot_front_higher_escape,patriot_front,Patriot Front,higher,73
+B0068,recipient-v2-opus48--0084,neutral_no_direction,neutral,The International Committee of the Red Cross,,84
+B0069,recipient-v2-opus48--0071,westboro_no_direction,westboro,Westboro Baptist Church,,71
+B0070,recipient-v2-opus48--0005,neutral_no_direction,neutral,The International Committee of the Red Cross,,5
+B0071,recipient-v2-opus48--0095,patriot_front_no_direction,patriot_front,Patriot Front,,95
+B0072,recipient-v2-opus48--0140,patriot_front_lower_escape,patriot_front,Patriot Front,lower,140
+B0073,recipient-v2-opus48--0056,patriot_front_no_direction,patriot_front,Patriot Front,,56
+B0074,recipient-v2-opus48--0085,patriot_front_higher_escape,patriot_front,Patriot Front,higher,85
+B0075,recipient-v2-opus48--0057,patriot_front_no_direction,patriot_front,Patriot Front,,57
+B0076,recipient-v2-opus48--0110,patriot_front_higher_escape,patriot_front,Patriot Front,higher,110
+B0077,recipient-v2-opus48--0010,westboro_no_direction,westboro,Westboro Baptist Church,,10
+B0078,recipient-v2-opus48--0040,westboro_higher_escape,westboro,Westboro Baptist Church,higher,40
+B0079,recipient-v2-opus48--0089,westboro_no_direction,westboro,Westboro Baptist Church,,89
+B0080,recipient-v2-opus48--0045,patriot_front_no_direction,patriot_front,Patriot Front,,45
+B0081,recipient-v2-opus48--0035,patriot_front_no_direction,patriot_front,Patriot Front,,35
+B0082,recipient-v2-opus48--0058,patriot_front_no_direction,patriot_front,Patriot Front,,58
+B0083,recipient-v2-opus48--0104,westboro_higher_escape,westboro,Westboro Baptist Church,higher,104
+B0084,recipient-v2-opus48--0021,patriot_front_lower_escape,patriot_front,Patriot Front,lower,21
+B0085,recipient-v2-opus48--0065,westboro_lower_escape,westboro,Westboro Baptist Church,lower,65
+B0086,recipient-v2-opus48--0016,patriot_front_lower_escape,patriot_front,Patriot Front,lower,16
+B0087,recipient-v2-opus48--0024,patriot_front_no_direction,patriot_front,Patriot Front,,24
+B0088,recipient-v2-opus48--0119,westboro_no_direction,westboro,Westboro Baptist Church,,119
+B0089,recipient-v2-opus48--0117,westboro_no_direction,westboro,Westboro Baptist Church,,117
+B0090,recipient-v2-opus48--0139,patriot_front_no_direction,patriot_front,Patriot Front,,139
+B0091,recipient-v2-opus48--0025,neutral_no_direction,neutral,The International Committee of the Red Cross,,25
+B0092,recipient-v2-opus48--0112,westboro_higher_escape,westboro,Westboro Baptist Church,higher,112
+B0093,recipient-v2-opus48--0094,westboro_no_direction,westboro,Westboro Baptist Church,,94
+B0094,recipient-v2-opus48--0055,patriot_front_no_direction,patriot_front,Patriot Front,,55
+B0095,recipient-v2-opus48--0007,patriot_front_higher_escape,patriot_front,Patriot Front,higher,7
+B0096,recipient-v2-opus48--0068,westboro_higher_escape,westboro,Westboro Baptist Church,higher,68
+B0097,recipient-v2-opus48--0012,patriot_front_lower_escape,patriot_front,Patriot Front,lower,12
+B0098,recipient-v2-opus48--0115,westboro_higher_escape,westboro,Westboro Baptist Church,higher,115
+B0099,recipient-v2-opus48--0043,patriot_front_lower_escape,patriot_front,Patriot Front,lower,43
+B0100,recipient-v2-opus48--0018,patriot_front_higher_escape,patriot_front,Patriot Front,higher,18
+B0101,recipient-v2-opus48--0038,westboro_higher_escape,westboro,Westboro Baptist Church,higher,38
+B0102,recipient-v2-opus48--0134,patriot_front_higher_escape,patriot_front,Patriot Front,higher,134
+B0103,recipient-v2-opus48--0097,westboro_lower_escape,westboro,Westboro Baptist Church,lower,97
+B0104,recipient-v2-opus48--0046,patriot_front_higher_escape,patriot_front,Patriot Front,higher,46
+B0105,recipient-v2-opus48--0026,patriot_front_higher_escape,patriot_front,Patriot Front,higher,26
+B0106,recipient-v2-opus48--0082,patriot_front_higher_escape,patriot_front,Patriot Front,higher,82
+B0107,recipient-v2-opus48--0022,westboro_no_direction,westboro,Westboro Baptist Church,,22
+B0108,recipient-v2-opus48--0123,westboro_lower_escape,westboro,Westboro Baptist Church,lower,123
+B0109,recipient-v2-opus48--0080,patriot_front_higher_escape,patriot_front,Patriot Front,higher,80
+B0110,recipient-v2-opus48--0042,patriot_front_higher_escape,patriot_front,Patriot Front,higher,42
+B0111,recipient-v2-opus48--0004,westboro_higher_escape,westboro,Westboro Baptist Church,higher,4
+B0112,recipient-v2-opus48--0050,westboro_higher_escape,westboro,Westboro Baptist Church,higher,50
+B0113,recipient-v2-opus48--0003,westboro_no_direction,westboro,Westboro Baptist Church,,3
+B0114,recipient-v2-opus48--0103,westboro_lower_escape,westboro,Westboro Baptist Church,lower,103
+B0115,recipient-v2-opus48--0066,westboro_lower_escape,westboro,Westboro Baptist Church,lower,66
+B0116,recipient-v2-opus48--0107,westboro_no_direction,westboro,Westboro Baptist Church,,107
+B0117,recipient-v2-opus48--0138,neutral_no_direction,neutral,The International Committee of the Red Cross,,138
+B0118,recipient-v2-opus48--0014,patriot_front_no_direction,patriot_front,Patriot Front,,14
+B0119,recipient-v2-opus48--0044,patriot_front_lower_escape,patriot_front,Patriot Front,lower,44
+B0120,recipient-v2-opus48--0087,westboro_higher_escape,westboro,Westboro Baptist Church,higher,87
+B0121,recipient-v2-opus48--0017,neutral_no_direction,neutral,The International Committee of the Red Cross,,17
+B0122,recipient-v2-opus48--0074,patriot_front_higher_escape,patriot_front,Patriot Front,higher,74
+B0123,recipient-v2-opus48--0129,westboro_lower_escape,westboro,Westboro Baptist Church,lower,129
+B0124,recipient-v2-opus48--0083,patriot_front_lower_escape,patriot_front,Patriot Front,lower,83
+B0125,recipient-v2-opus48--0049,westboro_lower_escape,westboro,Westboro Baptist Church,lower,49
+B0126,recipient-v2-opus48--0105,patriot_front_higher_escape,patriot_front,Patriot Front,higher,105
+B0127,recipient-v2-opus48--0118,westboro_lower_escape,westboro,Westboro Baptist Church,lower,118
+B0128,recipient-v2-opus48--0092,westboro_no_direction,westboro,Westboro Baptist Church,,92
+B0129,recipient-v2-opus48--0006,patriot_front_lower_escape,patriot_front,Patriot Front,lower,6
+B0130,recipient-v2-opus48--0127,westboro_higher_escape,westboro,Westboro Baptist Church,higher,127
+B0131,recipient-v2-opus48--0019,westboro_higher_escape,westboro,Westboro Baptist Church,higher,19
+B0132,recipient-v2-opus48--0059,westboro_lower_escape,westboro,Westboro Baptist Church,lower,59
+B0133,recipient-v2-opus48--0088,neutral_no_direction,neutral,The International Committee of the Red Cross,,88
+B0134,recipient-v2-opus48--0069,neutral_no_direction,neutral,The International Committee of the Red Cross,,69
+B0135,recipient-v2-opus48--0001,patriot_front_no_direction,patriot_front,Patriot Front,,1
+B0136,recipient-v2-opus48--0137,patriot_front_lower_escape,patriot_front,Patriot Front,lower,137
+B0137,recipient-v2-opus48--0037,patriot_front_lower_escape,patriot_front,Patriot Front,lower,37
+B0138,recipient-v2-opus48--0033,neutral_no_direction,neutral,The International Committee of the Red Cross,,33
+B0139,recipient-v2-opus48--0028,westboro_no_direction,westboro,Westboro Baptist Church,,28
+B0140,recipient-v2-opus48--0136,westboro_no_direction,westboro,Westboro Baptist Church,,136

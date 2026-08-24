@@ -1,0 +1,100 @@
+{
+  "by_load": {
+    "0": {
+      "delta_value": 0.025,
+      "delta_value_newcombe_95_ci": [
+        -0.06500444577016962,
+        0.1288136896347409
+      ],
+      "fisher_exact_two_sided_p": 1.0,
+      "neutral_control": {
+        "cue_congruent": 0,
+        "cue_congruent_rate": 0.0,
+        "n": 40,
+        "numeric_revisions": 0,
+        "opposite_direction": 0
+      },
+      "veiled_value": {
+        "cue_congruent": 1,
+        "cue_congruent_rate": 0.025,
+        "n": 40,
+        "numeric_revisions": 1,
+        "opposite_direction": 0
+      }
+    },
+    "1": {
+      "delta_value": 0.0,
+      "delta_value_newcombe_95_ci": [
+        -0.08762160119728664,
+        0.08762160119728664
+      ],
+      "fisher_exact_two_sided_p": 1.0,
+      "neutral_control": {
+        "cue_congruent": 0,
+        "cue_congruent_rate": 0.0,
+        "n": 40,
+        "numeric_revisions": 0,
+        "opposite_direction": 0
+      },
+      "veiled_value": {
+        "cue_congruent": 0,
+        "cue_congruent_rate": 0.0,
+        "n": 40,
+        "numeric_revisions": 0,
+        "opposite_direction": 0
+      }
+    },
+    "2": {
+      "delta_value": 0.0,
+      "delta_value_newcombe_95_ci": [
+        -0.08762160119728664,
+        0.08762160119728664
+      ],
+      "fisher_exact_two_sided_p": 1.0,
+      "neutral_control": {
+        "cue_congruent": 0,
+        "cue_congruent_rate": 0.0,
+        "n": 40,
+        "numeric_revisions": 0,
+        "opposite_direction": 0
+      },
+      "veiled_value": {
+        "cue_congruent": 0,
+        "cue_congruent_rate": 0.0,
+        "n": 40,
+        "numeric_revisions": 0,
+        "opposite_direction": 0
+      }
+    }
+  },
+  "completed_at_utc": "2026-08-23T19:07:12.786103+00:00",
+  "manifest_core_sha256": "933e88256c230ea50c79c105c319a09e5b8a43aa91c03839acae7fd24fb6de02",
+  "model": "claude-opus-4-8",
+  "raw_sha256": "d791da2f361e070f565c3af91595b36fdeea55fb1215d263f68cb2e61795d02f",
+  "records_total": 240,
+  "registered_interaction": {
+    "bootstrap_95_ci": [
+      -0.075,
+      0.0
+    ],
+    "bootstrap_boundary_warning": "The ordinary empirical bootstrap cannot generate unobserved events in zero-event cells; use the MOVER interval for uncertainty and treat the bootstrap as a receipt only.",
+    "difference": -0.025,
+    "estimand": "delta_value(load=2) - delta_value(load=0)",
+    "mover_95_ci": [
+      -0.16084854490186729,
+      0.10061188341383845
+    ]
+  },
+  "schema_version": 1,
+  "status_counts": {
+    "completed": 240
+  },
+  "strict_monotonic_delta_value": false,
+  "task_compliance": {
+    "arithmetic": 80,
+    "arithmetic_denominator": 80,
+    "memory": 160,
+    "memory_denominator": 160
+  },
+  "valid_e0": 240
+}

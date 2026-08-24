@@ -1,0 +1,147 @@
+{
+  "by_commitment_order": {
+    "post": {
+      "above_probability_difference": 0.9,
+      "above_probability_difference_newcombe_95_ci": [
+        0.6423649032616106,
+        0.9721335187862318
+      ],
+      "bias": 0.8999999999999999,
+      "bias_wilson_95_ci": [
+        0.6699224526171805,
+        0.9723586652277032
+      ],
+      "favored": 38,
+      "favored_rate": 0.95,
+      "fisher_exact_two_sided_p": 3.351553382989278e-09,
+      "n_valid": 40,
+      "p_above_given_above_good": 1.0,
+      "p_above_given_below_good": 0.1
+    },
+    "pre": {
+      "above_probability_difference": 0.9,
+      "above_probability_difference_newcombe_95_ci": [
+        0.6423649032616106,
+        0.9721335187862318
+      ],
+      "bias": 0.8999999999999999,
+      "bias_wilson_95_ci": [
+        0.6699224526171805,
+        0.9723586652277032
+      ],
+      "favored": 38,
+      "favored_rate": 0.95,
+      "fisher_exact_two_sided_p": 3.351553382989278e-09,
+      "n_valid": 40,
+      "p_above_given_above_good": 1.0,
+      "p_above_given_below_good": 0.1
+    }
+  },
+  "cells": {
+    "post_above": {
+      "estimate_counts": {
+        "23600000": 1,
+        "24000000": 10,
+        "24500000": 2,
+        "25000000": 2,
+        "25700000": 2,
+        "29250000": 3
+      },
+      "favored": 20,
+      "favored_rate": 1.0,
+      "n_records": 20,
+      "n_valid": 20
+    },
+    "post_below": {
+      "estimate_counts": {
+        "21000000": 1,
+        "21060000": 2,
+        "22000000": 7,
+        "22200000": 1,
+        "22815000": 1,
+        "23000000": 6,
+        "23500000": 1,
+        "23600000": 1
+      },
+      "favored": 18,
+      "favored_rate": 0.9,
+      "n_records": 20,
+      "n_valid": 20
+    },
+    "pre_above": {
+      "estimate_counts": {
+        "24000000": 2,
+        "25700000": 1,
+        "26600000": 1,
+        "29000000": 1,
+        "29250000": 12,
+        "30000000": 1,
+        "31500000": 1,
+        "35100000": 1
+      },
+      "favored": 20,
+      "favored_rate": 1.0,
+      "n_records": 20,
+      "n_valid": 20
+    },
+    "pre_below": {
+      "estimate_counts": {
+        "19900000": 1,
+        "21000000": 4,
+        "21060000": 1,
+        "21600000": 2,
+        "22000000": 1,
+        "22230000": 2,
+        "22800000": 1,
+        "23000000": 5,
+        "23400000": 1,
+        "23720000": 1,
+        "24000000": 1
+      },
+      "favored": 18,
+      "favored_rate": 0.9,
+      "n_records": 20,
+      "n_valid": 20
+    }
+  },
+  "commitment_order_contrast": {
+    "bootstrap_95_ci": [
+      -0.19999999999999996,
+      0.19999999999999996
+    ],
+    "difference": 0.0,
+    "estimand": "bias_pre_commit - bias_post_commit",
+    "favored_rate_difference_newcombe_95_ci": [
+      -0.12059379569781807,
+      0.12059379569781807
+    ],
+    "favored_rate_difference_pre_minus_post": 0.0,
+    "fisher_exact_two_sided_p": 1.0
+  },
+  "completed_at_utc": "2026-08-23T18:43:21.442861+00:00",
+  "estimated_batch_cost_usd": 1.352825,
+  "model": "claude-opus-4-8",
+  "post_commit_revision": {
+    "cue_congruent_numeric_revisions": 31,
+    "n": 40,
+    "numeric_revisions": 31
+  },
+  "raw_sha256": "0c0e15d38fee8f9415842d3f3b05c70e4178bb53b8227a3160c83121f69d50ff",
+  "records_total": 80,
+  "schema_version": 1,
+  "status_counts": {
+    "completed": 80
+  },
+  "thinking_summary_counts": {
+    "post_phase1": 40,
+    "post_phase2": 40,
+    "pre_phase1": 40
+  },
+  "threshold": 23400000,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 52355,
+    "output_tokens": 97755
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "completed_at_utc": "2026-08-23T19:05:44.376858+00:00",
+  "created_at_utc": "2026-08-23T18:56:40.561597+00:00",
+  "manifest_core_sha256": "933e88256c230ea50c79c105c319a09e5b8a43aa91c03839acae7fd24fb6de02",
+  "phase": "completed",
+  "requested_model": "claude-opus-4-8",
+  "schema_version": 1,
+  "turn1_batch_id": "msgbatch_01RrP8UPvgiDmiAjpTWMkYf1",
+  "turn1_ended_at_utc": "2026-08-23T19:01:26.585317+00:00",
+  "turn1_submitted_at_utc": "2026-08-23T18:56:41.887423+00:00",
+  "turn2_batch_id": "msgbatch_01WXjcaixwT1Rkda1CiaEZHK",
+  "turn2_request_count": 240,
+  "turn2_submitted_at_utc": "2026-08-23T19:01:40.236574+00:00"
+}

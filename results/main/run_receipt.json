@@ -1,0 +1,26 @@
+{
+  "already_present": 0,
+  "base_url_origin": "https://api.openai.com",
+  "completed_at_utc": "2026-08-22T18:43:37.868064+00:00",
+  "concurrency": 8,
+  "config_sha256": "254f54872282943aafddb3ecdca395637c2c5e1b407f89a5f18c3e82bb62544c",
+  "http_transport": "auto",
+  "limit": null,
+  "manifest_core_sha256": "960d72579c72a5923ff84a3985b664788a4372c73162bddc249c6379c139714a",
+  "manifest_path": "G:\\model_forensics_values_leakage\\results\\main\\manifest.json",
+  "max_output_tokens": 800,
+  "newly_written": 80,
+  "pending_at_start": 80,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.15",
+  "raw_jsonl_sha256": "9164d49cfaff5ea7848f90da6e5429dc8faf3c7e4a603ef09133606c72932f61",
+  "reasoning_effort": "low",
+  "records_total": 80,
+  "requested_model": "gpt-5.6",
+  "schema_version": 1,
+  "started_at_utc": "2026-08-22T18:40:09.963033+00:00",
+  "status_counts": {
+    "completed": 80
+  },
+  "temperature": 1.0
+}

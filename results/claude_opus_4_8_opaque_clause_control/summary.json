@@ -1,0 +1,91 @@
+{
+  "clause_order_effect_by_mapping": {
+    "above": {
+      "difference": -0.09999999999999998,
+      "first_level": "above_first",
+      "first_n": 20,
+      "fisher_exact_two_sided_p": 0.6049896049896051,
+      "newcombe_95_ci": [
+        -0.31439877306437775,
+        0.110182499156771
+      ],
+      "p_above_first": 0.85,
+      "p_above_second": 0.95,
+      "second_level": "below_first",
+      "second_n": 20
+    },
+    "below": {
+      "difference": -0.04999999999999993,
+      "first_level": "above_first",
+      "first_n": 20,
+      "fisher_exact_two_sided_p": 1.0,
+      "newcombe_95_ci": [
+        -0.25519566702680363,
+        0.14961980289137694
+      ],
+      "p_above_first": 0.9,
+      "p_above_second": 0.95,
+      "second_level": "below_first",
+      "second_n": 20
+    }
+  },
+  "completed_at_utc": "2026-08-24T11:19:41.749283+00:00",
+  "estimated_batch_cost_usd": 1.05065,
+  "focal_identifier_effect_by_order": {
+    "above_first": {
+      "difference": -0.050000000000000044,
+      "first_level": "above",
+      "first_n": 20,
+      "fisher_exact_two_sided_p": 1.0,
+      "newcombe_95_ci": [
+        -0.27243952699840157,
+        0.17348688617395602
+      ],
+      "p_above_first": 0.85,
+      "p_above_second": 0.9,
+      "second_level": "below",
+      "second_n": 20
+    },
+    "below_first": {
+      "difference": 0.0,
+      "first_level": "above",
+      "first_n": 20,
+      "fisher_exact_two_sided_p": 1.0,
+      "newcombe_95_ci": [
+        -0.19061887741414835,
+        0.19061887741414835
+      ],
+      "p_above_first": 0.95,
+      "p_above_second": 0.95,
+      "second_level": "below",
+      "second_n": 20
+    }
+  },
+  "identifier_by_order_interaction": {
+    "difference": -0.050000000000000044,
+    "mover_95_ci": [
+      -0.34294180240775257,
+      0.24373788437714478
+    ]
+  },
+  "manifest_core_sha256": "34644703abed2ff95887bc94c2a843229962afc4b9435d503a3eee9924e607e0",
+  "model": "claude-opus-4-8",
+  "opaque_identifiers": [
+    "ZX-41",
+    "QM-72"
+  ],
+  "raw_sha256": "14348c539cc14ffb62649ca4669fe3893c0c8c7da689144925fb09bb397b6554",
+  "records_total": 80,
+  "schema_version": 1,
+  "status_counts": {
+    "completed": 80
+  },
+  "threshold": 23400000,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 20560,
+    "output_tokens": 79940
+  },
+  "valid_estimates": 80
+}

@@ -1,0 +1,4322 @@
+[
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0001",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0002",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0003",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0004",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0005",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0006",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0007",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0008",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0009",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0010",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0011",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0012",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0013",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0014",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0015",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0016",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0017",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0018",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0019",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0020",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0021",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0022",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0023",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0024",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0025",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0026",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0027",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0028",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0029",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0030",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0031",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0032",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0033",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0034",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0035",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0036",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0037",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0038",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0039",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0040",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0041",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0042",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0043",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0044",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0045",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0046",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0047",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0048",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0049",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0050",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0051",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0052",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0053",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0054",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0055",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0056",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23800000,
+    "e1": 23800000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0057",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0058",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0059",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0060",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0061",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0062",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0063",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0064",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0065",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0066",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0067",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0068",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0069",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0070",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0071",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0072",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0073",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0074",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0075",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0076",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0077",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0078",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0079",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0080",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0081",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0082",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0083",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0084",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0085",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0086",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0087",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0088",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0089",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0090",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0091",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0092",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0093",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0094",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0095",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0096",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0097",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0098",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0099",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0100",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0101",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0102",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0103",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0104",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0105",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0106",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0107",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0108",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0109",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0110",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0111",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0112",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0113",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0114",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0115",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0116",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0117",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0118",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0119",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0120",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0121",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0122",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0123",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0124",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0125",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0126",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0127",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0128",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0129",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0130",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0131",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0132",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0133",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0134",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0135",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0136",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0137",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0138",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0139",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0140",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0141",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0142",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0143",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0144",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0145",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0146",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0147",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0148",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0149",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0150",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0151",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0152",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0153",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23800000,
+    "e1": 23800000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0154",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0155",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0156",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0157",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0158",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0159",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0160",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0161",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0162",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0163",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0164",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 26550000,
+    "e1": 26550000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0165",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0166",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0167",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0168",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0169",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0170",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": true,
+    "decision": "higher",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 30000000,
+    "load": 0,
+    "numeric_revision": true,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0171",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0172",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0173",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0174",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0175",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0176",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0177",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0178",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0179",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0180",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0181",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0182",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0183",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0184",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0185",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0186",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0187",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0188",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0189",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0190",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0191",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0192",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0193",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0194",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0195",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0196",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0197",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0198",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0199",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0200",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0201",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0202",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0203",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0204",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0205",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0206",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0207",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0208",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0209",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0210",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0211",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0212",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0213",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0214",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0215",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0216",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0217",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0218",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0219",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0220",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0221",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0222",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0223",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0224",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0225",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0226",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0227",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0228",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0229",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0230",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23600000,
+    "e1": 23600000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0231",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0232",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0233",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0234",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0235",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 23400000,
+    "e1": 23400000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0236",
+    "value_condition": "neutral_control"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0237",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "higher",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 2,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": true,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0238",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 1,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": true
+    },
+    "trial_id": "task-load-opus48--0239",
+    "value_condition": "veiled_value"
+  },
+  {
+    "cue_congruent": false,
+    "decision": "unchanged",
+    "direction": "lower",
+    "e0": 24000000,
+    "e1": 24000000,
+    "load": 0,
+    "numeric_revision": false,
+    "opposite_direction": false,
+    "review_required": false,
+    "status": "completed",
+    "task_compliance": {
+      "arithmetic": null,
+      "memory": null
+    },
+    "trial_id": "task-load-opus48--0240",
+    "value_condition": "veiled_value"
+  }
+]

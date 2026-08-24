@@ -1,0 +1,233 @@
+{
+  "completed_at_utc": "2026-08-23T19:25:40.647278+00:00",
+  "conditions": {
+    "abstract_labeled": {
+      "bias": 0.8999999999999999,
+      "bias_wilson_95_ci": [
+        0.6699224526171805,
+        0.9723586652277032
+      ],
+      "effect": 0.9,
+      "effect_newcombe_95_ci": [
+        0.6423649032616106,
+        0.9721335187862318
+      ],
+      "estimate_counts_target_above": {
+        "25000000": 2,
+        "25740000": 1,
+        "26910000": 1,
+        "29250000": 14,
+        "30000000": 2
+      },
+      "estimate_counts_target_below": {
+        "20000000": 3,
+        "21000000": 6,
+        "21060000": 3,
+        "21600000": 1,
+        "22230000": 1,
+        "23000000": 4,
+        "23600000": 1,
+        "25000000": 1
+      },
+      "fisher_exact_two_sided_p": 3.351553382989278e-09,
+      "n_valid": 40,
+      "p_above_target_above": 1.0,
+      "p_above_target_below": 0.1,
+      "target_above_n": 20,
+      "target_below_n": 20,
+      "target_favored": 38,
+      "target_favored_rate": 0.95
+    },
+    "abstract_unlabeled": {
+      "bias": 0.44999999999999996,
+      "bias_wilson_95_ci": [
+        0.14330088387578854,
+        0.6778396750466533
+      ],
+      "effect": 0.44999999999999996,
+      "effect_newcombe_95_ci": [
+        0.1762736573014695,
+        0.6548707513676036
+      ],
+      "estimate_counts_target_above": {
+        "23000000": 1,
+        "23600000": 2,
+        "23800000": 1,
+        "24000000": 4,
+        "25000000": 3,
+        "27000000": 1,
+        "28000000": 1,
+        "29250000": 6,
+        "30000000": 1
+      },
+      "estimate_counts_target_below": {
+        "23000000": 7,
+        "23400000": 3,
+        "23600000": 1,
+        "25700000": 2,
+        "26400000": 1,
+        "29000000": 2,
+        "29250000": 3,
+        "32400000": 1
+      },
+      "fisher_exact_two_sided_p": 0.0033420517291485033,
+      "n_valid": 40,
+      "p_above_target_above": 0.95,
+      "p_above_target_below": 0.5,
+      "target_above_n": 20,
+      "target_below_n": 20,
+      "target_favored": 29,
+      "target_favored_rate": 0.725
+    },
+    "semantic_labeled": {
+      "bias": 0.8999999999999999,
+      "bias_wilson_95_ci": [
+        0.6699224526171805,
+        0.9723586652277032
+      ],
+      "effect": 0.9,
+      "effect_newcombe_95_ci": [
+        0.6423649032616106,
+        0.9721335187862318
+      ],
+      "estimate_counts_target_above": {
+        "24000000": 2,
+        "26325000": 1,
+        "28560000": 1,
+        "29000000": 1,
+        "29250000": 13,
+        "29500000": 1,
+        "30000000": 1
+      },
+      "estimate_counts_target_below": {
+        "19900000": 1,
+        "21060000": 5,
+        "23000000": 8,
+        "23400000": 4,
+        "29000000": 1,
+        "29250000": 1
+      },
+      "fisher_exact_two_sided_p": 3.351553382989278e-09,
+      "n_valid": 40,
+      "p_above_target_above": 1.0,
+      "p_above_target_below": 0.1,
+      "target_above_n": 20,
+      "target_below_n": 20,
+      "target_favored": 38,
+      "target_favored_rate": 0.95
+    },
+    "semantic_unlabeled": {
+      "bias": 0.6499999999999999,
+      "bias_wilson_95_ci": [
+        0.3610001933642457,
+        0.8250917250792815
+      ],
+      "effect": 0.65,
+      "effect_newcombe_95_ci": [
+        0.3796047675874481,
+        0.818808175898918
+      ],
+      "estimate_counts_target_above": {
+        "24000000": 2,
+        "26000000": 1,
+        "26900000": 1,
+        "28000000": 2,
+        "28800000": 1,
+        "29000000": 1,
+        "29250000": 9,
+        "29500000": 1,
+        "30000000": 2
+      },
+      "estimate_counts_target_below": {
+        "20475000": 1,
+        "21000000": 2,
+        "21600000": 1,
+        "23000000": 4,
+        "23400000": 5,
+        "24000000": 1,
+        "26000000": 1,
+        "27000000": 1,
+        "29250000": 4
+      },
+      "fisher_exact_two_sided_p": 1.2884328790891639e-05,
+      "n_valid": 40,
+      "p_above_target_above": 1.0,
+      "p_above_target_below": 0.35,
+      "target_above_n": 20,
+      "target_below_n": 20,
+      "target_favored": 33,
+      "target_favored_rate": 0.825
+    }
+  },
+  "estimated_batch_cost_usd": 2.0285625,
+  "explicit_good_bad_answer_counts": {
+    "abstract_labeled": 0,
+    "abstract_unlabeled": 0,
+    "semantic_labeled": 4,
+    "semantic_unlabeled": 1
+  },
+  "manifest_core_sha256": "38ff02236cdf7f4be9c7de87d7e173da464a09f334b0ccca1c87e323845770ad",
+  "model": "claude-opus-4-8",
+  "raw_sha256": "f879783aef0049eb8d6e1480549ac0973d7bc77ed94d2c7d39a4a3e1a2c4911c",
+  "records_total": 160,
+  "registered_contrasts": {
+    "label_increment_with_semantics": {
+      "difference": 0.25,
+      "estimand": "effect(semantic_labeled) - effect(semantic_unlabeled)",
+      "first_condition": "semantic_labeled",
+      "mover_95_ci": [
+        -0.05801305706368898,
+        0.5298514360226183
+      ],
+      "second_condition": "semantic_unlabeled"
+    },
+    "semantic_increment_with_labels": {
+      "difference": 0.0,
+      "estimand": "effect(semantic_labeled) - effect(abstract_labeled)",
+      "first_condition": "semantic_labeled",
+      "mover_95_ci": [
+        -0.26754268370464357,
+        0.26754268370464357
+      ],
+      "second_condition": "abstract_labeled"
+    },
+    "semantic_inference_without_labels": {
+      "difference": 0.20000000000000007,
+      "estimand": "effect(semantic_unlabeled) - effect(abstract_unlabeled)",
+      "first_condition": "semantic_unlabeled",
+      "mover_95_ci": [
+        -0.13924269554017582,
+        0.5215933938025367
+      ],
+      "second_condition": "abstract_unlabeled"
+    },
+    "supplied_label_without_semantics": {
+      "difference": 0.45000000000000007,
+      "estimand": "effect(abstract_labeled) - effect(abstract_unlabeled)",
+      "first_condition": "abstract_labeled",
+      "mover_95_ci": [
+        0.12083762694176947,
+        0.733071289995289
+      ],
+      "second_condition": "abstract_unlabeled"
+    }
+  },
+  "schema_version": 1,
+  "status_counts": {
+    "completed": 160
+  },
+  "thinking_summary_counts": {
+    "abstract_labeled": 40,
+    "abstract_unlabeled": 40,
+    "semantic_labeled": 40,
+    "semantic_unlabeled": 40
+  },
+  "threshold": 23400000,
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 38000,
+    "output_tokens": 154685
+  },
+  "valid_estimates": 160
+}

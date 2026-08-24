@@ -1,0 +1,13 @@
+{
+  "completed_at_utc": "2026-08-23T18:38:47.875608+00:00",
+  "created_at_utc": "2026-08-23T18:33:31.641535+00:00",
+  "manifest_core_sha256": "1e2b3f9c50c1932f8c8f30b132ead83162f257505df2a7285f78030974aa8526",
+  "phase": "completed",
+  "phase1_batch_id": "msgbatch_019UyRtDKhrn9yuULJZPWVPk",
+  "phase1_ended_at_utc": "2026-08-23T18:36:22.707102+00:00",
+  "phase1_submitted_at_utc": "2026-08-23T18:33:32.912833+00:00",
+  "phase2_batch_id": "msgbatch_012vVPFVhHcJr3jqAjBJFT8y",
+  "phase2_request_count": 40,
+  "phase2_submitted_at_utc": "2026-08-23T18:36:54.558797+00:00",
+  "schema_version": 1
+}

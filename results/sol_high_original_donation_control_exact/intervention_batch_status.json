@@ -1,0 +1,40 @@
+{
+  "cancelled_at": null,
+  "cancelling_at": null,
+  "completed_at": 1787518626,
+  "completion_window": "24h",
+  "created_at": 1787515200,
+  "endpoint": "/v1/responses",
+  "error_file_id": null,
+  "errors": null,
+  "expired_at": null,
+  "expires_at": 1787601600,
+  "failed_at": null,
+  "finalizing_at": 1787518622,
+  "id": "batch_6a8b514095588190af570c01b975ad8f",
+  "in_progress_at": 1787515262,
+  "input_file_id": "file-LY3inEXPM5bi9FEzndmp5K",
+  "metadata": {
+    "description": "orig-donation-sol-high intervention"
+  },
+  "model": "gpt-5.6-sol",
+  "object": "batch",
+  "output_file_id": "file-QvMU2SSa5ye9r3yHBpBE9i",
+  "request_counts": {
+    "completed": 80,
+    "failed": 0,
+    "total": 80
+  },
+  "status": "completed",
+  "usage": {
+    "input_tokens": 13280,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 320137,
+    "output_tokens_details": {
+      "reasoning_tokens": 314398
+    },
+    "total_tokens": 333417
+  }
+}

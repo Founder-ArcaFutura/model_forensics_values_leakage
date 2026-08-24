@@ -1,0 +1,53 @@
+{
+  "batch": {
+    "cancelled_at": null,
+    "cancelling_at": null,
+    "completed_at": null,
+    "completion_window": "24h",
+    "created_at": 1787527583,
+    "endpoint": "/v1/responses",
+    "error_file_id": null,
+    "errors": null,
+    "expired_at": null,
+    "expires_at": 1787613983,
+    "failed_at": null,
+    "finalizing_at": null,
+    "id": "batch_6a8b819fd4ec8190b288a8fb0e27a2fb",
+    "in_progress_at": null,
+    "input_file_id": "file-4jnGNr4RstNukfBYaqQKca",
+    "metadata": {
+      "description": "valence-factorial-sol-high valence factorial"
+    },
+    "model": null,
+    "object": "batch",
+    "output_file_id": null,
+    "request_counts": {
+      "completed": 0,
+      "failed": 0,
+      "total": 0
+    },
+    "status": "validating",
+    "usage": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 0
+    }
+  },
+  "input_file": {
+    "bytes": 159120,
+    "created_at": 1787527582,
+    "expires_at": 1790119582,
+    "filename": "batch_input.jsonl",
+    "id": "file-4jnGNr4RstNukfBYaqQKca",
+    "object": "file",
+    "purpose": "batch",
+    "status": "processed",
+    "status_details": null
+  }
+}
