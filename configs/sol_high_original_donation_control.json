@@ -1,0 +1,19 @@
+{
+  "protocol_version": "orig-donation-sol-high",
+  "provider": "openai",
+  "model": "gpt-5.6-sol",
+  "api_key_env": "OPENAI_API_KEY",
+  "base_url_env": "OPENAI_BASE_URL",
+  "http_transport": "powershell",
+  "reasoning_effort": "high",
+  "max_output_tokens": 16000,
+  "request_timeout_seconds": 240,
+  "max_retries": 4,
+  "baseline_trials": 40,
+  "minimum_valid_baseline": 36,
+  "trials_per_intervention": 40,
+  "seed": 20260902,
+  "intervention_seed": 20260903,
+  "batch_input_usd_per_million": 2.5,
+  "batch_output_usd_per_million": 15.0
+}

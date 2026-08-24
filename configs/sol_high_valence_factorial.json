@@ -1,0 +1,22 @@
+{
+  "protocol_version": "valence-factorial-sol-high",
+  "provider": "openai",
+  "model": "gpt-5.6-sol",
+  "api_key_env": "OPENAI_API_KEY",
+  "base_url_env": "OPENAI_BASE_URL",
+  "http_transport": "powershell",
+  "reasoning_effort": "high",
+  "max_output_tokens": 16000,
+  "request_timeout_seconds": 240,
+  "max_retries": 4,
+  "threshold": 57350000,
+  "threshold_provenance": {
+    "source_protocol": "orig-donation-sol-high",
+    "source_baseline_manifest_core_sha256": "681a0e9131c71d72ca0aef8a34a6be05ffd2920896a1a812f03f3ef7dd41ec8a",
+    "method": "median of 40 valid gpt-5.6-sol high-reasoning baseline estimates"
+  },
+  "trials_per_cell": 20,
+  "seed": 20260904,
+  "batch_input_usd_per_million": 2.5,
+  "batch_output_usd_per_million": 15.0
+}

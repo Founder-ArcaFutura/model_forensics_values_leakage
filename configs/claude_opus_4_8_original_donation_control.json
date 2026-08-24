@@ -1,0 +1,24 @@
+{
+  "protocol_version": "orig-donation-opus48",
+  "provider": "anthropic",
+  "model": "claude-opus-4-8",
+  "api_key_env": "ANTHROPIC_API_KEY",
+  "anthropic_version": "2023-06-01",
+  "http_transport": "auto",
+  "max_output_tokens": 16000,
+  "thinking": {
+    "type": "adaptive",
+    "display": "summarized"
+  },
+  "output_config": {
+    "effort": "high"
+  },
+  "request_timeout_seconds": 240,
+  "baseline_trials": 40,
+  "minimum_valid_baseline": 36,
+  "trials_per_intervention": 40,
+  "seed": 20260826,
+  "intervention_seed": 20260827,
+  "batch_input_usd_per_million": 2.5,
+  "batch_output_usd_per_million": 12.5
+}

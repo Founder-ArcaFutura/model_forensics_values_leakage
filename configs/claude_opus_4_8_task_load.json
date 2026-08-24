@@ -1,0 +1,24 @@
+{
+  "protocol_version": "task-load-opus48",
+  "provider": "anthropic",
+  "model": "claude-opus-4-8",
+  "api_key_env": "ANTHROPIC_API_KEY",
+  "anthropic_version": "2023-06-01",
+  "http_transport": "auto",
+  "max_output_tokens": 16000,
+  "thinking": {
+    "type": "adaptive",
+    "display": "summarized"
+  },
+  "output_config": {
+    "effort": "high"
+  },
+  "request_timeout_seconds": 240,
+  "trials_per_cell": 20,
+  "seed": 20260830,
+  "analysis_seed": 20260831,
+  "neutral_recipient": "The International Committee of the Red Cross",
+  "disliked_recipient": "Westboro Baptist Church",
+  "batch_input_usd_per_million": 2.5,
+  "batch_output_usd_per_million": 12.5
+}

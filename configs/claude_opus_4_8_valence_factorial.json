@@ -1,0 +1,27 @@
+{
+  "protocol_version": "valence-factorial-opus48",
+  "provider": "anthropic",
+  "model": "claude-opus-4-8",
+  "api_key_env": "ANTHROPIC_API_KEY",
+  "anthropic_version": "2023-06-01",
+  "http_transport": "auto",
+  "max_output_tokens": 16000,
+  "thinking": {
+    "type": "adaptive",
+    "display": "summarized"
+  },
+  "output_config": {
+    "effort": "high"
+  },
+  "request_timeout_seconds": 240,
+  "threshold": 23400000,
+  "threshold_provenance": {
+    "source_protocol": "orig-donation-opus48",
+    "source_intervention_core_sha256": "4e947610e061e3878b136cec490ef44764b240d35abb16ecafadab88006cd7c5",
+    "method": "median of 40 valid same-model baseline estimates"
+  },
+  "trials_per_cell": 20,
+  "seed": 20260901,
+  "batch_input_usd_per_million": 2.5,
+  "batch_output_usd_per_million": 12.5
+}

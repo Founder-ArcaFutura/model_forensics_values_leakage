@@ -1,0 +1,17 @@
+{
+  "protocol_version": "giraffe-within-trajectory-v1",
+  "model": "gpt-5.6",
+  "reasoning_effort": "low",
+  "temperature": 1.0,
+  "max_output_tokens": 800,
+  "trials_per_arm": 5,
+  "seed": 20260822,
+  "concurrency": 4,
+  "request_timeout_seconds": 180,
+  "max_retries": 4,
+  "http_transport": "auto",
+  "base_url_env": "OPENAI_BASE_URL",
+  "api_key_env": "OPENAI_API_KEY",
+  "neutral_recipient": "North American Scrabble Players Association",
+  "disliked_recipient": "Westboro Baptist Church"
+}

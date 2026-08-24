@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "value-leakage-within-trajectory"
+version = "0.1.0"
+description = "A within-trajectory probe for value-conditioned revision of factual estimates"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+value-leakage = "value_leakage_experiment.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
