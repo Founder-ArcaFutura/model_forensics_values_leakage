@@ -11,6 +11,7 @@ from .task_load import create_task_load_manifest, step_task_load
 from .valence_factorial import create_valence_manifest, step_valence_factorial
 from .openai_controls import step_openai_positive, step_openai_valence
 from .opaque_clause_control import create_opaque_manifest, step_opaque_control, analyze_opaque_results
+from .moral_inversion import create_inversion_manifest, step_inversion, analyze_inversion_results
 from .manifest import create_manifest
 from .runner import run_manifest
 
@@ -115,6 +116,16 @@ def build_parser() -> argparse.ArgumentParser:
     opaque_analyze.add_argument("--manifest", type=Path, required=True)
     opaque_analyze.add_argument("--results", type=Path, required=True)
     opaque_analyze.add_argument("--out", type=Path, required=True)
+    inversion_manifest = subparsers.add_parser("inversion-manifest", help="Freeze congruent-versus-inverted moral-label control")
+    inversion_manifest.add_argument("--config", type=Path, required=True)
+    inversion_manifest.add_argument("--out", type=Path, required=True)
+    inversion_step = subparsers.add_parser("inversion-batch-step", help="Submit, poll, and analyze moral-inversion batch")
+    inversion_step.add_argument("--manifest", type=Path, required=True)
+    inversion_step.add_argument("--out", type=Path, required=True)
+    inversion_analyze = subparsers.add_parser("inversion-analyze", help="Analyze downloaded moral-inversion JSONL offline")
+    inversion_analyze.add_argument("--manifest", type=Path, required=True)
+    inversion_analyze.add_argument("--results", type=Path, required=True)
+    inversion_analyze.add_argument("--out", type=Path, required=True)
     return parser
 
 
@@ -219,5 +230,22 @@ def main() -> None:
             print(f"Request counts: {result['request_counts']}")
     elif args.command == "opaque-analyze":
         summary = analyze_opaque_results(args.manifest, args.results, args.out)
+        print(f"Records analyzed: {summary['records_total']}")
+        print(f"Valid estimates: {summary['valid_estimates']}")
+    elif args.command == "inversion-manifest":
+        manifest = create_inversion_manifest(args.config, args.out)
+        print(f"Wrote {len(manifest['trials'])} trials to {args.out}")
+        print(f"Manifest core SHA-256: {manifest['manifest_core_sha256']}")
+    elif args.command == "inversion-batch-step":
+        result = step_inversion(args.manifest, args.out)
+        print(f"Moral-inversion action: {result['action']}")
+        if result.get("batch_id"):
+            print(f"Batch ID: {result['batch_id']}")
+        if result.get("processing_status"):
+            print(f"Processing status: {result['processing_status']}")
+        if result.get("request_counts"):
+            print(f"Request counts: {result['request_counts']}")
+    elif args.command == "inversion-analyze":
+        summary = analyze_inversion_results(args.manifest, args.results, args.out)
         print(f"Records analyzed: {summary['records_total']}")
         print(f"Valid estimates: {summary['valid_estimates']}")
