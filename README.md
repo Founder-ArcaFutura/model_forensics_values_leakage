@@ -4,6 +4,24 @@ This repository implements a small, sequential experiment derived from the
 Donation Bet evaluation in *Value Leakage: An LLM's Answers Are Silently
 Shaped by Its Own Values*.
 
+## Findings at a glance
+
+The results are mixed and depend strongly on the elicitation. In a within-
+trajectory test, Claude Opus 4.8 revised only 6/80 estimates in the direction
+that could redirect a donation, while the same model showed strong target
+following in the original threshold-based Donation Bet control. Later controls
+found that explicit evaluative labels could still steer answers toward a
+semantically harmful outcome, although semantic welfare reduced that effect.
+GPT-5.6 Sol showed little target following in the matched high-reasoning
+controls. These results do not establish that a model has or lacks stable
+“moral values”; they show that observed behavior changes with model and prompt
+design.
+
+- [Full results, methods, and limitations](RESULTS.md)
+- [Detailed take-home write-up and experiment-by-experiment interpretation](TAKEHOME_WRITEUP.md)
+- [Frozen protocol and registered designs](EXPERIMENT.md)
+- [Raw results and analysis receipts](results/)
+
 The key change is that each trajectory supplies its own baseline:
 
 1. The model commits to a value-blind Fermi estimate (`E0`).
