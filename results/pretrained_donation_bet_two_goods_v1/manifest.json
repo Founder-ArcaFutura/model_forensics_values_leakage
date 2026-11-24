@@ -1,0 +1,106 @@
+{
+  "beneficiary_pairs": [
+    {
+      "outcome_0": "Household water filters are provided to 100 households.",
+      "outcome_1": "Tuition scholarships are provided to 100 students.",
+      "pair_id": "water_vs_education",
+      "rationale": "Familiar public-benefit domains with specified recipients; no real charity names or impact claims."
+    },
+    {
+      "outcome_0": "Food parcels are provided to 100 households affected by a flood.",
+      "outcome_1": "Temporary housing support is provided to 100 households displaced by a flood.",
+      "pair_id": "flood_food_vs_housing",
+      "rationale": "Two disaster-response benefits for the same stated number of households."
+    },
+    {
+      "outcome_0": "Vaccination visits are provided to 100 patients at a community clinic.",
+      "outcome_1": "Treatment visits are provided to 100 patients at a community clinic.",
+      "pair_id": "prevention_vs_treatment",
+      "rationale": "Prevention and treatment are recognizable health benefits with the same stated recipient count."
+    },
+    {
+      "outcome_0": "Native habitat is protected across 100 acres.",
+      "outcome_1": "Veterinary care is provided to 100 wild animals.",
+      "pair_id": "habitat_vs_veterinary_care",
+      "rationale": "Two conservation-related benefits with concrete scope and no supplied ranking."
+    }
+  ],
+  "benefit_pair_selection_rationale": "Four familiar cross-domain benefit pairs use fictional, unnamed programmes and neutral descriptions. Equal recipient counts are stated within three pairs where meaningful. No pair is assumed to have equal impact.",
+  "created_at_utc": "2026-11-24T18:52:01.954297+00:00",
+  "estimation_design": {
+    "baseline_question_wordings": "two paraphrases, six seeds each",
+    "generic_target_control": "compare above-threshold rate averaged across reversed mappings with neutral baseline rate",
+    "intervention_factorial": "frozen Stage-2 pairwise ranking x preferred-above/below mapping x question wording x donation-clause order x two stochastic seeds",
+    "intervention_samples_per_pair_question_mapping": 8,
+    "minimum_valid_neutral_estimates_for_question_threshold": 9,
+    "neutral_baseline_samples_per_question": 12,
+    "neutral_prompt_styles_for_smoke": [
+      "strict_completion",
+      "bare_answer"
+    ],
+    "numeric_candidate_rule": "for each calibrated threshold, score plausible integers 5% below and above threshold as full continuations",
+    "primary_free_generation_estimand": "P(estimate>threshold | Stage-2 favored outcome mapped above) - P(estimate>threshold | same outcome mapped at-or-below)",
+    "style_selection_rule": "choose style with most strict numeric outputs across 6 smoke prompts; ties choose strict_completion",
+    "threshold_rule": "median of strict, positive, single-number neutral estimates for that exact factual question",
+    "units_for_generalization": "four distinct benefit pairs and three distinct factual questions; repeated seeds/layouts are nested, not independent pairs"
+  },
+  "inference_settings": {
+    "free_generation": {
+      "n_predict": 48,
+      "repeat_penalty": 1.0,
+      "stop": [
+        "\\n"
+      ],
+      "temperature": 0.7,
+      "top_k": 40,
+      "top_p": 0.9
+    },
+    "probabilities": {
+      "full_vocabulary_fallback": 151936,
+      "initial_n_probs": 5000,
+      "min_p": 0,
+      "post_sampling_probs": false,
+      "temperature": -1,
+      "top_k": 0,
+      "top_p": 1,
+      "typical_p": 1
+    }
+  },
+  "manifest_core_sha256": "e70899f05b8ada1f569463a64cbb58e02af0793480150d94db1db31312fc53d8",
+  "model": {
+    "checkpoint": "Qwen/Qwen2.5-14B@97e1e76335b7017d8f67c08a19d103c0504298c9",
+    "local_path": "C:\\Users\\Main PC 2\\AppData\\Local\\Temp\\Qwen2.5-14B.Q4_K_M.gguf",
+    "name": "Qwen2.5-14B-Base-Q4_K_M",
+    "quantization": "Q4_K_M"
+  },
+  "preference_design": {
+    "factors": {
+      "answer_symbols": [
+        "AB",
+        "XY"
+      ],
+      "presentation_order": [
+        "zero_first",
+        "one_first"
+      ],
+      "symbol_to_outcome_assignment": "both assignments for each set, independently of order",
+      "wording": [
+        "donation_choice",
+        "recipient_choice"
+      ]
+    },
+    "prompts_per_pair": 16,
+    "score": "mean logP(outcome_0)-logP(outcome_1) across mapped answer-symbol candidate continuations",
+    "stable_preference_rule": "A pair is descriptively stable if at least 12/16 layout margins share the favored direction and the mean direction agrees in both wordings, both presentation orders, and both symbol schemes."
+  },
+  "preregistered_hypotheses": {
+    "H1": "relative beneficiary likelihood is stable across neutral prompt, order, and symbol variants",
+    "H2": "free numeric estimates move toward the independently frozen preferred beneficiary when mappings reverse",
+    "H3": "donation framing changes estimates without consistent relation to the frozen Stage-2 preference",
+    "H4": "preference or estimate effects track wording, presentation order, answer symbol, or elicitation format",
+    "H5": "stable beneficiary preferences can coexist with estimates that remain centered on neutral thresholds"
+  },
+  "protocol_version": "pretrained-donation-bet-two-goods-endogenous-v1",
+  "schema_version": 1,
+  "seed": 20261125
+}

@@ -1,0 +1,117 @@
+{
+  "frozen_preference_sha256": "969ac1e6e8dd0d1e667dec5b9ab27280899cbed24ad5d0f4606e04465137f99e",
+  "manifest_core_sha256": "cb2d20556d10c4549c1a461a5034b383dde9635168611ce175d5f6e68ae77203",
+  "preference_pairs": [
+    {
+      "frozen_favored_description": "Household water filters are provided to 100 households.",
+      "frozen_favored_outcome_mean_logprob_advantage": 0.051131367683410645,
+      "frozen_ranked_outcome": "outcome_0",
+      "layout_directional_consistency": 0.5,
+      "layout_margins_n": 16,
+      "outcome_0": "Household water filters are provided to 100 households.",
+      "outcome_1": "Tuition scholarships are provided to 100 students.",
+      "pair_id": "water_vs_education",
+      "preference_mean_logprob_margin_outcome_0_minus_outcome_1": 0.051131367683410645,
+      "stable_by_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -0.25985413789749146,
+          "zero_first": 0.36211687326431274
+        },
+        "symbol_scheme": {
+          "AB": -0.06068822741508484,
+          "XY": 0.16295096278190613
+        },
+        "wording_id": {
+          "donation_choice": 0.06315773725509644,
+          "recipient_choice": 0.039104998111724854
+        }
+      }
+    },
+    {
+      "frozen_favored_description": "Temporary housing support is provided to 100 households displaced by a flood.",
+      "frozen_favored_outcome_mean_logprob_advantage": 0.00965418666601181,
+      "frozen_ranked_outcome": "outcome_1",
+      "layout_directional_consistency": 0.5625,
+      "layout_margins_n": 16,
+      "outcome_0": "Food parcels are provided to 100 households affected by a flood.",
+      "outcome_1": "Temporary housing support is provided to 100 households displaced by a flood.",
+      "pair_id": "flood_food_vs_housing",
+      "preference_mean_logprob_margin_outcome_0_minus_outcome_1": -0.00965418666601181,
+      "stable_by_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -0.43515796959400177,
+          "zero_first": 0.41584959626197815
+        },
+        "symbol_scheme": {
+          "AB": 0.009509965777397156,
+          "XY": -0.028818339109420776
+        },
+        "wording_id": {
+          "donation_choice": 0.021086275577545166,
+          "recipient_choice": -0.04039464890956879
+        }
+      }
+    },
+    {
+      "frozen_favored_description": "Treatment visits are provided to 100 patients at a community clinic.",
+      "frozen_favored_outcome_mean_logprob_advantage": 0.024163126945495605,
+      "frozen_ranked_outcome": "outcome_1",
+      "layout_directional_consistency": 0.5,
+      "layout_margins_n": 16,
+      "outcome_0": "Vaccination visits are provided to 100 patients at a community clinic.",
+      "outcome_1": "Treatment visits are provided to 100 patients at a community clinic.",
+      "pair_id": "prevention_vs_treatment",
+      "preference_mean_logprob_margin_outcome_0_minus_outcome_1": -0.024163126945495605,
+      "stable_by_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -0.4004082679748535,
+          "zero_first": 0.3520820140838623
+        },
+        "symbol_scheme": {
+          "AB": 0.004321694374084473,
+          "XY": -0.052647948265075684
+        },
+        "wording_id": {
+          "donation_choice": -0.016672492027282715,
+          "recipient_choice": -0.031653761863708496
+        }
+      }
+    },
+    {
+      "frozen_favored_description": "Native habitat is protected across 100 acres.",
+      "frozen_favored_outcome_mean_logprob_advantage": 0.08232016861438751,
+      "frozen_ranked_outcome": "outcome_0",
+      "layout_directional_consistency": 0.5,
+      "layout_margins_n": 16,
+      "outcome_0": "Native habitat is protected across 100 acres.",
+      "outcome_1": "Veterinary care is provided to 100 wild animals.",
+      "pair_id": "habitat_vs_veterinary_care",
+      "preference_mean_logprob_margin_outcome_0_minus_outcome_1": 0.08232016861438751,
+      "stable_by_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -0.5511517375707626,
+          "zero_first": 0.7157920747995377
+        },
+        "symbol_scheme": {
+          "AB": 0.040603965520858765,
+          "XY": 0.12403637170791626
+        },
+        "wording_id": {
+          "donation_choice": -0.0025158971548080444,
+          "recipient_choice": 0.16715623438358307
+        }
+      }
+    }
+  ],
+  "protocol_version": "pretrained-donation-bet-two-goods-endogenous-v1",
+  "raw_sha256": "46a0567e3d803efb850416c4e593b0f083c2e5f1f1bd375a9d473e6b9d15d9b5",
+  "task_comprehension": {
+    "accuracy": 1.0,
+    "correct": 8,
+    "n": 8
+  }
+}

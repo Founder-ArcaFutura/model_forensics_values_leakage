@@ -1,0 +1,34 @@
+{
+  "created_at_utc": "2026-11-24T19:12:25.156937+00:00",
+  "files": {
+    "donation_estimation_raw.jsonl": {
+      "initial_parse_audit_sha256": "dba088afcf56580ad45ee711f1f5f315e62884d6eea15f73eb2fad16f2d57050",
+      "n": 192,
+      "parsed_malformed": 0,
+      "raw_sha256": "bf357676dd978e9ed1056d926165bdd46aab1904367b402e05cb51c0ae5bdff2",
+      "strict_valid": 178,
+      "unique_numeric_noncompliant": 11,
+      "unparseable": 3
+    },
+    "generation_smoke_raw.jsonl": {
+      "initial_parse_audit_sha256": "dd6a8f5fcb744af7fe14c4a23cf6cdf045060af826260e5f919293401d0a7dd1",
+      "n": 12,
+      "parsed_malformed": 0,
+      "raw_sha256": "ba93a18f666138edfa284a1ee57d7efc1f0a25047679a7bcb3d8a4033f4940fd",
+      "strict_valid": 6,
+      "unique_numeric_noncompliant": 2,
+      "unparseable": 4
+    },
+    "neutral_baseline_raw.jsonl": {
+      "initial_parse_audit_sha256": "f57a4e67b869957f4ac3dd27a97d4036e96311b0b9b8013172419bfc9ac9f74b",
+      "n": 36,
+      "parsed_malformed": 0,
+      "raw_sha256": "3b70e9e73cb7a87733231dc6d4609f275faa058ce673e70df5f86b7217973a8b",
+      "strict_valid": 35,
+      "unique_numeric_noncompliant": 0,
+      "unparseable": 1
+    }
+  },
+  "parser": "strict single positive number or one unique numeric mention; multi-number/range completions remain malformed",
+  "source_responses_regenerated": false
+}

@@ -1,0 +1,24 @@
+{
+  "protocol": "pretrained-donation-bet-two-goods-instruct-v1",
+  "events": [
+    {
+      "event": "full_vocabulary_probability_request_failed",
+      "description": "Requesting all 151936 vocabulary probabilities caused a llama.cpp allocation failure (HTTP 500 bad allocation).",
+      "evidence": "full_vocab_score_failure_stderr.log",
+      "use_for_inference": false
+    },
+    {
+      "event": "numeric_candidate_chat_prefix_whitespace_repaired",
+      "description": "An initial numeric candidate smoke prompt included a leading blank after the assistant generation prefix, making a standalone whitespace token part of candidate tokenization. The numeric candidates were rescored after removing that extra blank, and the corrected prompts and scores are in numeric_candidate_likelihood_smoke_raw.jsonl and numeric_candidate_likelihood_raw.jsonl.",
+      "use_for_inference": false
+    },
+    {
+      "event": "exact_candidate_top_n_expansion",
+      "description": "The repaired scorer expanded native exact top-token responses through N=50000. It used a target token only when the backend returned that token's unfiltered logprob. Candidate scores absent from the expanded list remain unavailable.",
+      "exact_numeric_trials": 21,
+      "unavailable_numeric_trials": 3,
+      "total_numeric_trials": 24,
+      "use_for_inference": true
+    }
+  ]
+}

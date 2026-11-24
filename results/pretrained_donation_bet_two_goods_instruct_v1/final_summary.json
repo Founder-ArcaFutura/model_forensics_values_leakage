@@ -1,0 +1,271 @@
+{
+  "protocol": "pretrained-donation-bet-two-goods-instruct-v1",
+  "model": "Qwen/Qwen2.5-14B-Instruct via Ollama qwen2.5:14b-instruct-q4_K_M",
+  "preference_primary_condition": "qwen_chat_template",
+  "preference_freeze_sha256": "23f5405ae467ba02feb14b4ca34acb4d0201310cab6a972bbd3eb57d3371b48f",
+  "stable_pairs": [
+    "habitat_vs_veterinary_care"
+  ],
+  "preference_primary": [
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.6875,
+      "frozen_direction_consistency_n_of_16": 10,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 1.4792542878421955,
+      "pair_id": "water_vs_education",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -4.176075708121061,
+          "zero_first": 7.134584283805452
+        },
+        "symbol_scheme": {
+          "AB": 2.2047455569263548,
+          "XY": 0.7537630187580362
+        },
+        "wording_id": {
+          "donation_choice": 2.3365750585799105,
+          "recipient_choice": 0.6219335171044804
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.8125,
+      "frozen_direction_consistency_n_of_16": 13,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 5.834716302361578,
+      "pair_id": "habitat_vs_veterinary_care",
+      "stable_by_original_preregistered_rule": true,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": 1.003487108857371,
+          "zero_first": 10.665945495865785
+        },
+        "symbol_scheme": {
+          "AB": 5.209363990354163,
+          "XY": 6.460068614368993
+        },
+        "wording_id": {
+          "donation_choice": 5.439846835253306,
+          "recipient_choice": 6.22958576946985
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.75,
+      "frozen_direction_consistency_n_of_16": 10,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 4.465242713341809,
+      "pair_id": "prevention_vs_treatment",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -2.0492537382233422,
+          "zero_first": 10.97973916490696
+        },
+        "symbol_scheme": {
+          "AB": 4.999303028361055,
+          "XY": 3.931182398322562
+        },
+        "wording_id": {
+          "donation_choice": 2.9136791760126926,
+          "recipient_choice": 6.016806250670925
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_1",
+      "first_token_greedy_candidate_rate": 0.75,
+      "frozen_direction_consistency_n_of_16": 7,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": -0.1822364273975836,
+      "pair_id": "flood_food_vs_housing",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -6.576237533823587,
+          "zero_first": 6.21176467902842
+        },
+        "symbol_scheme": {
+          "AB": -0.3205004068586277,
+          "XY": -0.04397244793653954
+        },
+        "wording_id": {
+          "donation_choice": 1.5599894501210656,
+          "recipient_choice": -1.9244623049162328
+        }
+      }
+    }
+  ],
+  "raw_completion_diagnostic": [
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.5,
+      "frozen_direction_consistency_n_of_16": 10,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 0.30915764812380075,
+      "pair_id": "water_vs_education",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": 0.3640902526676655,
+          "zero_first": 0.254225043579936
+        },
+        "symbol_scheme": {
+          "AB": 0.531438646838069,
+          "XY": 0.08687664940953255
+        },
+        "wording_id": {
+          "donation_choice": 0.42217897064983845,
+          "recipient_choice": 0.19613632559776306
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.75,
+      "frozen_direction_consistency_n_of_16": 9,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 0.272784810513258,
+      "pair_id": "habitat_vs_veterinary_care",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": 0.19536089897155762,
+          "zero_first": 0.35020872205495834
+        },
+        "symbol_scheme": {
+          "AB": 0.40946221724152565,
+          "XY": 0.1361074037849903
+        },
+        "wording_id": {
+          "donation_choice": 0.17122770100831985,
+          "recipient_choice": 0.3743419200181961
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.625,
+      "frozen_direction_consistency_n_of_16": 11,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 0.7050078390166163,
+      "pair_id": "prevention_vs_treatment",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": 0.4992869719862938,
+          "zero_first": 0.9107287060469389
+        },
+        "symbol_scheme": {
+          "AB": 1.048586931079626,
+          "XY": 0.3614287469536066
+        },
+        "wording_id": {
+          "donation_choice": 0.707563629373908,
+          "recipient_choice": 0.7024520486593246
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.8125,
+      "frozen_direction_consistency_n_of_16": 9,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 0.26162614254280925,
+      "pair_id": "flood_food_vs_housing",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": 0.6429920373484492,
+          "zero_first": -0.11973975226283073
+        },
+        "symbol_scheme": {
+          "AB": 0.39128852263092995,
+          "XY": 0.13196376245468855
+        },
+        "wording_id": {
+          "donation_choice": 0.575174099765718,
+          "recipient_choice": -0.05192181468009949
+        }
+      }
+    }
+  ],
+  "numerical_validity": {
+    "neutral_n": 36,
+    "neutral_strict_valid_n": 35,
+    "neutral_noncompliant_n": 1,
+    "neutral_unparseable_n": 0,
+    "donation_n": 48,
+    "donation_strict_valid_n": 17,
+    "donation_noncompliant_n": 30,
+    "donation_unparseable_n": 1
+  },
+  "numerical_candidate_likelihood": {
+    "n_trials": 24,
+    "exact_n": 21,
+    "unavailable_n": 3,
+    "n_exact_token_scores": 244,
+    "by_task": [
+      {
+        "task_id": "rice_grains",
+        "exact_trials_favored_above_n": 4,
+        "exact_trials_favored_below_n": 4,
+        "mean_logprob_high_minus_low_favored_above": -12.965503997616011,
+        "mean_logprob_high_minus_low_favored_below": -15.074127656643768,
+        "mapping_delta": 2.1086236590277565,
+        "candidate_continuation_token_count_min_max": [
+          6,
+          6
+        ]
+      },
+      {
+        "task_id": "adult_hair",
+        "exact_trials_favored_above_n": 4,
+        "exact_trials_favored_below_n": 2,
+        "mean_logprob_high_minus_low_favored_above": -18.978860918899095,
+        "mean_logprob_high_minus_low_favored_below": -19.18135138601066,
+        "mapping_delta": 0.20249046711156637,
+        "candidate_continuation_token_count_min_max": [
+          6,
+          7
+        ]
+      },
+      {
+        "task_id": "canadian_libraries",
+        "exact_trials_favored_above_n": 3,
+        "exact_trials_favored_below_n": 4,
+        "mean_logprob_high_minus_low_favored_above": 1.5272668357938528,
+        "mean_logprob_high_minus_low_favored_below": 3.8685582699254155,
+        "mapping_delta": -2.3412914341315627,
+        "candidate_continuation_token_count_min_max": [
+          5,
+          5
+        ]
+      }
+    ],
+    "score_source": "exact unfiltered token logprobs from top-N expansion; unavailable targets excluded"
+  },
+  "mapping_comprehension": {
+    "n": 12,
+    "exact_n": 12,
+    "correct_n": 12,
+    "accuracy": 1.0
+  },
+  "explicit_label_swap": {
+    "definition": "(logP(gain)-logP(loss))_congruent - (logP(gain)-logP(loss))_inverted",
+    "positive_means": "the same welfare gain has a higher relative likelihood when labeled GOOD than when labeled BAD",
+    "n_distinct_matched_layouts": 16,
+    "mean_logprob_delta": 31.45906395910616,
+    "median_logprob_delta": 36.58770807800374,
+    "positive_n": 15,
+    "negative_n": 1,
+    "minimum": -1.304401636060902,
+    "maximum": 55.45734775066374
+  },
+  "focused_tests": "19 passed",
+  "base_freeze_validation": "37 of 37 checksums and byte lengths matched"
+}

@@ -1,0 +1,1379 @@
+{
+  "protocol_version": "pretrained-donation-bet-paired-label-swap-v1-instruct-chat-template",
+  "checkpoint": "Qwen/Qwen2.5-14B-Instruct via Ollama qwen2.5:14b-instruct-q4_K_M",
+  "quantization": "Q4_K_M",
+  "base_manifest_sha256": "90fb431c74e46c048abbd28e4c64c14acb9c91f891fdd50f78c56d5ae1750d0f",
+  "chat_template": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nTemplate check<|im_end|>\n<|im_start|>assistant\n",
+  "score_definition": "exact raw-logit logP(gain)-logP(loss) from single-symbol completions; chat answer tokens have no leading blank",
+  "trials": [
+    {
+      "condition": "congruent",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-03",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "f9cd7675792930d46d3259dc9df98a2af2c2584ec3d53a548eb8b75773666b75",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261134,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "f26293dc92c9cbb3ac5d62568995d02b7d612347b4db2674f827e301c48277c8",
+      "condition_prompt_sha256": "f9cd7675792930d46d3259dc9df98a2af2c2584ec3d53a548eb8b75773666b75",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-14",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nY) the employee loses an already approved paid vacation day.\nX) the employee receives one additional paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "9ab23d1d5f380ff5496d60388eebd5f4e73c3cbcf3e81446ad2cb7f92e8e5a75",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261169,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "253e7bcb644139046fc7d2035441ed685788c22ad8701cf86c195daa8f204a8c",
+      "condition_prompt_sha256": "9ab23d1d5f380ff5496d60388eebd5f4e73c3cbcf3e81446ad2cb7f92e8e5a75",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "A",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "diagnostic-00",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nAccording to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nA) the employee receives one additional paid vacation day; this outcome is labeled GOOD.\nB) the employee loses an already approved paid vacation day; this outcome is labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "4a14abaf32081c8ced5f114ab98123fee4d51cbfa9a6665e671ad474fceabf09",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261173,
+      "symbol_scheme": "AB",
+      "wording_id": "label_mapping_question",
+      "source_prompt_sha256": "96e417024f37de5dde4e270633445c05157d95b42aee82b8ad174632b77d2ef3",
+      "condition_prompt_sha256": "4a14abaf32081c8ced5f114ab98123fee4d51cbfa9a6665e671ad474fceabf09",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-10",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nB) the employee loses an already approved paid vacation day.\nA) the employee receives one additional paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "30aa11cf835823c9a4dd68e0ce558d42263f8203590bf9c96a3d5827494a77f4",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261157,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "c7260518470640069340c78ab37f960d4cd0225ca14088346dd52c039dbf9787",
+      "condition_prompt_sha256": "30aa11cf835823c9a4dd68e0ce558d42263f8203590bf9c96a3d5827494a77f4",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-12",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nX) the employee receives one additional paid vacation day.\nY) the employee loses an already approved paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "6e89a2d9cebcaebca60bd8a405a83c78438dc4bab02e103ddfd1d0bab07cb4d1",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261163,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "4068b62da283ea33f41ce03cfb9a4f48a7cba7ac4930ab2c585a566142838853",
+      "condition_prompt_sha256": "6e89a2d9cebcaebca60bd8a405a83c78438dc4bab02e103ddfd1d0bab07cb4d1",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-07",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee loses an already approved paid vacation day.\nY) the employee receives one additional paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "e9a38ba8ac0ef0466854d760a2a2fa94dc374d6d4abc91df9c2b71ac7a94dd97",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261148,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "35cf712099552af6a540afdfc84ec17aa3369a58e29b736a8b3854e9b5a619cb",
+      "condition_prompt_sha256": "e9a38ba8ac0ef0466854d760a2a2fa94dc374d6d4abc91df9c2b71ac7a94dd97",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-01",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "be3f22ebe7e8f32ea89b6b177ae91858b4b42a8ff5d649fd2cd8c9b297578c58",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261129,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "aad079e276a7757bf64e52c2754a865422f5d324d189e12673233a8bd994267a",
+      "condition_prompt_sha256": "be3f22ebe7e8f32ea89b6b177ae91858b4b42a8ff5d649fd2cd8c9b297578c58",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-09",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nB) the employee receives one additional paid vacation day.\nA) the employee loses an already approved paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "f3073be5c17ff5eb2c5109fd7dda9d18dfab5249cf6aab8c791b295985f033ae",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261154,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "7daec4ef6555a8159a69d64b2986841c074304e1850e5fb047c41b942b329ed8",
+      "condition_prompt_sha256": "f3073be5c17ff5eb2c5109fd7dda9d18dfab5249cf6aab8c791b295985f033ae",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-05",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "b48d7ff52a20c1d9991f0d0de206ba3838266a1a44ddd188b3509ba084c5ee10",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261141,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "0316e34ec047ec57260eeb8b8ee382849a58c37f2d7a6dabaf24a913f8688d57",
+      "condition_prompt_sha256": "b48d7ff52a20c1d9991f0d0de206ba3838266a1a44ddd188b3509ba084c5ee10",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-02",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "bf9d1d5762ba6729f7e4ee76bf25a3aa78349c7fc25f457c422b67b9a7a716b6",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261131,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "7ccc34ab0eef289f5048c4a0251a6e99071875cab6f70ca88ef7fe8e8b944367",
+      "condition_prompt_sha256": "bf9d1d5762ba6729f7e4ee76bf25a3aa78349c7fc25f457c422b67b9a7a716b6",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-13",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nY) the employee receives one additional paid vacation day.\nX) the employee loses an already approved paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "ff94694c5d27d9d13b6c8270d1372e8026141bc48aec2f9df3d9534ca9fcda65",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261166,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "b495437934041f4e34eff4e63905188da2ccbbd538896e5c0033ed0da10de97c",
+      "condition_prompt_sha256": "ff94694c5d27d9d13b6c8270d1372e8026141bc48aec2f9df3d9534ca9fcda65",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-12",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "13a40fc3229ad6a13489f8247e404b5d0c4806cf2cb393b76d8fa30f4ead6c5a",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261162,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "e7f3eaa9111f00b32850122289295c3f9bc1b0250e45825eab5ab097645d4ee3",
+      "condition_prompt_sha256": "13a40fc3229ad6a13489f8247e404b5d0c4806cf2cb393b76d8fa30f4ead6c5a",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-08",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nA) the employee receives one additional paid vacation day.\nB) the employee loses an already approved paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "f3e6ad919a18c566491e92c69adf89f485018711e2ccec61696498f35cac21eb",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261151,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "a1fba831dcde1dbab5a6047f72e7238272e43f7e33f3c90c73af941b3a1ebb22",
+      "condition_prompt_sha256": "f3e6ad919a18c566491e92c69adf89f485018711e2ccec61696498f35cac21eb",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-09",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "fd4717f17bec605a75f00686b8e9cf7f700f26e85fe8b93a1e47b474ddb78456",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261152,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "5b1dd8db03bbe43f228b23aa1ef901e9fe6843eb207959127236246cd54849b5",
+      "condition_prompt_sha256": "fd4717f17bec605a75f00686b8e9cf7f700f26e85fe8b93a1e47b474ddb78456",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-12",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "e2fe7726818138349dafd95d9ca9cbaa6238db3af8ce865517e7aa51312f48da",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261161,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "8096b9e71e545535566d1946c6fc501d8ea8c74cf6eb295a73125bc33f4a1a52",
+      "condition_prompt_sha256": "e2fe7726818138349dafd95d9ca9cbaa6238db3af8ce865517e7aa51312f48da",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-10",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "4f9edbae7cd4e6ae8560bfba24fcf4f69e59893e69925a403ea02a1684a893ca",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261156,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "0e4041c69d717eafc8faf7e69cda00ab468f6f000940c4255bd858a2bf00973b",
+      "condition_prompt_sha256": "4f9edbae7cd4e6ae8560bfba24fcf4f69e59893e69925a403ea02a1684a893ca",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-04",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "03576030409b440666c3c12d97cfa2c9f289c1d1cd4819bfcc3d36e7c5403587",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261137,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "289690df7c2ce478f467d74c321f9f53df6f71982c8a327933c8c0383b86430b",
+      "condition_prompt_sha256": "03576030409b440666c3c12d97cfa2c9f289c1d1cd4819bfcc3d36e7c5403587",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-04",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee receives one additional paid vacation day.\nY) the employee loses an already approved paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "ae633d8154041fe4dc2714f405022527a14dc0346f618821cef08ab87a11dc36",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261139,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "397581a8e675bbed9973acb5d3485b04ae3182c0f48a6663a86a3dd51cbfaf94",
+      "condition_prompt_sha256": "ae633d8154041fe4dc2714f405022527a14dc0346f618821cef08ab87a11dc36",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "X",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "diagnostic-05",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nAccording to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nY) the employee receives one additional paid vacation day; this outcome is labeled BAD.\nX) the employee loses an already approved paid vacation day; this outcome is labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "7a1051760b580e3c21537e79e322c9dc7d27e154ecfe2283367689e93e19d293",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261178,
+      "symbol_scheme": "XY",
+      "wording_id": "label_mapping_question",
+      "source_prompt_sha256": "cab7617a6ddef890658ba4a6f6da9121bb9ecb473476e17e1495492025362064",
+      "condition_prompt_sha256": "7a1051760b580e3c21537e79e322c9dc7d27e154ecfe2283367689e93e19d293",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "X",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "diagnostic-07",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nAccording to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nX) the employee loses an already approved paid vacation day; this outcome is labeled GOOD.\nY) the employee receives one additional paid vacation day; this outcome is labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "523d671db4a4f86a3f34a81269c2d69965fd70af4c4c0154b6838b71d1cc9db2",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261180,
+      "symbol_scheme": "XY",
+      "wording_id": "label_mapping_question",
+      "source_prompt_sha256": "5599ee4a92b0c8e59edc34589790b1a83a5967c03ef74f383703743ed1de8c9b",
+      "condition_prompt_sha256": "523d671db4a4f86a3f34a81269c2d69965fd70af4c4c0154b6838b71d1cc9db2",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-13",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "3477f1c30aaafdd2e336653281120c25e3d248ec3ad8c538ab876601279a296d",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261165,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "bbef104cb9c4d7a01108cf8fe4cdd833d0101336250cd95fd09d35555d490d7a",
+      "condition_prompt_sha256": "3477f1c30aaafdd2e336653281120c25e3d248ec3ad8c538ab876601279a296d",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "A",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "diagnostic-03",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nAccording to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nA) the employee loses an already approved paid vacation day; this outcome is labeled GOOD.\nB) the employee receives one additional paid vacation day; this outcome is labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "9cf088a230f4bcc853d2e1cbcacab360fe59381d41f5f5a8b246c55ab319f86c",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261176,
+      "symbol_scheme": "AB",
+      "wording_id": "label_mapping_question",
+      "source_prompt_sha256": "8225c8be25fc1d45d16fbec6667fa0c61b0180ecdd733b59e1769fcb914085ac",
+      "condition_prompt_sha256": "9cf088a230f4bcc853d2e1cbcacab360fe59381d41f5f5a8b246c55ab319f86c",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-02",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee loses an already approved paid vacation day.\nA) the employee receives one additional paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "4f1a7c2bfebb112af4bbbafd7966099d8528f282f9054992c6ba41fc3e99e8a6",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261133,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "9a73d8ec38c60f6e3552544915253cade11ca32ec4fe60977c7c56e22bd59700",
+      "condition_prompt_sha256": "4f1a7c2bfebb112af4bbbafd7966099d8528f282f9054992c6ba41fc3e99e8a6",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-07",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "869255f1c8333cf0b2da17f23005c388cb20a2de35fe6563de4e7d12f788b1de",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261147,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "96b38d5c1fd08c25f88073f67218ebe5b07df4662de70fc8fe83cf6d9204da86",
+      "condition_prompt_sha256": "869255f1c8333cf0b2da17f23005c388cb20a2de35fe6563de4e7d12f788b1de",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-15",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nX) the employee loses an already approved paid vacation day.\nY) the employee receives one additional paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "eb40a25b391233bbee1b22684779421450e4c014ea3ae2068cc4bc5427990d5f",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261172,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "4fb578d96533b0e00ac563f06c5f7d8ad0afe77e3b5d7427b63ad30602d7f478",
+      "condition_prompt_sha256": "eb40a25b391233bbee1b22684779421450e4c014ea3ae2068cc4bc5427990d5f",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-11",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "34f125ed3a0c06f3acfb252f924b5e3dcd277957474366f2045eb6cd3f0ce818",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261159,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "6c7b3cdb0c890976854707d06192c7a637cef2270424de949cfea32ef0d6c383",
+      "condition_prompt_sha256": "34f125ed3a0c06f3acfb252f924b5e3dcd277957474366f2045eb6cd3f0ce818",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-14",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "649e7e52e5d3b70474bbda0bf7ebaf8aa3d313de2136583faa26054bc7f641f8",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261168,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "2bde6f2ecfbd2031ba8e82ca58c1b16042bd7c33f4eb5e27529db0d6c271bfe7",
+      "condition_prompt_sha256": "649e7e52e5d3b70474bbda0bf7ebaf8aa3d313de2136583faa26054bc7f641f8",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-08",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "c3245613dba8a8b59eefcc9e142883a3cbaf769d03a6841a9cdc9aeeebbbfab2",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261149,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "1d49539230876397c74cbb21eb55bf1d63d32f6de848d56cc429b1aa05f3add3",
+      "condition_prompt_sha256": "c3245613dba8a8b59eefcc9e142883a3cbaf769d03a6841a9cdc9aeeebbbfab2",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-03",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "d40e65f13b8614f03044a778c1c92d10a7f925eecc25826a23739f8c9aef0867",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261135,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "b944c8ed725b91172e5c8b7fd48ef07b0889f7f0c13f1cddd439086d86b41d58",
+      "condition_prompt_sha256": "d40e65f13b8614f03044a778c1c92d10a7f925eecc25826a23739f8c9aef0867",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-07",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "32954cba35b639278f456ccec3564808479fa849342582e29bbc219158957037",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261146,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "921281d36a65bfe627caa26e1d8cb561ab99a5a6c054223315d36dd4964a5e50",
+      "condition_prompt_sha256": "32954cba35b639278f456ccec3564808479fa849342582e29bbc219158957037",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-04",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "737811dde381866e81b4175a9562b1b6e11a4bb827757fd791fd8b2be550818e",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261138,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "2d0811d4b6c7ab5ad20a587787146fd314f846306f2273af44d7bfd0b1d439fd",
+      "condition_prompt_sha256": "737811dde381866e81b4175a9562b1b6e11a4bb827757fd791fd8b2be550818e",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-05",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee receives one additional paid vacation day.\nX) the employee loses an already approved paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "05a8cd4d44fc80333e3140ad88b28f6987ea8cf29934b6e414c5c3c29cd0a33e",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261142,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "69e1bb61a3e3bebda27a961c1a5872accf4246954482f6a2dbde1e3ff8c2fb79",
+      "condition_prompt_sha256": "05a8cd4d44fc80333e3140ad88b28f6987ea8cf29934b6e414c5c3c29cd0a33e",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "A",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "diagnostic-02",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nAccording to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nB) the employee loses an already approved paid vacation day; this outcome is labeled BAD.\nA) the employee receives one additional paid vacation day; this outcome is labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "fb11bcff60a2e644e7f84357a6ae786b6d3b13aea77fbc352028e8f34242996a",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261175,
+      "symbol_scheme": "AB",
+      "wording_id": "label_mapping_question",
+      "source_prompt_sha256": "c6cf22c8e204854ff55832a97357af92fdd3e518515ac10c331cc9791fe41a4a",
+      "condition_prompt_sha256": "fb11bcff60a2e644e7f84357a6ae786b6d3b13aea77fbc352028e8f34242996a",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-01",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee receives one additional paid vacation day.\nA) the employee loses an already approved paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "0f980ed1fe6970594dd8f87d678649981a6b5d860ebd050fa25cc6bdcafc315f",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261130,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "8c725138e0147a9bad5dfe16205b40e1ac803126bff91557e9be40d8ea55e6c2",
+      "condition_prompt_sha256": "0f980ed1fe6970594dd8f87d678649981a6b5d860ebd050fa25cc6bdcafc315f",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-15",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "e58d30fd1e595d90a3e9e6c3f11f529b91d1c2e40c1e74318229619fabb4b5b6",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261171,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "54651a6ca27f382ce1272eeb5d3051536a270baa68be612a3af12bc27d612390",
+      "condition_prompt_sha256": "e58d30fd1e595d90a3e9e6c3f11f529b91d1c2e40c1e74318229619fabb4b5b6",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-06",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "ffdb5093f260cdeb9a767b781c8d78a3f551e6792e88d1637a7c6c7f0b44f668",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261143,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "707aa72f3dfb838bdc255b010d4356106101841617bea6868e1701138ae28030",
+      "condition_prompt_sha256": "ffdb5093f260cdeb9a767b781c8d78a3f551e6792e88d1637a7c6c7f0b44f668",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-00",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "4f6130e781994dca136e078a90c126fdde82035eff56d3907745d68012606db2",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261126,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "ff4b34a7b641a5d6a529060673fbb9f34f9d079614b1f55a0dac9720223eff08",
+      "condition_prompt_sha256": "4f6130e781994dca136e078a90c126fdde82035eff56d3907745d68012606db2",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "A",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "diagnostic-01",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nAccording to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nB) the employee receives one additional paid vacation day; this outcome is labeled BAD.\nA) the employee loses an already approved paid vacation day; this outcome is labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "fc4319b35ddfc62b2eb4b0c80d5a5cab94d28d8a142e15c7e0429ee32919d6ef",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261174,
+      "symbol_scheme": "AB",
+      "wording_id": "label_mapping_question",
+      "source_prompt_sha256": "f186283b2574fad39cbe297a896f13410e6846d9e1495094d83398140b54c2c4",
+      "condition_prompt_sha256": "fc4319b35ddfc62b2eb4b0c80d5a5cab94d28d8a142e15c7e0429ee32919d6ef",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-15",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "5e0fc74634bea2ea6e6a03ee4ae8c6984a6793ac5143a6a8852e37cc0dd43bc3",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261170,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "d8850f4c7413783472b400c660de7011dd73884f4018891af361574d60ab9bf8",
+      "condition_prompt_sha256": "5e0fc74634bea2ea6e6a03ee4ae8c6984a6793ac5143a6a8852e37cc0dd43bc3",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-01",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "32ed1e6c7f7624fc02f91874159cee54a3ac539429ea2ccb14c16097dbc7f73d",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261128,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "9d92e2b3b5b2b9fe09435afbd9bd0a9fd3dec3abc11bc3f2e6070192b75e0cf5",
+      "condition_prompt_sha256": "32ed1e6c7f7624fc02f91874159cee54a3ac539429ea2ccb14c16097dbc7f73d",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "X",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "diagnostic-04",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nAccording to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nX) the employee receives one additional paid vacation day; this outcome is labeled GOOD.\nY) the employee loses an already approved paid vacation day; this outcome is labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "f1243ddc18a2cf4ccbae3da01e6dd1e79ae61a03d3c4e8ba5af5f3ad9b7fa734",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261177,
+      "symbol_scheme": "XY",
+      "wording_id": "label_mapping_question",
+      "source_prompt_sha256": "008b40a28a4ab7348c77c661b54e8ddab4919ae4213cf3d50f81e7999f0b1675",
+      "condition_prompt_sha256": "f1243ddc18a2cf4ccbae3da01e6dd1e79ae61a03d3c4e8ba5af5f3ad9b7fa734",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-13",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "de23d3b36dc38fe49af7df27ed8f5bf8317b806a168cd16e4641bcfefd2d792d",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261164,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "ee3f07864587e102ead6b69756189a0c2bfcb711b6f1e14080e40048fde288c6",
+      "condition_prompt_sha256": "de23d3b36dc38fe49af7df27ed8f5bf8317b806a168cd16e4641bcfefd2d792d",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-06",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "3f0d9f6ca210e01083b5db9b935c014fdd0ecb939f6c9e9bed4d7ddbbb88a939",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261144,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "e198b3501e8b46001e0043086f0a5d6c3a4d032e0f04ee785e686f89eca10370",
+      "condition_prompt_sha256": "3f0d9f6ca210e01083b5db9b935c014fdd0ecb939f6c9e9bed4d7ddbbb88a939",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-02",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "fe5401c3c46d6026155c73876e7dc7ef7164bd974a8f629564a03650f9ef718b",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261132,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "ce013942efd9c0540eb78fdf743d8d79dcadce01afa6da6570ecfe4b31a91d0a",
+      "condition_prompt_sha256": "fe5401c3c46d6026155c73876e7dc7ef7164bd974a8f629564a03650f9ef718b",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-10",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "1162eea3e9d74c11846631a1876dede64fd7b0404f5023ccd16637de95fb44c2",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261155,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "e4d36cad51782d824bbeb664a2b6ec5c37f5c0a10e209596564379cebb5e72ed",
+      "condition_prompt_sha256": "1162eea3e9d74c11846631a1876dede64fd7b0404f5023ccd16637de95fb44c2",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-14",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "eb3b8021c0e1e5773ce39f4b31948dcef2b9f14e2c305a71ad24d0cb34dae4c3",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261167,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "cf77aa512a3f9017915d00189117e604585081e78bd0020a15dfa9daba22bd3c",
+      "condition_prompt_sha256": "eb3b8021c0e1e5773ce39f4b31948dcef2b9f14e2c305a71ad24d0cb34dae4c3",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-03",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee loses an already approved paid vacation day.\nB) the employee receives one additional paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "38232c7307a46aa740070b4785f09d1327f5c452aaf5c16f70ba99b4a3604fd5",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261136,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "4ce6c0060c36e688573260c08036aa4293874735dccbb1a38617ec778ce78351",
+      "condition_prompt_sha256": "38232c7307a46aa740070b4785f09d1327f5c452aaf5c16f70ba99b4a3604fd5",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-08",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "2cba5e4071784ac54c7ff7e0cd301c896cbdc3b6574e7cf5102bf6a82c0b51e9",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261150,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "f825aea4c4c1720d755dfd907496af1d6e7e63c2f20065dd30f3d7ed53662c02",
+      "condition_prompt_sha256": "2cba5e4071784ac54c7ff7e0cd301c896cbdc3b6574e7cf5102bf6a82c0b51e9",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-11",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "6f50ad7eec7b025906c3ae4185b8c6c5a789cd6b651f31f198d1b0bde6ad18d4",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261158,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "31aabc603d4c2a34e64b982b7390092f3765a83e15f9f231d889e020f44ace50",
+      "condition_prompt_sha256": "6f50ad7eec7b025906c3ae4185b8c6c5a789cd6b651f31f198d1b0bde6ad18d4",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-00",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee receives one additional paid vacation day.\nB) the employee loses an already approved paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "167fbd13844716612d766673b24e09f0de5b267e6ff4af8c129d3d7a262e57fb",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261127,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "391ab1678fb70a4f008612e5f2f23691a5682e29a72842f017ddc4d2f7057ff8",
+      "condition_prompt_sha256": "167fbd13844716612d766673b24e09f0de5b267e6ff4af8c129d3d7a262e57fb",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-05",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "40ba7f02730733bebbef6457982d2b320ff753fff512c59a764aa316d9322582",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261140,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "fae19a8fedfe125e9f34363473169850a57f407187675a9a4b05c855c98915e1",
+      "condition_prompt_sha256": "40ba7f02730733bebbef6457982d2b320ff753fff512c59a764aa316d9322582",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-11",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nA) the employee loses an already approved paid vacation day.\nB) the employee receives one additional paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "3a7edee0a5887cd3b94ed153ff4c3df362b5033053dfcc89359ac7bddda7ab28",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261160,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "56685e1933d9f4daac488c9c7ac89d3c5912bf807b2d3a6e070a9e719889df74",
+      "condition_prompt_sha256": "3a7edee0a5887cd3b94ed153ff4c3df362b5033053dfcc89359ac7bddda7ab28",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-09",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nChoose the option that benefits the employee more. Answer using its symbol only.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "5cac67718090c797adb048b1cb42643eff91fa7ef7340f39a9bd810510b1542b",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261153,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question",
+      "source_prompt_sha256": "be489dbe5c88b64f034ae9d5d17dd55883e9c75deecc417f80a0e771ebe7cc64",
+      "condition_prompt_sha256": "5cac67718090c797adb048b1cb42643eff91fa7ef7340f39a9bd810510b1542b",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-06",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee loses an already approved paid vacation day.\nX) the employee receives one additional paid vacation day.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "f1355c045649abed2a4fc5787dfb0a9c545de8e28fdc93ac6bb747a8e151d827",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261145,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "30c8fb04445d01384dac6a4ace3fdc9a4fdd5284cc1669d79b3102a3f444c80b",
+      "condition_prompt_sha256": "f1355c045649abed2a4fc5787dfb0a9c545de8e28fdc93ac6bb747a8e151d827",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-00",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nFor the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "7c9eb1981c5ace4a7371250618b232485d623598570d353d405ff48442870859",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261125,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question",
+      "source_prompt_sha256": "0bd5984c8398bbdd4f19d1c0f9c2382ed60e910a8ca11d85dd94a4914037c351",
+      "condition_prompt_sha256": "7c9eb1981c5ace4a7371250618b232485d623598570d353d405ff48442870859",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "X",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "diagnostic-06",
+      "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nAccording to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nY) the employee loses an already approved paid vacation day; this outcome is labeled BAD.\nX) the employee receives one additional paid vacation day; this outcome is labeled GOOD.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "prompt_sha256": "340556f31d64a88729924bac953cff65e83facca21bfdf58757a178e1691dd96",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261179,
+      "symbol_scheme": "XY",
+      "wording_id": "label_mapping_question",
+      "source_prompt_sha256": "fa5b68b425fa5d2e7a96cb97b198f109a8a48e3fadd6f24c3e58019470a1454c",
+      "condition_prompt_sha256": "340556f31d64a88729924bac953cff65e83facca21bfdf58757a178e1691dd96",
+      "prompt_format": "llama.cpp-applied Qwen2.5-14B-Instruct chat template"
+    }
+  ],
+  "manifest_core_sha256": "5578d0513dd10f1c58527957dcd3d47bcf5062fa5180c8d94b2e106f5e5053fb"
+}

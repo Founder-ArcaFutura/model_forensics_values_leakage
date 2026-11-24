@@ -1,0 +1,14 @@
+{
+  "n": 96,
+  "correct": 91,
+  "accuracy": 0.9479166666666666,
+  "raw_sha256": "008af144d097a39739980d671cc7743a0f2420d9e9f2d025d020aebada789987",
+  "accuracy_by_symbol_scheme": {
+    "AB": 0.9583333333333334,
+    "XY": 0.9375
+  },
+  "accuracy_by_clause_order": {
+    "above_first": 0.8958333333333334,
+    "below_first": 1.0
+  }
+}

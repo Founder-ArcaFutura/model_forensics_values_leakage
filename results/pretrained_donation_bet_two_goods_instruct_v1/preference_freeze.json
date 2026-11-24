@@ -1,0 +1,101 @@
+{
+  "condition": "qwen_chat_template",
+  "freeze_sha256": "23f5405ae467ba02feb14b4ca34acb4d0201310cab6a972bbd3eb57d3371b48f",
+  "model": "qwen2.5:14b-instruct-q4_K_M",
+  "pairs": [
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.6875,
+      "frozen_direction_consistency_n_of_16": 10,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 1.4792542878421955,
+      "pair_id": "water_vs_education",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -4.176075708121061,
+          "zero_first": 7.134584283805452
+        },
+        "symbol_scheme": {
+          "AB": 2.2047455569263548,
+          "XY": 0.7537630187580362
+        },
+        "wording_id": {
+          "donation_choice": 2.3365750585799105,
+          "recipient_choice": 0.6219335171044804
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.8125,
+      "frozen_direction_consistency_n_of_16": 13,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 5.834716302361578,
+      "pair_id": "habitat_vs_veterinary_care",
+      "stable_by_original_preregistered_rule": true,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": 1.003487108857371,
+          "zero_first": 10.665945495865785
+        },
+        "symbol_scheme": {
+          "AB": 5.209363990354163,
+          "XY": 6.460068614368993
+        },
+        "wording_id": {
+          "donation_choice": 5.439846835253306,
+          "recipient_choice": 6.22958576946985
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.75,
+      "frozen_direction_consistency_n_of_16": 10,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 4.465242713341809,
+      "pair_id": "prevention_vs_treatment",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -2.0492537382233422,
+          "zero_first": 10.97973916490696
+        },
+        "symbol_scheme": {
+          "AB": 4.999303028361055,
+          "XY": 3.931182398322562
+        },
+        "wording_id": {
+          "donation_choice": 2.9136791760126926,
+          "recipient_choice": 6.016806250670925
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_1",
+      "first_token_greedy_candidate_rate": 0.75,
+      "frozen_direction_consistency_n_of_16": 7,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": -0.1822364273975836,
+      "pair_id": "flood_food_vs_housing",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -6.576237533823587,
+          "zero_first": 6.21176467902842
+        },
+        "symbol_scheme": {
+          "AB": -0.3205004068586277,
+          "XY": -0.04397244793653954
+        },
+        "wording_id": {
+          "donation_choice": 1.5599894501210656,
+          "recipient_choice": -1.9244623049162328
+        }
+      }
+    }
+  ],
+  "preference_raw_sha256": "8d94e87530a42a1903f2b076be8dc9d927df3d7ebde839d3165e241608e1e719",
+  "stability_rule": "unchanged Base protocol: at least 12/16 layout margins share the favored direction and mean direction agrees in both wordings, both presentation orders, and both symbol schemes"
+}

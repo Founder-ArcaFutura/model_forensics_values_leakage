@@ -32,6 +32,15 @@ results/*
 !results/pretrained_donation_bet_pilot_choice_category/**
 !results/pretrained_donation_bet_pilot_choice_category_v2/
 !results/pretrained_donation_bet_pilot_choice_category_v2/**
+!results/pretrained_donation_bet_two_goods_v1/
+!results/pretrained_donation_bet_two_goods_v1/**
+!results/pretrained_donation_bet_two_goods_instruct_v1/
+!results/pretrained_donation_bet_two_goods_instruct_v1/**
+results/pretrained_donation_bet_two_goods_v1/**/__pycache__/
+results/pretrained_donation_bet_two_goods_v1/**/*.py[cod]
+results/pretrained_donation_bet_two_goods_instruct_v1/**/__pycache__/
+results/pretrained_donation_bet_two_goods_instruct_v1/**/pytest_tmp/
+results/pretrained_donation_bet_two_goods_instruct_v1/**/*.py[cod]
 !results/pretrained_donation_bet_probability_14b/
 !results/pretrained_donation_bet_probability_14b/**
 !results/pretrained_donation_bet_probability_14b_v2/
