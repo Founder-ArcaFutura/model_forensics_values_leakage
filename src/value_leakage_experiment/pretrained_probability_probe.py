@@ -99,12 +99,14 @@ def _labels_for_trial(trial: dict[str, Any]) -> dict[str, str]:
 def _probability_record(trial: dict[str, Any], response: dict[str, Any]) -> dict[str, Any]:
     top = _top(response)
     answer_format = trial.get("answer_format", "letter")
-    if answer_format == "category":
-        first_name, second_name = "GOOD", "BAD"
-        first_text, second_text = " GOOD", " BAD"
-    else:
-        first_name, second_name = "A", "B"
-        first_text, second_text = " A", " B"
+    candidate_spec = {
+        "letter": (("A", " A"), ("B", " B")),
+        "category": (("GOOD", " GOOD"), ("BAD", " BAD")),
+        "welfare_category": (("GAIN", " GAIN"), ("LOSS", " LOSS")),
+    }
+    if answer_format not in candidate_spec:
+        raise ValueError(f"unsupported answer format: {answer_format}")
+    (first_name, first_text), (second_name, second_text) = candidate_spec[answer_format]
     score_first = _candidate_score(top, first_text)
     score_second = _candidate_score(top, second_text)
     choice = (response.get("response") or "")
@@ -153,12 +155,16 @@ def _probability_record(trial: dict[str, Any], response: dict[str, Any]) -> dict
         row["logprob_A_minus_B"] = row["logprob_first_minus_second"] if answer_format == "letter" else None
         row["label_margin_good_minus_bad"] = None
         row["welfare_margin_gain_minus_loss"] = None
-    elif answer_format == "category":
+    elif answer_format in {"category", "welfare_category"}:
         row["logprob_A_minus_B"] = None
-        row["label_margin_good_minus_bad"] = row["logprob_first_minus_second"] if trial["alignment"] != "neutral" else None
-        row["welfare_margin_gain_minus_loss"] = (
-            row["label_margin_good_minus_bad"] * (1 if trial["alignment"] == "congruent" else -1)
-            if trial["alignment"] != "neutral" and both else None)
+        if answer_format == "category":
+            row["label_margin_good_minus_bad"] = row["logprob_first_minus_second"] if trial["alignment"] != "neutral" and both else None
+            row["welfare_margin_gain_minus_loss"] = (
+                row["label_margin_good_minus_bad"] * (1 if trial["alignment"] == "congruent" else -1)
+                if row["label_margin_good_minus_bad"] is not None else None)
+        else:
+            row["label_margin_good_minus_bad"] = None
+            row["welfare_margin_gain_minus_loss"] = row["logprob_first_minus_second"] if trial["alignment"] == "neutral" and both else None
     elif trial["alignment"] == "neutral":
         row["logprob_A_minus_B"] = row["logprob_first_minus_second"]
         row["welfare_margin_gain_minus_loss"] = row["logprob_first_minus_second"] * (1 if trial["option_order"] == "above_first" else -1) if both else None
@@ -263,7 +269,10 @@ def _diagnostic_trials(seed: int) -> list[dict[str, Any]]:
 
 def _summarize(rows: list[dict[str, Any]]) -> dict[str, Any]:
     choice_rows = [r for r in rows if r.get("elicitation") in {"choice_answer_token_probability", "label_token_probability"}]
-    scored = [r for r in choice_rows if r.get("logprob_A_minus_B") is not None]
+    choice_rows += [r for r in rows if r.get("elicitation") == "welfare_token_probability"]
+    scored = [r for r in choice_rows if r.get("logprob_first_minus_second") is not None and
+              all(score.get("logprob") is not None for score in r.get("candidate_scores", {}).values())]
+    letter_rows = [r for r in choice_rows if r["elicitation"] == "choice_answer_token_probability"]
     def group_filtered(alignment: str, field: str, elicitation: str) -> dict[str, Any]:
         values = [r[field] for r in scored if r["elicitation"] == elicitation and
                   r["alignment"] == alignment and r[field] is not None]
@@ -275,15 +284,17 @@ def _summarize(rows: list[dict[str, Any]]) -> dict[str, Any]:
     return {
         "records": len(rows), "choice_prompts": len(choice_rows), "candidate_pairs_scored": len(scored),
         "candidate_pair_missing_n": len(choice_rows) - len(scored),
-        "candidate_missing_reasons": "one or both exact A/B token byte sequences absent from top-20 raw alternatives",
-        "generated_A_n": sum(r.get("generated_choice") == "A" for r in rows),
-        "generated_B_n": sum(r.get("generated_choice") == "B" for r in rows),
-        "generated_other_n": sum(r.get("generated_choice") is None for r in rows),
+        "candidate_missing_reasons": "one or both exact candidate byte sequences absent from top-20 raw alternatives; this transport does not reconstruct multi-token candidates",
+        "generated_A_n": sum(r.get("generated_choice") == "A" for r in letter_rows),
+        "generated_B_n": sum(r.get("generated_choice") == "B" for r in letter_rows),
+        "generated_other_n": sum(r.get("generated_choice") is None for r in letter_rows),
         "generated_choice_counts_by_elicitation": {
             elicitation: {choice: sum(r.get("generated_choice") == (None if choice == "unparsed" else choice)
                                       for r in choice_rows if r["elicitation"] == elicitation)
-                          for choice in ("A", "B", "GOOD", "BAD", "unparsed")}
-            for elicitation in ("choice_answer_token_probability", "label_token_probability")},
+                          for choice in (("A", "B", "unparsed") if elicitation == "choice_answer_token_probability"
+                                         else ("GOOD", "BAD", "unparsed") if elicitation == "label_token_probability"
+                                         else ("GAIN", "LOSS", "unparsed"))}
+            for elicitation in ("choice_answer_token_probability", "label_token_probability", "welfare_token_probability")},
         "label_margin": {elicitation: {a: group_filtered(a, "label_margin_good_minus_bad", elicitation)
                                        for a in ("congruent", "inverted")}
                          for elicitation in ("choice_answer_token_probability", "label_token_probability")},

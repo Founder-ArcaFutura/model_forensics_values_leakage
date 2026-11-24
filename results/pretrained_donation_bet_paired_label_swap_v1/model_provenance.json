@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+  "run_date": "2026-11-24",
+  "repository_branch": "pretrained-donation-bet-pilot",
+  "model": {
+    "checkpoint": "Qwen/Qwen2.5-14B",
+    "base_repository_revision_checked": "97e1e76335b7017d8f67c08a19d103c0504298c9",
+    "training_stage": "pretrained base; not Qwen2.5-14B-Instruct",
+    "base_verification": "Official Qwen model card identifies the checkpoint as Qwen2.5-14B and distinguishes the Instruct variant.",
+    "checkpoint_url": "https://huggingface.co/Qwen/Qwen2.5-14B/tree/97e1e76335b7017d8f67c08a19d103c0504298c9",
+    "quantization": "Q4_K_M",
+    "quantization_source": "mradermacher/Qwen2.5-14B-GGUF",
+    "quantization_source_revision": "d0a2788fa6dc8e83ce2f0aae07882eeecb06ef1f",
+    "quantization_filename": "Qwen2.5-14B.Q4_K_M.gguf",
+    "quantization_size_bytes": 8988110720,
+    "quantization_sha256": "597e04a092b2ca80a66741a0dd4b5f7bc291e2077ede3fb312cb51b48b53c9a2",
+    "upstream_weight_revision_pinned_by_quant_card": false,
+    "provenance_note": "The quantization card identifies the base source model but does not pin the upstream weight commit used to produce the GGUF. The official base revision above was checked independently.",
+    "tokenizer": "Qwen2.5 tokenizer embedded in the GGUF; exact answer token IDs/pieces recorded in tokenizer_probe.json"
+  },
+  "hardware": {
+    "gpu": "AMD Radeon RX 9060 XT",
+    "reported_vram_mib": 16304,
+    "device": "Vulkan0",
+    "model_layer_placement": "llama.cpp native server log assigned model layers to Vulkan0",
+    "cpu_fallback": "llama.cpp warned Flash Attention over K/V rows was unsupported and assigned that operation to CPU"
+  },
+  "inference": {
+    "backend": "llama.cpp native server",
+    "version": "b12606",
+    "binary_archive_sha256": "76e3c7df27b892bff158bf46f30c3a01aff7ff20a05830d6f492721f9ebc136b",
+    "server_options": "--host 127.0.0.1 --port 8081 --ctx-size 4096 --n-gpu-layers 99 --device Vulkan0",
+    "scoring_endpoint": "POST /completion; /tokenize used for answer-symbol tokenization",
+    "temperature": -1,
+    "post_sampling_probs": false,
+    "filters": {"top_k": 0, "top_p": 1, "min_p": 0, "typical_p": 1},
+    "scoring_method": "sum exact conditional log probabilities for the full whitespace-prefixed answer token continuation",
+    "seed": 20261125
+  },
+  "experiment": {
+    "manifest_core_sha256": "cb9115f5466c1be3b3d5af0b751a5175a237536420c2d2f5fa918ae54fa23d4a",
+    "raw_results_sha256": "81750c70d072e070027f2688d18cff07b8e6ecb22eb0f6d5e8d6e8830bf809b0",
+    "choice_condition_prompts": 48,
+    "matched_layouts": 16,
+    "label_mapping_diagnostics": 8
+  }
+}

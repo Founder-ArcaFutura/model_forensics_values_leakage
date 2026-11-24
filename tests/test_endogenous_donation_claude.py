@@ -48,4 +48,15 @@ def test_neutral_calibration_and_nonselective_stable_pair_carryforward():
     assert {row["pair_id"] for row in intervention["trials"] if row["stage"] == "unlabeled_two_goods"} == set(stable)
     unlabeled = [row for row in intervention["trials"] if row["stage"] == "unlabeled_two_goods"]
     assert all("GOOD" not in row["prompt"] and "BAD" not in row["prompt"] for row in unlabeled)
+    assert len({row["custom_id"] for row in intervention["trials"]}) == len(intervention["trials"])
+    for pair in stable:
+        for task in design.FERMI_QUESTIONS:
+            ids_by_condition = {
+                condition: {row["custom_id"] for row in unlabeled
+                            if row["pair_id"] == pair and row["task_id"] == task and row["condition"] == condition}
+                for condition in ("preferred_above", "preferred_below")
+            }
+            assert len(ids_by_condition["preferred_above"]) == design.SAMPLES_PER_CELL
+            assert len(ids_by_condition["preferred_below"]) == design.SAMPLES_PER_CELL
+            assert ids_by_condition["preferred_above"].isdisjoint(ids_by_condition["preferred_below"])
 

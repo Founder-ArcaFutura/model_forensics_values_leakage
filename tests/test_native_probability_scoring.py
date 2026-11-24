@@ -9,6 +9,11 @@ from value_leakage_experiment.native_probability_scoring import (
     _candidate_spec,
     _score_sequence,
 )
+from value_leakage_experiment.pretrained_probability_probe import (
+    _make_trials,
+    _probability_record,
+    _summarize,
+)
 
 
 class NativeProbabilityScoringTests(unittest.TestCase):
@@ -53,6 +58,36 @@ class NativeProbabilityScoringTests(unittest.TestCase):
         self.assertEqual(_candidate_spec({"answer_format": "category"}), ("GOOD", " GOOD", "BAD", " BAD"))
         self.assertEqual(_candidate_spec({"answer_format": "welfare_category"}),
                          ("GAIN", " GAIN", "LOSS", " LOSS"))
+
+    def test_neutral_welfare_category_scores_gain_loss_candidates(self):
+        trial = next(row for row in _make_trials(9) if row["answer_format"] == "welfare_category")
+        response = {"response": " GAIN", "logprobs": [{"bytes": list(b" GAIN"), "top_logprobs": [
+            {"token": " GAIN", "bytes": list(b" GAIN"), "logprob": -0.25},
+            {"token": " LOSS", "bytes": list(b" LOSS"), "logprob": -1.25},
+        ]}]}
+
+        row = _probability_record(trial, response)
+
+        self.assertEqual(set(row["candidate_scores"]), {"GAIN", "LOSS"})
+        self.assertAlmostEqual(row["logprob_first_minus_second"], 1.0)
+        self.assertAlmostEqual(row["welfare_margin_gain_minus_loss"], 1.0)
+        self.assertIsNone(row["logprob_A_minus_B"])
+
+    def test_summary_counts_scored_category_pairs_without_letter_margin(self):
+        trial = next(row for row in _make_trials(12) if row["answer_format"] == "category")
+        response = {"response": " GOOD", "logprobs": [{"bytes": list(b" GOOD"), "top_logprobs": [
+            {"token": " GOOD", "bytes": list(b" GOOD"), "logprob": -0.2},
+            {"token": " BAD", "bytes": list(b" BAD"), "logprob": -1.0},
+        ]}]}
+
+        row = _probability_record(trial, response)
+        summary = _summarize([row])
+
+        self.assertIsNone(row["logprob_A_minus_B"])
+        self.assertEqual(summary["candidate_pairs_scored"], 1)
+        self.assertEqual(summary["candidate_pair_missing_n"], 0)
+        self.assertEqual(summary["label_margin"]["label_token_probability"][trial["alignment"]]
+                         ["n_distinct_prompts"], 1)
 
 
 if __name__ == "__main__":

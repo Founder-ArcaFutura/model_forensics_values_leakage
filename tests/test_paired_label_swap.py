@@ -50,12 +50,18 @@ def test_order_and_answer_symbol_assignment_are_fully_crossed():
 def test_comprehension_diagnostics_are_separate_and_correctly_mapped():
     trials = build_trials(8)
     diagnostics = [trial for trial in trials if trial.get("elicitation") == "task_comprehension_diagnostic"]
-    assert len(diagnostics) == 8
+    assert len(diagnostics) == 16
     for trial in diagnostics:
         assert trial["expected_symbol"] == next(
             symbol for outcome, symbol in trial["outcome_symbols"].items()
             if trial["outcome_labels"][outcome] == "GOOD"
         )
+    for scheme in {trial["symbol_scheme"] for trial in diagnostics}:
+        for outcome in ("gain", "loss"):
+            assigned = {trial["expected_symbol"] for trial in diagnostics
+                        if trial["symbol_scheme"] == scheme and
+                        next(key for key, label in trial["outcome_labels"].items() if label == "GOOD") == outcome}
+            assert len(assigned) == 2
 
 
 def test_scored_outcome_margin_uses_mapping_not_answer_symbol(monkeypatch):

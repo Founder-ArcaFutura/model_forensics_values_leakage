@@ -1,0 +1,34 @@
+{
+  "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+  "records": 56,
+  "matched_layout_pairs": 16,
+  "conditions_per_pair": 3,
+  "paired_label_swap_delta": {
+    "definition": "(logP(gain)-logP(loss))_congruent - (logP(gain)-logP(loss))_inverted",
+    "positive_means": "the same welfare gain has a higher relative likelihood when labeled GOOD than when labeled BAD",
+    "n_distinct_matched_layouts": 16,
+    "mean_logprob_delta": 0.8271405883133411,
+    "median_logprob_delta": 0.8817272186279297,
+    "positive_n": 16,
+    "negative_n": 0,
+    "minimum": 0.14288902282714844,
+    "maximum": 1.6645793914794922
+  },
+  "mean_gain_minus_loss_logprob": {
+    "congruent": 0.613785982131958,
+    "inverted": -0.21335460618138313,
+    "neutral": 0.8674350865185261
+  },
+  "comprehension": {
+    "n": 8,
+    "correct": 6,
+    "accuracy": 0.75
+  },
+  "model_name": "Qwen2.5-14B-Base-Q4_K_M",
+  "checkpoint": "Qwen/Qwen2.5-14B@97e1e76335b7017d8f67c08a19d103c0504298c9",
+  "quantization": "Q4_K_M",
+  "seed": 20261125,
+  "manifest_core_sha256": "cb9115f5466c1be3b3d5af0b751a5175a237536420c2d2f5fa918ae54fa23d4a",
+  "raw_sha256": "81750c70d072e070027f2688d18cff07b8e6ecb22eb0f6d5e8d6e8830bf809b0",
+  "completed_at_utc": "2026-11-24T17:52:00.139682+00:00"
+}

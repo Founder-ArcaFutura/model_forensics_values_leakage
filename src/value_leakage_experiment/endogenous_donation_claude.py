@@ -164,7 +164,10 @@ def build_intervention_manifest(thresholds: dict[str, dict[str, Any]],
                                           else (other_text, preferred_text))
                 prompt = _two_goods_prompt(FERMI_QUESTIONS[task_id], threshold, above_text, below_text)
                 for replicate in range(1, SAMPLES_PER_CELL + 1):
-                    trials.append({"custom_id": f"tg-{pair_id[:7]}-{task_id[:8]}-{condition[:3]}-{replicate:03d}",
+                    condition_code = "pa" if condition == "preferred_above" else "pb"
+                    pair_key = sha256_text(pair_id)[:8]
+                    task_key = sha256_text(task_id)[:8]
+                    trials.append({"custom_id": f"tg-{pair_key}-{task_key}-{condition_code}-{replicate:03d}",
                                    "stage": "unlabeled_two_goods", "condition": condition, "task_id": task_id,
                                    "pair_id": pair_id, "frozen_preference": preferred_outcome,
                                    "preferred_beneficiary": preferred_text, "other_beneficiary": other_text,

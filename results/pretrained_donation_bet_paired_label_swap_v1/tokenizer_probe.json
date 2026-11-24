@@ -1,0 +1,29 @@
+{
+  "answer_symbols": {
+    "A": [
+      {
+        "id": 362,
+        "piece": " A"
+      }
+    ],
+    "B": [
+      {
+        "id": 425,
+        "piece": " B"
+      }
+    ],
+    "X": [
+      {
+        "id": 1599,
+        "piece": " X"
+      }
+    ],
+    "Y": [
+      {
+        "id": 809,
+        "piece": " Y"
+      }
+    ]
+  },
+  "method": "llama.cpp /tokenize endpoint via exact continuation-prefix check"
+}

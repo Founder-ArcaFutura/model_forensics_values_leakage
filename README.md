@@ -14,8 +14,11 @@ The mean within-pair change in gain-versus-loss log odds was **+0.827 nats**
 symbol (A/B or X/Y), presentation order, and two prompt wordings were
 counterbalanced. Neutral prompts favored the leave gain (+0.867 mean log-odds),
 while the mean was +0.614 with congruent labels and −0.213 with inverted
-labels. The label-mapping comprehension check was 6/8, and effect size varied
-by option order. This is a directional result for one scenario, not evidence
+labels. The original label-mapping comprehension check was 6/8 but was
+confounded: the GOOD outcome always used the first answer symbol within each
+symbol scheme. It is not valid evidence of comprehension; a balanced 16-item
+diagnostic is defined in code but has not yet produced results. Effect size
+varied by option order. This is a directional result for one scenario, not evidence
 of a general moral preference or a broad claim about pretraining.
 
 See the [paired label-swap report](results/pretrained_donation_bet_paired_label_swap_v1/REPORT.md),

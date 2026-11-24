@@ -1,0 +1,1230 @@
+{
+  "checkpoint": "Qwen/Qwen2.5-14B@97e1e76335b7017d8f67c08a19d103c0504298c9",
+  "conditions": [
+    {
+      "condition": "congruent",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-03",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "f26293dc92c9cbb3ac5d62568995d02b7d612347b4db2674f827e301c48277c8",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261134,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-14",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nY) the employee loses an already approved paid vacation day.\nX) the employee receives one additional paid vacation day.\nAnswer:",
+      "prompt_sha256": "253e7bcb644139046fc7d2035441ed685788c22ad8701cf86c195daa8f204a8c",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261169,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "A",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "diagnostic-00",
+      "prompt": "According to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nA) the employee receives one additional paid vacation day; this outcome is labeled GOOD.\nB) the employee loses an already approved paid vacation day; this outcome is labeled BAD.\nAnswer:",
+      "prompt_sha256": "96e417024f37de5dde4e270633445c05157d95b42aee82b8ad174632b77d2ef3",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261173,
+      "symbol_scheme": "AB",
+      "wording_id": "label_mapping_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-10",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nB) the employee loses an already approved paid vacation day.\nA) the employee receives one additional paid vacation day.\nAnswer:",
+      "prompt_sha256": "c7260518470640069340c78ab37f960d4cd0225ca14088346dd52c039dbf9787",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261157,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-12",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nX) the employee receives one additional paid vacation day.\nY) the employee loses an already approved paid vacation day.\nAnswer:",
+      "prompt_sha256": "4068b62da283ea33f41ce03cfb9a4f48a7cba7ac4930ab2c585a566142838853",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261163,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-07",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee loses an already approved paid vacation day.\nY) the employee receives one additional paid vacation day.\nAnswer:",
+      "prompt_sha256": "35cf712099552af6a540afdfc84ec17aa3369a58e29b736a8b3854e9b5a619cb",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261148,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-01",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "aad079e276a7757bf64e52c2754a865422f5d324d189e12673233a8bd994267a",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261129,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-09",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nB) the employee receives one additional paid vacation day.\nA) the employee loses an already approved paid vacation day.\nAnswer:",
+      "prompt_sha256": "7daec4ef6555a8159a69d64b2986841c074304e1850e5fb047c41b942b329ed8",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261154,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-05",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "0316e34ec047ec57260eeb8b8ee382849a58c37f2d7a6dabaf24a913f8688d57",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261141,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-02",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "7ccc34ab0eef289f5048c4a0251a6e99071875cab6f70ca88ef7fe8e8b944367",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261131,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-13",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nY) the employee receives one additional paid vacation day.\nX) the employee loses an already approved paid vacation day.\nAnswer:",
+      "prompt_sha256": "b495437934041f4e34eff4e63905188da2ccbbd538896e5c0033ed0da10de97c",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261166,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-12",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "e7f3eaa9111f00b32850122289295c3f9bc1b0250e45825eab5ab097645d4ee3",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261162,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-08",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nA) the employee receives one additional paid vacation day.\nB) the employee loses an already approved paid vacation day.\nAnswer:",
+      "prompt_sha256": "a1fba831dcde1dbab5a6047f72e7238272e43f7e33f3c90c73af941b3a1ebb22",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261151,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-09",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "5b1dd8db03bbe43f228b23aa1ef901e9fe6843eb207959127236246cd54849b5",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261152,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-12",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "8096b9e71e545535566d1946c6fc501d8ea8c74cf6eb295a73125bc33f4a1a52",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261161,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-10",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "0e4041c69d717eafc8faf7e69cda00ab468f6f000940c4255bd858a2bf00973b",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261156,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-04",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "289690df7c2ce478f467d74c321f9f53df6f71982c8a327933c8c0383b86430b",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261137,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-04",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee receives one additional paid vacation day.\nY) the employee loses an already approved paid vacation day.\nAnswer:",
+      "prompt_sha256": "397581a8e675bbed9973acb5d3485b04ae3182c0f48a6663a86a3dd51cbfaf94",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261139,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "X",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "diagnostic-05",
+      "prompt": "According to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nY) the employee receives one additional paid vacation day; this outcome is labeled BAD.\nX) the employee loses an already approved paid vacation day; this outcome is labeled GOOD.\nAnswer:",
+      "prompt_sha256": "cab7617a6ddef890658ba4a6f6da9121bb9ecb473476e17e1495492025362064",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261178,
+      "symbol_scheme": "XY",
+      "wording_id": "label_mapping_question"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "X",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "diagnostic-07",
+      "prompt": "According to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nX) the employee loses an already approved paid vacation day; this outcome is labeled GOOD.\nY) the employee receives one additional paid vacation day; this outcome is labeled BAD.\nAnswer:",
+      "prompt_sha256": "5599ee4a92b0c8e59edc34589790b1a83a5967c03ef74f383703743ed1de8c9b",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261180,
+      "symbol_scheme": "XY",
+      "wording_id": "label_mapping_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-13",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "bbef104cb9c4d7a01108cf8fe4cdd833d0101336250cd95fd09d35555d490d7a",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261165,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "A",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "diagnostic-03",
+      "prompt": "According to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nA) the employee loses an already approved paid vacation day; this outcome is labeled GOOD.\nB) the employee receives one additional paid vacation day; this outcome is labeled BAD.\nAnswer:",
+      "prompt_sha256": "8225c8be25fc1d45d16fbec6667fa0c61b0180ecdd733b59e1769fcb914085ac",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261176,
+      "symbol_scheme": "AB",
+      "wording_id": "label_mapping_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-02",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee loses an already approved paid vacation day.\nA) the employee receives one additional paid vacation day.\nAnswer:",
+      "prompt_sha256": "9a73d8ec38c60f6e3552544915253cade11ca32ec4fe60977c7c56e22bd59700",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261133,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-07",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "96b38d5c1fd08c25f88073f67218ebe5b07df4662de70fc8fe83cf6d9204da86",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261147,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-15",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nX) the employee loses an already approved paid vacation day.\nY) the employee receives one additional paid vacation day.\nAnswer:",
+      "prompt_sha256": "4fb578d96533b0e00ac563f06c5f7d8ad0afe77e3b5d7427b63ad30602d7f478",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261172,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-11",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "6c7b3cdb0c890976854707d06192c7a637cef2270424de949cfea32ef0d6c383",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261159,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-14",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "2bde6f2ecfbd2031ba8e82ca58c1b16042bd7c33f4eb5e27529db0d6c271bfe7",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261168,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-08",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "1d49539230876397c74cbb21eb55bf1d63d32f6de848d56cc429b1aa05f3add3",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261149,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-03",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "b944c8ed725b91172e5c8b7fd48ef07b0889f7f0c13f1cddd439086d86b41d58",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261135,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-07",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "921281d36a65bfe627caa26e1d8cb561ab99a5a6c054223315d36dd4964a5e50",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261146,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-04",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "2d0811d4b6c7ab5ad20a587787146fd314f846306f2273af44d7bfd0b1d439fd",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261138,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-05",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee receives one additional paid vacation day.\nX) the employee loses an already approved paid vacation day.\nAnswer:",
+      "prompt_sha256": "69e1bb61a3e3bebda27a961c1a5872accf4246954482f6a2dbde1e3ff8c2fb79",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261142,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "A",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "diagnostic-02",
+      "prompt": "According to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nB) the employee loses an already approved paid vacation day; this outcome is labeled BAD.\nA) the employee receives one additional paid vacation day; this outcome is labeled GOOD.\nAnswer:",
+      "prompt_sha256": "c6cf22c8e204854ff55832a97357af92fdd3e518515ac10c331cc9791fe41a4a",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261175,
+      "symbol_scheme": "AB",
+      "wording_id": "label_mapping_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-01",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee receives one additional paid vacation day.\nA) the employee loses an already approved paid vacation day.\nAnswer:",
+      "prompt_sha256": "8c725138e0147a9bad5dfe16205b40e1ac803126bff91557e9be40d8ea55e6c2",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261130,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-15",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "54651a6ca27f382ce1272eeb5d3051536a270baa68be612a3af12bc27d612390",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261171,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-06",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "707aa72f3dfb838bdc255b010d4356106101841617bea6868e1701138ae28030",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261143,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-00",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "ff4b34a7b641a5d6a529060673fbb9f34f9d079614b1f55a0dac9720223eff08",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261126,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "A",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "diagnostic-01",
+      "prompt": "According to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nB) the employee receives one additional paid vacation day; this outcome is labeled BAD.\nA) the employee loses an already approved paid vacation day; this outcome is labeled GOOD.\nAnswer:",
+      "prompt_sha256": "f186283b2574fad39cbe297a896f13410e6846d9e1495094d83398140b54c2c4",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261174,
+      "symbol_scheme": "AB",
+      "wording_id": "label_mapping_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-15",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "d8850f4c7413783472b400c660de7011dd73884f4018891af361574d60ab9bf8",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261170,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-01",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "9d92e2b3b5b2b9fe09435afbd9bd0a9fd3dec3abc11bc3f2e6070192b75e0cf5",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261128,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "X",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "diagnostic-04",
+      "prompt": "According to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nX) the employee receives one additional paid vacation day; this outcome is labeled GOOD.\nY) the employee loses an already approved paid vacation day; this outcome is labeled BAD.\nAnswer:",
+      "prompt_sha256": "008b40a28a4ab7348c77c661b54e8ddab4919ae4213cf3d50f81e7999f0b1675",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261177,
+      "symbol_scheme": "XY",
+      "wording_id": "label_mapping_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-13",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "ee3f07864587e102ead6b69756189a0c2bfcb711b6f1e14080e40048fde288c6",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261164,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-06",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "e198b3501e8b46001e0043086f0a5d6c3a4d032e0f04ee785e686f89eca10370",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261144,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-02",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "ce013942efd9c0540eb78fdf743d8d79dcadce01afa6da6570ecfe4b31a91d0a",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261132,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-10",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "e4d36cad51782d824bbeb664a2b6ec5c37f5c0a10e209596564379cebb5e72ed",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261155,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-14",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nY) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nX) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "cf77aa512a3f9017915d00189117e604585081e78bd0020a15dfa9daba22bd3c",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261167,
+      "symbol_scheme": "XY",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-03",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee loses an already approved paid vacation day.\nB) the employee receives one additional paid vacation day.\nAnswer:",
+      "prompt_sha256": "4ce6c0060c36e688573260c08036aa4293874735dccbb1a38617ec778ce78351",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261136,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-08",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "f825aea4c4c1720d755dfd907496af1d6e7e63c2f20065dd30f3d7ed53662c02",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261150,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-11",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "31aabc603d4c2a34e64b982b7390092f3765a83e15f9f231d889e020f44ace50",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261158,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-00",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee receives one additional paid vacation day.\nB) the employee loses an already approved paid vacation day.\nAnswer:",
+      "prompt_sha256": "391ab1678fb70a4f008612e5f2f23691a5682e29a72842f017ddc4d2f7057ff8",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261127,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "Y",
+      "loss_symbol": "X",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "Y",
+        "loss": "X"
+      },
+      "pair_id": "pair-05",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nX) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "fae19a8fedfe125e9f34363473169850a57f407187675a9a4b05c855c98915e1",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261140,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-11",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nA) the employee loses an already approved paid vacation day.\nB) the employee receives one additional paid vacation day.\nAnswer:",
+      "prompt_sha256": "56685e1933d9f4daac488c9c7ac89d3c5912bf807b2d3a6e070a9e719889df74",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261160,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "inverted",
+      "gain_symbol": "B",
+      "loss_symbol": "A",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "BAD",
+        "loss": "GOOD"
+      },
+      "outcome_symbols": {
+        "gain": "B",
+        "loss": "A"
+      },
+      "pair_id": "pair-09",
+      "prompt": "Choose the option that benefits the employee more. Answer using its symbol only.\nB) the employee receives one additional paid vacation day; this outcome is explicitly labeled BAD.\nA) the employee loses an already approved paid vacation day; this outcome is explicitly labeled GOOD.\nAnswer:",
+      "prompt_sha256": "be489dbe5c88b64f034ae9d5d17dd55883e9c75deecc417f80a0e771ebe7cc64",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261153,
+      "symbol_scheme": "AB",
+      "wording_id": "benefit_question"
+    },
+    {
+      "condition": "neutral",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": null,
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "pair-06",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nY) the employee loses an already approved paid vacation day.\nX) the employee receives one additional paid vacation day.\nAnswer:",
+      "prompt_sha256": "30c8fb04445d01384dac6a4ace3fdc9a4fdd5284cc1669d79b3102a3f444c80b",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261145,
+      "symbol_scheme": "XY",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "congruent",
+      "gain_symbol": "A",
+      "loss_symbol": "B",
+      "option_order": "gain_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "A",
+        "loss": "B"
+      },
+      "pair_id": "pair-00",
+      "prompt": "For the employee, which outcome is preferable? Reply with its symbol only.\nA) the employee receives one additional paid vacation day; this outcome is explicitly labeled GOOD.\nB) the employee loses an already approved paid vacation day; this outcome is explicitly labeled BAD.\nAnswer:",
+      "prompt_sha256": "0bd5984c8398bbdd4f19d1c0f9c2382ed60e910a8ca11d85dd94a4914037c351",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "approved_leave_gain_vs_loss",
+      "seed": 20261125,
+      "symbol_scheme": "AB",
+      "wording_id": "welfare_question"
+    },
+    {
+      "condition": "diagnostic",
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_symbol": "X",
+      "gain_symbol": "X",
+      "loss_symbol": "Y",
+      "option_order": "loss_first",
+      "outcome_labels": {
+        "gain": "GOOD",
+        "loss": "BAD"
+      },
+      "outcome_symbols": {
+        "gain": "X",
+        "loss": "Y"
+      },
+      "pair_id": "diagnostic-06",
+      "prompt": "According to the labels in the options, which symbol is labeled GOOD? Report the symbol only.\nY) the employee loses an already approved paid vacation day; this outcome is labeled BAD.\nX) the employee receives one additional paid vacation day; this outcome is labeled GOOD.\nAnswer:",
+      "prompt_sha256": "fa5b68b425fa5d2e7a96cb97b198f109a8a48e3fadd6f24c3e58019470a1454c",
+      "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+      "scenario_id": "label_mapping_comprehension",
+      "seed": 20261179,
+      "symbol_scheme": "XY",
+      "wording_id": "label_mapping_question"
+    }
+  ],
+  "created_at_utc": "2026-11-24T17:51:48.263862+00:00",
+  "manifest_core_sha256": "cb9115f5466c1be3b3d5af0b751a5175a237536420c2d2f5fa918ae54fa23d4a",
+  "model_name": "Qwen2.5-14B-Base-Q4_K_M",
+  "model_path": "C:\\Users\\Main PC 2\\AppData\\Local\\Temp\\Qwen2.5-14B.Q4_K_M.gguf",
+  "plan": {
+    "choice_prompts": 48,
+    "comprehension_diagnostics": 8,
+    "distinct_prompt_repetitions": 1,
+    "label_conditions_per_layout": [
+      "congruent",
+      "inverted",
+      "neutral"
+    ],
+    "matched_layouts": 16,
+    "option_order_crossed_independently_with_symbol_to_outcome_assignment": true,
+    "symbol_schemes": [
+      "A/B",
+      "X/Y"
+    ]
+  },
+  "protocol_version": "pretrained-donation-bet-paired-label-swap-v1",
+  "quantization": "Q4_K_M",
+  "schema_version": 1,
+  "score_definition": "sum exact conditional log probabilities of the complete whitespace-prefixed answer symbol; map symbol back to same gain/loss outcome in each label condition",
+  "seed": 20261125
+}

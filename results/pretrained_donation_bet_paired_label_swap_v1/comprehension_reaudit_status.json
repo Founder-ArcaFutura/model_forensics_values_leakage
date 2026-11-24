@@ -1,0 +1,12 @@
+{
+  "status": "incomplete_local_execution",
+  "manifest": "comprehension_reaudit_manifest.json",
+  "model_loaded": true,
+  "completed_scored_rows": 0,
+  "raw_results_written": false,
+  "notes": "The local llama.cpp server loaded the Qwen2.5-14B Q4_K_M model on Vulkan0, but the isolated scoring run did not return scored rows before it was interrupted. This is an execution failure, not a model result.",
+  "logs": [
+    "llama_server_comprehension_reaudit.log",
+    "llama_server_comprehension_reaudit_stderr.log"
+  ]
+}

@@ -85,36 +85,36 @@ def build_trials(seed: int) -> list[dict[str, Any]]:
     for scheme_id, symbols in SYMBOL_SCHEMES.items():
         for order in ("gain_first", "loss_first"):
             for good_outcome in ("gain", "loss"):
-                gain_symbol = symbols[0] if (good_outcome == "gain") else symbols[1]
-                loss_symbol = symbols[1] if (good_outcome == "gain") else symbols[0]
-                mapping = {"gain": gain_symbol, "loss": loss_symbol}
-                display_outcomes = ("gain", "loss") if order == "gain_first" else ("loss", "gain")
-                option_lines = [
-                    f"{mapping[o]}) {OUTCOMES[o]}; this outcome is labeled {'GOOD' if o == good_outcome else 'BAD'}."
-                    for o in display_outcomes
-                ]
-                prompt = (
-                    "According to the labels in the options, which symbol is labeled GOOD? "
-                    "Report the symbol only.\n" + "\n".join(option_lines) + "\nAnswer:"
-                )
-                trials.append({
-                    "pair_id": f"diagnostic-{len(trials) - 48:02d}",
-                    "scenario_id": "label_mapping_comprehension",
-                    "condition": "diagnostic",
-                    "elicitation": "task_comprehension_diagnostic",
-                    "wording_id": "label_mapping_question",
-                    "symbol_scheme": scheme_id,
-                    "option_order": order,
-                    "gain_symbol": gain_symbol,
-                    "loss_symbol": loss_symbol,
-                    "outcome_symbols": mapping,
-                    "outcome_labels": {"gain": "GOOD" if good_outcome == "gain" else "BAD",
-                                       "loss": "GOOD" if good_outcome == "loss" else "BAD"},
-                    "expected_symbol": mapping[good_outcome],
-                    "prompt": prompt,
-                    "prompt_sha256": sha256_text(prompt),
-                    "seed": seed + len(trials),
-                })
+                for gain_symbol in symbols:
+                    loss_symbol = symbols[1] if gain_symbol == symbols[0] else symbols[0]
+                    mapping = {"gain": gain_symbol, "loss": loss_symbol}
+                    display_outcomes = ("gain", "loss") if order == "gain_first" else ("loss", "gain")
+                    option_lines = [
+                        f"{mapping[o]}) {OUTCOMES[o]}; this outcome is labeled {'GOOD' if o == good_outcome else 'BAD'}."
+                        for o in display_outcomes
+                    ]
+                    prompt = (
+                        "According to the labels in the options, which symbol is labeled GOOD? "
+                        "Report the symbol only.\n" + "\n".join(option_lines) + "\nAnswer:"
+                    )
+                    trials.append({
+                        "pair_id": f"diagnostic-{len(trials) - 48:02d}",
+                        "scenario_id": "label_mapping_comprehension",
+                        "condition": "diagnostic",
+                        "elicitation": "task_comprehension_diagnostic",
+                        "wording_id": "label_mapping_question",
+                        "symbol_scheme": scheme_id,
+                        "option_order": order,
+                        "gain_symbol": gain_symbol,
+                        "loss_symbol": loss_symbol,
+                        "outcome_symbols": mapping,
+                        "outcome_labels": {"gain": "GOOD" if good_outcome == "gain" else "BAD",
+                                           "loss": "GOOD" if good_outcome == "loss" else "BAD"},
+                        "expected_symbol": mapping[good_outcome],
+                        "prompt": prompt,
+                        "prompt_sha256": sha256_text(prompt),
+                        "seed": seed + len(trials),
+                    })
     random.Random(seed).shuffle(trials)
     for trial in trials:
         trial["protocol_version"] = PROTOCOL
