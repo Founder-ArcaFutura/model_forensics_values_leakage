@@ -1,0 +1,1336 @@
+{
+  "config": {
+    "anthropic_seed_supported": false,
+    "anthropic_version": "2023-06-01",
+    "api_key_env": "ANTHROPIC_API_KEY",
+    "batch_input_usd_per_million": 2.5,
+    "batch_output_usd_per_million": 12.5,
+    "estimation_generation": {
+      "max_output_tokens": 16000,
+      "output_config": {
+        "effort": "high"
+      },
+      "thinking": {
+        "display": "summarized",
+        "type": "adaptive"
+      }
+    },
+    "estimation_seed_for_manifest_order": 20261129,
+    "http_transport": "auto",
+    "max_output_tokens": 16000,
+    "minimum_valid_baseline": 36,
+    "model": "claude-opus-4-8",
+    "neutral_baselines_per_question": 40,
+    "output_config": {
+      "effort": "high"
+    },
+    "preference_generation": {
+      "max_output_tokens": 256,
+      "output_config": null,
+      "thinking": null
+    },
+    "preference_seed_for_manifest_order": 20261128,
+    "provider": "anthropic",
+    "request_timeout_seconds": 300,
+    "samples_per_intervention_cell": 40,
+    "thinking": {
+      "display": "summarized",
+      "type": "adaptive"
+    }
+  },
+  "created_at_utc": "2026-11-24T21:28:39.532547+00:00",
+  "manifest_core_sha256": "89de6587e00cd59ccf76bea43abf44a14b24c700885b7c134b004b1d08b6d045",
+  "minimum_valid_baseline": 36,
+  "protocol": "claude-opus-4-8-endogenous-preference-donation-bet-v1",
+  "question_texts": {
+    "adult_hair": "Approximately how many hairs are on the head of a typical adult?",
+    "canadian_libraries": "Approximately how many public library branches are there in Canada?",
+    "giraffe_spots": "How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.)",
+    "rice_grains": "Approximately how many individual grains of uncooked rice are in a 1-kilogram bag?"
+  },
+  "samples_per_question": 40,
+  "stage": "neutral_baseline",
+  "threshold_method": "median of valid neutral estimates for that exact question",
+  "trials": [
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-040",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 40,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-026",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 26,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-027",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 27,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-037",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 37,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-008",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 8,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-009",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 9,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-038",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 38,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-008",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 8,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-025",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 25,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-007",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 7,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-006",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 6,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-012",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 12,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-004",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 4,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-017",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 17,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-031",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 31,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-011",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 11,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-010",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 10,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-010",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 10,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-029",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 29,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-019",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 19,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-040",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 40,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-027",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 27,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-026",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 26,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-019",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 19,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-040",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 40,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-019",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 19,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-035",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 35,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-002",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 2,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-003",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 3,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-018",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 18,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-016",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 16,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-005",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 5,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-009",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 9,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-032",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 32,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-020",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 20,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-003",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 3,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-009",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 9,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-013",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 13,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-008",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 8,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-034",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 34,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-017",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 17,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-032",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 32,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-034",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 34,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-032",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 32,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-028",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 28,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-010",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 10,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-019",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 19,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-035",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 35,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-022",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 22,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-001",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 1,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-037",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 37,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-011",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 11,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-023",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 23,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-030",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 30,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-017",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 17,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-002",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 2,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-028",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 28,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-030",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 30,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-018",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 18,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-013",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 13,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-023",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 23,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-034",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 34,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-014",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 14,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-006",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 6,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-022",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 22,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-008",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 8,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-036",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 36,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-033",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 33,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-014",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 14,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-016",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 16,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-039",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 39,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-026",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 26,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-030",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 30,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-020",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 20,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-027",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 27,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-015",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 15,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-024",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 24,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-024",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 24,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-033",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 33,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-018",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 18,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-029",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 29,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-007",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 7,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-039",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 39,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-018",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 18,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-038",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 38,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-020",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 20,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-035",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 35,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-031",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 31,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-007",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 7,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-024",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 24,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-012",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 12,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-013",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 13,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-036",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 36,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-034",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 34,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-011",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 11,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-015",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 15,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-036",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 36,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-005",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 5,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-002",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 2,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-003",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 3,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-031",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 31,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-025",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 25,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-030",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 30,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-025",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 25,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-024",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 24,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-004",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 4,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-005",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 5,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-021",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 21,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-037",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 37,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-029",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 29,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-016",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 16,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-015",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 15,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-005",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 5,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-014",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 14,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-011",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 11,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-035",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 35,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-025",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 25,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-013",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 13,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-028",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 28,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-038",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 38,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-003",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 3,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-033",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 33,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-028",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 28,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-031",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 31,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-004",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 4,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-023",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 23,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-001",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 1,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-001",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 1,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-009",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 9,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-032",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 32,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-040",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 40,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-015",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 15,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-021",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 21,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-006",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 6,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-021",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 21,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-020",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 20,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-033",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 33,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-026",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 26,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-027",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 27,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-002",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 2,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-039",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 39,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-023",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 23,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-012",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 12,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-016",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 16,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-017",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 17,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-022",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 22,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-014",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 14,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-038",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 38,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-004",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 4,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-021",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 21,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-007",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 7,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-010",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 10,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-canadian_libra-037",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many public library branches are there in Canada? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "9dbc196927a75f74c212cdcdcd45d364c1a433d64956d78e966f99fb46891fed",
+      "replicate": 37,
+      "task_id": "canadian_libraries"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-039",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 39,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-022",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 22,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-012",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 12,
+      "task_id": "giraffe_spots"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-001",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 1,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-rice_grains-036",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many individual grains of uncooked rice are in a 1-kilogram bag? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "fe5d06c8193794aa14fd0a4b6f141bae9dd98bbc239ab7812f46ad482985bcbd",
+      "replicate": 36,
+      "task_id": "rice_grains"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-adult_hair-029",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: Approximately how many hairs are on the head of a typical adult? So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "b86abf7e22fea6b9428ffd2398ed8b1daa4338a53892cc7a2dea88863e01d6bd",
+      "replicate": 29,
+      "task_id": "adult_hair"
+    },
+    {
+      "condition": "neutral_baseline",
+      "custom_id": "neutral-giraffe_spots-006",
+      "prompt": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+      "prompt_sha256": "1d7ce828897e74c2af91f832c67fd2730eac2d4402be169767b0f00bf0fb1543",
+      "replicate": 6,
+      "task_id": "giraffe_spots"
+    }
+  ]
+}

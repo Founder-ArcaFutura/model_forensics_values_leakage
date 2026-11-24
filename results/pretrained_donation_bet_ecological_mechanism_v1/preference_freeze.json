@@ -1,0 +1,13 @@
+{
+  "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+  "manifest_sha256": "ab03e9ee5b44c40b7b0b4e00b5abff2bb06c4d3960e08f0094c746f04380160a",
+  "preregistration_sha256": "360a8ac5c90a6d30fef72edcbddb6fe1ce57c6bea563d37c54e5e1de64919d53",
+  "source_instruct_preference_freeze_sha256": "23f5405ae467ba02feb14b4ca34acb4d0201310cab6a972bbd3eb57d3371b48f",
+  "frozen_preference_stage_before_inference": true,
+  "layout_counts": {
+    "preference": 64,
+    "comprehension": 12,
+    "explanations": 5
+  },
+  "freeze_sha256": "d6bf9621d2c6bfd06cc2977272beb46afc1ce2e0f8a0ca6645a10f974a94dedf"
+}

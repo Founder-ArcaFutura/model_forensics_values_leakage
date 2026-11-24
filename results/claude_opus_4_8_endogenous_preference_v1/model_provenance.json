@@ -1,0 +1,46 @@
+{
+  "api_key_env_name": "ANTHROPIC_API_KEY",
+  "batch_rate_source": "Anthropic Claude Model Pricing list, effective 2026-05-27",
+  "batch_rates_usd_per_million": {
+    "input": 2.5,
+    "output": 12.5
+  },
+  "config": {
+    "anthropic_seed_supported": false,
+    "anthropic_version": "2023-06-01",
+    "api_key_env": "ANTHROPIC_API_KEY",
+    "batch_input_usd_per_million": 2.5,
+    "batch_output_usd_per_million": 12.5,
+    "estimation_generation": {
+      "max_output_tokens": 16000,
+      "output_config": {
+        "effort": "high"
+      },
+      "thinking": {
+        "display": "summarized",
+        "type": "adaptive"
+      }
+    },
+    "estimation_seed_for_manifest_order": 20261129,
+    "http_transport": "auto",
+    "minimum_valid_baseline": 36,
+    "model": "claude-opus-4-8",
+    "neutral_baselines_per_question": 40,
+    "preference_generation": {
+      "max_output_tokens": 256,
+      "output_config": null,
+      "thinking": null
+    },
+    "preference_seed_for_manifest_order": 20261128,
+    "provider": "anthropic",
+    "request_timeout_seconds": 300,
+    "samples_per_intervention_cell": 40
+  },
+  "existing_reference_run": "results/claude_opus_4_8_original_donation_control/summary.json",
+  "key_value_saved": false,
+  "model_provenance_policy": "The returned model identifier in every response is retained; the API model alias may resolve to a provider snapshot.",
+  "provider": "Anthropic Messages API",
+  "reference_bias": 0.85,
+  "reference_model": "claude-opus-4-8",
+  "requested_model": "claude-opus-4-8"
+}

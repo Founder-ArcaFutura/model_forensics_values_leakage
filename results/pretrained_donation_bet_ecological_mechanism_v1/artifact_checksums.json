@@ -1,0 +1,94 @@
+[
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\chat_template_validation.json",
+    "sha256": "501b6617670ce3c912c5afc79725e333276f2e40a0466592389ea01b3745e3fe"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\commands.md",
+    "sha256": "f27135db304cd6f0165b221df95366936ceca2df125e2b136a5d616f8cf73271"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\comprehension_raw.jsonl",
+    "sha256": "22db059ef1432efe71019c84e633c8522c2acc912366dc17c4359d53456caa51"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\explanations_brief_adaptation_manifest.json",
+    "sha256": "fa60105d6e2da549826e2ec070a8ab72c308444d0e80f4023f08421beeba82b9"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\explanations_brief_adaptation_raw.jsonl",
+    "sha256": "74ad5c73f443866b40d03e9a7958773b5cb05851e910a0aa1a7c8731b7ff80fc"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\explanations_extension_manifest.json",
+    "sha256": "ff06691b9f1c0fbfb7722df12ceb16b43ccb0f55a5d25ce704d2d9e2bfa5883c"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\explanations_extension_raw.jsonl",
+    "sha256": "dddbf8629aafb8536810ec7b8c7d83b29ef21cd341524b31e0f34d5d3048c6a0"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\explanations_raw.jsonl",
+    "sha256": "633cd6eb6d9f4f7d2ccf57b107f1fb31b23267ea586783926e2c399ed3186bc5"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\focused_tests.log",
+    "sha256": "f9f76637d70c34f6339e15d5a902b27359c15fe0f9f115cd89c057afcfb4af2a"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\hypothesis_design.md",
+    "sha256": "360a8ac5c90a6d30fef72edcbddb6fe1ce57c6bea563d37c54e5e1de64919d53"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\llama_server_brief_explanations_stderr.log",
+    "sha256": "50c020e5da7e5e1247a347ade3e96c9b6d77772e27ec5eaf798b8571db4d735f"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\llama_server_brief_explanations.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\llama_server_explanations_extension_stderr.log",
+    "sha256": "2183731b3d897f14722ee4d23b5ba210bbee11588d4317b096e0181718753745"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\llama_server_explanations_extension.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\llama_server_stderr.log",
+    "sha256": "2c337da16e09ebfbd2ea90e510dbf51d619e26a7df31ab3534cb1ad3d352dda8"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\llama_server.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\manifest.json",
+    "sha256": "e32fd332b405119a10de77c93eac9104133402a4c3ed1d81efd2f651485f019c"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\model_provenance.json",
+    "sha256": "05cd6b10c5cfaabe9b8206770280e7a87a1e5c918d7bf765a83708f66b3d6b9b"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\preference_freeze.json",
+    "sha256": "2c0f8b9124ab7caa53eacb0750f78a72befd0b26b09078afacba453694adfc84"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\preference_raw.jsonl",
+    "sha256": "784753a785694b2e525150330d0a9bbfb8a6a60ee72affa980e856cef12492b8"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\REPORT.md",
+    "sha256": "f0f5f597e9329fefa064973b00506be38fa471d469d9d653ebcbb4f6781e74c6"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\run_ecological_probe.py",
+    "sha256": "ee0e7a0f212cb020094dfbb1d43a1d95376d550fb368c7f12ee674079b18048f"
+  },
+  {
+    "path": "results\\pretrained_donation_bet_ecological_mechanism_v1\\summary.json",
+    "sha256": "6c7e0cdb9343ecd397519d0bae4a2c212414047b2214d4e979fcded739f2104f"
+  }
+]
