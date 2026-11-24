@@ -1,0 +1,10 @@
+{
+  "estimate": null,
+  "model": "pretrained-donation-bet-qwen25-3b-base-q5km",
+  "protocol_version": "pretrained-donation-bet-pilot-v1",
+  "raw_sha256": "87312810d6ecbaf59238e920164d2801cb3434080d64523f293b78b65c8b7aee",
+  "records": 1,
+  "status": "completed",
+  "transport": "OpenAI-compatible /v1/completions",
+  "valid_estimate": false
+}

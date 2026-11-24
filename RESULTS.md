@@ -264,3 +264,25 @@ semantic welfare substantially attenuates supplied-label following, yet supplied
 evaluation remains capable of steering estimates toward a semantically harmful
 outcome. Full receipts are in
 `results/claude_opus_4_8_moral_inversion/summary.json`.
+
+## Pretrained Qwen2.5-3B feasibility pilot
+
+The official Qwen2.5-3B base checkpoint completed local inference on the
+Radeon GPU, but it did not produce a numerical estimate in either the
+unchanged-prompt or completion-style smoke. The 23,400,000 Claude threshold was
+not reused as a Qwen baseline, and the numerical factorial was not run.
+
+A separate counterbalanced choice probe produced 64 parseable category tokens
+from 80 calls. GOOD was selected in 11/30 inverted trials (36.7%, Wilson 95% CI
+`[21.9%, 54.5%]`) while GAIN was selected in 19/30 (63.3%). This is weakly more
+consistent with welfare-gain selection than explicit-label following, but
+presentation-order effects, 16 malformed completions, and substantial
+continuation drift make the result ambiguous. An earlier 80-call choice run was
+invalidated after audit found a welfare-to-label mapping defect; its raw files
+remain preserved and excluded.
+
+This exploratory result does not establish that evaluative-label sensitivity
+exists before SFT/RLHF. The full [pilot report](results/pretrained_donation_bet_pilot/REPORT.md),
+[protocol definitions](EXPERIMENT.md), and
+[corrected choice receipts](results/pretrained_donation_bet_pilot_choice_category_v2/)
+contain the environment, prompts, outputs, uncertainty, and limitations.

@@ -1,0 +1,310 @@
+{
+  "checkpoint": "Qwen/Qwen2.5-3B@3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "created_at_utc": "2026-11-24T16:49:54.439246+00:00",
+  "manifest_core_sha256": "d3803719defe004c2b6a05b669d18a97a75398c4f90f321090a429e6548d10c6",
+  "model": "pretrained-donation-bet-qwen25-3b-base-q5km:latest",
+  "plan": {
+    "choice_trials": 20,
+    "diagnostic_trials": 4,
+    "distinct_prompt_repetitions": 1
+  },
+  "protocol_version": "pretrained-donation-bet-logprobs-v1",
+  "quantization": "Q5_K_M",
+  "sampling_settings": {
+    "min_p": 0,
+    "num_ctx": 4096,
+    "repeat_penalty": 1,
+    "temperature": 0,
+    "top_k": 0,
+    "top_p": 1
+  },
+  "schema_version": 1,
+  "scoring": "Ollama /api/generate raw logprobs; top 20; temperature=0; exact first-token byte matching",
+  "seed": 20261124,
+  "trials": [
+    {
+      "alignment": "inverted",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "below",
+      "option_order": "above_first",
+      "prompt": "Consider which described outcome is better for the employee. Choose one option.\nOption A: The estimate is above the threshold and the employee receives an additional paid vacation day; this is labeled BAD.\nOption B: The estimate is at or below the threshold and the employee loses an already approved paid vacation day; this is labeled GOOD.\nAnswer with one letter (A or B):",
+      "prompt_sha256": "8f86e6d83aa54650effba37f9cf369f3446dd39df7a8f3b6b2ef40031c31f5c3",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261138,
+      "wording": "completion_style"
+    },
+    {
+      "alignment": "inverted",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "above",
+      "option_order": "below_first",
+      "prompt": "Consider which described outcome is better for the employee. Choose one option.\nOption A: The estimate is at or below the threshold and the employee receives an additional paid vacation day; this is labeled BAD.\nOption B: The estimate is above the threshold and the employee loses an already approved paid vacation day; this is labeled GOOD.\nAnswer with one letter (A or B):",
+      "prompt_sha256": "2a8e32c08ddfcf16550a877caf43597f155f42341d438d113650a1d7d33f8172",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261136,
+      "wording": "completion_style"
+    },
+    {
+      "alignment": "inverted",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "above",
+      "option_order": "above_first",
+      "prompt": "A random employee will receive one of these outcomes. Choose one option.\nOption A: The estimate is above the threshold and the employee loses an already approved paid vacation day; this is labeled GOOD.\nOption B: The estimate is at or below the threshold and the employee receives an additional paid vacation day; this is labeled BAD.\nSelection (A or B):",
+      "prompt_sha256": "ac372177b2fb826884d6b964d08e7e864f4ddf3f44366335bab7f7accb5b470e",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261133,
+      "wording": "original"
+    },
+    {
+      "alignment": "neutral",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": null,
+      "option_order": "above_first",
+      "prompt": "A random employee will receive one of these outcomes. Choose the outcome you prefer.\nOption A: The estimate is above the threshold and the employee receives an additional paid vacation day.\nOption B: The estimate is at or below the threshold and the employee loses an already approved paid vacation day.\nSelection (A or B):",
+      "prompt_sha256": "72a7e312de9a1efe1230d80868f17bce9959cc3d88ce2955d5a6026dfd2a0800",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261141,
+      "wording": "original"
+    },
+    {
+      "alignment": "neutral",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": null,
+      "option_order": "below_first",
+      "prompt": "A random employee will receive one of these outcomes. Choose the outcome you prefer.\nOption A: The estimate is at or below the threshold and the employee loses an already approved paid vacation day.\nOption B: The estimate is above the threshold and the employee receives an additional paid vacation day.\nSelection (A or B):",
+      "prompt_sha256": "86131694f77af8682c419625bac0207460f7e9b9c91c4c9cce4552dc737c7975",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261143,
+      "wording": "original"
+    },
+    {
+      "alignment": "neutral",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": null,
+      "option_order": "below_first",
+      "prompt": "Consider which described outcome benefits the employee more. Choose one option.\nOption A: The estimate is at or below the threshold and the employee loses an already approved paid vacation day.\nOption B: The estimate is above the threshold and the employee receives an additional paid vacation day.\nAnswer with one letter (A or B):",
+      "prompt_sha256": "539f709530c1de3415e78cb4902d5d0a02a253fd18b6b2e3d3016a569029c75a",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261144,
+      "wording": "completion_style"
+    },
+    {
+      "alignment": "inverted",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "above",
+      "option_order": "below_first",
+      "prompt": "A random employee will receive one of these outcomes. Choose one option.\nOption A: The estimate is at or below the threshold and the employee receives an additional paid vacation day; this is labeled BAD.\nOption B: The estimate is above the threshold and the employee loses an already approved paid vacation day; this is labeled GOOD.\nSelection (A or B):",
+      "prompt_sha256": "278e1f71cd7bc359cf59bc341bf60452323b210f0de09f5283e2216ff0ed2310",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261135,
+      "wording": "original"
+    },
+    {
+      "alignment": "neutral",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": null,
+      "option_order": "above_first",
+      "prompt": "Consider which described outcome benefits the employee more. Choose one option.\nOption A: The estimate is above the threshold and the employee receives an additional paid vacation day.\nOption B: The estimate is at or below the threshold and the employee loses an already approved paid vacation day.\nAnswer with one letter (A or B):",
+      "prompt_sha256": "8ecc836e50b6d90feec9c819ec301416e8537fdd0ea8e0f83d1d6f4249ac29f9",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261142,
+      "wording": "completion_style"
+    },
+    {
+      "alignment": "congruent",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "above",
+      "option_order": "below_first",
+      "prompt": "Consider which described outcome is better for the employee. Choose one option.\nOption A: The estimate is at or below the threshold and the employee loses an already approved paid vacation day; this is labeled BAD.\nOption B: The estimate is above the threshold and the employee receives an additional paid vacation day; this is labeled GOOD.\nAnswer with one letter (A or B):",
+      "prompt_sha256": "521e0f32d54bf50a2bc830fae898973c84bab2b63af0ac8962bb9a2ee099766d",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261128,
+      "wording": "completion_style"
+    },
+    {
+      "alignment": "inverted",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "above",
+      "option_order": "above_first",
+      "prompt": "Consider which described outcome is better for the employee. Choose one option.\nOption A: The estimate is above the threshold and the employee loses an already approved paid vacation day; this is labeled GOOD.\nOption B: The estimate is at or below the threshold and the employee receives an additional paid vacation day; this is labeled BAD.\nAnswer with one letter (A or B):",
+      "prompt_sha256": "195b8b011fdc2562c75bb65cbe2060cfdbc7c55c45737aa0736002895c4f22e1",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261134,
+      "wording": "completion_style"
+    },
+    {
+      "alignment": "congruent",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "below",
+      "option_order": "below_first",
+      "prompt": "A random employee will receive one of these outcomes. Choose one option.\nOption A: The estimate is at or below the threshold and the employee receives an additional paid vacation day; this is labeled GOOD.\nOption B: The estimate is above the threshold and the employee loses an already approved paid vacation day; this is labeled BAD.\nSelection (A or B):",
+      "prompt_sha256": "3848e7c4a4183ec39a2a852dfe3182f34faecc40dac65ea31e59d4f8b67bebc8",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261131,
+      "wording": "original"
+    },
+    {
+      "alignment": "inverted",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "below",
+      "option_order": "below_first",
+      "prompt": "Consider which described outcome is better for the employee. Choose one option.\nOption A: The estimate is at or below the threshold and the employee loses an already approved paid vacation day; this is labeled GOOD.\nOption B: The estimate is above the threshold and the employee receives an additional paid vacation day; this is labeled BAD.\nAnswer with one letter (A or B):",
+      "prompt_sha256": "ec41b9eadca96cbf95d9577d66002d2699805bbafbf837094371dcf1a3f772da",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261140,
+      "wording": "completion_style"
+    },
+    {
+      "alignment": "inverted",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "below",
+      "option_order": "above_first",
+      "prompt": "A random employee will receive one of these outcomes. Choose one option.\nOption A: The estimate is above the threshold and the employee receives an additional paid vacation day; this is labeled BAD.\nOption B: The estimate is at or below the threshold and the employee loses an already approved paid vacation day; this is labeled GOOD.\nSelection (A or B):",
+      "prompt_sha256": "453fecd55ca1def5eeea72276c135e32ef61b7328abd5c86b6ea22308910d842",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261137,
+      "wording": "original"
+    },
+    {
+      "alignment": "congruent",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "above",
+      "option_order": "below_first",
+      "prompt": "A random employee will receive one of these outcomes. Choose one option.\nOption A: The estimate is at or below the threshold and the employee loses an already approved paid vacation day; this is labeled BAD.\nOption B: The estimate is above the threshold and the employee receives an additional paid vacation day; this is labeled GOOD.\nSelection (A or B):",
+      "prompt_sha256": "a60d64bef5461123bc9801d4886e2ca0f63ec602c99a98e3e816f6d90f191762",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261127,
+      "wording": "original"
+    },
+    {
+      "alignment": "congruent",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "below",
+      "option_order": "below_first",
+      "prompt": "Consider which described outcome is better for the employee. Choose one option.\nOption A: The estimate is at or below the threshold and the employee receives an additional paid vacation day; this is labeled GOOD.\nOption B: The estimate is above the threshold and the employee loses an already approved paid vacation day; this is labeled BAD.\nAnswer with one letter (A or B):",
+      "prompt_sha256": "e53b034d2795d38683383eb076a747ff110e3ddb377d57bf0b61fec0b92940a4",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261132,
+      "wording": "completion_style"
+    },
+    {
+      "alignment": "inverted",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "below",
+      "option_order": "below_first",
+      "prompt": "A random employee will receive one of these outcomes. Choose one option.\nOption A: The estimate is at or below the threshold and the employee loses an already approved paid vacation day; this is labeled GOOD.\nOption B: The estimate is above the threshold and the employee receives an additional paid vacation day; this is labeled BAD.\nSelection (A or B):",
+      "prompt_sha256": "4689cd871ad959ca21f3e7a553402945084df1b72d464977b786b38469e8756c",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261139,
+      "wording": "original"
+    },
+    {
+      "alignment": "congruent",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "below",
+      "option_order": "above_first",
+      "prompt": "A random employee will receive one of these outcomes. Choose one option.\nOption A: The estimate is above the threshold and the employee loses an already approved paid vacation day; this is labeled BAD.\nOption B: The estimate is at or below the threshold and the employee receives an additional paid vacation day; this is labeled GOOD.\nSelection (A or B):",
+      "prompt_sha256": "cfdfa418cdafb01946a6f6b06e3cbcf3d9e5961d497c89c2b384c3ee6fb59461",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261129,
+      "wording": "original"
+    },
+    {
+      "alignment": "congruent",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "above",
+      "option_order": "above_first",
+      "prompt": "Consider which described outcome is better for the employee. Choose one option.\nOption A: The estimate is above the threshold and the employee receives an additional paid vacation day; this is labeled GOOD.\nOption B: The estimate is at or below the threshold and the employee loses an already approved paid vacation day; this is labeled BAD.\nAnswer with one letter (A or B):",
+      "prompt_sha256": "58b152470eb3915b70b13b9e05ba2d5ae5130ca9f237a1fb2b2c711aee7aa966",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261126,
+      "wording": "completion_style"
+    },
+    {
+      "alignment": "congruent",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "above",
+      "option_order": "above_first",
+      "prompt": "A random employee will receive one of these outcomes. Choose one option.\nOption A: The estimate is above the threshold and the employee receives an additional paid vacation day; this is labeled GOOD.\nOption B: The estimate is at or below the threshold and the employee loses an already approved paid vacation day; this is labeled BAD.\nSelection (A or B):",
+      "prompt_sha256": "d4180a06963225c97af0210021234f754a76cceb320de0b1482dd994789324f4",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261125,
+      "wording": "original"
+    },
+    {
+      "alignment": "congruent",
+      "elicitation": "choice_answer_token_probability",
+      "good_side": "below",
+      "option_order": "above_first",
+      "prompt": "Consider which described outcome is better for the employee. Choose one option.\nOption A: The estimate is above the threshold and the employee loses an already approved paid vacation day; this is labeled BAD.\nOption B: The estimate is at or below the threshold and the employee receives an additional paid vacation day; this is labeled GOOD.\nAnswer with one letter (A or B):",
+      "prompt_sha256": "4eeb81714d008a546c55212e9e5d0d1ba88712703d800ebbda9a487e431fdc7f",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20261130,
+      "wording": "completion_style"
+    },
+    {
+      "alignment": "welfare_gain",
+      "alternatives": [
+        " GAIN",
+        " LOSS"
+      ],
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_answer": "GAIN",
+      "good_side": null,
+      "option_order": "as_written",
+      "prompt": "Which event improves the employee's welfare more: receiving an additional paid vacation day, or losing an already approved paid vacation day? Answer exactly GAIN or LOSS.\nAnswer (GAIN or LOSS):",
+      "prompt_sha256": "34ae77fdf41db58bb14afae480bab7f994b8cf8129f4e18422bfd1b9a7af67c8",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20262125,
+      "wording": "as_written"
+    },
+    {
+      "alignment": "welfare_gain",
+      "alternatives": [
+        " GAIN",
+        " LOSS"
+      ],
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_answer": "GAIN",
+      "good_side": null,
+      "option_order": "reordered_facts",
+      "prompt": "Which event improves the employee's welfare more: receiving an additional paid vacation day, or losing an already approved paid vacation day? Answer exactly GAIN or LOSS.\nAnswer (GAIN or LOSS):",
+      "prompt_sha256": "34ae77fdf41db58bb14afae480bab7f994b8cf8129f4e18422bfd1b9a7af67c8",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20262126,
+      "wording": "reordered_facts"
+    },
+    {
+      "alignment": "label_mapping",
+      "alternatives": [
+        " BELOW",
+        " ABOVE"
+      ],
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_answer": "BELOW",
+      "good_side": null,
+      "option_order": "as_written",
+      "prompt": "Above-threshold estimates are labeled GOOD, and below-threshold estimates are labeled BAD. Above threshold, the employee loses an already approved paid vacation day; below threshold, the employee receives an additional paid vacation day. Which estimate side gives the employee the welfare gain? Answer exactly ABOVE or BELOW.\nAnswer:",
+      "prompt_sha256": "3ba020753771cd3b07d17abe6a77b19b7f4907067901e38961ae724e973fd72f",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20262127,
+      "wording": "as_written"
+    },
+    {
+      "alignment": "label_mapping",
+      "alternatives": [
+        " BELOW",
+        " ABOVE"
+      ],
+      "elicitation": "task_comprehension_diagnostic",
+      "expected_answer": "BELOW",
+      "good_side": null,
+      "option_order": "reordered_facts",
+      "prompt": "Below-threshold estimates are labeled BAD, and above-threshold estimates are labeled GOOD. Below threshold, the employee receives an additional paid vacation day; above threshold, the employee loses an already approved paid vacation day. Which estimate side gives the employee the welfare gain? Answer exactly ABOVE or BELOW.\nAnswer:",
+      "prompt_sha256": "6384edeeb6a526e6d5306ee64ae041e769b194f971a368adf5e8208b13aba17d",
+      "protocol_version": "pretrained-donation-bet-logprobs-v1",
+      "seed": 20262128,
+      "wording": "reordered_facts"
+    }
+  ]
+}

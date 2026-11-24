@@ -1,0 +1,23 @@
+{
+  "protocol_version": "pretrained-donation-bet-pilot-v1",
+  "model": "pretrained-donation-bet-qwen25-3b-base-q5km",
+  "checkpoint": "Qwen/Qwen2.5-3B",
+  "checkpoint_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "serving_stack": "Ollama 0.40.17 ROCm, local OpenAI-compatible completions endpoint",
+  "serving_quantization": "Q5_K_M GGUF; community conversion from Qwen/Qwen2.5-3B",
+  "serving_quantization_source": "bartowski/Qwen2.5-3B-GGUF@main:Qwen2.5-3B-Q5_K_M.gguf",
+  "serving_artifact_sha256": "41ba01c0a947829a11b3f2d843d493ff852ddd6fb64571210213e2a277532748",
+  "base_url_env": "OPENAI_BASE_URL",
+  "api_key_env": "OPENAI_API_KEY",
+  "transport": "ollama_generate_raw",
+  "temperature": 0.7,
+  "max_tokens": 192,
+  "request_timeout_seconds": 240,
+  "baseline_trials": 24,
+  "trials_per_cell": 6,
+  "seed": 20261124,
+  "smoke_threshold_only": 23400000,
+  "threshold_method": "median of valid neutral estimates from this checkpoint",
+  "threshold_minimum_valid": 16,
+  "elicitation": "original"
+}

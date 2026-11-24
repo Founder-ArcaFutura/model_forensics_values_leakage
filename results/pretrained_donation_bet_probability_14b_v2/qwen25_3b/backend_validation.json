@@ -1,0 +1,450 @@
+{
+  "interpretation": "temperature invariance was not established",
+  "invariant_within_1e-6": false,
+  "max_abs_logprob_delta": 0.10394740104675293,
+  "model": "pretrained-donation-bet-qwen25-3b-base-q5km:latest",
+  "prompt": "Consider which described outcome is better for the employee. Choose one option.\nOption A: The estimate is at or below the threshold and the employee loses an already approved paid vacation day; this is labeled BAD.\nOption B: The estimate is above the threshold and the employee receives an additional paid vacation day; this is labeled GOOD.\nAnswer with one letter (A or B):",
+  "seed": 20261123,
+  "temperature_0": {
+    "created_at": "2026-11-24T16:59:42.7983219Z",
+    "done": true,
+    "done_reason": "length",
+    "eval_count": 1,
+    "eval_duration": 1000,
+    "load_duration": 3579348500,
+    "logprobs": [
+      {
+        "bytes": [
+          32,
+          65
+        ],
+        "logprob": -0.9609892964363098,
+        "token": " A",
+        "top_logprobs": [
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -0.9609892964363098,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              66
+            ],
+            "logprob": -1.2016109228134155,
+            "token": " B"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              65,
+              68
+            ],
+            "logprob": -3.270643472671509,
+            "token": " BAD"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -3.5499978065490723,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -3.582642078399658,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              79,
+              112,
+              116,
+              105,
+              111,
+              110
+            ],
+            "logprob": -3.924001932144165,
+            "token": " Option"
+          },
+          {
+            "bytes": [
+              32,
+              42,
+              42
+            ],
+            "logprob": -4.263834476470947,
+            "token": " **"
+          },
+          {
+            "bytes": [
+              65
+            ],
+            "logprob": -4.2762532234191895,
+            "token": "A"
+          },
+          {
+            "bytes": [
+              66
+            ],
+            "logprob": -4.5300116539001465,
+            "token": "B"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              79,
+              79,
+              68
+            ],
+            "logprob": -4.588709354400635,
+            "token": " GOOD"
+          },
+          {
+            "bytes": [
+              32,
+              40
+            ],
+            "logprob": -4.688165187835693,
+            "token": " ("
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -4.804488658905029,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32,
+              10
+            ],
+            "logprob": -5.008068561553955,
+            "token": " \n"
+          },
+          {
+            "bytes": [
+              32,
+              10,
+              10
+            ],
+            "logprob": -5.149734973907471,
+            "token": " \n\n"
+          },
+          {
+            "bytes": [
+              32,
+              79,
+              80,
+              84,
+              73,
+              79,
+              78
+            ],
+            "logprob": -5.328474521636963,
+            "token": " OPTION"
+          },
+          {
+            "bytes": [
+              32,
+              67
+            ],
+            "logprob": -5.515472888946533,
+            "token": " C"
+          },
+          {
+            "bytes": [
+              32,
+              73
+            ],
+            "logprob": -5.568432331085205,
+            "token": " I"
+          },
+          {
+            "bytes": [
+              32,
+              95,
+              95
+            ],
+            "logprob": -5.601446628570557,
+            "token": " __"
+          },
+          {
+            "bytes": [
+              32,
+              95,
+              95,
+              95,
+              95,
+              95,
+              95
+            ],
+            "logprob": -5.615784168243408,
+            "token": " ______"
+          },
+          {
+            "bytes": [
+              32,
+              95,
+              95,
+              95,
+              95
+            ],
+            "logprob": -5.784567356109619,
+            "token": " ____"
+          }
+        ]
+      }
+    ],
+    "model": "pretrained-donation-bet-qwen25-3b-base-q5km:latest",
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_count": 74,
+    "prompt_eval_duration": 77567000,
+    "response": " A",
+    "total_duration": 3671755900
+  },
+  "temperature_0_7": {
+    "created_at": "2026-11-24T16:59:42.8840517Z",
+    "done": true,
+    "done_reason": "length",
+    "eval_count": 1,
+    "eval_duration": 1000,
+    "load_duration": 11593500,
+    "logprobs": [
+      {
+        "bytes": [
+          32,
+          65
+        ],
+        "logprob": -0.9594969749450684,
+        "token": " A",
+        "top_logprobs": [
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -0.9594969749450684,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              66
+            ],
+            "logprob": -1.1983141899108887,
+            "token": " B"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              65,
+              68
+            ],
+            "logprob": -3.166696071624756,
+            "token": " BAD"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -3.5666213035583496,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -3.6170172691345215,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              79,
+              112,
+              116,
+              105,
+              111,
+              110
+            ],
+            "logprob": -3.9129385948181152,
+            "token": " Option"
+          },
+          {
+            "bytes": [
+              32,
+              42,
+              42
+            ],
+            "logprob": -4.218350887298584,
+            "token": " **"
+          },
+          {
+            "bytes": [
+              65
+            ],
+            "logprob": -4.296243190765381,
+            "token": "A"
+          },
+          {
+            "bytes": [
+              66
+            ],
+            "logprob": -4.532638072967529,
+            "token": "B"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              79,
+              79,
+              68
+            ],
+            "logprob": -4.639620304107666,
+            "token": " GOOD"
+          },
+          {
+            "bytes": [
+              32,
+              40
+            ],
+            "logprob": -4.642383098602295,
+            "token": " ("
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -4.8535475730896,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32,
+              10
+            ],
+            "logprob": -5.035510540008545,
+            "token": " \n"
+          },
+          {
+            "bytes": [
+              32,
+              10,
+              10
+            ],
+            "logprob": -5.240479946136475,
+            "token": " \n\n"
+          },
+          {
+            "bytes": [
+              32,
+              79,
+              80,
+              84,
+              73,
+              79,
+              78
+            ],
+            "logprob": -5.324621677398682,
+            "token": " OPTION"
+          },
+          {
+            "bytes": [
+              32,
+              67
+            ],
+            "logprob": -5.501204967498779,
+            "token": " C"
+          },
+          {
+            "bytes": [
+              32,
+              73
+            ],
+            "logprob": -5.6131463050842285,
+            "token": " I"
+          },
+          {
+            "bytes": [
+              32,
+              95,
+              95,
+              95,
+              95,
+              95,
+              95
+            ],
+            "logprob": -5.677261829376221,
+            "token": " ______"
+          },
+          {
+            "bytes": [
+              32,
+              95,
+              95
+            ],
+            "logprob": -5.688674449920654,
+            "token": " __"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              105,
+              118,
+              101,
+              110
+            ],
+            "logprob": -5.852295398712158,
+            "token": " Given"
+          }
+        ]
+      }
+    ],
+    "model": "pretrained-donation-bet-qwen25-3b-base-q5km:latest",
+    "prompt_eval_cached_count": 73,
+    "prompt_eval_count": 74,
+    "prompt_eval_duration": 35046000,
+    "response": " A",
+    "total_duration": 62195700
+  },
+  "temperature_pair": [
+    0,
+    0.7
+  ],
+  "top_token_bytes_common_n": 19
+}

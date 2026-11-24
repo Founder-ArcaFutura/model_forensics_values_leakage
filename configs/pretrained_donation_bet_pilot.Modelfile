@@ -1,0 +1,2 @@
+FROM C:\path\to\Qwen2.5-3B-Q5_K_M.gguf
+PARAMETER num_ctx 4096

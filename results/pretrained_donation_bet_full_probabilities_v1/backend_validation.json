@@ -1,0 +1,45 @@
+{
+  "backend": "llama.cpp b12606 native /completion, Windows Vulkan",
+  "candidate_token_scores": {
+    "A": {
+      "id": 362,
+      "logprob": -0.9710442423820496,
+      "token": " A"
+    },
+    "B": {
+      "id": 425,
+      "logprob": -2.5752618312835693,
+      "token": " B"
+    },
+    "BAD": {
+      "id": 47718,
+      "logprob": -2.1052815914154053,
+      "token": " BAD"
+    },
+    "GOOD": {
+      "id": 21722,
+      "logprob": -4.543349742889404,
+      "token": " GOOD"
+    }
+  },
+  "device": "Vulkan0 AMD Radeon RX 9060 XT",
+  "normalization_note": "Full-distribution sum differs from 1 by 0.000254, consistent with accumulated float32/logprob rounding; candidate scoring uses backend logprobs directly.",
+  "prompt": "Select only the preferred option. Answer with exactly one letter.\nOption A: Employee loses approved leave, labeled GOOD.\nOption B: Employee gains an extra paid day, labeled BAD.\nSelection (A or B):",
+  "request_settings": {
+    "min_p": 0.0,
+    "n_predict": 1,
+    "n_probs": 151936,
+    "post_sampling_probs": false,
+    "repeat_penalty": 1.0,
+    "return_tokens": true,
+    "stream": false,
+    "temperature": -1,
+    "top_k": 0,
+    "top_p": 1.0
+  },
+  "requested_vocab_alternatives": 151936,
+  "returned_alternatives": 151936,
+  "sampled_content": " A",
+  "sum_exp_raw_logprobs": 1.000254089164524,
+  "validated_at_utc": "2026-11-24T17:23:41.305455+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "protocol_version": "pretrained-donation-bet-full-likelihood-v1",
+  "created_at_utc": "2026-11-24T17:24:35Z",
+  "repository_branch": "pretrained-donation-bet-pilot",
+  "models": {
+    "qwen25_3b": {
+      "checkpoint": "Qwen/Qwen2.5-3B",
+      "checkpoint_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+      "training_stage": "pretrained base; not Qwen2.5-3B-Instruct",
+      "base_verification": "official Qwen2.5-3B model card identifies the base checkpoint; the local quant was converted from this repository",
+      "checkpoint_url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "serving_quantization": "Q5_K_M GGUF",
+      "quantization_source": "bartowski/Qwen2.5-3B-GGUF:Qwen2.5-3B-Q5_K_M.gguf",
+      "quantization_artifact_sha256": "41ba01c0a947829a11b3f2d843d493ff852ddd6fb64571210213e2a277532748",
+      "local_model_blob": "C:\\Users\\Main PC 2\\.ollama\\models\\blobs\\sha256-41ba01c0a947829a11b3f2d843d493ff852ddd6fb64571210213e2a277532748",
+      "tokenizer": "Qwen2.5 tokenizer from the same GGUF; exact token ids and pieces recorded in tokenizer_probe.json"
+    },
+    "qwen25_14b": {
+      "checkpoint": "Qwen/Qwen2.5-14B",
+      "checkpoint_revision": "97e1e76335b7017d8f67c08a19d103c0504298c9",
+      "base_repository_revision_checked": "97e1e76335b7017d8f67c08a19d103c0504298c9",
+      "training_stage": "pretrained base; not Qwen2.5-14B-Instruct",
+      "base_verification": "official Qwen2.5-14B model card identifies this source as pretrained base weights and separately names the Instruct variant",
+      "checkpoint_url": "https://huggingface.co/Qwen/Qwen2.5-14B/tree/97e1e76335b7017d8f67c08a19d103c0504298c9",
+      "quantization_source_revision": "d0a2788fa6dc8e83ce2f0aae07882eeecb06ef1f",
+      "quantization_source": "mradermacher/Qwen2.5-14B-GGUF",
+      "quantization_source_revision": "d0a2788fa6dc8e83ce2f0aae07882eeecb06ef1f",
+      "quantization_url": "https://huggingface.co/mradermacher/Qwen2.5-14B-GGUF/tree/d0a2788fa6dc8e83ce2f0aae07882eeecb06ef1f",
+      "source_description": "static GGUF quantization of Qwen/Qwen2.5-14B",
+      "source_revision_note": "The official base repository revision was independently resolved as 97e1e76335b7017d8f67c08a19d103c0504298c9. The fetched quant repository revision is d0a2788fa6dc8e83ce2f0aae07882eeecb06ef1f; its model card identifies the source model family but does not pin the exact upstream weight commit used by the quantizer.",
+      "serving_quantization": "Q4_K_M",
+      "artifact_filename": "Qwen2.5-14B.Q4_K_M.gguf",
+      "artifact_size_bytes": 8988110720,
+      "artifact_sha256": "597e04a092b2ca80a66741a0dd4b5f7bc291e2077ede3fb312cb51b48b53c9a2",
+      "local_model_path": "C:\\Users\\Main PC 2\\AppData\\Local\\Temp\\Qwen2.5-14B.Q4_K_M.gguf",
+      "tokenizer": "Qwen2.5 tokenizer embedded in GGUF; exact token ids and pieces recorded in tokenizer_probe.json"
+    }
+  },
+  "hardware": {
+    "gpu": "AMD Radeon RX 9060 XT",
+    "reported_vram_mib": 16304,
+    "native_backend_device": "Vulkan0",
+    "native_backend_device_detection": "llama.cpp --list-devices reported Vulkan0: AMD Radeon RX 9060 XT (16304 MiB)",
+    "layer_placement": "llama.cpp native server logs assigned model layers to Vulkan0; no CPU model-layer assignments were observed for either checkpoint",
+    "rocm_attempt": "official llama.cpp b12606 Windows ROCm binary listed Available devices: (none), so it was not used",
+    "inherited_hsa_override": "HSA_OVERRIDE_GFX_VERSION=10.3.0 was present in the environment; retained for Ollama discovery but not required by the selected Vulkan scoring server"
+  },
+  "inference_backend": {
+    "name": "llama.cpp native server",
+    "version": "b12606",
+    "binary_archive": "llama-b12606-bin-win-vulkan-x64.zip",
+    "binary_archive_sha256": "76e3c7df27b892bff158bf46f30c3a01aff7ff20a05830d6f492721f9ebc136b",
+    "source_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12606",
+    "endpoint": "POST http://127.0.0.1:8081/completion",
+    "server_options": "--host 127.0.0.1 --port 8081 --ctx-size 4096 --n-gpu-layers 99 --device Vulkan0",
+    "scoring": {
+      "temperature": -1,
+      "temperature_semantics": "greedy token selection with softmax of original logits for reported probabilities",
+      "post_sampling_probs": false,
+      "top_k": 0,
+      "top_p": 1,
+      "min_p": 0,
+      "typical_p": 1,
+      "repeat_penalty": 1,
+      "frequency_penalty": 0,
+      "presence_penalty": 0,
+      "initial_n_probs": 5000,
+      "full_vocabulary_fallback_n_probs": 151936,
+      "actual_full_vocabulary_fallback_token_scores": 0,
+      "full_vocabulary_smoke_returned": 151936,
+      "full_vocabulary_smoke_sum_exp_logprobs": 1.000254089164524
+    }
+  },
+  "ollama_discovery": {
+    "version": "0.40.17",
+    "prior_local_run": "Qwen2.5-14B Q4_K_M and Qwen2.5-3B Q5_K_M were both observed at 100% GPU by ollama ps",
+    "probability_api_limit": "Ollama top_logprobs is capped at 20; temperature changes reported scores. Those exploratory runs are retained separately and are not the primary scores."
+  },
+  "tokenization_probe": {
+    "leading_space_A": {"id": 362, "piece": " A"},
+    "leading_space_B": {"id": 425, "piece": " B"},
+    "leading_space_GOOD": {"id": 21722, "piece": " GOOD"},
+    "leading_space_BAD": {"id": 47718, "piece": " BAD"},
+    "leading_space_GAIN": [{"id": 479, "piece": " G"}, {"id": 6836, "piece": "AIN"}],
+    "leading_space_LOSS": {"id": 27353, "piece": " LOSS"},
+    "note": "A/B and GOOD/BAD answer strings are single tokens in this context; GAIN is two tokens and scored as a full two-token conditional continuation. No-space variants are separately captured."
+  }
+}

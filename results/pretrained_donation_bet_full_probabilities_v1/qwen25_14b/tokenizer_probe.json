@@ -1,0 +1,87 @@
+{
+  "candidates": {
+    " A": [
+      {
+        "id": 362,
+        "piece": " A"
+      }
+    ],
+    " B": [
+      {
+        "id": 425,
+        "piece": " B"
+      }
+    ],
+    " BAD": [
+      {
+        "id": 47718,
+        "piece": " BAD"
+      }
+    ],
+    " GAIN": [
+      {
+        "id": 479,
+        "piece": " G"
+      },
+      {
+        "id": 6836,
+        "piece": "AIN"
+      }
+    ],
+    " GOOD": [
+      {
+        "id": 21722,
+        "piece": " GOOD"
+      }
+    ],
+    " LOSS": [
+      {
+        "id": 27353,
+        "piece": " LOSS"
+      }
+    ],
+    "A": [
+      {
+        "id": 32,
+        "piece": "A"
+      }
+    ],
+    "B": [
+      {
+        "id": 33,
+        "piece": "B"
+      }
+    ],
+    "BAD": [
+      {
+        "id": 53572,
+        "piece": "BAD"
+      }
+    ],
+    "GAIN": [
+      {
+        "id": 38,
+        "piece": "G"
+      },
+      {
+        "id": 6836,
+        "piece": "AIN"
+      }
+    ],
+    "GOOD": [
+      {
+        "id": 69733,
+        "piece": "GOOD"
+      }
+    ],
+    "LOSS": [
+      {
+        "id": 58860,
+        "piece": "LOSS"
+      }
+    ]
+  },
+  "method": "llama.cpp /tokenize; exact token ids and pieces retained",
+  "model_path": "C:\\Users\\Main PC 2\\AppData\\Local\\Temp\\Qwen2.5-14B.Q4_K_M.gguf",
+  "vocabulary_size": 151936
+}

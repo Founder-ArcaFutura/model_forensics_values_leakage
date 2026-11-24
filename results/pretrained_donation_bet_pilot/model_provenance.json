@@ -1,0 +1,39 @@
+{
+  "checkpoint": "Qwen/Qwen2.5-3B",
+  "checkpoint_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "base_model_verification": {
+    "source": "Official Qwen Hugging Face model card identifies this repository as the base 3B model and its training stage as Pretraining.",
+    "cached_config_model_type": "qwen2",
+    "cached_config_architecture": "Qwen2ForCausalLM",
+    "cached_model_path": "C:/Users/Main PC 2/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B/snapshots/3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+  },
+  "serving_artifact": {
+    "source_repository": "bartowski/Qwen2.5-3B-GGUF",
+    "source_model": "Qwen/Qwen2.5-3B",
+    "file": "Qwen2.5-3B-Q5_K_M.gguf",
+    "quantization": "Q5_K_M",
+    "sha256": "41ba01c0a947829a11b3f2d843d493ff852ddd6fb64571210213e2a277532748",
+    "model_card_notes": "The conversion card identifies Qwen/Qwen2.5-3B as its original model and reports llama.cpp b3751 with imatrix quantization."
+  },
+  "machine": {
+    "gpu": "AMD Radeon RX 9060 XT",
+    "opencl_device": "gfx1200",
+    "ollama_reported_vram_total": "15.9 GiB",
+    "ollama_reported_vram_available_at_start": "15.8 GiB",
+    "amd_opencl_driver": "3679.0",
+    "local_torch_cuda": false,
+    "inference_confirmation": "ollama ps reported 100% GPU during smoke and pilot inference"
+  },
+  "serving": {
+    "stack": "Ollama 0.40.17, llama.cpp runner, ROCm 7.1 backend",
+    "server": "http://127.0.0.1:11434",
+    "openai_compatible_route_tested": "POST /v1/completions; generated prompt echo/debris rather than a usable completion",
+    "used_route": "POST /api/generate with raw=true and stream=false",
+    "inherited_environment_note": "Ollama logged HSA_OVERRIDE_GFX_VERSION=10.3.0 and warned it had been overridden; it reported compute gfx1030 while identifying the card as RX 9060 XT. This environment was left intact."
+  },
+  "remote_access": {
+    "configured_ssh_targets_checked": 3,
+    "result": "all three SSH connections timed out; local GPU was sufficient and used"
+  },
+  "recorded_at_utc": "2026-11-24T16:00:00Z"
+}

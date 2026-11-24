@@ -1,0 +1,244 @@
+{
+  "alignment": {
+    "congruent": {
+      "label_good_selected": {
+        "n_valid": 27,
+        "rate": 0.4074074074074074,
+        "successes": 11,
+        "wilson_95_ci": [
+          0.24514757074395552,
+          0.592732990319353
+        ]
+      },
+      "n_valid": 27,
+      "order_strata": {
+        "above_first": {
+          "label_good_selected": {
+            "n_valid": 14,
+            "rate": 0.5714285714285714,
+            "successes": 8,
+            "wilson_95_ci": [
+              0.3259064457965074,
+              0.7861920109552588
+            ]
+          },
+          "select_A": {
+            "n_valid": 14,
+            "rate": 0.5714285714285714,
+            "successes": 8,
+            "wilson_95_ci": [
+              0.3259064457965074,
+              0.7861920109552588
+            ]
+          }
+        },
+        "below_first": {
+          "label_good_selected": {
+            "n_valid": 13,
+            "rate": 0.23076923076923078,
+            "successes": 3,
+            "wilson_95_ci": [
+              0.08179528718498569,
+              0.5025637594672749
+            ]
+          },
+          "select_A": {
+            "n_valid": 13,
+            "rate": 0.6923076923076923,
+            "successes": 9,
+            "wilson_95_ci": [
+              0.42369343180549035,
+              0.8731929634428948
+            ]
+          }
+        }
+      },
+      "select_A": {
+        "n_valid": 27,
+        "rate": 0.6296296296296297,
+        "successes": 17,
+        "wilson_95_ci": [
+          0.4422923441210239,
+          0.784674870390344
+        ]
+      },
+      "welfare_gain_selected": {
+        "n_valid": 27,
+        "rate": 0.4074074074074074,
+        "successes": 11,
+        "wilson_95_ci": [
+          0.24514757074395552,
+          0.592732990319353
+        ]
+      }
+    },
+    "inverted": {
+      "label_good_selected": {
+        "n_valid": 30,
+        "rate": 0.36666666666666664,
+        "successes": 11,
+        "wilson_95_ci": [
+          0.21873920806100708,
+          0.5448643634520511
+        ]
+      },
+      "n_valid": 30,
+      "order_strata": {
+        "above_first": {
+          "label_good_selected": {
+            "n_valid": 15,
+            "rate": 0.4666666666666667,
+            "successes": 7,
+            "wilson_95_ci": [
+              0.24809535365737387,
+              0.698830199745016
+            ]
+          },
+          "select_A": {
+            "n_valid": 15,
+            "rate": 0.6,
+            "successes": 9,
+            "wilson_95_ci": [
+              0.357468301206246,
+              0.8017550385865841
+            ]
+          }
+        },
+        "below_first": {
+          "label_good_selected": {
+            "n_valid": 15,
+            "rate": 0.26666666666666666,
+            "successes": 4,
+            "wilson_95_ci": [
+              0.10897453325692374,
+              0.5195043405598057
+            ]
+          },
+          "select_A": {
+            "n_valid": 15,
+            "rate": 0.6666666666666666,
+            "successes": 10,
+            "wilson_95_ci": [
+              0.41713547738519774,
+              0.8482367556028526
+            ]
+          }
+        }
+      },
+      "select_A": {
+        "n_valid": 30,
+        "rate": 0.6333333333333333,
+        "successes": 19,
+        "wilson_95_ci": [
+          0.4551356365479487,
+          0.7812607919389929
+        ]
+      },
+      "welfare_gain_selected": {
+        "n_valid": 30,
+        "rate": 0.6333333333333333,
+        "successes": 19,
+        "wilson_95_ci": [
+          0.4551356365479487,
+          0.7812607919389929
+        ]
+      }
+    }
+  },
+  "checkpoint": "Qwen/Qwen2.5-3B",
+  "checkpoint_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "completed_at_utc": "2026-11-24T16:05:04.317040+00:00",
+  "completion_variation": {
+    "largest_exact_repeat_count": 14,
+    "n_nonempty_texts": 64,
+    "unique_nonempty_texts": 48
+  },
+  "elicitation": "choice_category",
+  "malformed_or_nonchoice_completions": 16,
+  "manifest_core_sha256": "e3dd42c1e064089dc40782cef9c4685d0d9cc1d056a3aceef57e4b39c309d50e",
+  "model": "pretrained-donation-bet-qwen25-3b-base-q5km",
+  "neutral_controls": {
+    "n_valid": 7,
+    "order_strata": {
+      "above_first": {
+        "select_A": {
+          "n_valid": 3,
+          "rate": 1.0,
+          "successes": 3,
+          "wilson_95_ci": [
+            0.4385029682449546,
+            1
+          ]
+        },
+        "welfare_gain_selected": {
+          "n_valid": 3,
+          "rate": 1.0,
+          "successes": 3,
+          "wilson_95_ci": [
+            0.4385029682449546,
+            1
+          ]
+        }
+      },
+      "below_first": {
+        "select_A": {
+          "n_valid": 4,
+          "rate": 0.0,
+          "successes": 0,
+          "wilson_95_ci": [
+            0,
+            0.4898908364545973
+          ]
+        },
+        "welfare_gain_selected": {
+          "n_valid": 4,
+          "rate": 1.0,
+          "successes": 4,
+          "wilson_95_ci": [
+            0.5101091635454027,
+            1
+          ]
+        }
+      }
+    },
+    "select_A": {
+      "n_valid": 7,
+      "rate": 0.42857142857142855,
+      "successes": 3,
+      "wilson_95_ci": [
+        0.15821985525146975,
+        0.7495416354723428
+      ]
+    },
+    "welfare_gain_selected": {
+      "n_valid": 7,
+      "rate": 1.0,
+      "successes": 7,
+      "wilson_95_ci": [
+        0.6456695649333126,
+        1
+      ]
+    }
+  },
+  "protocol_version": "pretrained-donation-bet-choice-category-v2",
+  "quantization": "Q5_K_M GGUF; community conversion from Qwen/Qwen2.5-3B",
+  "raw_sha256": "1dc6a9f68701f465490b65b156cec5d2f7057db316b4092c146908a9fade6cfa",
+  "records_total": 80,
+  "response_formats": {
+    "semantic_category": 64,
+    "unparsed": 16
+  },
+  "response_quality": {
+    "category_followed_by_continuation_n": 45,
+    "category_only_completion_n": 19,
+    "leading_category_parse_n": 64,
+    "quality_note": "Raw continuations are retained; some extend into unrelated or internally inconsistent text.",
+    "task_comprehension": "not independently adjudicated; a leading category token is not proof of comprehension"
+  },
+  "schema_version": 1,
+  "status_counts": {
+    "completed": 80
+  },
+  "temperature": 0.7,
+  "valid_choices": 64
+}

@@ -1,0 +1,1032 @@
+{
+  "backend_logprob_validation": {
+    "max_abs_logprob_delta": 0.06852579116821289,
+    "temperature_invariant": false
+  },
+  "checkpoint": "Qwen/Qwen2.5-14B@97e1e76335b7017d8f67c08a19d103c0504298c9",
+  "checkpoint_revision": "97e1e76335b7017d8f67c08a19d103c0504298c9",
+  "completed_at_utc": "2026-11-24T17:01:02.871467+00:00",
+  "manifest_core_sha256": "e775bbd817586bac2693b57836a5409c446cdb39086bf1412e17e218b42726cf",
+  "model": "pretrained-donation-bet-qwen25-14b-base-q4km:latest",
+  "protocol_version": "pretrained-donation-bet-probability-scoring-v2",
+  "quantization": "Q4_K_M",
+  "quantization_source_revision": "d0a2788fa6dc8e83ce2f0aae07882eeecb06ef1f",
+  "quantized_upstream_revision_pinned": false,
+  "raw_sha256": "a10a7c19a313d88fe1e5a026dfa5abeb9d008c1dec4ec8e61acc608d1ce94a66",
+  "seed": 20261124,
+  "summary": {
+    "answer_position_margin": {
+      "above_first": {
+        "mean_logprob_A_minus_B": 0.39262059330940247,
+        "n_distinct_prompts": 8
+      },
+      "below_first": {
+        "mean_logprob_A_minus_B": -0.34525566015924725,
+        "n_distinct_prompts": 7
+      }
+    },
+    "candidate_missing_reasons": "one or both exact A/B token byte sequences absent from top-20 raw alternatives",
+    "candidate_pair_missing_n": 21,
+    "candidate_pairs_scored": 15,
+    "choice_prompts": 36,
+    "comprehension": [
+      {
+        "argmax": "A",
+        "correct_by_argmax": true,
+        "diagnostic": "welfare_semantics",
+        "expected": "A",
+        "generated": "A",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -0.5178342461585999,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              66
+            ],
+            "logprob": -1.5790830850601196,
+            "token": " B"
+          },
+          {
+            "bytes": [
+              32,
+              79,
+              112,
+              116,
+              105,
+              111,
+              110
+            ],
+            "logprob": -2.367232084274292,
+            "token": " Option"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -3.521872043609619,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -3.9052281379699707,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              97,
+              115,
+              101,
+              100
+            ],
+            "logprob": -4.436354160308838,
+            "token": " Based"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              110
+            ],
+            "logprob": -5.910877704620361,
+            "token": " In"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -5.994287967681885,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              101,
+              116,
+              119,
+              101,
+              101,
+              110
+            ],
+            "logprob": -6.0866379737854,
+            "token": " Between"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              116
+            ],
+            "logprob": -6.181980609893799,
+            "token": " It"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              101,
+              116
+            ],
+            "logprob": -6.34649133682251,
+            "token": " Let"
+          },
+          {
+            "bytes": [
+              32,
+              73
+            ],
+            "logprob": -6.350311756134033,
+            "token": " I"
+          },
+          {
+            "bytes": [
+              32,
+              42,
+              42
+            ],
+            "logprob": -6.445654392242432,
+            "token": " **"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              105,
+              118,
+              101,
+              110
+            ],
+            "logprob": -6.947521686553955,
+            "token": " Given"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              111,
+              116,
+              104
+            ],
+            "logprob": -6.95290994644165,
+            "token": " Both"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              105,
+              115
+            ],
+            "logprob": -6.967606067657471,
+            "token": " This"
+          },
+          {
+            "bytes": [
+              32,
+              70,
+              111,
+              114
+            ],
+            "logprob": -6.971485614776611,
+            "token": " For"
+          },
+          {
+            "bytes": [
+              32,
+              111,
+              112,
+              116,
+              105,
+              111,
+              110
+            ],
+            "logprob": -7.023830890655518,
+            "token": " option"
+          },
+          {
+            "bytes": [
+              32,
+              87,
+              105,
+              116,
+              104,
+              111,
+              117,
+              116
+            ],
+            "logprob": -7.063621997833252,
+            "token": " Without"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              102
+            ],
+            "logprob": -7.069218158721924,
+            "token": " If"
+          }
+        ],
+        "wording": "standard_option_order"
+      },
+      {
+        "argmax": "B",
+        "correct_by_argmax": true,
+        "diagnostic": "welfare_semantics",
+        "expected": "B",
+        "generated": "B",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              66
+            ],
+            "logprob": -0.3268238306045532,
+            "token": " B"
+          },
+          {
+            "bytes": [
+              32,
+              79,
+              112,
+              116,
+              105,
+              111,
+              110
+            ],
+            "logprob": -2.2901532649993896,
+            "token": " Option"
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -3.1034963130950928,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -3.322570562362671,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -3.7366559505462646,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              97,
+              115,
+              101,
+              100
+            ],
+            "logprob": -4.116687297821045,
+            "token": " Based"
+          },
+          {
+            "bytes": [
+              32,
+              73
+            ],
+            "logprob": -5.731151103973389,
+            "token": " I"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              101,
+              116,
+              119,
+              101,
+              101,
+              110
+            ],
+            "logprob": -5.876441478729248,
+            "token": " Between"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -5.951364040374756,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              116
+            ],
+            "logprob": -5.9797492027282715,
+            "token": " It"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              110
+            ],
+            "logprob": -5.995406627655029,
+            "token": " In"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              111,
+              116,
+              104
+            ],
+            "logprob": -6.47064733505249,
+            "token": " Both"
+          },
+          {
+            "bytes": [
+              32,
+              42,
+              42
+            ],
+            "logprob": -6.509389400482178,
+            "token": " **"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              101,
+              116
+            ],
+            "logprob": -6.513251781463623,
+            "token": " Let"
+          },
+          {
+            "bytes": [
+              32,
+              70,
+              111,
+              114
+            ],
+            "logprob": -6.5928568840026855,
+            "token": " For"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              105,
+              118,
+              101,
+              110
+            ],
+            "logprob": -6.723983287811279,
+            "token": " Given"
+          },
+          {
+            "bytes": [
+              32,
+              111,
+              112,
+              116,
+              105,
+              111,
+              110
+            ],
+            "logprob": -6.745067119598389,
+            "token": " option"
+          },
+          {
+            "bytes": [
+              32,
+              98
+            ],
+            "logprob": -6.846843242645264,
+            "token": " b"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -6.891839504241943,
+            "token": " "
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              102
+            ],
+            "logprob": -6.923320293426514,
+            "token": " If"
+          }
+        ],
+        "wording": "reversed_option_order"
+      },
+      {
+        "argmax": "B",
+        "correct_by_argmax": true,
+        "diagnostic": "label_mapping",
+        "expected": "B",
+        "generated": "B",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              66
+            ],
+            "logprob": -0.29936251044273376,
+            "token": " B"
+          },
+          {
+            "bytes": [
+              32,
+              79,
+              112,
+              116,
+              105,
+              111,
+              110
+            ],
+            "logprob": -2.7295420169830322,
+            "token": " Option"
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -2.910240411758423,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              101,
+              108,
+              111,
+              119
+            ],
+            "logprob": -3.2904152870178223,
+            "token": " Below"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -3.607597589492798,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -4.248783588409424,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              97,
+              115,
+              101,
+              100
+            ],
+            "logprob": -4.8648552894592285,
+            "token": " Based"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              98,
+              111,
+              118,
+              101
+            ],
+            "logprob": -4.972904682159424,
+            "token": " Above"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              65,
+              68
+            ],
+            "logprob": -5.902540683746338,
+            "token": " BAD"
+          },
+          {
+            "bytes": null,
+            "logprob": -5.927402973175049,
+            "token": ""
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -6.132809162139893,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              111,
+              111,
+              100
+            ],
+            "logprob": -6.14469575881958,
+            "token": " Good"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              79,
+              79,
+              68
+            ],
+            "logprob": -6.452906131744385,
+            "token": " GOOD"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -6.466223239898682,
+            "token": " "
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              101,
+              116
+            ],
+            "logprob": -6.67179536819458,
+            "token": " Let"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              101,
+              116,
+              119,
+              101,
+              101,
+              110
+            ],
+            "logprob": -6.67313814163208,
+            "token": " Between"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              99,
+              99,
+              111,
+              114,
+              100,
+              105,
+              110,
+              103
+            ],
+            "logprob": -6.6786274909973145,
+            "token": " According"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              110
+            ],
+            "logprob": -6.693108081817627,
+            "token": " In"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              69,
+              76,
+              79,
+              87
+            ],
+            "logprob": -6.77636194229126,
+            "token": " BELOW"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              105,
+              118,
+              101,
+              110
+            ],
+            "logprob": -6.780638217926025,
+            "token": " Given"
+          }
+        ],
+        "wording": "standard_option_order"
+      },
+      {
+        "argmax": "A",
+        "correct_by_argmax": true,
+        "diagnostic": "label_mapping",
+        "expected": "A",
+        "generated": "A",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -0.24422447383403778,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              79,
+              112,
+              116,
+              105,
+              111,
+              110
+            ],
+            "logprob": -2.3958206176757812,
+            "token": " Option"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              101,
+              108,
+              111,
+              119
+            ],
+            "logprob": -3.5109119415283203,
+            "token": " Below"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -3.8061981201171875,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -4.453338623046875,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              66
+            ],
+            "logprob": -4.693319320678711,
+            "token": " B"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              98,
+              111,
+              118,
+              101
+            ],
+            "logprob": -5.122182846069336,
+            "token": " Above"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              97,
+              115,
+              101,
+              100
+            ],
+            "logprob": -5.3926239013671875,
+            "token": " Based"
+          },
+          {
+            "bytes": null,
+            "logprob": -5.469799041748047,
+            "token": ""
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              111,
+              111,
+              100
+            ],
+            "logprob": -5.720691680908203,
+            "token": " Good"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -6.010005950927734,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              79,
+              79,
+              68
+            ],
+            "logprob": -6.474891662597656,
+            "token": " GOOD"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              110
+            ],
+            "logprob": -6.580339431762695,
+            "token": " In"
+          },
+          {
+            "bytes": [
+              32,
+              42,
+              42
+            ],
+            "logprob": -6.7916259765625,
+            "token": " **"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -6.834087371826172,
+            "token": " "
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              101,
+              116
+            ],
+            "logprob": -6.901439666748047,
+            "token": " Let"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              105,
+              118,
+              101,
+              110
+            ],
+            "logprob": -7.137458801269531,
+            "token": " Given"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              111,
+              116,
+              104
+            ],
+            "logprob": -7.150590896606445,
+            "token": " Both"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              69,
+              76,
+              79,
+              87
+            ],
+            "logprob": -7.189723968505859,
+            "token": " BELOW"
+          },
+          {
+            "bytes": [
+              32,
+              111,
+              112,
+              116,
+              105,
+              111,
+              110
+            ],
+            "logprob": -7.331548690795898,
+            "token": " option"
+          }
+        ],
+        "wording": "reversed_option_order"
+      }
+    ],
+    "generated_A_n": 7,
+    "generated_B_n": 9,
+    "generated_choice_counts_by_elicitation": {
+      "choice_answer_token_probability": {
+        "A": 5,
+        "B": 7,
+        "BAD": 0,
+        "GOOD": 0,
+        "unparsed": 8
+      },
+      "label_token_probability": {
+        "A": 0,
+        "B": 0,
+        "BAD": 16,
+        "GOOD": 0,
+        "unparsed": 0
+      }
+    },
+    "generated_other_n": 8,
+    "label_margin": {
+      "choice_answer_token_probability": {
+        "congruent": {
+          "max_prompt_margin": 1.3060455322265625,
+          "mean_logprob_margin": 0.5092124938964844,
+          "min_prompt_margin": -0.31292724609375,
+          "n_distinct_prompts": 5,
+          "negative_n": 1,
+          "positive_n": 4,
+          "zero_n": 0
+        },
+        "inverted": {
+          "max_prompt_margin": 0.5361689329147339,
+          "mean_logprob_margin": -0.06877106428146362,
+          "min_prompt_margin": -0.6547431945800781,
+          "n_distinct_prompts": 6,
+          "negative_n": 4,
+          "positive_n": 2,
+          "zero_n": 0
+        }
+      },
+      "label_token_probability": {
+        "congruent": {
+          "max_prompt_margin": null,
+          "mean_logprob_margin": null,
+          "min_prompt_margin": null,
+          "n_distinct_prompts": 0,
+          "negative_n": 0,
+          "positive_n": 0,
+          "zero_n": 0
+        },
+        "inverted": {
+          "max_prompt_margin": null,
+          "mean_logprob_margin": null,
+          "min_prompt_margin": null,
+          "n_distinct_prompts": 0,
+          "negative_n": 0,
+          "positive_n": 0,
+          "zero_n": 0
+        }
+      }
+    },
+    "records": 40,
+    "welfare_margin": {
+      "choice_answer_token_probability": {
+        "congruent": {
+          "max_prompt_margin": 1.3060455322265625,
+          "mean_logprob_margin": 0.5092124938964844,
+          "min_prompt_margin": -0.31292724609375,
+          "n_distinct_prompts": 5,
+          "negative_n": 1,
+          "positive_n": 4,
+          "zero_n": 0
+        },
+        "inverted": {
+          "max_prompt_margin": 0.6547431945800781,
+          "mean_logprob_margin": 0.06877106428146362,
+          "min_prompt_margin": -0.5361689329147339,
+          "n_distinct_prompts": 6,
+          "negative_n": 2,
+          "positive_n": 4,
+          "zero_n": 0
+        },
+        "neutral": {
+          "max_prompt_margin": 2.3577384650707245,
+          "mean_logprob_margin": 0.9890484735369682,
+          "min_prompt_margin": -0.4033585786819458,
+          "n_distinct_prompts": 4,
+          "negative_n": 1,
+          "positive_n": 3,
+          "zero_n": 0
+        }
+      },
+      "label_token_probability": {
+        "congruent": {
+          "max_prompt_margin": null,
+          "mean_logprob_margin": null,
+          "min_prompt_margin": null,
+          "n_distinct_prompts": 0,
+          "negative_n": 0,
+          "positive_n": 0,
+          "zero_n": 0
+        },
+        "inverted": {
+          "max_prompt_margin": null,
+          "mean_logprob_margin": null,
+          "min_prompt_margin": null,
+          "n_distinct_prompts": 0,
+          "negative_n": 0,
+          "positive_n": 0,
+          "zero_n": 0
+        },
+        "neutral": {
+          "max_prompt_margin": null,
+          "mean_logprob_margin": null,
+          "min_prompt_margin": null,
+          "n_distinct_prompts": 0,
+          "negative_n": 0,
+          "positive_n": 0,
+          "zero_n": 0
+        }
+      }
+    }
+  }
+}
