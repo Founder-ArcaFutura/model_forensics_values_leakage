@@ -1,0 +1,836 @@
+{
+  "requests": [
+    {
+      "custom_id": "pref-0030",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Treatment visits are provided to 100 patients at a community clinic.\nX) Vaccination visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0055",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Tuition scholarships are provided to 100 students.\nY) Household water filters are provided to 100 households.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0028",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Household water filters are provided to 100 households.\nB) Tuition scholarships are provided to 100 students.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0002",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0029",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Treatment visits are provided to 100 patients at a community clinic.\nB) Vaccination visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0053",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Treatment visits are provided to 100 patients at a community clinic.\nY) Vaccination visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0061",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Temporary housing support is provided to 100 households displaced by a flood.\nY) Food parcels are provided to 100 households affected by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0021",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Tuition scholarships are provided to 100 students.\nX) Household water filters are provided to 100 households.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0016",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) Native habitat is protected across 100 acres.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0017",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Food parcels are provided to 100 households affected by a flood.\nX) Temporary housing support is provided to 100 households displaced by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0046",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0012",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Household water filters are provided to 100 households.\nA) Tuition scholarships are provided to 100 students.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0051",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Native habitat is protected across 100 acres.\nX) Veterinary care is provided to 100 wild animals.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0049",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Tuition scholarships are provided to 100 students.\nB) Household water filters are provided to 100 households.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0033",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Food parcels are provided to 100 households affected by a flood.\nY) Temporary housing support is provided to 100 households displaced by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0010",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Temporary housing support is provided to 100 households displaced by a flood.\nX) Food parcels are provided to 100 households affected by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0009",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Food parcels are provided to 100 households affected by a flood.\nX) Temporary housing support is provided to 100 households displaced by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0019",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Temporary housing support is provided to 100 households displaced by a flood.\nX) Food parcels are provided to 100 households affected by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0044",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Tuition scholarships are provided to 100 students.\nA) Household water filters are provided to 100 households.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0043",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) Native habitat is protected across 100 acres.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0005",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Temporary housing support is provided to 100 households displaced by a flood.\nA) Food parcels are provided to 100 households affected by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0058",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Temporary housing support is provided to 100 households displaced by a flood.\nY) Food parcels are provided to 100 households affected by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0014",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Food parcels are provided to 100 households affected by a flood.\nB) Temporary housing support is provided to 100 households displaced by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0062",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0037",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Household water filters are provided to 100 households.\nX) Tuition scholarships are provided to 100 students.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0020",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Household water filters are provided to 100 households.\nY) Tuition scholarships are provided to 100 students.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0011",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Vaccination visits are provided to 100 patients at a community clinic.\nX) Treatment visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0052",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Food parcels are provided to 100 households affected by a flood.\nY) Temporary housing support is provided to 100 households displaced by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0040",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Vaccination visits are provided to 100 patients at a community clinic.\nY) Treatment visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0056",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Native habitat is protected across 100 acres.\nB) Veterinary care is provided to 100 wild animals.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0006",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Household water filters are provided to 100 households.\nB) Tuition scholarships are provided to 100 students.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0022",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Vaccination visits are provided to 100 patients at a community clinic.\nA) Treatment visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0038",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Treatment visits are provided to 100 patients at a community clinic.\nX) Vaccination visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0035",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Food parcels are provided to 100 households affected by a flood.\nA) Temporary housing support is provided to 100 households displaced by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0027",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Food parcels are provided to 100 households affected by a flood.\nA) Temporary housing support is provided to 100 households displaced by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0060",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Household water filters are provided to 100 households.\nY) Tuition scholarships are provided to 100 students.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0063",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Vaccination visits are provided to 100 patients at a community clinic.\nB) Treatment visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0034",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Temporary housing support is provided to 100 households displaced by a flood.\nB) Food parcels are provided to 100 households affected by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0003",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0039",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Tuition scholarships are provided to 100 students.\nB) Household water filters are provided to 100 households.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0054",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Temporary housing support is provided to 100 households displaced by a flood.\nB) Food parcels are provided to 100 households affected by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0018",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) Native habitat is protected across 100 acres.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0031",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Treatment visits are provided to 100 patients at a community clinic.\nA) Vaccination visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0013",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Vaccination visits are provided to 100 patients at a community clinic.\nX) Treatment visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0032",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Vaccination visits are provided to 100 patients at a community clinic.\nY) Treatment visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0042",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Temporary housing support is provided to 100 households displaced by a flood.\nA) Food parcels are provided to 100 households affected by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0064",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Household water filters are provided to 100 households.\nA) Tuition scholarships are provided to 100 students.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0023",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) Native habitat is protected across 100 acres.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0048",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) Native habitat is protected across 100 acres.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0015",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Household water filters are provided to 100 households.\nX) Tuition scholarships are provided to 100 students.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0004",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Treatment visits are provided to 100 patients at a community clinic.\nA) Vaccination visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0045",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Treatment visits are provided to 100 patients at a community clinic.\nY) Vaccination visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0036",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Tuition scholarships are provided to 100 students.\nY) Household water filters are provided to 100 households.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0024",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Tuition scholarships are provided to 100 students.\nA) Household water filters are provided to 100 households.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0025",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) Native habitat is protected across 100 acres.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0026",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Food parcels are provided to 100 households affected by a flood.\nB) Temporary housing support is provided to 100 households displaced by a flood.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0041",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Vaccination visits are provided to 100 patients at a community clinic.\nA) Treatment visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0001",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Tuition scholarships are provided to 100 students.\nX) Household water filters are provided to 100 households.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0007",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Vaccination visits are provided to 100 patients at a community clinic.\nB) Treatment visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0050",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) Native habitat is protected across 100 acres.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0057",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Native habitat is protected across 100 acres.\nX) Veterinary care is provided to 100 wild animals.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0047",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Native habitat is protected across 100 acres.\nB) Veterinary care is provided to 100 wild animals.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0008",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Treatment visits are provided to 100 patients at a community clinic.\nB) Vaccination visits are provided to 100 patients at a community clinic.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    },
+    {
+      "custom_id": "pref-0059",
+      "params": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) Native habitat is protected across 100 acres.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8"
+      }
+    }
+  ]
+}

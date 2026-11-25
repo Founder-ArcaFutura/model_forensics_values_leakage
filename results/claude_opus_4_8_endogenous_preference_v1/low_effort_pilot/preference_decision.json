@@ -1,0 +1,8 @@
+{
+  "decision_at_utc": "2026-11-25T02:23:04.006454+00:00",
+  "favored_outcome": null,
+  "preference_conditioned_arms_permitted": false,
+  "preference_freeze_sha256": "93ea2658dc7c707a826a5c26c838ce3c32cdc3f9e636d49d1b761e19880bc477",
+  "primary_pair_id": "habitat_vs_veterinary_care",
+  "primary_pair_stable": false
+}

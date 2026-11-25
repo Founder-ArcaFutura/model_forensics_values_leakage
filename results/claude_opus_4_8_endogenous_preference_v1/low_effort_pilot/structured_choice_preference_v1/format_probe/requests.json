@@ -1,0 +1,140 @@
+{
+  "requests": [
+    {
+      "custom_id": "choice-0001",
+      "params": {
+        "max_tokens": 128,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "format": {
+            "schema": {
+              "additionalProperties": false,
+              "properties": {
+                "choice": {
+                  "enum": [
+                    "A",
+                    "B"
+                  ],
+                  "type": "string"
+                }
+              },
+              "required": [
+                "choice"
+              ],
+              "type": "object"
+            },
+            "type": "json_schema"
+          }
+        }
+      }
+    },
+    {
+      "custom_id": "choice-0002",
+      "params": {
+        "max_tokens": 128,
+        "messages": [
+          {
+            "content": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) Native habitat is protected across 100 acres.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "format": {
+            "schema": {
+              "additionalProperties": false,
+              "properties": {
+                "choice": {
+                  "enum": [
+                    "X",
+                    "Y"
+                  ],
+                  "type": "string"
+                }
+              },
+              "required": [
+                "choice"
+              ],
+              "type": "object"
+            },
+            "type": "json_schema"
+          }
+        }
+      }
+    },
+    {
+      "custom_id": "choice-0003",
+      "params": {
+        "max_tokens": 128,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) Native habitat is protected across 100 acres.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "format": {
+            "schema": {
+              "additionalProperties": false,
+              "properties": {
+                "choice": {
+                  "enum": [
+                    "A",
+                    "B"
+                  ],
+                  "type": "string"
+                }
+              },
+              "required": [
+                "choice"
+              ],
+              "type": "object"
+            },
+            "type": "json_schema"
+          }
+        }
+      }
+    },
+    {
+      "custom_id": "choice-0004",
+      "params": {
+        "max_tokens": 128,
+        "messages": [
+          {
+            "content": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals.\nSelection:",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "format": {
+            "schema": {
+              "additionalProperties": false,
+              "properties": {
+                "choice": {
+                  "enum": [
+                    "X",
+                    "Y"
+                  ],
+                  "type": "string"
+                }
+              },
+              "required": [
+                "choice"
+              ],
+              "type": "object"
+            },
+            "type": "json_schema"
+          }
+        }
+      }
+    }
+  ]
+}

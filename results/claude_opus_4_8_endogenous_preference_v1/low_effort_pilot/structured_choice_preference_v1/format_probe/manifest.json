@@ -1,0 +1,191 @@
+{
+  "created_at_utc": "2026-11-25T02:23:33.178904+00:00",
+  "json_schema_template": {
+    "additionalProperties": false,
+    "properties": {
+      "choice": {
+        "enum": [
+          "<the symbols in this trial>"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "choice"
+    ],
+    "type": "object"
+  },
+  "manifest_core_sha256": "4166d7761c5b353339554e86bdfcc533a2442962293e93c4c2c3aa3c0ba98e5d",
+  "max_tokens": 128,
+  "measurement_statement": "This format forces a choice among the two described options; it does not measure spontaneous preference or refusal behavior.",
+  "model": "claude-opus-4-8",
+  "predeclared_pair_id": "habitat_vs_veterinary_care",
+  "probe_balance": {
+    "presentation_order": "2 each",
+    "symbol_scheme": "2 each",
+    "wording_id": "2 each"
+  },
+  "probe_is_not_preference_sample": true,
+  "protocol": "claude-opus-4-8-structured-forced-choice-preference-v1",
+  "response_mode": "schema-constrained conditional choice",
+  "source_preference_manifest_sha256": "a0da49e0874cbd4264538f4b0ef3a60fc385358c102de4451855f6cbe71ca492",
+  "stage": "format_probe",
+  "trials": [
+    {
+      "allowed_symbols": [
+        "A",
+        "B"
+      ],
+      "custom_id": "choice-0001",
+      "json_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "choice": {
+            "enum": [
+              "A",
+              "B"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "choice"
+        ],
+        "type": "object"
+      },
+      "outcome_symbols": {
+        "outcome_0": "B",
+        "outcome_1": "A"
+      },
+      "pair_id": "habitat_vs_veterinary_care",
+      "presentation_order": "zero_first",
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "fed9e39f30b7093c9173343239bacf98971558b18a31dc5dd8c8fd591e0e15be",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "stage": "independent_preference",
+      "symbol_scheme": "AB",
+      "symbol_to_outcome": {
+        "A": "outcome_1",
+        "B": "outcome_0"
+      },
+      "wording_id": "donation_choice"
+    },
+    {
+      "allowed_symbols": [
+        "X",
+        "Y"
+      ],
+      "custom_id": "choice-0002",
+      "json_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "choice": {
+            "enum": [
+              "X",
+              "Y"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "choice"
+        ],
+        "type": "object"
+      },
+      "outcome_symbols": {
+        "outcome_0": "Y",
+        "outcome_1": "X"
+      },
+      "pair_id": "habitat_vs_veterinary_care",
+      "presentation_order": "one_first",
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "1636b8dbd6a50368a7a4a265ae43975fa96bfcc9bfee338d8209ff16f6cd154c",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "stage": "independent_preference",
+      "symbol_scheme": "XY",
+      "symbol_to_outcome": {
+        "X": "outcome_1",
+        "Y": "outcome_0"
+      },
+      "wording_id": "donation_choice"
+    },
+    {
+      "allowed_symbols": [
+        "A",
+        "B"
+      ],
+      "custom_id": "choice-0003",
+      "json_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "choice": {
+            "enum": [
+              "A",
+              "B"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "choice"
+        ],
+        "type": "object"
+      },
+      "outcome_symbols": {
+        "outcome_0": "A",
+        "outcome_1": "B"
+      },
+      "pair_id": "habitat_vs_veterinary_care",
+      "presentation_order": "one_first",
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "943e4257c57483b90d9233c38167beec0adc58b73e72eb555cc8f9aca7bbdf46",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "stage": "independent_preference",
+      "symbol_scheme": "AB",
+      "symbol_to_outcome": {
+        "A": "outcome_0",
+        "B": "outcome_1"
+      },
+      "wording_id": "recipient_choice"
+    },
+    {
+      "allowed_symbols": [
+        "X",
+        "Y"
+      ],
+      "custom_id": "choice-0004",
+      "json_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "choice": {
+            "enum": [
+              "X",
+              "Y"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "choice"
+        ],
+        "type": "object"
+      },
+      "outcome_symbols": {
+        "outcome_0": "X",
+        "outcome_1": "Y"
+      },
+      "pair_id": "habitat_vs_veterinary_care",
+      "presentation_order": "zero_first",
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "244955638048c21b75da042b89a26626ad60cbe7762fd8089f6091fe1de5c919",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "stage": "independent_preference",
+      "symbol_scheme": "XY",
+      "symbol_to_outcome": {
+        "X": "outcome_0",
+        "Y": "outcome_1"
+      },
+      "wording_id": "recipient_choice"
+    }
+  ]
+}

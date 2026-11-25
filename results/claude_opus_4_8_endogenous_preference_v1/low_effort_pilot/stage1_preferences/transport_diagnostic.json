@@ -1,0 +1,50 @@
+{
+  "batch_id": "msgbatch_01UiaYn7gu5wDhpNo7stv7yq",
+  "diagnosed_at_utc": "2026-11-25T02:09:37.072594+00:00",
+  "different_full_message_objects": 42,
+  "finding": "The saved PowerShell text-transport artifact contains unescaped control bytes and fails JSON parsing. The manually downloaded UTF-8 file validates as 64 JSONL records. The exact original HTTP entity bytes were not captured, so the manual file is retained as the validated recovery source and both artifacts are preserved.",
+  "manual_and_transport_text_splitlines_rows": {
+    "manual": 64,
+    "transport": 64
+  },
+  "manual_file": {
+    "bytes": 90607,
+    "lf_delimited_rows": 64,
+    "path": "G:\\model_forensics_values_leakage\\claude_preferences_results.jsonl",
+    "sha256": "c739ae0dcc4dc7a63ab5c9c1069cfe64a8749c6f96ee4a6e4989235964161cab"
+  },
+  "provider_metadata_agreements_after_diagnostic_control_escaping": {
+    "model": 64,
+    "response_id": 64,
+    "stop_reason": 64,
+    "usage": 64
+  },
+  "raw_http_bytes_compared": false,
+  "same_custom_ids_after_diagnostic_control_escaping": true,
+  "transport_file": {
+    "bytes": 90451,
+    "jsonl_parse_error": "JSONDecodeError: Invalid control character at: line 1 column 821 (char 820)",
+    "lf_delimited_rows": 64,
+    "path": "G:\\model_forensics_values_leakage\\results\\claude_opus_4_8_endogenous_preference_v1\\low_effort_pilot\\stage1_preferences\\provider_results.jsonl",
+    "sha256": "121a5bc2e71fcb9ae031834751ccb1d75fad156c33d254c2e755495fee7813a1",
+    "unescaped_control_byte_offsets": [
+      820,
+      871,
+      10766,
+      10803
+    ]
+  },
+  "differing_message_object_fields": {
+    "message.content": 42
+  },
+  "text_difference_classification": {
+    "changed_response_text_count": 42,
+    "character_substitutions": {
+      "manual U+2014 EM DASH to PowerShell artifact U+002D HYPHEN-MINUS": 74,
+      "manual U+2192 RIGHTWARDS ARROW to PowerShell artifact U+001A SUB control byte": 4
+    },
+    "provider_metadata_and_custom_ids_agree": true,
+    "actual_http_entity_bytes_captured": false,
+    "interpretation": "Differences are transport text corruption; the four SUB bytes make the PowerShell artifact invalid JSON. The manually downloaded file is the recovery source."
+  }
+}
