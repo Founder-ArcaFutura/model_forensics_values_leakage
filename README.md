@@ -4,22 +4,41 @@ This repository implements a small, sequential experiment derived from the
 Donation Bet evaluation in *Value Leakage: An LLM's Answers Are Silently
 Shaped by Its Own Values*.
 
-## Latest findings: pretrained-base label swap
+## Claude Opus 4.8: contradictory labels reverse habitat funding
+
+At the frozen 23,400,000 giraffe-spots threshold, the share of estimates that
+funded habitat changed sharply when habitat was explicitly designated BAD:
+
+| Condition | Habitat designation | Estimates funding habitat |
+|---|---|---:|
+| Unlabeled | None | 18/24 (75.0%) |
+| Congruent | GOOD | 21/24 (87.5%) |
+| Incongruent | BAD | 7/24 (29.2%) |
+
+Incongruent minus congruent was **−58.3 percentage points** (95% Newcombe CI
+**[−74.8, −31.1]**).
+
+An independently elicited forced choice favored habitat preservation over
+veterinary care in 13/16 counterbalanced layouts, passing the preregistered
+stability criterion. **Exploratory, n=24 per cell.** The forced comparative
+choice is not spontaneous preference. See the [frozen manifest, responses, and analysis](results/claude_opus_4_8_endogenous_preference_v1/low_effort_pilot/congruent_incongruent_v1/).
+
+## Mechanism: label-following precedes post-training
 
 A paired probability-scoring pilot on **Qwen2.5-14B Base** found that swapping
 which outcome was labeled GOOD shifted likelihood toward the same welfare-
 positive outcome in the predicted direction across **16/16 matched layouts**.
 The mean within-pair change in gain-versus-loss log odds was **+0.827 nats**
-(median +0.857). The options were held fixed while label assignment, answer
-symbol (A/B or X/Y), presentation order, and two prompt wordings were
-counterbalanced. Neutral prompts favored the leave gain (+0.867 mean log-odds),
-while the mean was +0.614 with congruent labels and −0.213 with inverted
-labels. The original label-mapping comprehension check was 6/8 but was
-confounded: the GOOD outcome always used the first answer symbol within each
-symbol scheme. It is not valid evidence of comprehension; a balanced 16-item
-diagnostic is defined in code but has not yet produced results. Effect size
-varied by option order. This is a directional result for one scenario, not evidence
-of a general moral preference or a broad claim about pretraining.
+(median +0.857). Options were held fixed while label assignment, answer symbol
+(A/B or X/Y), presentation order, and two prompt wordings were counterbalanced.
+Neutral prompts favored the leave gain (+0.867 mean log-odds), while the mean
+was +0.614 with congruent labels and −0.213 with inverted labels. The original
+label-mapping comprehension check was 6/8 but confounded: GOOD always used the
+first answer symbol within each symbol scheme. It is not valid evidence of
+comprehension; a balanced 16-item diagnostic is defined in code but has not yet
+produced results. Effect size varied by option order. This is a directional
+result for one scenario, not evidence of a general moral preference or a broad
+claim about pretraining.
 
 See the [paired label-swap report](results/pretrained_donation_bet_paired_label_swap_v1/REPORT.md),
 [paired results and raw scores](results/pretrained_donation_bet_paired_label_swap_v1/),
@@ -30,24 +49,8 @@ base model.
 
 ## Findings at a glance
 
-The results are mixed and depend strongly on the elicitation. In a within-
-trajectory test, Claude Opus 4.8 revised only 6/80 estimates in the direction
-that could redirect a donation, while the same model showed strong target
-following in the original threshold-based Donation Bet control. Later controls
-found that explicit evaluative labels could still steer answers toward a
-semantically harmful outcome, although semantic welfare reduced that effect.
-GPT-5.6 Sol showed little target following in the matched high-reasoning
-controls. These results do not establish that a model has or lacks stable
-“moral values”; they show that observed behavior changes with model and prompt
-design.
-
-The pretrained-base pilot found that Qwen2.5-3B was not usable for the
-numerical Donation Bet prompt family without post-training: neither the
-original nor a completion-style smoke produced a valid estimate. A separate
-choice probe was runnable but remains ambiguous because of malformed and
-drifting completions. It does not establish whether post-training is necessary.
-See the [pretrained pilot report](results/pretrained_donation_bet_pilot/REPORT.md)
-and its [raw outputs and analysis](results/pretrained_donation_bet_pilot_choice_category_v2/).
+Within-trajectory results are attenuated relative to the threshold assay and
+are reported in [RESULTS.md](RESULTS.md).
 
 - [Full results, methods, and limitations](RESULTS.md)
 - [Detailed take-home write-up and experiment-by-experiment interpretation](TAKEHOME_WRITEUP.md)
