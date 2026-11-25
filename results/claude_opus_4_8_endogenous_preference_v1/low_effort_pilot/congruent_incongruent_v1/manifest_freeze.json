@@ -1,0 +1,18 @@
+{
+  "condition_mapping_counts": {
+    "congruent::habitat_above": 12,
+    "congruent::habitat_at_or_below": 12,
+    "incongruent::habitat_above": 12,
+    "incongruent::habitat_at_or_below": 12,
+    "unlabeled::habitat_above": 12,
+    "unlabeled::habitat_at_or_below": 12
+  },
+  "freeze_sha256": "ef752b5be65d5006704487abc76aa6e8698d1524b60412b42ce11fe440b8b010",
+  "frozen_at_utc": "2026-11-25T03:22:50.026803+00:00",
+  "manifest_core_sha256": "a1c26c74f343880f2f02a0eb207c386700ccc55e967f865bc99dc92ddf5902bc",
+  "manifest_sha256": "2ef5057bb52b4944eb0d2d2e27703376f4732fd93552f15b368f6bdafce2e68b",
+  "protocol": "claude-opus-4-8-congruent-incongruent-donation-bet-v1",
+  "request_count": 72,
+  "requests_sha256": "f62e21bc4d84fe7da2f60d8fa077d333a4d8ef0e742e1a819aaf48b85811a7d9",
+  "source_provenance_sha256": "994936ba60b65545eb982ca91e81bdeee5d804d3c4be39db2c4258fbbd9c7368"
+}

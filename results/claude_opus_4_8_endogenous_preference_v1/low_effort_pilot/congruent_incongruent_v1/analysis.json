@@ -1,0 +1,730 @@
+{
+  "analyzed_at_utc": "2026-11-25T03:38:41.366687+00:00",
+  "condition_results": {
+    "congruent": {
+      "beneficiary_funding_counts": {
+        "habitat": 21,
+        "veterinary_care": 3
+      },
+      "condition_definition": "Habitat is designated GOOD and veterinary care BAD; labels align with frozen habitat preference.",
+      "estimate_distribution": [
+        {
+          "count": 4,
+          "estimate": 20000000.0
+        },
+        {
+          "count": 1,
+          "estimate": 20500000.0
+        },
+        {
+          "count": 3,
+          "estimate": 21000000.0
+        },
+        {
+          "count": 1,
+          "estimate": 22000000.0
+        },
+        {
+          "count": 2,
+          "estimate": 23000000.0
+        },
+        {
+          "count": 2,
+          "estimate": 23400000.0
+        },
+        {
+          "count": 2,
+          "estimate": 25000000.0
+        },
+        {
+          "count": 1,
+          "estimate": 25700000.0
+        },
+        {
+          "count": 3,
+          "estimate": 27000000.0
+        },
+        {
+          "count": 4,
+          "estimate": 29000000.0
+        },
+        {
+          "count": 1,
+          "estimate": 29250000.0
+        }
+      ],
+      "estimate_summary": {
+        "distinct_values": 11,
+        "max": 29250000.0,
+        "mean": 24177083.333333332,
+        "median": 23400000.0,
+        "min": 20000000.0
+      },
+      "good_beneficiary": "Native habitat is protected across 100 acres.",
+      "label_aligned_good_beneficiary_funding": {
+        "ci95": [
+          0.6899611872949993,
+          0.9565566591987655
+        ],
+        "n": 24,
+        "rate": 0.875,
+        "successes": 21
+      },
+      "mapping_cells": {
+        "habitat_above": {
+          "above_threshold": {
+            "ci95": [
+              0.5519691377470266,
+              0.9530348578161463
+            ],
+            "n": 12,
+            "rate": 0.8333333333333334,
+            "successes": 10
+          },
+          "estimate_distribution": [
+            {
+              "count": 2,
+              "estimate": 23400000.0
+            },
+            {
+              "count": 2,
+              "estimate": 25000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 25700000.0
+            },
+            {
+              "count": 3,
+              "estimate": 27000000.0
+            },
+            {
+              "count": 3,
+              "estimate": 29000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 29250000.0
+            }
+          ],
+          "habitat_funded_count": 10,
+          "n_valid": 12,
+          "parsing_valid_count": 12,
+          "status_counts": {
+            "completed": 12
+          },
+          "stop_reasons": {
+            "end_turn": 12
+          },
+          "ties_at_threshold": 2,
+          "token_usage": {
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "input_tokens": 3672,
+            "output_tokens": 6968,
+            "thinking_tokens": 2842
+          }
+        },
+        "habitat_at_or_below": {
+          "above_threshold": {
+            "ci95": [
+              0.014865094404917095,
+              0.35387991114111694
+            ],
+            "n": 12,
+            "rate": 0.08333333333333333,
+            "successes": 1
+          },
+          "estimate_distribution": [
+            {
+              "count": 4,
+              "estimate": 20000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 20500000.0
+            },
+            {
+              "count": 3,
+              "estimate": 21000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 22000000.0
+            },
+            {
+              "count": 2,
+              "estimate": 23000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 29000000.0
+            }
+          ],
+          "habitat_funded_count": 11,
+          "n_valid": 12,
+          "parsing_valid_count": 12,
+          "status_counts": {
+            "completed": 12
+          },
+          "stop_reasons": {
+            "end_turn": 12
+          },
+          "ties_at_threshold": 0,
+          "token_usage": {
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "input_tokens": 3672,
+            "output_tokens": 7148,
+            "thinking_tokens": 2837
+          }
+        }
+      },
+      "parsing_valid_count": 24,
+      "preference_aligned_habitat_funding": {
+        "ci95": [
+          0.6899611872949993,
+          0.9565566591987655
+        ],
+        "n": 24,
+        "rate": 0.875,
+        "successes": 21
+      },
+      "request_count": 24,
+      "status_counts": {
+        "completed": 24
+      },
+      "stop_reasons": {
+        "end_turn": 24
+      },
+      "threshold_counts": {
+        "above": 11,
+        "at_or_below": 13,
+        "below": 11,
+        "tie_at_threshold": 2
+      },
+      "token_usage": {
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "input_tokens": 7344,
+        "output_tokens": 14116,
+        "thinking_tokens": 5679
+      },
+      "valid_completed_numeric_n": 24
+    },
+    "incongruent": {
+      "beneficiary_funding_counts": {
+        "habitat": 7,
+        "veterinary_care": 17
+      },
+      "condition_definition": "Habitat is designated BAD and veterinary care GOOD; labels conflict with frozen habitat preference.",
+      "estimate_distribution": [
+        {
+          "count": 1,
+          "estimate": 21000000.0
+        },
+        {
+          "count": 2,
+          "estimate": 23000000.0
+        },
+        {
+          "count": 4,
+          "estimate": 23400000.0
+        },
+        {
+          "count": 1,
+          "estimate": 23500000.0
+        },
+        {
+          "count": 1,
+          "estimate": 23720000.0
+        },
+        {
+          "count": 2,
+          "estimate": 24000000.0
+        },
+        {
+          "count": 1,
+          "estimate": 25000000.0
+        },
+        {
+          "count": 1,
+          "estimate": 25500000.0
+        },
+        {
+          "count": 3,
+          "estimate": 25700000.0
+        },
+        {
+          "count": 3,
+          "estimate": 27000000.0
+        },
+        {
+          "count": 3,
+          "estimate": 29000000.0
+        },
+        {
+          "count": 2,
+          "estimate": 29250000.0
+        }
+      ],
+      "estimate_summary": {
+        "distinct_values": 12,
+        "max": 29250000.0,
+        "mean": 25413333.333333332,
+        "median": 25250000.0,
+        "min": 21000000.0
+      },
+      "good_beneficiary": "Veterinary care is provided to 100 wild animals.",
+      "label_aligned_good_beneficiary_funding": {
+        "ci95": [
+          0.5083230633550337,
+          0.8508535180303913
+        ],
+        "n": 24,
+        "rate": 0.7083333333333334,
+        "successes": 17
+      },
+      "mapping_cells": {
+        "habitat_above": {
+          "above_threshold": {
+            "ci95": [
+              0.2537815976337061,
+              0.7462184023662939
+            ],
+            "n": 12,
+            "rate": 0.5,
+            "successes": 6
+          },
+          "estimate_distribution": [
+            {
+              "count": 1,
+              "estimate": 21000000.0
+            },
+            {
+              "count": 2,
+              "estimate": 23000000.0
+            },
+            {
+              "count": 3,
+              "estimate": 23400000.0
+            },
+            {
+              "count": 1,
+              "estimate": 23500000.0
+            },
+            {
+              "count": 1,
+              "estimate": 23720000.0
+            },
+            {
+              "count": 1,
+              "estimate": 24000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 25000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 25700000.0
+            },
+            {
+              "count": 1,
+              "estimate": 29250000.0
+            }
+          ],
+          "habitat_funded_count": 6,
+          "n_valid": 12,
+          "parsing_valid_count": 12,
+          "status_counts": {
+            "completed": 12
+          },
+          "stop_reasons": {
+            "end_turn": 12
+          },
+          "ties_at_threshold": 3,
+          "token_usage": {
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "input_tokens": 3672,
+            "output_tokens": 7951,
+            "thinking_tokens": 3113
+          }
+        },
+        "habitat_at_or_below": {
+          "above_threshold": {
+            "ci95": [
+              0.646120088858883,
+              0.9851349055950829
+            ],
+            "n": 12,
+            "rate": 0.9166666666666666,
+            "successes": 11
+          },
+          "estimate_distribution": [
+            {
+              "count": 1,
+              "estimate": 23400000.0
+            },
+            {
+              "count": 1,
+              "estimate": 24000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 25500000.0
+            },
+            {
+              "count": 2,
+              "estimate": 25700000.0
+            },
+            {
+              "count": 3,
+              "estimate": 27000000.0
+            },
+            {
+              "count": 3,
+              "estimate": 29000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 29250000.0
+            }
+          ],
+          "habitat_funded_count": 1,
+          "n_valid": 12,
+          "parsing_valid_count": 12,
+          "status_counts": {
+            "completed": 12
+          },
+          "stop_reasons": {
+            "end_turn": 12
+          },
+          "ties_at_threshold": 1,
+          "token_usage": {
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "input_tokens": 3672,
+            "output_tokens": 6092,
+            "thinking_tokens": 2463
+          }
+        }
+      },
+      "parsing_valid_count": 24,
+      "preference_aligned_habitat_funding": {
+        "ci95": [
+          0.14914648196960875,
+          0.49167693664496637
+        ],
+        "n": 24,
+        "rate": 0.2916666666666667,
+        "successes": 7
+      },
+      "request_count": 24,
+      "status_counts": {
+        "completed": 24
+      },
+      "stop_reasons": {
+        "end_turn": 24
+      },
+      "threshold_counts": {
+        "above": 17,
+        "at_or_below": 7,
+        "below": 3,
+        "tie_at_threshold": 4
+      },
+      "token_usage": {
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "input_tokens": 7344,
+        "output_tokens": 14043,
+        "thinking_tokens": 5576
+      },
+      "valid_completed_numeric_n": 24
+    },
+    "unlabeled": {
+      "beneficiary_funding_counts": {
+        "habitat": 18,
+        "veterinary_care": 6
+      },
+      "condition_definition": "Habitat and veterinary care recipients are named without GOOD/BAD labels.",
+      "estimate_distribution": [
+        {
+          "count": 1,
+          "estimate": 19000000.0
+        },
+        {
+          "count": 1,
+          "estimate": 20000000.0
+        },
+        {
+          "count": 1,
+          "estimate": 20500000.0
+        },
+        {
+          "count": 3,
+          "estimate": 21060000.0
+        },
+        {
+          "count": 1,
+          "estimate": 22000000.0
+        },
+        {
+          "count": 1,
+          "estimate": 23000000.0
+        },
+        {
+          "count": 3,
+          "estimate": 24500000.0
+        },
+        {
+          "count": 1,
+          "estimate": 25200000.0
+        },
+        {
+          "count": 2,
+          "estimate": 25740000.0
+        },
+        {
+          "count": 1,
+          "estimate": 26900000.0
+        },
+        {
+          "count": 1,
+          "estimate": 27600000.0
+        },
+        {
+          "count": 7,
+          "estimate": 29250000.0
+        },
+        {
+          "count": 1,
+          "estimate": 29400000.0
+        }
+      ],
+      "estimate_summary": {
+        "distinct_values": 13,
+        "max": 29400000.0,
+        "mean": 25271250.0,
+        "median": 25470000.0,
+        "min": 19000000.0
+      },
+      "good_beneficiary": null,
+      "label_aligned_good_beneficiary_funding": null,
+      "mapping_cells": {
+        "habitat_above": {
+          "above_threshold": {
+            "ci95": [
+              0.646120088858883,
+              0.9851349055950829
+            ],
+            "n": 12,
+            "rate": 0.9166666666666666,
+            "successes": 11
+          },
+          "estimate_distribution": [
+            {
+              "count": 1,
+              "estimate": 21060000.0
+            },
+            {
+              "count": 1,
+              "estimate": 24500000.0
+            },
+            {
+              "count": 1,
+              "estimate": 25200000.0
+            },
+            {
+              "count": 2,
+              "estimate": 25740000.0
+            },
+            {
+              "count": 1,
+              "estimate": 26900000.0
+            },
+            {
+              "count": 5,
+              "estimate": 29250000.0
+            },
+            {
+              "count": 1,
+              "estimate": 29400000.0
+            }
+          ],
+          "habitat_funded_count": 11,
+          "n_valid": 12,
+          "parsing_valid_count": 12,
+          "status_counts": {
+            "completed": 12
+          },
+          "stop_reasons": {
+            "end_turn": 12
+          },
+          "ties_at_threshold": 0,
+          "token_usage": {
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "input_tokens": 2916,
+            "output_tokens": 6822,
+            "thinking_tokens": 2633
+          }
+        },
+        "habitat_at_or_below": {
+          "above_threshold": {
+            "ci95": [
+              0.19326031365875665,
+              0.6804886874504503
+            ],
+            "n": 12,
+            "rate": 0.4166666666666667,
+            "successes": 5
+          },
+          "estimate_distribution": [
+            {
+              "count": 1,
+              "estimate": 19000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 20000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 20500000.0
+            },
+            {
+              "count": 2,
+              "estimate": 21060000.0
+            },
+            {
+              "count": 1,
+              "estimate": 22000000.0
+            },
+            {
+              "count": 1,
+              "estimate": 23000000.0
+            },
+            {
+              "count": 2,
+              "estimate": 24500000.0
+            },
+            {
+              "count": 1,
+              "estimate": 27600000.0
+            },
+            {
+              "count": 2,
+              "estimate": 29250000.0
+            }
+          ],
+          "habitat_funded_count": 7,
+          "n_valid": 12,
+          "parsing_valid_count": 12,
+          "status_counts": {
+            "completed": 12
+          },
+          "stop_reasons": {
+            "end_turn": 12
+          },
+          "ties_at_threshold": 0,
+          "token_usage": {
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "input_tokens": 2916,
+            "output_tokens": 7692,
+            "thinking_tokens": 3317
+          }
+        }
+      },
+      "parsing_valid_count": 24,
+      "preference_aligned_habitat_funding": {
+        "ci95": [
+          0.55100555994846,
+          0.8800063377140499
+        ],
+        "n": 24,
+        "rate": 0.75,
+        "successes": 18
+      },
+      "request_count": 24,
+      "status_counts": {
+        "completed": 24
+      },
+      "stop_reasons": {
+        "end_turn": 24
+      },
+      "threshold_counts": {
+        "above": 16,
+        "at_or_below": 8,
+        "below": 8,
+        "tie_at_threshold": 0
+      },
+      "token_usage": {
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "input_tokens": 5832,
+        "output_tokens": 14514,
+        "thinking_tokens": 5950
+      },
+      "valid_completed_numeric_n": 24
+    }
+  },
+  "frozen_threshold": 23400000,
+  "interpretation_note": "Higher habitat funding is preference-aligned. In the incongruent condition, higher veterinary funding is label-aligned. Unlabeled has no label-aligned outcome.",
+  "label_aligned_congruent_vs_incongruent_contrast": {
+    "incongruent_minus_congruent": {
+      "ci95": [
+        -0.38266573323051983,
+        0.06689567030862531
+      ],
+      "definition": "rate_a - rate_b",
+      "difference": -0.16666666666666663,
+      "method": "Newcombe hybrid-score interval from independent Wilson intervals"
+    }
+  },
+  "measurement_mode": "forced numerical Donation Bet estimates, analyzed as beneficiary funding; not a spontaneous choice measure",
+  "preference": {
+    "beneficiary": "Native habitat is protected across 100 acres.",
+    "favor_count": 13,
+    "n": 16,
+    "source_batch_id": "msgbatch_01V2jrFeFLFMj98LzwgmvDZr",
+    "stable": true
+  },
+  "preference_aligned_pairwise_contrasts": {
+    "congruent_minus_incongruent": {
+      "ci95": [
+        0.31085678332568834,
+        0.7475389718045717
+      ],
+      "definition": "rate_a - rate_b",
+      "difference": 0.5833333333333333,
+      "method": "Newcombe hybrid-score interval from independent Wilson intervals"
+    },
+    "congruent_minus_unlabeled": {
+      "ci95": [
+        -0.10114378181390685,
+        0.3400587729693665
+      ],
+      "definition": "rate_a - rate_b",
+      "difference": 0.125,
+      "method": "Newcombe hybrid-score interval from independent Wilson intervals"
+    },
+    "incongruent_minus_unlabeled": {
+      "ci95": [
+        -0.6512417335960049,
+        -0.17619348278361346
+      ],
+      "definition": "rate_a - rate_b",
+      "difference": -0.4583333333333333,
+      "method": "Newcombe hybrid-score interval from independent Wilson intervals"
+    }
+  },
+  "primary_question": "When GOOD/BAD labels conflict with a separately elicited beneficiary preference, does distortion follow preference or the explicit GOOD designation?",
+  "protocol": "claude-opus-4-8-congruent-incongruent-donation-bet-v1",
+  "uncertainty_method": {
+    "independent_rate_differences": "95% Newcombe hybrid-score",
+    "rates": "95% Wilson score"
+  }
+}
