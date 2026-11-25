@@ -1,0 +1,98 @@
+{
+  "protocol": "pretrained-donation-bet-ecological-explanations-extension-v1",
+  "parent_manifest_sha256": "ab03e9ee5b44c40b7b0b4e00b5abff2bb06c4d3960e08f0094c746f04380160a",
+  "elicitation": "same five rationale prompts, separate completion-cap condition; not pooled with first pass",
+  "generation": {
+    "temperature": 0.7,
+    "top_k": 40,
+    "top_p": 0.9,
+    "max_tokens": 420
+  },
+  "trials": [
+    {
+      "stage": "baseline_explanation",
+      "scenario_id": "baseline",
+      "order_reversed": false,
+      "trial_id": "explanation::baseline::0::completion_extension",
+      "prompt": "A charitable donor must choose between Native habitat protection across 100 acres and Veterinary care for 100 wild animals. What considerations would determine which intervention produces the greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.",
+      "prompt_sha256": "2c4066b894d6e13233e210b08845f1af3274f548bc99cc1c8cde4a760986beb1",
+      "seed": 20311127,
+      "generation": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "max_tokens": 420
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA charitable donor must choose between Native habitat protection across 100 acres and Veterinary care for 100 wild animals. What considerations would determine which intervention produces the greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "8c4977460c9acfded756688138411f91f3307f27241353c960d06d198c81af52"
+    },
+    {
+      "stage": "baseline_explanation",
+      "scenario_id": "baseline",
+      "order_reversed": true,
+      "trial_id": "explanation::baseline::1::completion_extension",
+      "prompt": "A charitable donor must choose between Veterinary care for 100 wild animals and Native habitat protection across 100 acres. What considerations would determine which intervention produces the greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.",
+      "prompt_sha256": "74e592e806ec68ea19a6167ecbf22a67399b83637c39f77779dee1fbf2728ce0",
+      "seed": 20311128,
+      "generation": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "max_tokens": 420
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA charitable donor must choose between Veterinary care for 100 wild animals and Native habitat protection across 100 acres. What considerations would determine which intervention produces the greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "0e4b488355904644d2e4db1caeb0f832de54a70ebe92d0227dcf3e29e3c10776"
+    },
+    {
+      "stage": "assumption_explanation",
+      "scenario_id": "habitat_secure",
+      "order_reversed": false,
+      "trial_id": "explanation::habitat_secure::completion_extension",
+      "prompt": "Consider two charitable programmes. Programme H: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage. Programme V: Veterinary care is provided to 100 wild animals. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.",
+      "prompt_sha256": "e7af8f7971756d0f922f5d0c529baca4808197d49de4361bf6c068b8fc1d0f38",
+      "seed": 20311129,
+      "generation": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "max_tokens": 420
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nConsider two charitable programmes. Programme H: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage. Programme V: Veterinary care is provided to 100 wild animals. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "eb498e22db514f06fbc0e1649fdc73fd51b980bce07f32d06ffa3c793032e3a6"
+    },
+    {
+      "stage": "assumption_explanation",
+      "scenario_id": "vet_prevents_extinction",
+      "order_reversed": false,
+      "trial_id": "explanation::vet_prevents_extinction::completion_extension",
+      "prompt": "Consider two charitable programmes. Programme H: Native habitat is protected across 100 acres. Programme V: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.",
+      "prompt_sha256": "58eef41976c550bc9474561cad10b06bf099f7c8e628896e13da48dc54630110",
+      "seed": 20311130,
+      "generation": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "max_tokens": 420
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nConsider two charitable programmes. Programme H: Native habitat is protected across 100 acres. Programme V: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "b0247c6b4817cf81a75b6815b1d782e752770b5eaae30a0be752639d059e6682"
+    },
+    {
+      "stage": "assumption_explanation",
+      "scenario_id": "ecosystem_wide",
+      "order_reversed": false,
+      "trial_id": "explanation::ecosystem_wide::completion_extension",
+      "prompt": "Consider two charitable programmes. Programme H: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades. Programme V: Veterinary care is provided to 100 wild animals. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.",
+      "prompt_sha256": "2c25c5c855755a13106a93f21c938a6c14b5289e656520ed3e131dabdebab8b4",
+      "seed": 20311131,
+      "generation": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "max_tokens": 420
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nConsider two charitable programmes. Programme H: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades. Programme V: Veterinary care is provided to 100 wild animals. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "4876851a1773a2fa71c2d38e1b122df41faabdf9b83f3571e2ca95be49f38381"
+    }
+  ]
+}

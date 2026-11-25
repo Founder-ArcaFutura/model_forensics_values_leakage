@@ -1,0 +1,47 @@
+{
+  "batch_id": "msgbatch_01UiaYn7gu5wDhpNo7stv7yq",
+  "manifest_core_sha256": "28bf2433bc33a4e077792ffa2fa259980d1ca6c7448f2ebbcd5bb1669fc3dcdd",
+  "manifest_mapping_checks_passed": 64,
+  "manifest_sha256": "9eae6d6feedf78b51e4bea33d7abd4a6e9569d9dddd6be80acf0b0f5e16564cd",
+  "normalized_raw_sha256": "98a0d68747deea1e6d973839b6803d08d376998eb19be0bbe5181752a9917684",
+  "previous_transport_artifact": {
+    "path": "G:\\model_forensics_values_leakage\\results\\claude_opus_4_8_endogenous_preference_v1\\low_effort_pilot\\stage1_preferences\\provider_results.jsonl",
+    "sha256": "121a5bc2e71fcb9ae031834751ccb1d75fad156c33d254c2e755495fee7813a1"
+  },
+  "protocol": "claude-opus-4-8-low-effort-label-masking-pilot-v1",
+  "provider_results_path": "G:\\model_forensics_values_leakage\\results\\claude_opus_4_8_endogenous_preference_v1\\low_effort_pilot\\stage1_preferences\\provider_results.manual.jsonl",
+  "provider_results_sha256": "c739ae0dcc4dc7a63ab5c9c1069cfe64a8749c6f96ee4a6e4989235964161cab",
+  "provider_source": {
+    "kind": "validated_manual_file",
+    "provider_confirmed_batch_id": "msgbatch_01UiaYn7gu5wDhpNo7stv7yq",
+    "provider_confirmed_errors": 0,
+    "provider_confirmed_succeeded": 64,
+    "source_bytes": 90607,
+    "source_path": "G:\\model_forensics_values_leakage\\claude_preferences_results.jsonl",
+    "source_sha256": "c739ae0dcc4dc7a63ab5c9c1069cfe64a8749c6f96ee4a6e4989235964161cab"
+  },
+  "recovery": "local manual JSONL import; no Anthropic network call",
+  "request_count": 64,
+  "request_file_sha256": "e7abb810bf397da468a535e570c558ee652697f3231ae57aea52e3e3951e6df1",
+  "requested_model": "claude-opus-4-8",
+  "retrieved_at_utc": "2026-11-25T02:09:37.063666+00:00",
+  "returned_models": {
+    "claude-opus-4-8": 64
+  },
+  "stage": "stage1_preferences",
+  "status_counts": {
+    "completed": 3,
+    "incomplete": 61
+  },
+  "stop_reasons": {
+    "end_turn": 3,
+    "max_tokens": 61
+  },
+  "transport_diagnostic_sha256": "733003cb921b4c06569621a19a6417cebfc6511a68c631911e668106d6392cd3",
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 5312,
+    "output_tokens": 16094
+  }
+}

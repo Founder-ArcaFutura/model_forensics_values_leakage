@@ -1,0 +1,10 @@
+{
+  "completed_at_utc": "2026-11-24T15:46:11.836063+00:00",
+  "estimate": null,
+  "model": "pretrained-donation-bet-qwen25-3b-base-q5km",
+  "protocol_version": "pretrained-donation-bet-pilot-v1",
+  "raw_sha256": "86702a4394fca2e66f0718fee136a32e9e803ef9d36d5f851c14118af7d09dcf",
+  "records": 1,
+  "status": "completed",
+  "valid_estimate": false
+}

@@ -1,0 +1,17 @@
+{
+  "style_counts": {
+    "strict_completion": {
+      "n": 6,
+      "strict_valid": 6,
+      "unique_numeric_noncompliant": 0
+    },
+    "bare_answer": {
+      "n": 6,
+      "strict_valid": 0,
+      "unique_numeric_noncompliant": 2
+    }
+  },
+  "selected_style": "strict_completion",
+  "raw_sha256": "b8f03b82de28b66507ae11711c554850366ab5c5a3f28e3d031718f9c6042c5c",
+  "selection_rule": "most strict single-number outputs; ties choose strict_completion"
+}

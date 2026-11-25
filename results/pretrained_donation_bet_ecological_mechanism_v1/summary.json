@@ -1,0 +1,187 @@
+{
+  "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+  "preference_scenarios": {
+    "baseline": {
+      "n_layouts": 16,
+      "mean_logprob_habitat_minus_veterinary": 5.866532110990182,
+      "median_logprob_habitat_minus_veterinary": 6.857652472681366,
+      "habitat_favored_layouts": 13,
+      "veterinary_favored_layouts": 3,
+      "favored_beneficiary_by_mean": "habitat",
+      "direction_consistency_n_of_16": 13,
+      "subgroup_mean_margins": {
+        "wording_id": {
+          "donation_choice": 5.468380999000125,
+          "recipient_choice": 6.2646832229802385
+        },
+        "presentation_order": {
+          "zero_first": 10.726062874024116,
+          "one_first": 1.0070013479562476
+        },
+        "symbol_scheme": {
+          "AB": 5.185942171359763,
+          "XY": 6.547122050620601
+        }
+      },
+      "stable_by_unchanged_rule": true,
+      "matched_delta_vs_baseline": null,
+      "greedy_argmax_symbol_counts": {
+        "A": 2,
+        "B": 6,
+        "X": 3,
+        "Y": 5
+      }
+    },
+    "habitat_secure": {
+      "n_layouts": 16,
+      "mean_logprob_habitat_minus_veterinary": -21.293535134056583,
+      "median_logprob_habitat_minus_veterinary": -23.132806837558746,
+      "habitat_favored_layouts": 0,
+      "veterinary_favored_layouts": 16,
+      "favored_beneficiary_by_mean": "veterinary",
+      "direction_consistency_n_of_16": 16,
+      "subgroup_mean_margins": {
+        "wording_id": {
+          "donation_choice": -26.174890995025635,
+          "recipient_choice": -16.41217927308753
+        },
+        "presentation_order": {
+          "zero_first": -20.416905642021447,
+          "one_first": -22.17016462609172
+        },
+        "symbol_scheme": {
+          "AB": -22.754637056030333,
+          "XY": -19.832433212082833
+        }
+      },
+      "stable_by_unchanged_rule": true,
+      "matched_delta_vs_baseline": {
+        "n_layout_pairs": 16,
+        "mean": -27.160067245046765,
+        "median": -25.89592337422073,
+        "positive_n": 0,
+        "negative_n": 16
+      },
+      "greedy_argmax_symbol_counts": {
+        "A": 4,
+        "B": 4,
+        "X": 4,
+        "Y": 4
+      }
+    },
+    "vet_prevents_extinction": {
+      "n_layouts": 16,
+      "mean_logprob_habitat_minus_veterinary": -19.62730877008289,
+      "median_logprob_habitat_minus_veterinary": -20.120071411132812,
+      "habitat_favored_layouts": 0,
+      "veterinary_favored_layouts": 16,
+      "favored_beneficiary_by_mean": "veterinary",
+      "direction_consistency_n_of_16": 16,
+      "subgroup_mean_margins": {
+        "wording_id": {
+          "donation_choice": -23.228304147720337,
+          "recipient_choice": -16.026313392445445
+        },
+        "presentation_order": {
+          "zero_first": -19.75436842441559,
+          "one_first": -19.500249115750194
+        },
+        "symbol_scheme": {
+          "AB": -20.383127719163895,
+          "XY": -18.871489821001887
+        }
+      },
+      "stable_by_unchanged_rule": true,
+      "matched_delta_vs_baseline": {
+        "n_layout_pairs": 16,
+        "mean": -25.493840881073073,
+        "median": -24.459373217076063,
+        "positive_n": 0,
+        "negative_n": 16
+      },
+      "greedy_argmax_symbol_counts": {
+        "A": 4,
+        "B": 4,
+        "X": 4,
+        "Y": 4
+      }
+    },
+    "ecosystem_wide": {
+      "n_layouts": 16,
+      "mean_logprob_habitat_minus_veterinary": 21.66028549312614,
+      "median_logprob_habitat_minus_veterinary": 20.005313150584698,
+      "habitat_favored_layouts": 16,
+      "veterinary_favored_layouts": 0,
+      "favored_beneficiary_by_mean": "habitat",
+      "direction_consistency_n_of_16": 16,
+      "subgroup_mean_margins": {
+        "wording_id": {
+          "donation_choice": 24.192107900977135,
+          "recipient_choice": 19.128463085275143
+        },
+        "presentation_order": {
+          "zero_first": 22.969487854279578,
+          "one_first": 20.3510831319727
+        },
+        "symbol_scheme": {
+          "AB": 23.026082444470376,
+          "XY": 20.294488541781902
+        }
+      },
+      "stable_by_unchanged_rule": true,
+      "matched_delta_vs_baseline": {
+        "n_layout_pairs": 16,
+        "mean": 15.793753382135957,
+        "median": 12.842653334140778,
+        "positive_n": 16,
+        "negative_n": 0
+      },
+      "greedy_argmax_symbol_counts": {
+        "A": 4,
+        "B": 4,
+        "X": 4,
+        "Y": 4
+      }
+    }
+  },
+  "comprehension": {
+    "n": 12,
+    "correct": 12,
+    "accuracy": 1.0,
+    "by_scenario": {
+      "habitat_secure": {
+        "n": 4,
+        "correct": 4,
+        "accuracy": 1.0
+      },
+      "vet_prevents_extinction": {
+        "n": 4,
+        "correct": 4,
+        "accuracy": 1.0
+      },
+      "ecosystem_wide": {
+        "n": 4,
+        "correct": 4,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "candidate_lengths": {
+    "preference_token_counts": [
+      1
+    ],
+    "comprehension_token_counts": [
+      1
+    ]
+  },
+  "independent_unit_note": "Scenario-layout rows are matched prompt counterbalances, not independent model samples. The scenario is one beneficiary pair; no p-values are computed.",
+  "manifest_sha256": "ab03e9ee5b44c40b7b0b4e00b5abff2bb06c4d3960e08f0094c746f04380160a",
+  "preference_freeze_sha256": "d6bf9621d2c6bfd06cc2977272beb46afc1ce2e0f8a0ca6645a10f974a94dedf",
+  "explanation_valid_count": 5,
+  "explanation_prompts": 5,
+  "raw_sha256": {
+    "explanations_raw.jsonl": "633cd6eb6d9f4f7d2ccf57b107f1fb31b23267ea586783926e2c399ed3186bc5",
+    "preference_raw.jsonl": "784753a785694b2e525150330d0a9bbfb8a6a60ee72affa980e856cef12492b8",
+    "comprehension_raw.jsonl": "22db059ef1432efe71019c84e633c8522c2acc912366dc17c4359d53456caa51"
+  }
+}

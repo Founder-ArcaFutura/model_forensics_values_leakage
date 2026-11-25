@@ -1,0 +1,11 @@
+0.00.148.596 I srv  llama_server: initializing ...
+0.00.148.613 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.149.350 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.160.190 I srv    load_model: loading model 'C:\Users\Main PC 2\AppData\Local\Temp\Qwen2.5-14B.Q4_K_M.gguf'
+0.00.678.211 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.06.585.037 W resolve_fused_ops: layer 0 is assigned to device Vulkan0 but Flash Attention over K/V rows is assigned to device CPU (usually due to missing support)
+0.06.585.049 W resolve_fused_ops: Flash Attention over K/V rows not supported, set to disabled
+0.06.661.029 I cmn          init: llama threadpool init, n_threads = 8
+0.07.926.997 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 4096, kv_unified = 'true'
+0.07.931.842 I srv  server_run_i: model loaded
+0.07.931.853 I srv  server_on_li: listening on http://127.0.0.1:8081

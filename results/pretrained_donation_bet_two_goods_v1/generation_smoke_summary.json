@@ -1,0 +1,19 @@
+{
+  "parser_audit": "Initial and unit-only parser assessments are separately preserved.",
+  "raw_sha256": "ba93a18f666138edfa284a1ee57d7efc1f0a25047679a7bcb3d8a4033f4940fd",
+  "records": 12,
+  "selected_style_by_preregistered_rule": "strict_completion",
+  "selection_not_based_on_estimate_value": true,
+  "style_counts": {
+    "bare_answer": {
+      "n": 6,
+      "strict_valid_n": 0,
+      "unique_numeric_noncompliant_n": 2
+    },
+    "strict_completion": {
+      "n": 6,
+      "strict_valid_n": 6,
+      "unique_numeric_noncompliant_n": 0
+    }
+  }
+}

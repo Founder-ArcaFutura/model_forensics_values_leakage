@@ -161,6 +161,48 @@ try {
                 pass
 
 
+def _powershell_request_bytes(settings: AnthropicSettings, method: str, path: str) -> bytes:
+    """Return response entity bytes without passing them through PowerShell text output."""
+    if platform.system() != "Windows":
+        raise APIError("PowerShell transport is only supported on Windows")
+    script = r"""
+$headers = @{
+    'x-api-key' = $env:VL_ANTHROPIC_API_KEY
+    'anthropic-version' = $env:VL_ANTHROPIC_VERSION
+}
+try {
+    $response = Invoke-WebRequest -Uri $env:VL_ANTHROPIC_URL -Method $env:VL_ANTHROPIC_METHOD `
+        -Headers $headers -UseBasicParsing -TimeoutSec ([int]$env:VL_ANTHROPIC_TIMEOUT_SECONDS)
+    $response.RawContentStream.CopyTo([Console]::OpenStandardOutput())
+} catch {
+    if ($_.ErrorDetails -and $_.ErrorDetails.Message) {
+        [Console]::Error.Write($_.ErrorDetails.Message)
+    } else {
+        [Console]::Error.Write($_.Exception.Message)
+    }
+    exit 1
+}
+"""
+    child_env = os.environ.copy()
+    child_env["VL_ANTHROPIC_API_KEY"] = settings.api_key
+    child_env["VL_ANTHROPIC_VERSION"] = settings.anthropic_version
+    child_env["VL_ANTHROPIC_URL"] = f"{settings.base_url}{path}"
+    child_env["VL_ANTHROPIC_METHOD"] = method
+    child_env["VL_ANTHROPIC_TIMEOUT_SECONDS"] = str(settings.request_timeout_seconds)
+    process = subprocess.run(
+        ["powershell.exe", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass", "-Command", script],
+        capture_output=True,
+        text=False,
+        timeout=settings.request_timeout_seconds + 30,
+        env=child_env,
+        check=False,
+    )
+    if process.returncode != 0:
+        detail = (process.stderr or b"").decode("utf-8", errors="replace")
+        raise APIError(f"Anthropic HTTP request failed: {detail[:1000]}")
+    return process.stdout
+
+
 def anthropic_request_text(
     settings: AnthropicSettings,
     method: str,
@@ -174,6 +216,27 @@ def anthropic_request_text(
         return _powershell_request(settings, method, path, payload)
     if transport == "urllib":
         return _urllib_request(settings, method, path, payload)
+    raise APIError(f"Unknown HTTP transport: {transport}")
+
+
+def anthropic_request_bytes(settings: AnthropicSettings, method: str, path: str) -> bytes:
+    """Fetch a response body as bytes for JSONL and other byte-sensitive payloads."""
+    transport = settings.http_transport
+    if transport == "auto":
+        transport = "powershell" if platform.system() == "Windows" else "urllib"
+    if transport == "powershell":
+        return _powershell_request_bytes(settings, method, path)
+    if transport == "urllib":
+        request = urllib.request.Request(
+            url=f"{settings.base_url}{path}",
+            headers={
+                "x-api-key": settings.api_key,
+                "anthropic-version": settings.anthropic_version,
+            },
+            method=method,
+        )
+        with urllib.request.urlopen(request, timeout=settings.request_timeout_seconds) as response:
+            return response.read()
     raise APIError(f"Unknown HTTP transport: {transport}")
 
 

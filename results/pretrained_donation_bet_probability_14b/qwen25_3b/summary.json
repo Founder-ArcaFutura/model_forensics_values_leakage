@@ -1,0 +1,901 @@
+{
+  "checkpoint": "Qwen/Qwen2.5-3B@3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "completed_at_utc": "2026-11-24T16:50:00.059600+00:00",
+  "manifest_core_sha256": "d3803719defe004c2b6a05b669d18a97a75398c4f90f321090a429e6548d10c6",
+  "model": "pretrained-donation-bet-qwen25-3b-base-q5km:latest",
+  "protocol_version": "pretrained-donation-bet-logprobs-v1",
+  "quantization": "Q5_K_M",
+  "raw_sha256": "539b054ef0f4feb278b68f850f520b45a0686463db0b0448822382ac4d17f633",
+  "seed": 20261124,
+  "summary": {
+    "answer_position_margin": {
+      "above_first": {
+        "mean_logprob_A_minus_B": 0.7136869260243007,
+        "n_distinct_prompts": 7
+      },
+      "below_first": {
+        "mean_logprob_A_minus_B": 0.5412326256434122,
+        "n_distinct_prompts": 6
+      }
+    },
+    "candidate_missing_reasons": "one or both exact A/B token byte sequences absent from top-20 raw alternatives",
+    "candidate_pair_missing_n": 7,
+    "candidate_pairs_scored": 13,
+    "choice_prompts": 20,
+    "comprehension": [
+      {
+        "diagnostic": "welfare_gain",
+        "expected": "GAIN",
+        "generated": "G",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              71
+            ],
+            "logprob": -1.0729423761367798,
+            "token": " G"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -2.9488234519958496,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              111,
+              115,
+              115
+            ],
+            "logprob": -2.9537405967712402,
+            "token": " Loss"
+          },
+          {
+            "bytes": [
+              32,
+              10
+            ],
+            "logprob": -3.420790195465088,
+            "token": " \n"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -3.454650640487671,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              40
+            ],
+            "logprob": -3.471121311187744,
+            "token": " ("
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              79,
+              83,
+              83
+            ],
+            "logprob": -3.4962754249572754,
+            "token": " LOSS"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              97,
+              105,
+              110
+            ],
+            "logprob": -3.6829257011413574,
+            "token": " Gain"
+          },
+          {
+            "bytes": [
+              32,
+              95,
+              95
+            ],
+            "logprob": -3.9264867305755615,
+            "token": " __"
+          },
+          {
+            "bytes": null,
+            "logprob": -4.005427837371826,
+            "token": ""
+          },
+          {
+            "bytes": [
+              32,
+              10,
+              10
+            ],
+            "logprob": -4.221293926239014,
+            "token": " \n\n"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              102
+            ],
+            "logprob": -4.526711940765381,
+            "token": " If"
+          },
+          {
+            "bytes": [
+              32,
+              42,
+              42
+            ],
+            "logprob": -4.58472204208374,
+            "token": " **"
+          },
+          {
+            "bytes": [
+              32,
+              87,
+              104,
+              101,
+              110
+            ],
+            "logprob": -4.741801738739014,
+            "token": " When"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -4.789796352386475,
+            "token": " "
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -4.985595226287842,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              116
+            ],
+            "logprob": -4.995872974395752,
+            "token": " It"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -5.1149821281433105,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              71
+            ],
+            "logprob": -5.186193943023682,
+            "token": "G"
+          },
+          {
+            "bytes": [
+              32,
+              95,
+              95,
+              95,
+              95,
+              95,
+              95
+            ],
+            "logprob": -5.249110698699951,
+            "token": " ______"
+          }
+        ],
+        "wording": "as_written"
+      },
+      {
+        "diagnostic": "welfare_gain",
+        "expected": "GAIN",
+        "generated": "G",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              71
+            ],
+            "logprob": -1.02712082862854,
+            "token": " G"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              111,
+              115,
+              115
+            ],
+            "logprob": -2.9786455631256104,
+            "token": " Loss"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -2.995819330215454,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              10
+            ],
+            "logprob": -3.431828737258911,
+            "token": " \n"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -3.4643499851226807,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              40
+            ],
+            "logprob": -3.512747049331665,
+            "token": " ("
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              79,
+              83,
+              83
+            ],
+            "logprob": -3.5600779056549072,
+            "token": " LOSS"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              97,
+              105,
+              110
+            ],
+            "logprob": -3.6236250400543213,
+            "token": " Gain"
+          },
+          {
+            "bytes": [
+              32,
+              95,
+              95
+            ],
+            "logprob": -3.9681599140167236,
+            "token": " __"
+          },
+          {
+            "bytes": null,
+            "logprob": -4.0859599113464355,
+            "token": ""
+          },
+          {
+            "bytes": [
+              32,
+              10,
+              10
+            ],
+            "logprob": -4.244822025299072,
+            "token": " \n\n"
+          },
+          {
+            "bytes": [
+              32,
+              42,
+              42
+            ],
+            "logprob": -4.576927661895752,
+            "token": " **"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              102
+            ],
+            "logprob": -4.603186130523682,
+            "token": " If"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -4.788581371307373,
+            "token": " "
+          },
+          {
+            "bytes": [
+              32,
+              87,
+              104,
+              101,
+              110
+            ],
+            "logprob": -4.788753986358643,
+            "token": " When"
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -4.965841770172119,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              116
+            ],
+            "logprob": -5.02018404006958,
+            "token": " It"
+          },
+          {
+            "bytes": [
+              71
+            ],
+            "logprob": -5.1291890144348145,
+            "token": "G"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -5.145275592803955,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32,
+              95,
+              95,
+              95,
+              95,
+              95,
+              95
+            ],
+            "logprob": -5.296289920806885,
+            "token": " ______"
+          }
+        ],
+        "wording": "reordered_facts"
+      },
+      {
+        "diagnostic": "label_mapping",
+        "expected": "BELOW",
+        "generated": "ABOVE",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              65,
+              66,
+              79,
+              86,
+              69
+            ],
+            "logprob": -1.339360237121582,
+            "token": " ABOVE"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              69,
+              76,
+              79,
+              87
+            ],
+            "logprob": -1.7098037004470825,
+            "token": " BELOW"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              65,
+              68
+            ],
+            "logprob": -1.810460090637207,
+            "token": " BAD"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              79,
+              79,
+              68
+            ],
+            "logprob": -2.140498399734497,
+            "token": " GOOD"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              98,
+              111,
+              118,
+              101
+            ],
+            "logprob": -3.07405948638916,
+            "token": " Above"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              101,
+              108,
+              111,
+              119
+            ],
+            "logprob": -3.0839099884033203,
+            "token": " Below"
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -4.234509468078613,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -4.245715141296387,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              97,
+              98,
+              111,
+              118,
+              101
+            ],
+            "logprob": -4.460210800170898,
+            "token": " above"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              111,
+              111,
+              100
+            ],
+            "logprob": -4.4881439208984375,
+            "token": " Good"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              66
+            ],
+            "logprob": -4.51578426361084,
+            "token": " AB"
+          },
+          {
+            "bytes": [
+              32,
+              98,
+              101,
+              108,
+              111,
+              119
+            ],
+            "logprob": -4.624790191650391,
+            "token": " below"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -4.742720603942871,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              78,
+              83,
+              87
+            ],
+            "logprob": -5.406142234802246,
+            "token": " ANSW"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              69
+            ],
+            "logprob": -5.56209659576416,
+            "token": " BE"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -5.568561553955078,
+            "token": " "
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              97,
+              100
+            ],
+            "logprob": -5.606715202331543,
+            "token": " Bad"
+          },
+          {
+            "bytes": [
+              32,
+              103,
+              111,
+              111,
+              100
+            ],
+            "logprob": -6.036124229431152,
+            "token": " good"
+          },
+          {
+            "bytes": [
+              32,
+              10
+            ],
+            "logprob": -6.5682878494262695,
+            "token": " \n"
+          },
+          {
+            "bytes": [
+              32,
+              116,
+              104,
+              101
+            ],
+            "logprob": -6.595396041870117,
+            "token": " the"
+          }
+        ],
+        "wording": "as_written"
+      },
+      {
+        "diagnostic": "label_mapping",
+        "expected": "BELOW",
+        "generated": "ABOVE",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              65,
+              66,
+              79,
+              86,
+              69
+            ],
+            "logprob": -1.3061846494674683,
+            "token": " ABOVE"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              69,
+              76,
+              79,
+              87
+            ],
+            "logprob": -1.5714528560638428,
+            "token": " BELOW"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              65,
+              68
+            ],
+            "logprob": -1.7620580196380615,
+            "token": " BAD"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              79,
+              79,
+              68
+            ],
+            "logprob": -2.3535611629486084,
+            "token": " GOOD"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              101,
+              108,
+              111,
+              119
+            ],
+            "logprob": -3.069002866744995,
+            "token": " Below"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              98,
+              111,
+              118,
+              101
+            ],
+            "logprob": -3.2786757946014404,
+            "token": " Above"
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -4.005979061126709,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -4.386638641357422,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              111,
+              111,
+              100
+            ],
+            "logprob": -4.621138572692871,
+            "token": " Good"
+          },
+          {
+            "bytes": [
+              32,
+              97,
+              98,
+              111,
+              118,
+              101
+            ],
+            "logprob": -4.63836669921875,
+            "token": " above"
+          },
+          {
+            "bytes": [
+              32,
+              98,
+              101,
+              108,
+              111,
+              119
+            ],
+            "logprob": -4.754054546356201,
+            "token": " below"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -4.75880241394043,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              66
+            ],
+            "logprob": -4.794050693511963,
+            "token": " AB"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -5.409180164337158,
+            "token": " "
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              78,
+              83,
+              87
+            ],
+            "logprob": -5.692448616027832,
+            "token": " ANSW"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              69
+            ],
+            "logprob": -5.706814765930176,
+            "token": " BE"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              97,
+              100
+            ],
+            "logprob": -5.872754096984863,
+            "token": " Bad"
+          },
+          {
+            "bytes": [
+              32,
+              103,
+              111,
+              111,
+              100
+            ],
+            "logprob": -6.232381820678711,
+            "token": " good"
+          },
+          {
+            "bytes": [
+              32,
+              67
+            ],
+            "logprob": -6.537912368774414,
+            "token": " C"
+          },
+          {
+            "bytes": [
+              32,
+              66
+            ],
+            "logprob": -6.63966178894043,
+            "token": " B"
+          }
+        ],
+        "wording": "reordered_facts"
+      }
+    ],
+    "generated_A_n": 13,
+    "generated_B_n": 0,
+    "generated_other_n": 11,
+    "label_margin": {
+      "congruent": {
+        "max_prompt_margin": 0.42418479919433594,
+        "mean_logprob_margin": 0.08245517313480377,
+        "min_prompt_margin": -0.2860659956932068,
+        "n_distinct_prompts": 4,
+        "negative_n": 2,
+        "positive_n": 2,
+        "zero_n": 0
+      },
+      "inverted": {
+        "max_prompt_margin": 1.740849494934082,
+        "mean_logprob_margin": 0.43728086948394773,
+        "min_prompt_margin": -0.2479419708251953,
+        "n_distinct_prompts": 5,
+        "negative_n": 2,
+        "positive_n": 3,
+        "zero_n": 0
+      }
+    },
+    "records": 24,
+    "welfare_margin": {
+      "congruent": {
+        "max_prompt_margin": 0.42418479919433594,
+        "mean_logprob_margin": 0.08245517313480377,
+        "min_prompt_margin": -0.2860659956932068,
+        "n_distinct_prompts": 4,
+        "negative_n": 2,
+        "positive_n": 2,
+        "zero_n": 0
+      },
+      "inverted": {
+        "max_prompt_margin": 0.2479419708251953,
+        "mean_logprob_margin": -0.43728086948394773,
+        "min_prompt_margin": -1.740849494934082,
+        "n_distinct_prompts": 5,
+        "negative_n": 3,
+        "positive_n": 2,
+        "zero_n": 0
+      },
+      "neutral": {
+        "max_prompt_margin": 1.8419666290283203,
+        "mean_logprob_margin": 0.06565065681934357,
+        "min_prompt_margin": -1.7258102893829346,
+        "n_distinct_prompts": 4,
+        "negative_n": 2,
+        "positive_n": 2,
+        "zero_n": 0
+      }
+    }
+  }
+}

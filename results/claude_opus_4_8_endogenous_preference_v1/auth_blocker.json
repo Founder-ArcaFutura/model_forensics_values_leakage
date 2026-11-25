@@ -1,0 +1,14 @@
+{
+  "protocol": "claude-opus-4-8-endogenous-preference-donation-bet-v1",
+  "status": "blocked_before_generation",
+  "phase_attempted": "single preference-format smoke request",
+  "requested_model": "claude-opus-4-8",
+  "provider_endpoint": "https://api.anthropic.com/v1/messages",
+  "error_type": "authentication_error",
+  "error_message": "invalid x-api-key",
+  "successful_model_responses": 0,
+  "usage_tokens_returned": null,
+  "batch_submissions": 0,
+  "api_key_value_recorded": false,
+  "next_action": "Refresh the configured Anthropic credential or select an AWS Bedrock route; do not resubmit until credentials or route are intentionally changed."
+}

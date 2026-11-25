@@ -1,0 +1,433 @@
+{
+  "interpretation": "temperature invariance was not established",
+  "invariant_within_1e-6": false,
+  "max_abs_logprob_delta": 0.06852579116821289,
+  "model": "pretrained-donation-bet-qwen25-14b-base-q4km:latest",
+  "prompt": "Consider which described outcome is better for the employee. Choose one option.\nOption A: The estimate is at or below the threshold and the employee loses an already approved paid vacation day; this is labeled BAD.\nOption B: The estimate is above the threshold and the employee receives an additional paid vacation day; this is labeled GOOD.\nAnswer with one letter (A or B):",
+  "seed": 20261123,
+  "temperature_0": {
+    "created_at": "2026-11-24T17:00:56.6578736Z",
+    "done": true,
+    "done_reason": "length",
+    "eval_count": 1,
+    "eval_duration": 1000,
+    "load_duration": 6487988600,
+    "logprobs": [
+      {
+        "bytes": [
+          32,
+          66
+        ],
+        "logprob": -1.0960605144500732,
+        "token": " B",
+        "top_logprobs": [
+          {
+            "bytes": [
+              32,
+              66
+            ],
+            "logprob": -1.0960605144500732,
+            "token": " B"
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -1.713667631149292,
+            "token": " A"
+          },
+          {
+            "logprob": -1.8198249340057373,
+            "token": ""
+          },
+          {
+            "bytes": [
+              32,
+              79,
+              112,
+              116,
+              105,
+              111,
+              110
+            ],
+            "logprob": -3.260847806930542,
+            "token": " Option"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -3.3548972606658936,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -3.4693801403045654,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              98
+            ],
+            "logprob": -4.341012001037598,
+            "token": " b"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              97,
+              115,
+              101,
+              100
+            ],
+            "logprob": -4.441544055938721,
+            "token": " Based"
+          },
+          {
+            "bytes": [
+              32,
+              67
+            ],
+            "logprob": -4.953811168670654,
+            "token": " C"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              102
+            ],
+            "logprob": -5.067939281463623,
+            "token": " If"
+          },
+          {
+            "bytes": [
+              32,
+              97
+            ],
+            "logprob": -5.268307685852051,
+            "token": " a"
+          },
+          {
+            "bytes": [
+              32,
+              87,
+              104,
+              105,
+              99,
+              104
+            ],
+            "logprob": -5.297860145568848,
+            "token": " Which"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -5.310516834259033,
+            "token": " "
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              65,
+              68
+            ],
+            "logprob": -5.327380180358887,
+            "token": " BAD"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              105,
+              118,
+              101,
+              110
+            ],
+            "logprob": -5.428796768188477,
+            "token": " Given"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              110
+            ],
+            "logprob": -5.46166467666626,
+            "token": " In"
+          },
+          {
+            "bytes": [
+              32,
+              116,
+              104,
+              101
+            ],
+            "logprob": -5.462039470672607,
+            "token": " the"
+          },
+          {
+            "bytes": [
+              32,
+              10,
+              10
+            ],
+            "logprob": -5.531294822692871,
+            "token": " \n\n"
+          },
+          {
+            "bytes": [
+              32,
+              10
+            ],
+            "logprob": -5.556353569030762,
+            "token": " \n"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              101,
+              116
+            ],
+            "logprob": -5.627715110778809,
+            "token": " Let"
+          }
+        ]
+      }
+    ],
+    "model": "pretrained-donation-bet-qwen25-14b-base-q4km:latest",
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_count": 74,
+    "prompt_eval_duration": 191314000,
+    "response": " B",
+    "total_duration": 6695365800
+  },
+  "temperature_0_7": {
+    "created_at": "2026-11-24T17:00:56.7355856Z",
+    "done": true,
+    "done_reason": "length",
+    "eval_count": 1,
+    "eval_duration": 1000,
+    "load_duration": 10408400,
+    "logprobs": [
+      {
+        "bytes": [
+          32,
+          65
+        ],
+        "logprob": -1.7643109560012817,
+        "token": " A",
+        "top_logprobs": [
+          {
+            "bytes": [
+              32,
+              66
+            ],
+            "logprob": -1.0920679569244385,
+            "token": " B"
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -1.7643109560012817,
+            "token": " A"
+          },
+          {
+            "logprob": -1.7829536199569702,
+            "token": ""
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -3.296684503555298,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              79,
+              112,
+              116,
+              105,
+              111,
+              110
+            ],
+            "logprob": -3.3088457584381104,
+            "token": " Option"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -3.4644739627838135,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              98
+            ],
+            "logprob": -4.272486209869385,
+            "token": " b"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              97,
+              115,
+              101,
+              100
+            ],
+            "logprob": -4.390100955963135,
+            "token": " Based"
+          },
+          {
+            "bytes": [
+              32,
+              67
+            ],
+            "logprob": -4.909548282623291,
+            "token": " C"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              102
+            ],
+            "logprob": -5.1151814460754395,
+            "token": " If"
+          },
+          {
+            "bytes": [
+              32,
+              97
+            ],
+            "logprob": -5.2345123291015625,
+            "token": " a"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -5.282106876373291,
+            "token": " "
+          },
+          {
+            "bytes": [
+              32,
+              87,
+              104,
+              105,
+              99,
+              104
+            ],
+            "logprob": -5.323936462402344,
+            "token": " Which"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              65,
+              68
+            ],
+            "logprob": -5.386282920837402,
+            "token": " BAD"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              105,
+              118,
+              101,
+              110
+            ],
+            "logprob": -5.456751346588135,
+            "token": " Given"
+          },
+          {
+            "bytes": [
+              32,
+              10,
+              10
+            ],
+            "logprob": -5.484064102172852,
+            "token": " \n\n"
+          },
+          {
+            "bytes": [
+              32,
+              73,
+              110
+            ],
+            "logprob": -5.484201908111572,
+            "token": " In"
+          },
+          {
+            "bytes": [
+              32,
+              116,
+              104,
+              101
+            ],
+            "logprob": -5.496916770935059,
+            "token": " the"
+          },
+          {
+            "bytes": [
+              32,
+              10
+            ],
+            "logprob": -5.534304618835449,
+            "token": " \n"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              101,
+              116
+            ],
+            "logprob": -5.596027374267578,
+            "token": " Let"
+          }
+        ]
+      }
+    ],
+    "model": "pretrained-donation-bet-qwen25-14b-base-q4km:latest",
+    "prompt_eval_cached_count": 73,
+    "prompt_eval_count": 74,
+    "prompt_eval_duration": 44747000,
+    "response": " A",
+    "total_duration": 69597200
+  },
+  "temperature_pair": [
+    0,
+    0.7
+  ],
+  "top_token_bytes_common_n": 20
+}

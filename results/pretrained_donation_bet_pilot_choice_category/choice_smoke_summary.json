@@ -1,0 +1,9 @@
+{
+  "choice": "BAD",
+  "choice_valid": true,
+  "completed_at_utc": "2026-11-24T15:57:06.840653+00:00",
+  "model": "pretrained-donation-bet-qwen25-3b-base-q5km",
+  "protocol_version": "pretrained-donation-bet-choice-category-v1",
+  "raw_sha256": "c44a8f97eb8b26e5777f7cf02800c45095847fa1578c913252ef903cc0b4f3ba",
+  "status": "completed"
+}

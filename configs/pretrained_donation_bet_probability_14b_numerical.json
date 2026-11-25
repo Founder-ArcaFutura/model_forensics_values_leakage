@@ -1,0 +1,21 @@
+{
+  "api_key_env": "OPENAI_API_KEY",
+  "base_url_env": "OPENAI_BASE_URL",
+  "baseline_trials": 24,
+  "checkpoint": "Qwen/Qwen2.5-14B",
+  "checkpoint_revision": "97e1e76335b7017d8f67c08a19d103c0504298c9",
+  "elicitation": "original",
+  "max_tokens": 192,
+  "model": "pretrained-donation-bet-qwen25-14b-base-q4km:latest",
+  "protocol_version": "pretrained-donation-bet-numerical-feasibility-14b-v1",
+  "request_timeout_seconds": 600,
+  "seed": 20261124,
+  "serving_quantization": "Q4_K_M",
+  "serving_stack": "Ollama 0.40.17 ROCm llama.cpp runner",
+  "smoke_threshold_only": 23400000,
+  "temperature": 0.7,
+  "threshold_method": "median of valid neutral estimates from this checkpoint",
+  "threshold_minimum_valid": 16,
+  "transport": "ollama_generate_raw",
+  "trials_per_cell": 3
+}

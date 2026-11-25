@@ -68,9 +68,22 @@ def _batch_request(settings: AnthropicSettings, trial: dict[str, Any], phase: in
     return {"custom_id": trial["trial_id"], "params": message_params(settings, messages)}
 
 
-def _parse_batch_results(text: str) -> dict[str, dict[str, Any]]:
+def _parse_batch_results(text: str | bytes) -> dict[str, dict[str, Any]]:
+    """Parse provider JSONL without treating Unicode separators as row breaks.
+
+    Python's ``str.splitlines`` also splits U+0085, U+2028, and U+2029, which
+    are legal characters inside JSON strings. Batch JSONL records are delimited
+    by LF (optionally preceded by CR), so split on LF only. Bytes are accepted
+    to keep retrieval paths UTF-8 explicit and avoid console text conversions.
+    """
+    if isinstance(text, bytes):
+        text = text.decode("utf-8-sig")
+    elif text.startswith("\ufeff"):
+        text = text[1:]
     rows: dict[str, dict[str, Any]] = {}
-    for line_number, line in enumerate(text.splitlines(), start=1):
+    for line_number, line in enumerate(text.split("\n"), start=1):
+        if line.endswith("\r"):
+            line = line[:-1]
         if not line.strip():
             continue
         row = json.loads(line)

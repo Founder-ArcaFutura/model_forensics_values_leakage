@@ -1,0 +1,124 @@
+{
+  "checkpoint": "Qwen/Qwen2.5-3B@3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "completed_at_utc": "2026-11-24T17:16:52.462526+00:00",
+  "manifest_core_sha256": "ea6f2924f3cfba7e9d0519995f48bd1ac6e5f2e7ce03cab06d60c3de44e58c05",
+  "model_name": "Qwen2.5-3B-Base-Q5_K_M",
+  "protocol_version": "pretrained-donation-bet-full-likelihood-v1",
+  "quantization": "Q5_K_M",
+  "raw_sha256": "aa06a54ec3e60663c798a67c2a210dd3cb11bb9e5766f0176ce3d1b29f641dea",
+  "seed": 20261124,
+  "summary": {
+    "answer_position_logprob_A_minus_B": {
+      "above_first": {
+        "mean": 0.9763875424861908,
+        "n": 10
+      },
+      "below_first": {
+        "mean": 1.0422626376152038,
+        "n": 10
+      }
+    },
+    "candidate_pairs_scored": 40,
+    "comprehension": [
+      {
+        "argmax": "A",
+        "correct": false,
+        "expected": "B",
+        "ordering": "reversed_option_order",
+        "task": "welfare_semantics"
+      },
+      {
+        "argmax": "A",
+        "correct": true,
+        "expected": "A",
+        "ordering": "standard_option_order",
+        "task": "welfare_semantics"
+      },
+      {
+        "argmax": "A",
+        "correct": true,
+        "expected": "A",
+        "ordering": "reversed_option_order",
+        "task": "label_mapping"
+      },
+      {
+        "argmax": "B",
+        "correct": true,
+        "expected": "B",
+        "ordering": "standard_option_order",
+        "task": "label_mapping"
+      }
+    ],
+    "generated_first_token_counts": {
+      "label_category": {
+        "BAD": 15,
+        "GOOD": 1
+      },
+      "letter_choice": {
+        "A": 13,
+        "B": 0
+      },
+      "neutral_category_first_token": {
+        "G_or_fragment": 4,
+        "LOSS": 0
+      }
+    },
+    "logprob_margin": {
+      "label_token_probability": {
+        "congruent": {
+          "max_prompt_margin": 0.08555781841278076,
+          "mean_logprob_margin": -0.48850228637456894,
+          "min_prompt_margin": -1.236179381608963,
+          "n_distinct_prompts": 8,
+          "negative_n": 7,
+          "positive_n": 1
+        },
+        "inverted": {
+          "max_prompt_margin": -0.019809722900390625,
+          "mean_logprob_margin": -0.6035797335207462,
+          "min_prompt_margin": -1.2160835266113281,
+          "n_distinct_prompts": 8,
+          "negative_n": 8,
+          "positive_n": 0
+        }
+      },
+      "letter_outcome_choice": {
+        "congruent": {
+          "max_prompt_margin": 2.0103628635406494,
+          "mean_logprob_margin": 0.0766734778881073,
+          "min_prompt_margin": -1.755263328552246,
+          "n_distinct_prompts": 8,
+          "negative_n": 4,
+          "positive_n": 4
+        },
+        "inverted": {
+          "max_prompt_margin": 1.5312767028808594,
+          "mean_logprob_margin": -0.11647634208202362,
+          "min_prompt_margin": -1.9393174648284912,
+          "n_distinct_prompts": 8,
+          "negative_n": 4,
+          "positive_n": 4
+        },
+        "neutral": {
+          "max_prompt_margin": 1.8246276378631592,
+          "mean_logprob_margin": 0.04360194504261017,
+          "min_prompt_margin": -1.683476448059082,
+          "n_distinct_prompts": 4,
+          "negative_n": 2,
+          "positive_n": 2
+        }
+      },
+      "neutral_welfare_category": {
+        "neutral": {
+          "max_prompt_margin": 3.605508865788579,
+          "mean_logprob_margin": 2.557147130544763,
+          "min_prompt_margin": 1.4551928775617853,
+          "n_distinct_prompts": 4,
+          "negative_n": 0,
+          "positive_n": 4
+        }
+      }
+    },
+    "records": 44
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "batch_id": "msgbatch_01UiaYn7gu5wDhpNo7stv7yq",
+  "favored_outcome": null,
+  "freeze_sha256": "93ea2658dc7c707a826a5c26c838ce3c32cdc3f9e636d49d1b761e19880bc477",
+  "frozen_at_utc": "2026-11-25T02:23:04.003816+00:00",
+  "manifest_core_sha256": "28bf2433bc33a4e077792ffa2fa259980d1ca6c7448f2ebbcd5bb1669fc3dcdd",
+  "preference_provider_sha256": "c739ae0dcc4dc7a63ab5c9c1069cfe64a8749c6f96ee4a6e4989235964161cab",
+  "preference_raw_sha256": "98a0d68747deea1e6d973839b6803d08d376998eb19be0bbe5181752a9917684",
+  "primary_pair_id": "habitat_vs_veterinary_care",
+  "primary_pair_stable": false,
+  "primary_pair_summary": {
+    "direction_consistency_n_of_16": 0,
+    "favored_count": 0,
+    "favored_description": null,
+    "favored_outcome": null,
+    "invalid_or_malformed": 16,
+    "n_layouts": 16,
+    "outcome_0": "Native habitat is protected across 100 acres.",
+    "outcome_1": "Veterinary care is provided to 100 wild animals.",
+    "pair_id": "habitat_vs_veterinary_care",
+    "stable_by_preregistered_rule": false,
+    "subgroups": {
+      "presentation_order": {
+        "one_first": {
+          "favor_rate": null,
+          "n_favored": 0,
+          "n_valid": 0
+        },
+        "zero_first": {
+          "favor_rate": null,
+          "n_favored": 0,
+          "n_valid": 0
+        }
+      },
+      "symbol_scheme": {
+        "AB": {
+          "favor_rate": null,
+          "n_favored": 0,
+          "n_valid": 0
+        },
+        "XY": {
+          "favor_rate": null,
+          "n_favored": 0,
+          "n_valid": 0
+        }
+      },
+      "wording_id": {
+        "donation_choice": {
+          "favor_rate": null,
+          "n_favored": 0,
+          "n_valid": 0
+        },
+        "recipient_choice": {
+          "favor_rate": null,
+          "n_favored": 0,
+          "n_valid": 0
+        }
+      }
+    },
+    "valid_choices": 0
+  },
+  "protocol": "claude-opus-4-8-low-effort-label-masking-pilot-v1",
+  "provider_receipt_sha256": "f4083a9de365d22f71cd56bdfed921c27f3de9ff393347b4501c09cb55f3d9e1",
+  "provider_source_file": "provider_results.manual.jsonl",
+  "response_status_counts": {
+    "completed": 3,
+    "incomplete": 61
+  },
+  "response_stop_reason_counts": {
+    "end_turn": 3,
+    "max_tokens": 61
+  },
+  "stability_rule": ">=12 of 16 layouts favor one outcome and each wording/order/symbol subgroup favors the same outcome",
+  "strict_symbol_choice_count": 1,
+  "strict_symbol_choice_count_in_primary_pair": 0
+}

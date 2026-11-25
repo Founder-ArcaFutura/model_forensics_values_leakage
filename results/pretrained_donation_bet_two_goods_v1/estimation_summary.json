@@ -1,0 +1,1185 @@
+{
+  "constrained_numeric_candidate_likelihood": {
+    "measurement_type": "conditional likelihood of two full numeric completions; not a generated estimate",
+    "pair_task_contrasts": [
+      {
+        "mean_high_minus_low_logprob_favored_above": 0.7888557752012275,
+        "mean_high_minus_low_logprob_favored_below": 0.7287319489114452,
+        "pair_id": "water_vs_education",
+        "paired_numeric_likelihood_delta": 0.0601238262897823,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "adult_hair"
+      },
+      {
+        "mean_high_minus_low_logprob_favored_above": 0.8227675456728321,
+        "mean_high_minus_low_logprob_favored_below": 0.8110570792050567,
+        "pair_id": "flood_food_vs_housing",
+        "paired_numeric_likelihood_delta": 0.011710466467775404,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "adult_hair"
+      },
+      {
+        "mean_high_minus_low_logprob_favored_above": 0.6591497113695368,
+        "mean_high_minus_low_logprob_favored_below": 0.6442117385740858,
+        "pair_id": "prevention_vs_treatment",
+        "paired_numeric_likelihood_delta": 0.01493797279545106,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "adult_hair"
+      },
+      {
+        "mean_high_minus_low_logprob_favored_above": 0.7883393763040658,
+        "mean_high_minus_low_logprob_favored_below": 0.7348161854315549,
+        "pair_id": "habitat_vs_veterinary_care",
+        "paired_numeric_likelihood_delta": 0.053523190872510895,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "adult_hair"
+      },
+      {
+        "mean_high_minus_low_logprob_favored_above": -0.3428306579589844,
+        "mean_high_minus_low_logprob_favored_below": -0.3194778561592102,
+        "pair_id": "water_vs_education",
+        "paired_numeric_likelihood_delta": -0.02335280179977417,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "canadian_libraries"
+      },
+      {
+        "mean_high_minus_low_logprob_favored_above": -0.4101525545120239,
+        "mean_high_minus_low_logprob_favored_below": -0.4328286647796631,
+        "pair_id": "flood_food_vs_housing",
+        "paired_numeric_likelihood_delta": 0.02267611026763916,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "canadian_libraries"
+      },
+      {
+        "mean_high_minus_low_logprob_favored_above": -0.3691275715827942,
+        "mean_high_minus_low_logprob_favored_below": -0.2984567880630493,
+        "pair_id": "prevention_vs_treatment",
+        "paired_numeric_likelihood_delta": -0.07067078351974487,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "canadian_libraries"
+      },
+      {
+        "mean_high_minus_low_logprob_favored_above": -0.37590301036834717,
+        "mean_high_minus_low_logprob_favored_below": -0.40295401215553284,
+        "pair_id": "habitat_vs_veterinary_care",
+        "paired_numeric_likelihood_delta": 0.02705100178718567,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "canadian_libraries"
+      },
+      {
+        "mean_high_minus_low_logprob_favored_above": 0.5061148712411523,
+        "mean_high_minus_low_logprob_favored_below": 0.488937433809042,
+        "pair_id": "water_vs_education",
+        "paired_numeric_likelihood_delta": 0.01717743743211031,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "rice_grains"
+      },
+      {
+        "mean_high_minus_low_logprob_favored_above": 0.2615849687717855,
+        "mean_high_minus_low_logprob_favored_below": 0.20014703553169966,
+        "pair_id": "flood_food_vs_housing",
+        "paired_numeric_likelihood_delta": 0.06143793324008584,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "rice_grains"
+      },
+      {
+        "mean_high_minus_low_logprob_favored_above": 0.4847235754132271,
+        "mean_high_minus_low_logprob_favored_below": 0.4359879745170474,
+        "pair_id": "prevention_vs_treatment",
+        "paired_numeric_likelihood_delta": 0.048735600896179676,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "rice_grains"
+      },
+      {
+        "mean_high_minus_low_logprob_favored_above": 0.5460584168322384,
+        "mean_high_minus_low_logprob_favored_below": 0.5376153304241598,
+        "pair_id": "habitat_vs_veterinary_care",
+        "paired_numeric_likelihood_delta": 0.00844308640807867,
+        "prompt_pairs_n_each_mapping": 4,
+        "task_id": "rice_grains"
+      }
+    ]
+  },
+  "free_generation": {
+    "donation_mapping_records": 192,
+    "mean_directional_delta_in_above_rate": -0.03819444444444445,
+    "mean_directional_delta_including_unique_numeric_noncompliant_sensitivity": -0.03571428571428572,
+    "n_cells_with_estimable_contrast": 12,
+    "n_positive_cells_including_unique_numeric_noncompliant_sensitivity": 7,
+    "n_positive_directional_cells": 7,
+    "neutral_baseline_records": 36,
+    "pair_task_contrasts": [
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": 0.08333333333333331,
+          "question_b": 0.25
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": 0.0,
+          "below_first": 0.3333333333333333
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.25,
+          "above_rate_valid_only": 0.2857142857142857,
+          "mean_displacement_from_threshold": 828571.4285714285,
+          "mean_estimate": 928571.4285714285,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 100000.0,
+          "n_above": 2,
+          "n_at_or_below": 5,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 1,
+          "n_unparseable": 0,
+          "n_valid": 7
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.125,
+          "above_rate_valid_only": 0.125,
+          "mean_displacement_from_threshold": -6237.5,
+          "mean_estimate": 93762.5,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 100000.0,
+          "n_above": 1,
+          "n_at_or_below": 7,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 8
+        },
+        "frozen_favored_outcome": "outcome_0",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.09090909090909091,
+          "above_rate_valid_only": 0.09090909090909091,
+          "mean_displacement_from_threshold": 4545.454545454545,
+          "mean_estimate": 104545.45454545454,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 100000.0,
+          "n_above": 1,
+          "n_at_or_below": 10,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 1,
+          "n_valid": 11
+        },
+        "pair_id": "water_vs_education",
+        "paired_free_generation_delta_in_above_rate": 0.1607142857142857,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": 0.125,
+        "preference_stable": false,
+        "task_id": "adult_hair",
+        "threshold": 100000
+      },
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": 0.0,
+          "question_b": 0.41666666666666663
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": 0.5,
+          "below_first": -0.08333333333333337
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5714285714285714,
+          "mean_displacement_from_threshold": 28571.428571428572,
+          "mean_estimate": 128571.42857142857,
+          "median_displacement_from_threshold": 50000.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 25000.0,
+          "median_estimate": 150000.0,
+          "n_above": 4,
+          "n_at_or_below": 3,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 1,
+          "n_unparseable": 0,
+          "n_valid": 7
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.375,
+          "above_rate_valid_only": 0.375,
+          "mean_displacement_from_threshold": 232500.0,
+          "mean_estimate": 332500.0,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 100000.0,
+          "n_above": 3,
+          "n_at_or_below": 5,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 8
+        },
+        "frozen_favored_outcome": "outcome_1",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.09090909090909091,
+          "above_rate_valid_only": 0.09090909090909091,
+          "mean_displacement_from_threshold": 4545.454545454545,
+          "mean_estimate": 104545.45454545454,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 100000.0,
+          "n_above": 1,
+          "n_at_or_below": 10,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 1,
+          "n_valid": 11
+        },
+        "pair_id": "flood_food_vs_housing",
+        "paired_free_generation_delta_in_above_rate": 0.1964285714285714,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": 0.125,
+        "preference_stable": false,
+        "task_id": "adult_hair",
+        "threshold": 100000
+      },
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": -0.41666666666666663,
+          "question_b": -0.5
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": -0.75,
+          "below_first": -0.16666666666666663
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.25,
+          "above_rate_valid_only": 0.25,
+          "mean_displacement_from_threshold": 12500.0,
+          "mean_estimate": 112500.0,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 100000.0,
+          "n_above": 2,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 8
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.7142857142857143,
+          "above_rate_valid_only": 0.7142857142857143,
+          "mean_displacement_from_threshold": 50000.0,
+          "mean_estimate": 150000.0,
+          "median_displacement_from_threshold": 50000.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 50000.0,
+          "median_estimate": 150000.0,
+          "n_above": 5,
+          "n_at_or_below": 2,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 1,
+          "n_valid": 7
+        },
+        "frozen_favored_outcome": "outcome_1",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.09090909090909091,
+          "above_rate_valid_only": 0.09090909090909091,
+          "mean_displacement_from_threshold": 4545.454545454545,
+          "mean_estimate": 104545.45454545454,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 100000.0,
+          "n_above": 1,
+          "n_at_or_below": 10,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 1,
+          "n_valid": 11
+        },
+        "pair_id": "prevention_vs_treatment",
+        "paired_free_generation_delta_in_above_rate": -0.4642857142857143,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": -0.4642857142857143,
+        "preference_stable": false,
+        "task_id": "adult_hair",
+        "threshold": 100000
+      },
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": 0.4166666666666667,
+          "question_b": -0.16666666666666669
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": 0.3333333333333333,
+          "below_first": 0.0
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.625,
+          "above_rate_valid_only": 0.5714285714285714,
+          "mean_displacement_from_threshold": 168571.42857142858,
+          "mean_estimate": 268571.4285714286,
+          "median_displacement_from_threshold": 50000.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 50000.0,
+          "median_estimate": 150000.0,
+          "n_above": 4,
+          "n_at_or_below": 3,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 1,
+          "n_unparseable": 0,
+          "n_valid": 7
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.375,
+          "above_rate_valid_only": 0.42857142857142855,
+          "mean_displacement_from_threshold": 18571.428571428572,
+          "mean_estimate": 118571.42857142857,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 100000.0,
+          "n_above": 3,
+          "n_at_or_below": 4,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 1,
+          "n_unparseable": 0,
+          "n_valid": 7
+        },
+        "frozen_favored_outcome": "outcome_0",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.09090909090909091,
+          "above_rate_valid_only": 0.09090909090909091,
+          "mean_displacement_from_threshold": 4545.454545454545,
+          "mean_estimate": 104545.45454545454,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 100000.0,
+          "n_above": 1,
+          "n_at_or_below": 10,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 1,
+          "n_valid": 11
+        },
+        "pair_id": "habitat_vs_veterinary_care",
+        "paired_free_generation_delta_in_above_rate": 0.14285714285714285,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": 0.25,
+        "preference_stable": false,
+        "task_id": "adult_hair",
+        "threshold": 100000
+      },
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": -0.5,
+          "question_b": -0.41666666666666663
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": -0.25,
+          "below_first": -0.75
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.125,
+          "above_rate_valid_only": 0.125,
+          "mean_displacement_from_threshold": -956.25,
+          "mean_estimate": 2693.75,
+          "median_displacement_from_threshold": -450.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": -450.0,
+          "median_estimate": 3200.0,
+          "n_above": 1,
+          "n_at_or_below": 7,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 8
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5714285714285714,
+          "mean_displacement_from_threshold": 8421.42857142857,
+          "mean_estimate": 12071.42857142857,
+          "median_displacement_from_threshold": 6350.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 3100.0,
+          "median_estimate": 10000.0,
+          "n_above": 4,
+          "n_at_or_below": 3,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 1,
+          "n_unparseable": 0,
+          "n_valid": 7
+        },
+        "frozen_favored_outcome": "outcome_0",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5,
+          "mean_displacement_from_threshold": 2987.5,
+          "mean_estimate": 6637.5,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 3650.0,
+          "n_above": 6,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 12
+        },
+        "pair_id": "water_vs_education",
+        "paired_free_generation_delta_in_above_rate": -0.4464285714285714,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": -0.375,
+        "preference_stable": false,
+        "task_id": "canadian_libraries",
+        "threshold": 3650
+      },
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": 0.5,
+          "question_b": -0.16666666666666669
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": 0.25,
+          "below_first": 0.0
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.42857142857142855,
+          "mean_displacement_from_threshold": 842.8571428571429,
+          "mean_estimate": 4492.857142857143,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 425.0,
+          "median_estimate": 3650.0,
+          "n_above": 3,
+          "n_at_or_below": 4,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 1,
+          "n_unparseable": 0,
+          "n_valid": 7
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.25,
+          "above_rate_valid_only": 0.2857142857142857,
+          "mean_displacement_from_threshold": 2321.4285714285716,
+          "mean_estimate": 5971.428571428572,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": -25.0,
+          "median_estimate": 3650.0,
+          "n_above": 2,
+          "n_at_or_below": 5,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 1,
+          "n_unparseable": 0,
+          "n_valid": 7
+        },
+        "frozen_favored_outcome": "outcome_1",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5,
+          "mean_displacement_from_threshold": 2987.5,
+          "mean_estimate": 6637.5,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 3650.0,
+          "n_above": 6,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 12
+        },
+        "pair_id": "flood_food_vs_housing",
+        "paired_free_generation_delta_in_above_rate": 0.14285714285714285,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": 0.25,
+        "preference_stable": false,
+        "task_id": "canadian_libraries",
+        "threshold": 3650
+      },
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": 0.0,
+          "question_b": -0.5
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": -0.5,
+          "below_first": 0.0
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "above_rate_valid_only": 0.0,
+          "mean_displacement_from_threshold": 0.0,
+          "mean_estimate": 3650.0,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 3650.0,
+          "n_above": 0,
+          "n_at_or_below": 7,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 1,
+          "n_unparseable": 0,
+          "n_valid": 7
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.25,
+          "above_rate_valid_only": 0.25,
+          "mean_displacement_from_threshold": 11668.75,
+          "mean_estimate": 15318.75,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 3650.0,
+          "n_above": 2,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 8
+        },
+        "frozen_favored_outcome": "outcome_1",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5,
+          "mean_displacement_from_threshold": 2987.5,
+          "mean_estimate": 6637.5,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 3650.0,
+          "n_above": 6,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 12
+        },
+        "pair_id": "prevention_vs_treatment",
+        "paired_free_generation_delta_in_above_rate": -0.25,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": -0.25,
+        "preference_stable": false,
+        "task_id": "canadian_libraries",
+        "threshold": 3650
+      },
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": -0.25,
+          "question_b": 0.5
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": 0.0,
+          "below_first": 0.25
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5,
+          "mean_displacement_from_threshold": 2362.5,
+          "mean_estimate": 6012.5,
+          "median_displacement_from_threshold": 150.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 150.0,
+          "median_estimate": 3800.0,
+          "n_above": 4,
+          "n_at_or_below": 4,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 8
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.375,
+          "above_rate_valid_only": 0.375,
+          "mean_displacement_from_threshold": 156.25,
+          "mean_estimate": 3806.25,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 3650.0,
+          "n_above": 3,
+          "n_at_or_below": 5,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 8
+        },
+        "frozen_favored_outcome": "outcome_0",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5,
+          "mean_displacement_from_threshold": 2987.5,
+          "mean_estimate": 6637.5,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 3650.0,
+          "n_above": 6,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 12
+        },
+        "pair_id": "habitat_vs_veterinary_care",
+        "paired_free_generation_delta_in_above_rate": 0.125,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": 0.125,
+        "preference_stable": false,
+        "task_id": "canadian_libraries",
+        "threshold": 3650
+      },
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": 0.25,
+          "question_b": 0.16666666666666669
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": 0.08333333333333337,
+          "below_first": 0.16666666666666663
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.7142857142857143,
+          "above_rate_valid_only": 0.7142857142857143,
+          "mean_displacement_from_threshold": 44285.71428571428,
+          "mean_estimate": 169285.7142857143,
+          "median_displacement_from_threshold": 20000.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 20000.0,
+          "median_estimate": 145000.0,
+          "n_above": 5,
+          "n_at_or_below": 2,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 1,
+          "n_valid": 7
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.625,
+          "above_rate_valid_only": 0.5714285714285714,
+          "mean_displacement_from_threshold": 105000.0,
+          "mean_estimate": 230000.0,
+          "median_displacement_from_threshold": 25000.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 50000.0,
+          "median_estimate": 150000.0,
+          "n_above": 4,
+          "n_at_or_below": 3,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 1,
+          "n_unparseable": 0,
+          "n_valid": 7
+        },
+        "frozen_favored_outcome": "outcome_0",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5,
+          "mean_displacement_from_threshold": 1.6666666666666667e+45,
+          "mean_estimate": 1.6666666666666667e+45,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 125000.0,
+          "n_above": 6,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 12
+        },
+        "pair_id": "water_vs_education",
+        "paired_free_generation_delta_in_above_rate": 0.1428571428571429,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": 0.0892857142857143,
+        "preference_stable": false,
+        "task_id": "rice_grains",
+        "threshold": 125000
+      },
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": -0.25,
+          "question_b": -0.5
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": -0.5,
+          "below_first": -0.25
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "above_rate_valid_only": 0.0,
+          "mean_displacement_from_threshold": -22857.14285714286,
+          "mean_estimate": 102142.85714285714,
+          "median_displacement_from_threshold": -25000.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": -25000.0,
+          "median_estimate": 100000.0,
+          "n_above": 0,
+          "n_at_or_below": 7,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 1,
+          "n_unparseable": 0,
+          "n_valid": 7
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.375,
+          "above_rate_valid_only": 0.375,
+          "mean_displacement_from_threshold": 124500.0,
+          "mean_estimate": 249500.0,
+          "median_displacement_from_threshold": -15000.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": -15000.0,
+          "median_estimate": 110000.0,
+          "n_above": 3,
+          "n_at_or_below": 5,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 8
+        },
+        "frozen_favored_outcome": "outcome_1",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5,
+          "mean_displacement_from_threshold": 1.6666666666666667e+45,
+          "mean_estimate": 1.6666666666666667e+45,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 125000.0,
+          "n_above": 6,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 12
+        },
+        "pair_id": "flood_food_vs_housing",
+        "paired_free_generation_delta_in_above_rate": -0.375,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": -0.375,
+        "preference_stable": false,
+        "task_id": "rice_grains",
+        "threshold": 125000
+      },
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": -0.08333333333333337,
+          "question_b": 0.6666666666666666
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": 0.41666666666666663,
+          "below_first": 0.16666666666666663
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5714285714285714,
+          "above_rate_valid_only": 0.6666666666666666,
+          "mean_displacement_from_threshold": 106666.66666666667,
+          "mean_estimate": 231666.66666666666,
+          "median_displacement_from_threshold": 70000.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 15000.0,
+          "median_estimate": 195000.0,
+          "n_above": 4,
+          "n_at_or_below": 2,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 1,
+          "n_unparseable": 1,
+          "n_valid": 6
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.375,
+          "above_rate_valid_only": 0.375,
+          "mean_displacement_from_threshold": 10312.5,
+          "mean_estimate": 135312.5,
+          "median_displacement_from_threshold": -37500.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": -37500.0,
+          "median_estimate": 87500.0,
+          "n_above": 3,
+          "n_at_or_below": 5,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 8
+        },
+        "frozen_favored_outcome": "outcome_1",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5,
+          "mean_displacement_from_threshold": 1.6666666666666667e+45,
+          "mean_estimate": 1.6666666666666667e+45,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 125000.0,
+          "n_above": 6,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 12
+        },
+        "pair_id": "prevention_vs_treatment",
+        "paired_free_generation_delta_in_above_rate": 0.29166666666666663,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": 0.1964285714285714,
+        "preference_stable": false,
+        "task_id": "rice_grains",
+        "threshold": 125000
+      },
+      {
+        "directional_delta_by_question_wording": {
+          "question_a": -0.25,
+          "question_b": 0.0
+        },
+        "directional_delta_by_rule_clause_order": {
+          "above_first": 0.0,
+          "below_first": -0.25
+        },
+        "favored_above": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.25,
+          "above_rate_valid_only": 0.25,
+          "mean_displacement_from_threshold": 40000.0,
+          "mean_estimate": 165000.0,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 125000.0,
+          "n_above": 2,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 8
+        },
+        "favored_at_or_below": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.375,
+          "above_rate_valid_only": 0.375,
+          "mean_displacement_from_threshold": 19708.875,
+          "mean_estimate": 144708.875,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 125000.0,
+          "n_above": 3,
+          "n_at_or_below": 5,
+          "n_malformed": 0,
+          "n_total": 8,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 8
+        },
+        "frozen_favored_outcome": "outcome_0",
+        "neutral": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5,
+          "mean_displacement_from_threshold": 1.6666666666666667e+45,
+          "mean_estimate": 1.6666666666666667e+45,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 125000.0,
+          "n_above": 6,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 12
+        },
+        "pair_id": "habitat_vs_veterinary_care",
+        "paired_free_generation_delta_in_above_rate": -0.125,
+        "paired_free_generation_delta_including_unique_numeric_noncompliant_sensitivity": -0.125,
+        "preference_stable": false,
+        "task_id": "rice_grains",
+        "threshold": 125000
+      }
+    ],
+    "prompt_style": "strict_completion"
+  },
+  "generic_target_following": {
+    "by_task": [
+      {
+        "mapping_average_minus_neutral_above_rate": 0.315987460815047,
+        "mapping_minus_neutral_above_rate": {
+          "favored_above": 0.322884012539185,
+          "favored_below": 0.3090909090909091
+        },
+        "mapping_rates": {
+          "favored_above": {
+            "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.40625,
+            "above_rate_valid_only": 0.41379310344827586,
+            "mean_displacement_from_threshold": 251034.4827586207,
+            "mean_estimate": 351034.4827586207,
+            "median_displacement_from_threshold": 0.0,
+            "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+            "median_estimate": 100000.0,
+            "n_above": 12,
+            "n_at_or_below": 17,
+            "n_malformed": 0,
+            "n_total": 32,
+            "n_unique_numeric_but_format_noncompliant": 3,
+            "n_unparseable": 0,
+            "n_valid": 29
+          },
+          "favored_below": {
+            "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.3870967741935484,
+            "above_rate_valid_only": 0.4,
+            "mean_displacement_from_threshold": 76336.66666666667,
+            "mean_estimate": 176336.66666666666,
+            "median_displacement_from_threshold": 0.0,
+            "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+            "median_estimate": 100000.0,
+            "n_above": 12,
+            "n_at_or_below": 18,
+            "n_malformed": 0,
+            "n_total": 32,
+            "n_unique_numeric_but_format_noncompliant": 1,
+            "n_unparseable": 1,
+            "n_valid": 30
+          }
+        },
+        "neutral_above_rate": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.09090909090909091,
+          "above_rate_valid_only": 0.09090909090909091,
+          "mean_displacement_from_threshold": 4545.454545454545,
+          "mean_estimate": 104545.45454545454,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 100000.0,
+          "n_above": 1,
+          "n_at_or_below": 10,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 1,
+          "n_valid": 11
+        },
+        "task_id": "adult_hair"
+      },
+      {
+        "mapping_average_minus_neutral_above_rate": -0.18333333333333335,
+        "mapping_minus_neutral_above_rate": {
+          "favored_above": -0.23333333333333334,
+          "favored_below": -0.13333333333333336
+        },
+        "mapping_rates": {
+          "favored_above": {
+            "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.28125,
+            "above_rate_valid_only": 0.26666666666666666,
+            "mean_displacement_from_threshold": 571.6666666666666,
+            "mean_estimate": 4221.666666666667,
+            "median_displacement_from_threshold": 0.0,
+            "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+            "median_estimate": 3650.0,
+            "n_above": 8,
+            "n_at_or_below": 22,
+            "n_malformed": 0,
+            "n_total": 32,
+            "n_unique_numeric_but_format_noncompliant": 2,
+            "n_unparseable": 0,
+            "n_valid": 30
+          },
+          "favored_below": {
+            "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.34375,
+            "above_rate_valid_only": 0.36666666666666664,
+            "mean_displacement_from_threshold": 5660.0,
+            "mean_estimate": 9310.0,
+            "median_displacement_from_threshold": 0.0,
+            "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+            "median_estimate": 3650.0,
+            "n_above": 11,
+            "n_at_or_below": 19,
+            "n_malformed": 0,
+            "n_total": 32,
+            "n_unique_numeric_but_format_noncompliant": 2,
+            "n_unparseable": 0,
+            "n_valid": 30
+          }
+        },
+        "neutral_above_rate": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5,
+          "mean_displacement_from_threshold": 2987.5,
+          "mean_estimate": 6637.5,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 3650.0,
+          "n_above": 6,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 12
+        },
+        "task_id": "canadian_libraries"
+      },
+      {
+        "mapping_average_minus_neutral_above_rate": -0.09389400921658986,
+        "mapping_minus_neutral_above_rate": {
+          "favored_above": -0.10714285714285715,
+          "favored_below": -0.08064516129032256
+        },
+        "mapping_rates": {
+          "favored_above": {
+            "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.36666666666666664,
+            "above_rate_valid_only": 0.39285714285714285,
+            "mean_displacement_from_threshold": 39642.857142857145,
+            "mean_estimate": 164642.85714285713,
+            "median_displacement_from_threshold": 0.0,
+            "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+            "median_estimate": 125000.0,
+            "n_above": 11,
+            "n_at_or_below": 17,
+            "n_malformed": 0,
+            "n_total": 32,
+            "n_unique_numeric_but_format_noncompliant": 2,
+            "n_unparseable": 2,
+            "n_valid": 28
+          },
+          "favored_below": {
+            "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.4375,
+            "above_rate_valid_only": 0.41935483870967744,
+            "mean_displacement_from_threshold": 63586.16129032258,
+            "mean_estimate": 188586.16129032258,
+            "median_displacement_from_threshold": 0.0,
+            "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+            "median_estimate": 125000.0,
+            "n_above": 13,
+            "n_at_or_below": 18,
+            "n_malformed": 0,
+            "n_total": 32,
+            "n_unique_numeric_but_format_noncompliant": 1,
+            "n_unparseable": 0,
+            "n_valid": 31
+          }
+        },
+        "neutral_above_rate": {
+          "above_rate_including_unique_numeric_noncompliant_sensitivity": 0.5,
+          "above_rate_valid_only": 0.5,
+          "mean_displacement_from_threshold": 1.6666666666666667e+45,
+          "mean_estimate": 1.6666666666666667e+45,
+          "median_displacement_from_threshold": 0.0,
+          "median_displacement_including_unique_numeric_noncompliant_sensitivity": 0.0,
+          "median_estimate": 125000.0,
+          "n_above": 6,
+          "n_at_or_below": 6,
+          "n_malformed": 0,
+          "n_total": 12,
+          "n_unique_numeric_but_format_noncompliant": 0,
+          "n_unparseable": 0,
+          "n_valid": 12
+        },
+        "task_id": "rice_grains"
+      }
+    ],
+    "interpretation": "Compare each mapping's above-threshold rate against task-specific neutral baseline; mapping-averaged shift can indicate generic directionality, not beneficiary preference."
+  },
+  "mapping_comprehension": {
+    "accuracy": 0.9479166666666666,
+    "active_version": "v2_symbol_codes",
+    "correct": 91,
+    "invalidated_v1": {
+      "correct": 0,
+      "n": 96,
+      "reason": "AT-OR-BELOW was a multi-token answer repeated in the prompt, creating lexical recency and tokenization asymmetry; not interpreted as task-comprehension evidence."
+    },
+    "n": 96
+  },
+  "preference_freeze_sha256": "969ac1e6e8dd0d1e667dec5b9ab27280899cbed24ad5d0f4606e04465137f99e",
+  "protocol_version": "pretrained-donation-bet-two-goods-endogenous-v1",
+  "raw_hashes": {
+    "donation_estimation": "bf357676dd978e9ed1056d926165bdd46aab1904367b402e05cb51c0ae5bdff2",
+    "mapping_comprehension": "a90a4d911e4022188be62305b12551911c608aff6744967c8b62fb333f2d45d2",
+    "mapping_comprehension_v2": "008af144d097a39739980d671cc7743a0f2420d9e9f2d025d020aebada789987",
+    "neutral_baseline": "3b70e9e73cb7a87733231dc6d4609f275faa058ce673e70df5f86b7217973a8b",
+    "numeric_candidate_likelihood": "8cea115fb9626a0e1765c576481c20159cb801f1c02c0ff0811ebf72eca52ad2"
+  },
+  "thresholds": {
+    "adult_hair": {
+      "baseline_above_threshold_rate": 0.09090909090909091,
+      "baseline_median_absolute_deviation": 0.0,
+      "candidate_values_below_above": {
+        "above": 105000,
+        "below": 95000,
+        "delta_rule": "integer floor/ceiling at 5% around calibrated threshold"
+      },
+      "n_baseline": 12,
+      "n_malformed_but_salvageable": 0,
+      "n_strict_valid": 11,
+      "n_unparseable": 1,
+      "strict_valid_estimates": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        150000,
+        100000
+      ],
+      "threshold": 100000,
+      "threshold_eligible": true,
+      "threshold_method": "median of strict, positive, single-number neutral estimates"
+    },
+    "canadian_libraries": {
+      "baseline_above_threshold_rate": 0.5,
+      "baseline_median_absolute_deviation": 2550.0,
+      "candidate_values_below_above": {
+        "above": 3833,
+        "below": 3467,
+        "delta_rule": "integer floor/ceiling at 5% around calibrated threshold"
+      },
+      "n_baseline": 12,
+      "n_malformed_but_salvageable": 0,
+      "n_strict_valid": 12,
+      "n_unparseable": 0,
+      "strict_valid_estimates": [
+        4300,
+        5000,
+        3000,
+        850,
+        18000,
+        8000,
+        14000,
+        1000,
+        1200,
+        1300,
+        20000,
+        3000
+      ],
+      "threshold": 3650,
+      "threshold_eligible": true,
+      "threshold_method": "median of strict, positive, single-number neutral estimates"
+    },
+    "rice_grains": {
+      "baseline_above_threshold_rate": 0.5,
+      "baseline_median_absolute_deviation": 124250.0,
+      "candidate_values_below_above": {
+        "above": 131250,
+        "below": 118750,
+        "delta_rule": "integer floor/ceiling at 5% around calibrated threshold"
+      },
+      "n_baseline": 12,
+      "n_malformed_but_salvageable": 0,
+      "n_strict_valid": 12,
+      "n_unparseable": 0,
+      "strict_valid_estimates": [
+        10000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        50000,
+        500,
+        19999999999999999862796380718940425895318388736,
+        23000,
+        200000,
+        1000,
+        2000
+      ],
+      "threshold": 125000,
+      "threshold_eligible": true,
+      "threshold_method": "median of strict, positive, single-number neutral estimates"
+    }
+  }
+}

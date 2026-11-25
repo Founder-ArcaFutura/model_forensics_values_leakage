@@ -1,0 +1,265 @@
+{
+  "candidate_token_length": {
+    "counts_by_symbol": {
+      "A": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "X": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "Y": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "mean_logprob_per_token_by_symbol": {
+      "A": -6.658496441337778,
+      "B": -1.9026052463808014,
+      "X": -4.584557887979486,
+      "Y": -3.349449706631276
+    }
+  },
+  "comprehension_candidate_argmax_correct": 8,
+  "comprehension_greedy_first_token_correct": 7,
+  "comprehension_n": 8,
+  "greedy_first_token_counts": {
+    "A": 8,
+    "B": 21,
+    "X": 7,
+    "Y": 12
+  },
+  "mean_candidate_logprob_by_symbol": {
+    "A": -6.658496441337778,
+    "B": -1.9026052463808014,
+    "X": -4.584557887979486,
+    "Y": -3.349449706631276
+  },
+  "n_records": 72,
+  "preference_pairs": [
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.6875,
+      "frozen_direction_consistency_n_of_16": 10,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 1.4792542878421955,
+      "pair_id": "water_vs_education",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -4.176075708121061,
+          "zero_first": 7.134584283805452
+        },
+        "symbol_scheme": {
+          "AB": 2.2047455569263548,
+          "XY": 0.7537630187580362
+        },
+        "wording_id": {
+          "donation_choice": 2.3365750585799105,
+          "recipient_choice": 0.6219335171044804
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.8125,
+      "frozen_direction_consistency_n_of_16": 13,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 5.834716302361578,
+      "pair_id": "habitat_vs_veterinary_care",
+      "stable_by_original_preregistered_rule": true,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": 1.003487108857371,
+          "zero_first": 10.665945495865785
+        },
+        "symbol_scheme": {
+          "AB": 5.209363990354163,
+          "XY": 6.460068614368993
+        },
+        "wording_id": {
+          "donation_choice": 5.439846835253306,
+          "recipient_choice": 6.22958576946985
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_0",
+      "first_token_greedy_candidate_rate": 0.75,
+      "frozen_direction_consistency_n_of_16": 10,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": 4.465242713341809,
+      "pair_id": "prevention_vs_treatment",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -2.0492537382233422,
+          "zero_first": 10.97973916490696
+        },
+        "symbol_scheme": {
+          "AB": 4.999303028361055,
+          "XY": 3.931182398322562
+        },
+        "wording_id": {
+          "donation_choice": 2.9136791760126926,
+          "recipient_choice": 6.016806250670925
+        }
+      }
+    },
+    {
+      "favored_outcome": "outcome_1",
+      "first_token_greedy_candidate_rate": 0.75,
+      "frozen_direction_consistency_n_of_16": 7,
+      "margins_n": 16,
+      "mean_logprob_margin_outcome_0_minus_outcome_1": -0.1822364273975836,
+      "pair_id": "flood_food_vs_housing",
+      "stable_by_original_preregistered_rule": false,
+      "subgroup_mean_margins": {
+        "presentation_order": {
+          "one_first": -6.576237533823587,
+          "zero_first": 6.21176467902842
+        },
+        "symbol_scheme": {
+          "AB": -0.3205004068586277,
+          "XY": -0.04397244793653954
+        },
+        "wording_id": {
+          "donation_choice": 1.5599894501210656,
+          "recipient_choice": -1.9244623049162328
+        }
+      }
+    }
+  ],
+  "preference_trials": 64,
+  "symbol_argmax_counts": {
+    "A": 10,
+    "B": 22,
+    "X": 14,
+    "Y": 18
+  }
+}

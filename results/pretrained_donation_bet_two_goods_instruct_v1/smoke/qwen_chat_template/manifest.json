@@ -1,0 +1,35 @@
+{
+  "base_preference_manifest_sha256": "cb2d20556d10c4549c1a461a5034b383dde9635168611ce175d5f6e68ae77203",
+  "candidate_policy": "symbols; chat uses bare token after assistant newline, raw prompt uses Base-compatible leading blank",
+  "condition": "qwen_chat_template",
+  "prompt_sha256s": [
+    "1b5a4d745402573fe3d1c2490355356996de8cbec65f53fb78e4277b6cbf4a49",
+    "bf3f633fbf6a22eefbb11cd5e7cc9cf061d309796f182dc7d9a161917e2bbae3",
+    "5e39db4bf4b18cd98e591c237b4df2f5409ce6ce64101ef5bf35f0b405f69ee3",
+    "fed9e39f30b7093c9173343239bacf98971558b18a31dc5dd8c8fd591e0e15be",
+    "f8e3c6e96bd2eaeb54b9fa6369cf485e5cf74b6c98749aab6431a115b85fda55",
+    "7a6bff77f5ce6ef378c3a744dfa6dfa9ce8abaf5f51a3f6cc06b19ec562c39fc",
+    "ce329046834014a715278b1683551810fb98d82ad8ebe01e5d5e1a50722e2dfd",
+    "320625c5d4e5448e6a23e75b742dfd821eb8894ea0f25eac47f10d312370714f"
+  ],
+  "scoring_prompt_sha256s": [
+    "bd28a4857e3a237c08ccefbf0e62a04ce483c86e301f5fc6e924aafd97417eb4",
+    "b71a789fb66d3202b74e716a6f0eb4b5456250edfbba29802ca549c3c572bdb7",
+    "608308037491058e9f0afe730289ab0f9896c87b02378fbba12946c50025da94",
+    "a8f2dd57d6b416a2d3d15993f630343d4c1887318003f26203aac9425a85dfc9",
+    "723526f2fbd7387edcb44075e771de7b8aeac2bbcb95f3003de2cf4bd58d99f1",
+    "a15d395f3bab14fab2b1b096e91f4980136fea6f0bc4561d7b527cc61025e3e4",
+    "bdc791405dd0f28702a7478ab6f898efb32df2d781641f0ad29df02963ad788d",
+    "885f92188c5584e0d433ec40ab25bd88165a861b6273619c90edd6b7b2307b73"
+  ],
+  "trial_ids": [
+    "pref-water_vs_education-donation_choice-XY-one_first-X",
+    "pref-flood_food_vs_housing-recipient_choice-AB-one_first-A",
+    "pref-prevention_vs_treatment-recipient_choice-AB-one_first-A",
+    "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+    "comprehension-water_vs_education-XY",
+    "comprehension-flood_food_vs_housing-XY",
+    "comprehension-prevention_vs_treatment-AB",
+    "comprehension-habitat_vs_veterinary_care-XY"
+  ]
+}

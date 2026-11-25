@@ -1,0 +1,874 @@
+{
+  "checkpoint": "Qwen/Qwen2.5-14B@97e1e76335b7017d8f67c08a19d103c0504298c9",
+  "checkpoint_revision": "97e1e76335b7017d8f67c08a19d103c0504298c9",
+  "completed_at_utc": "2026-11-24T16:52:32.227899+00:00",
+  "manifest_core_sha256": "fe50f9ca82b5b8979a88704af28bde7ddb7832805d46ec061933fd63d68e2eae",
+  "model": "pretrained-donation-bet-qwen25-14b-base-q4km",
+  "protocol_version": "pretrained-donation-bet-logprobs-v1",
+  "quantization": "Q4_K_M",
+  "quantization_source_revision": "d0a2788fa6dc8e83ce2f0aae07882eeecb06ef1f",
+  "quantized_upstream_revision_pinned": false,
+  "raw_sha256": "17114a5a4bd8986e3f0b0589eab879f25418398a982cf9ce222a64085e283381",
+  "seed": 20261124,
+  "summary": {
+    "answer_position_margin": {
+      "above_first": {
+        "mean_logprob_A_minus_B": 0.40027645230293274,
+        "n_distinct_prompts": 8
+      },
+      "below_first": {
+        "mean_logprob_A_minus_B": -0.34511999998773846,
+        "n_distinct_prompts": 7
+      }
+    },
+    "candidate_missing_reasons": "one or both exact A/B token byte sequences absent from top-20 raw alternatives",
+    "candidate_pair_missing_n": 5,
+    "candidate_pairs_scored": 15,
+    "choice_prompts": 20,
+    "comprehension": [
+      {
+        "diagnostic": "welfare_gain",
+        "expected": "GAIN",
+        "generated": "G",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              71
+            ],
+            "logprob": -0.8218966126441956,
+            "token": " G"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              79,
+              83,
+              83
+            ],
+            "logprob": -0.9968996047973633,
+            "token": " LOSS"
+          },
+          {
+            "bytes": null,
+            "logprob": -2.794083595275879,
+            "token": ""
+          },
+          {
+            "bytes": [
+              32,
+              10
+            ],
+            "logprob": -3.886998176574707,
+            "token": " \n"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              111,
+              115,
+              115
+            ],
+            "logprob": -3.9298925399780273,
+            "token": " Loss"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -4.148533821105957,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              10,
+              10
+            ],
+            "logprob": -4.308934211730957,
+            "token": " \n\n"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              97,
+              105,
+              110
+            ],
+            "logprob": -4.850281715393066,
+            "token": " Gain"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -4.992871284484863,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              42,
+              42
+            ],
+            "logprob": -5.547537803649902,
+            "token": " **"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -5.7175703048706055,
+            "token": " "
+          },
+          {
+            "bytes": [
+              71
+            ],
+            "logprob": -5.747918128967285,
+            "token": "G"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              79
+            ],
+            "logprob": -5.847670555114746,
+            "token": " LO"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -6.263581275939941,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32,
+              108,
+              111,
+              115,
+              115
+            ],
+            "logprob": -6.365189552307129,
+            "token": " loss"
+          },
+          {
+            "bytes": [
+              32,
+              95,
+              95
+            ],
+            "logprob": -6.625697135925293,
+            "token": " __"
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -6.920341491699219,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              76
+            ],
+            "logprob": -6.926238059997559,
+            "token": " L"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              79,
+              83
+            ],
+            "logprob": -7.059243202209473,
+            "token": " LOS"
+          },
+          {
+            "bytes": [
+              32,
+              40
+            ],
+            "logprob": -7.4900407791137695,
+            "token": " ("
+          }
+        ],
+        "wording": "as_written"
+      },
+      {
+        "diagnostic": "welfare_gain",
+        "expected": "GAIN",
+        "generated": "G",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              71
+            ],
+            "logprob": -0.8083282709121704,
+            "token": " G"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              79,
+              83,
+              83
+            ],
+            "logprob": -0.9848476648330688,
+            "token": " LOSS"
+          },
+          {
+            "bytes": null,
+            "logprob": -2.8747670650482178,
+            "token": ""
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              111,
+              115,
+              115
+            ],
+            "logprob": -3.8889520168304443,
+            "token": " Loss"
+          },
+          {
+            "bytes": [
+              32,
+              10
+            ],
+            "logprob": -3.9051244258880615,
+            "token": " \n"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -4.3435492515563965,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              10,
+              10
+            ],
+            "logprob": -4.387197017669678,
+            "token": " \n\n"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              97,
+              105,
+              110
+            ],
+            "logprob": -4.866021633148193,
+            "token": " Gain"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -5.078549861907959,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              42,
+              42
+            ],
+            "logprob": -5.601500988006592,
+            "token": " **"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -5.702712535858154,
+            "token": " "
+          },
+          {
+            "bytes": [
+              71
+            ],
+            "logprob": -5.76648473739624,
+            "token": "G"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              79
+            ],
+            "logprob": -5.887629985809326,
+            "token": " LO"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -6.257619380950928,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32,
+              108,
+              111,
+              115,
+              115
+            ],
+            "logprob": -6.374904155731201,
+            "token": " loss"
+          },
+          {
+            "bytes": [
+              32,
+              95,
+              95
+            ],
+            "logprob": -6.750081539154053,
+            "token": " __"
+          },
+          {
+            "bytes": [
+              32,
+              76
+            ],
+            "logprob": -6.860850811004639,
+            "token": " L"
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -6.951598644256592,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              76,
+              79,
+              83
+            ],
+            "logprob": -7.055699825286865,
+            "token": " LOS"
+          },
+          {
+            "bytes": [
+              76,
+              79,
+              83,
+              83
+            ],
+            "logprob": -7.46896505355835,
+            "token": "LOSS"
+          }
+        ],
+        "wording": "reordered_facts"
+      },
+      {
+        "diagnostic": "label_mapping",
+        "expected": "BELOW",
+        "generated": "ABOVE",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              65,
+              66,
+              79,
+              86,
+              69
+            ],
+            "logprob": -0.5400574207305908,
+            "token": " ABOVE"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              69,
+              76,
+              79,
+              87
+            ],
+            "logprob": -1.6338056325912476,
+            "token": " BELOW"
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -3.3405582904815674,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              98,
+              111,
+              118,
+              101
+            ],
+            "logprob": -3.4555580615997314,
+            "token": " Above"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              101,
+              108,
+              111,
+              119
+            ],
+            "logprob": -3.5191051959991455,
+            "token": " Below"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -4.1352972984313965,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              66
+            ],
+            "logprob": -4.5937933921813965,
+            "token": " AB"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -4.949329376220703,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -4.96937894821167,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -5.406970500946045,
+            "token": " "
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              69
+            ],
+            "logprob": -5.592090129852295,
+            "token": " BE"
+          },
+          {
+            "bytes": [
+              32,
+              42,
+              42
+            ],
+            "logprob": -5.673232555389404,
+            "token": " **"
+          },
+          {
+            "bytes": [
+              32,
+              97,
+              98,
+              111,
+              118,
+              101
+            ],
+            "logprob": -5.816966533660889,
+            "token": " above"
+          },
+          {
+            "bytes": [
+              32,
+              40
+            ],
+            "logprob": -5.820061683654785,
+            "token": " ("
+          },
+          {
+            "bytes": [
+              32,
+              34
+            ],
+            "logprob": -5.860044956207275,
+            "token": " \""
+          },
+          {
+            "bytes": null,
+            "logprob": -6.065087795257568,
+            "token": ""
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              79,
+              79,
+              68
+            ],
+            "logprob": -6.369029521942139,
+            "token": " GOOD"
+          },
+          {
+            "bytes": [
+              32,
+              98,
+              101,
+              108,
+              111,
+              119
+            ],
+            "logprob": -6.418737888336182,
+            "token": " below"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              97,
+              115,
+              101,
+              100
+            ],
+            "logprob": -6.436553955078125,
+            "token": " Based"
+          },
+          {
+            "bytes": [
+              32,
+              91
+            ],
+            "logprob": -6.630362033843994,
+            "token": " ["
+          }
+        ],
+        "wording": "as_written"
+      },
+      {
+        "diagnostic": "label_mapping",
+        "expected": "BELOW",
+        "generated": "ABOVE",
+        "top_candidates": [
+          {
+            "bytes": [
+              32,
+              65,
+              66,
+              79,
+              86,
+              69
+            ],
+            "logprob": -0.8611946105957031,
+            "token": " ABOVE"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              69,
+              76,
+              79,
+              87
+            ],
+            "logprob": -1.195425033569336,
+            "token": " BELOW"
+          },
+          {
+            "bytes": [
+              32,
+              65
+            ],
+            "logprob": -2.8328094482421875,
+            "token": " A"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              101,
+              108,
+              111,
+              119
+            ],
+            "logprob": -3.0865001678466797,
+            "token": " Below"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              98,
+              111,
+              118,
+              101
+            ],
+            "logprob": -3.6989192962646484,
+            "token": " Above"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              104,
+              101
+            ],
+            "logprob": -4.25572395324707,
+            "token": " The"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              66
+            ],
+            "logprob": -4.45123291015625,
+            "token": " AB"
+          },
+          {
+            "bytes": [
+              32,
+              65,
+              110,
+              115,
+              119,
+              101,
+              114
+            ],
+            "logprob": -4.808945655822754,
+            "token": " Answer"
+          },
+          {
+            "bytes": [
+              32
+            ],
+            "logprob": -4.92625617980957,
+            "token": " "
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              69
+            ],
+            "logprob": -5.2338666915893555,
+            "token": " BE"
+          },
+          {
+            "bytes": [
+              32,
+              84,
+              111
+            ],
+            "logprob": -5.373189926147461,
+            "token": " To"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              65,
+              68
+            ],
+            "logprob": -5.412221908569336,
+            "token": " BAD"
+          },
+          {
+            "bytes": [
+              32,
+              40
+            ],
+            "logprob": -5.606025695800781,
+            "token": " ("
+          },
+          {
+            "bytes": [
+              32,
+              10
+            ],
+            "logprob": -5.783275604248047,
+            "token": " \n"
+          },
+          {
+            "bytes": [
+              32,
+              91
+            ],
+            "logprob": -5.90372371673584,
+            "token": " ["
+          },
+          {
+            "bytes": [
+              32,
+              10,
+              10
+            ],
+            "logprob": -5.9278106689453125,
+            "token": " \n\n"
+          },
+          {
+            "bytes": [
+              32,
+              34
+            ],
+            "logprob": -6.051896095275879,
+            "token": " \""
+          },
+          {
+            "bytes": [
+              32,
+              42,
+              42
+            ],
+            "logprob": -6.219633102416992,
+            "token": " **"
+          },
+          {
+            "bytes": [
+              32,
+              66,
+              97,
+              115,
+              101,
+              100
+            ],
+            "logprob": -6.257912635803223,
+            "token": " Based"
+          },
+          {
+            "bytes": [
+              32,
+              71,
+              79,
+              79,
+              68
+            ],
+            "logprob": -6.383508682250977,
+            "token": " GOOD"
+          }
+        ],
+        "wording": "reordered_facts"
+      }
+    ],
+    "generated_A_n": 6,
+    "generated_B_n": 6,
+    "generated_other_n": 12,
+    "label_margin": {
+      "congruent": {
+        "max_prompt_margin": 1.3060455322265625,
+        "mean_logprob_margin": 0.4982853174209595,
+        "min_prompt_margin": -0.31292724609375,
+        "n_distinct_prompts": 5,
+        "negative_n": 1,
+        "positive_n": 4,
+        "zero_n": 0
+      },
+      "inverted": {
+        "max_prompt_margin": 0.5898551940917969,
+        "mean_logprob_margin": -0.05452950795491537,
+        "min_prompt_margin": -0.6547431945800781,
+        "n_distinct_prompts": 6,
+        "negative_n": 3,
+        "positive_n": 3,
+        "zero_n": 0
+      }
+    },
+    "records": 24,
+    "welfare_margin": {
+      "congruent": {
+        "max_prompt_margin": 1.3060455322265625,
+        "mean_logprob_margin": 0.4982853174209595,
+        "min_prompt_margin": -0.31292724609375,
+        "n_distinct_prompts": 5,
+        "negative_n": 1,
+        "positive_n": 4,
+        "zero_n": 0
+      },
+      "inverted": {
+        "max_prompt_margin": 0.6547431945800781,
+        "mean_logprob_margin": 0.05452950795491537,
+        "min_prompt_margin": -0.5898551940917969,
+        "n_distinct_prompts": 6,
+        "negative_n": 3,
+        "positive_n": 3,
+        "zero_n": 0
+      },
+      "neutral": {
+        "max_prompt_margin": 2.3577384650707245,
+        "mean_logprob_margin": 0.9890484735369682,
+        "min_prompt_margin": -0.4033585786819458,
+        "n_distinct_prompts": 4,
+        "negative_n": 1,
+        "positive_n": 3,
+        "zero_n": 0
+      }
+    }
+  }
+}

@@ -4,6 +4,30 @@ This repository implements a small, sequential experiment derived from the
 Donation Bet evaluation in *Value Leakage: An LLM's Answers Are Silently
 Shaped by Its Own Values*.
 
+## Latest findings: pretrained-base label swap
+
+A paired probability-scoring pilot on **Qwen2.5-14B Base** found that swapping
+which outcome was labeled GOOD shifted likelihood toward the same welfare-
+positive outcome in the predicted direction across **16/16 matched layouts**.
+The mean within-pair change in gain-versus-loss log odds was **+0.827 nats**
+(median +0.857). The options were held fixed while label assignment, answer
+symbol (A/B or X/Y), presentation order, and two prompt wordings were
+counterbalanced. Neutral prompts favored the leave gain (+0.867 mean log-odds),
+while the mean was +0.614 with congruent labels and −0.213 with inverted
+labels. The original label-mapping comprehension check was 6/8 but was
+confounded: the GOOD outcome always used the first answer symbol within each
+symbol scheme. It is not valid evidence of comprehension; a balanced 16-item
+diagnostic is defined in code but has not yet produced results. Effect size
+varied by option order. This is a directional result for one scenario, not evidence
+of a general moral preference or a broad claim about pretraining.
+
+See the [paired label-swap report](results/pretrained_donation_bet_paired_label_swap_v1/REPORT.md),
+[paired results and raw scores](results/pretrained_donation_bet_paired_label_swap_v1/),
+and the [matched 3B/14B probability pilot](results/pretrained_donation_bet_full_probabilities_v1/REPORT.md).
+The earlier [3B categorical pilot](results/pretrained_donation_bet_pilot_choice_category_v2/)
+remains separate and inconclusive; the numerical assay was not usable on either
+base model.
+
 ## Findings at a glance
 
 The results are mixed and depend strongly on the elicitation. In a within-
@@ -16,6 +40,14 @@ GPT-5.6 Sol showed little target following in the matched high-reasoning
 controls. These results do not establish that a model has or lacks stable
 “moral values”; they show that observed behavior changes with model and prompt
 design.
+
+The pretrained-base pilot found that Qwen2.5-3B was not usable for the
+numerical Donation Bet prompt family without post-training: neither the
+original nor a completion-style smoke produced a valid estimate. A separate
+choice probe was runnable but remains ambiguous because of malformed and
+drifting completions. It does not establish whether post-training is necessary.
+See the [pretrained pilot report](results/pretrained_donation_bet_pilot/REPORT.md)
+and its [raw outputs and analysis](results/pretrained_donation_bet_pilot_choice_category_v2/).
 
 - [Full results, methods, and limitations](RESULTS.md)
 - [Detailed take-home write-up and experiment-by-experiment interpretation](TAKEHOME_WRITEUP.md)

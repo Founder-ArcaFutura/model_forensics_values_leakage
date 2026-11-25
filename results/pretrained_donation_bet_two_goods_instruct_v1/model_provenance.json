@@ -1,0 +1,36 @@
+{
+  "model_name": "Qwen2.5-14B-Instruct Q4_K_M",
+  "source_checkpoint": "Qwen/Qwen2.5-14B-Instruct",
+  "training_stage": "public instruction-tuned checkpoint; not the pretrained Base checkpoint",
+  "upstream_source_revision": null,
+  "upstream_revision_note": "The pulled Ollama artifact did not expose a pinned upstream Hugging Face git revision. The source identity is the official Instruct checkpoint name; no revision is inferred.",
+  "distribution": "Ollama library qwen2.5:14b-instruct-q4_K_M",
+  "ollama_manifest_sha256": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+  "gguf_sha256": "2049f5674b1e92b4464e5729975c9689fcfbf0b0e4443ccf10b5339f370f9a54",
+  "gguf_bytes": 8988110688,
+  "quantization": "Q4_K_M",
+  "backend": "llama.cpp llama-server b12606, Vulkan",
+  "inference_device": "AMD Radeon RX 9060 XT",
+  "reported_vram_mib": 16304,
+  "gpu_execution_evidence": "llama-server reported model layer 38 assigned to Vulkan0. Auto-fit enabled; GPU offload was used. The server warned that Flash Attention over K/V rows used CPU fallback, and does not provide a complete layer-offload count in the preserved log.",
+  "server_settings": {
+    "host": "127.0.0.1",
+    "port": 8093,
+    "context_size": 2048,
+    "fit": "on",
+    "device": "Vulkan0",
+    "candidate_probability_measurement": "Native exact continuation logprobs from the unfiltered model distribution, before temperature/top-k/top-p sampling. The two-candidate normalized scores are a conditional comparison over the defined candidate set, not vocabulary-wide answer probabilities.",
+    "free_numeric_generation": {
+      "temperature": 0.7,
+      "top_k": 40,
+      "top_p": 0.9,
+      "repeat_penalty": 1,
+      "max_tokens": 48,
+      "stop": ["\\n"]
+    },
+    "greedy_diagnostic": "Greedy first-token diagnostics are separately stored in the raw probability result records; they are not treated as independent generated observations."
+  },
+  "scoring": "llama.cpp native completion endpoint. Full continuation likelihood is obtained by scoring every token in the candidate; where native top-probability output could not return a target token, the scorer expanded top-N and retained the exact target logprob or marked the trial unavailable. No truncated-list approximation was used.",
+  "chat_template": "Verified with llama.cpp /apply-template. The rendered prompt is the Qwen2.5 template with the default system message 'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.' and an assistant generation prefix. See chat_template_validation.json.",
+  "local_model_blob_path_at_run": "C:\\Users\\Main PC 2\\.ollama\\models\\blobs\\sha256-2049f5674b1e92b4464e5729975c9689fcfbf0b0e4443ccf10b5339f370f9a54"
+}

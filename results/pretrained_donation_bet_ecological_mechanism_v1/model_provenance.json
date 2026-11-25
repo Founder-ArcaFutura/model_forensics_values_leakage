@@ -1,0 +1,24 @@
+{
+  "model": "Qwen/Qwen2.5-14B-Instruct via qwen2.5:14b-instruct-q4_K_M",
+  "checkpoint_type": "public instruction-tuned checkpoint",
+  "ollama_tag": "qwen2.5:14b-instruct-q4_K_M",
+  "quantization": "Q4_K_M",
+  "gguf_sha256": "2049f5674b1e92b4464e5729975c9689fcfbf0b0e4443ccf10b5339f370f9a54",
+  "backend": "llama.cpp llama-server b12606, Vulkan",
+  "device_verified": "AMD Radeon RX 9060 XT (Vulkan0)",
+  "reported_vram_mib": 16304,
+  "ollama_manifest_sha256": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+  "server_args": [
+    "--ctx-size",
+    "2048",
+    "--fit",
+    "on",
+    "--device",
+    "Vulkan0"
+  ],
+  "gpu_execution_evidence": "llama-server was launched with --device Vulkan0, --fit on; server loaded the GGUF and processed all preference and comprehension requests. Startup log reports layer 0 assigned to Vulkan0. Flash Attention over K/V rows fell back to CPU because the Vulkan backend does not support it; a complete layer-offload count was not logged.",
+  "context_size": 2048,
+  "candidate_probability_source": "llama.cpp native /completion raw next-token logits; temp=-1, post_sampling_probs=false",
+  "chat_template": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n{content}<|im_end|>\n<|im_start|>assistant\n",
+  "source_preferences_sha256": "23f5405ae467ba02feb14b4ca34acb4d0201310cab6a972bbd3eb57d3371b48f"
+}

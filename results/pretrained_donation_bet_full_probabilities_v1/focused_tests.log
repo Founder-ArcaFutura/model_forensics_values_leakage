@@ -1,0 +1,12 @@
+..................                                                       [100%]
+============================== warnings summary ===============================
+C:\Users\Main PC 2\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\cacheprovider.py:475
+  C:\Users\Main PC 2\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\cacheprovider.py:475: PytestCacheWarning: could not create cache path G:\model_forensics_values_leakage\.pytest_cache\v\cache\nodeids: [WinError 5] Access is denied: 'G:\\model_forensics_values_leakage\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+18 passed, 1 warning in 0.86s
+Exception ignored in: <function Console.__del__ at 0x0000016CD0CD20C0>
+Traceback (most recent call last):
+  File "C:\Users\Main PC 2\AppData\Local\Programs\Python\Python313\Lib\site-packages\pyreadline3\console\console.py", line 254, in __del__
+OSError: [WinError -1073741816] Windows Error 0xc0000008

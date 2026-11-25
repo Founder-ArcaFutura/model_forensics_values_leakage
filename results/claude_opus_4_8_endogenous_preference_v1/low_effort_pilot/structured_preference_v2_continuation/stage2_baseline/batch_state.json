@@ -1,0 +1,28 @@
+{
+  "batch_id": "msgbatch_012RavYCwf9RprpDu1WJH3vi",
+  "last_polled_at_utc": "2026-11-25T03:05:17.239100+00:00",
+  "last_processing_status": "ended",
+  "last_request_counts": {
+    "canceled": 0,
+    "errored": 0,
+    "expired": 0,
+    "processing": 0,
+    "succeeded": 12
+  },
+  "manifest_core_sha256": "e24fbe305397368d0a505d36e157aa573afb895e85cd5ae2461f3d1a28f497b4",
+  "phase": "retrieved",
+  "prepared_at_utc": "2026-11-25T02:57:49.869623+00:00",
+  "protocol": "claude-opus-4-8-low-effort-label-masking-pilot-v1",
+  "provider_downloaded_at_utc": "2026-11-25T03:05:24.920327+00:00",
+  "provider_results_sha256": "834732bbf31985f0c5fc1420113801588468dfc1e0b37c4755af479e0d4c07b8",
+  "provider_source_description": {
+    "kind": "anthropic_raw_http_body"
+  },
+  "provider_source_file": "provider_results.jsonl",
+  "request_count": 12,
+  "request_file_sha256": "18aca2f5dffedb471f263c24f50d5ea7cc34fa420b99bca1d394a64c8f1e6dbf",
+  "retrieved_at_utc": "2026-11-25T03:05:24.939955+00:00",
+  "stage": "stage2_baseline",
+  "submission_started_at_utc": "2026-11-25T03:02:47.921146+00:00",
+  "submitted_at_utc": "2026-11-25T03:02:49.029987+00:00"
+}

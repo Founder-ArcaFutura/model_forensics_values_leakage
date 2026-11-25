@@ -1,0 +1,127 @@
+{
+  "checkpoint": "Qwen/Qwen2.5-14B@97e1e76335b7017d8f67c08a19d103c0504298c9",
+  "checkpoint_revision": "97e1e76335b7017d8f67c08a19d103c0504298c9",
+  "completed_at_utc": "2026-11-24T17:15:35.016538+00:00",
+  "manifest_core_sha256": "5729d99a901642a36243db0cc05473ad372e9d9ce5c306b8ec04dc437077f083",
+  "model_name": "Qwen2.5-14B-Base-Q4_K_M",
+  "protocol_version": "pretrained-donation-bet-full-likelihood-v1",
+  "quantization": "Q4_K_M",
+  "quantization_source_revision": "d0a2788fa6dc8e83ce2f0aae07882eeecb06ef1f",
+  "quantized_upstream_revision_pinned": false,
+  "raw_sha256": "8ac8c9c5d6cb7fa6fd14caa007efc4bb5f7f10216c61f7f7aa67e48d120f0e74",
+  "seed": 20261124,
+  "summary": {
+    "answer_position_logprob_A_minus_B": {
+      "above_first": {
+        "mean": 0.37226483821868894,
+        "n": 10
+      },
+      "below_first": {
+        "mean": 0.017663180828094482,
+        "n": 10
+      }
+    },
+    "candidate_pairs_scored": 40,
+    "comprehension": [
+      {
+        "argmax": "B",
+        "correct": true,
+        "expected": "B",
+        "ordering": "reversed_option_order",
+        "task": "welfare_semantics"
+      },
+      {
+        "argmax": "A",
+        "correct": true,
+        "expected": "A",
+        "ordering": "standard_option_order",
+        "task": "welfare_semantics"
+      },
+      {
+        "argmax": "A",
+        "correct": true,
+        "expected": "A",
+        "ordering": "reversed_option_order",
+        "task": "label_mapping"
+      },
+      {
+        "argmax": "B",
+        "correct": true,
+        "expected": "B",
+        "ordering": "standard_option_order",
+        "task": "label_mapping"
+      }
+    ],
+    "generated_first_token_counts": {
+      "label_category": {
+        "BAD": 16,
+        "GOOD": 0
+      },
+      "letter_choice": {
+        "A": 5,
+        "B": 6
+      },
+      "neutral_category_first_token": {
+        "G_or_fragment": 3,
+        "LOSS": 0
+      }
+    },
+    "logprob_margin": {
+      "label_token_probability": {
+        "congruent": {
+          "max_prompt_margin": -0.176849365234375,
+          "mean_logprob_margin": -0.3289330005645752,
+          "min_prompt_margin": -0.47229957580566406,
+          "n_distinct_prompts": 8,
+          "negative_n": 8,
+          "positive_n": 0
+        },
+        "inverted": {
+          "max_prompt_margin": -0.6285265684127808,
+          "mean_logprob_margin": -0.840124785900116,
+          "min_prompt_margin": -1.032339096069336,
+          "n_distinct_prompts": 8,
+          "negative_n": 8,
+          "positive_n": 0
+        }
+      },
+      "letter_outcome_choice": {
+        "congruent": {
+          "max_prompt_margin": 1.3462677001953125,
+          "mean_logprob_margin": 0.5284269154071808,
+          "min_prompt_margin": -0.26785850524902344,
+          "n_distinct_prompts": 8,
+          "negative_n": 2,
+          "positive_n": 6
+        },
+        "inverted": {
+          "max_prompt_margin": 0.6760025024414062,
+          "mean_logprob_margin": -0.10213258862495422,
+          "min_prompt_margin": -0.7187461853027344,
+          "n_distinct_prompts": 8,
+          "negative_n": 5,
+          "positive_n": 3
+        },
+        "neutral": {
+          "max_prompt_margin": 2.268444061279297,
+          "mean_logprob_margin": 0.9877014458179474,
+          "min_prompt_margin": -0.3517378568649292,
+          "n_distinct_prompts": 4,
+          "negative_n": 1,
+          "positive_n": 3
+        }
+      },
+      "neutral_welfare_category": {
+        "neutral": {
+          "max_prompt_margin": 3.4545229766517878,
+          "mean_logprob_margin": 2.242170992307365,
+          "min_prompt_margin": 1.136996733956039,
+          "n_distinct_prompts": 4,
+          "negative_n": 0,
+          "positive_n": 4
+        }
+      }
+    },
+    "records": 44
+  }
+}

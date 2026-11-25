@@ -1,0 +1,9 @@
+{
+  "endpoint": "/apply-template",
+  "response": {
+    "prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nTemplate check<|im_end|>\n<|im_start|>assistant\n"
+  },
+  "expected_manual_render": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nTemplate check<|im_end|>\n<|im_start|>assistant\n",
+  "rendered_text": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nTemplate check<|im_end|>\n<|im_start|>assistant\n",
+  "matches_exactly": true
+}

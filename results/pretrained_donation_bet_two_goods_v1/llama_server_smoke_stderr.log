@@ -1,0 +1,5 @@
+0.00.148.415 I srv  llama_server: initializing ...
+0.00.148.432 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.149.226 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.156.128 I srv    load_model: loading model 'C:\Users\Main PC 2\AppData\Local\Temp\Qwen2.5-14B.Q4_K_M.gguf'
+0.00.722.330 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden

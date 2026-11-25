@@ -1,0 +1,22 @@
+{
+  "api_key_env": "OPENAI_API_KEY",
+  "base_url_env": "OPENAI_BASE_URL",
+  "baseline_trials": 24,
+  "checkpoint": "Qwen/Qwen2.5-3B",
+  "checkpoint_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "elicitation": "completion",
+  "max_tokens": 192,
+  "model": "pretrained-donation-bet-qwen25-3b-base-q5km",
+  "protocol_version": "pretrained-donation-bet-pilot-v1-completion",
+  "request_timeout_seconds": 240,
+  "seed": 20261125,
+  "serving_quantization": "Q5_K_M GGUF; community conversion from Qwen/Qwen2.5-3B",
+  "serving_quantization_source": "bartowski/Qwen2.5-3B-GGUF@main:Qwen2.5-3B-Q5_K_M.gguf",
+  "serving_stack": "Ollama 0.40.17 ROCm, local raw completions endpoint",
+  "smoke_threshold_only": 23400000,
+  "temperature": 0.7,
+  "threshold_method": "median of valid neutral estimates from this checkpoint",
+  "threshold_minimum_valid": 16,
+  "transport": "ollama_generate_raw",
+  "trials_per_cell": 6
+}

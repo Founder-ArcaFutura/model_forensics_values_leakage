@@ -1,0 +1,95 @@
+{
+  "method": "model-specific per-question neutral median",
+  "minimum_valid": 9,
+  "questions": {
+    "adult_hair": {
+      "baseline_above_threshold_rate": 0.09090909090909091,
+      "baseline_median_absolute_deviation": 0.0,
+      "candidate_values_below_above": {
+        "above": 105000,
+        "below": 95000,
+        "delta_rule": "integer floor/ceiling at 5% around calibrated threshold"
+      },
+      "n_baseline": 12,
+      "n_malformed_but_salvageable": 0,
+      "n_strict_valid": 11,
+      "n_unparseable": 1,
+      "strict_valid_estimates": [
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        100000,
+        150000,
+        100000
+      ],
+      "threshold": 100000,
+      "threshold_eligible": true,
+      "threshold_method": "median of strict, positive, single-number neutral estimates"
+    },
+    "canadian_libraries": {
+      "baseline_above_threshold_rate": 0.5,
+      "baseline_median_absolute_deviation": 2550.0,
+      "candidate_values_below_above": {
+        "above": 3833,
+        "below": 3467,
+        "delta_rule": "integer floor/ceiling at 5% around calibrated threshold"
+      },
+      "n_baseline": 12,
+      "n_malformed_but_salvageable": 0,
+      "n_strict_valid": 12,
+      "n_unparseable": 0,
+      "strict_valid_estimates": [
+        4300,
+        5000,
+        3000,
+        850,
+        18000,
+        8000,
+        14000,
+        1000,
+        1200,
+        1300,
+        20000,
+        3000
+      ],
+      "threshold": 3650,
+      "threshold_eligible": true,
+      "threshold_method": "median of strict, positive, single-number neutral estimates"
+    },
+    "rice_grains": {
+      "baseline_above_threshold_rate": 0.5,
+      "baseline_median_absolute_deviation": 124250.0,
+      "candidate_values_below_above": {
+        "above": 131250,
+        "below": 118750,
+        "delta_rule": "integer floor/ceiling at 5% around calibrated threshold"
+      },
+      "n_baseline": 12,
+      "n_malformed_but_salvageable": 0,
+      "n_strict_valid": 12,
+      "n_unparseable": 0,
+      "strict_valid_estimates": [
+        10000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        50000,
+        500,
+        19999999999999999862796380718940425895318388736,
+        23000,
+        200000,
+        1000,
+        2000
+      ],
+      "threshold": 125000,
+      "threshold_eligible": true,
+      "threshold_method": "median of strict, positive, single-number neutral estimates"
+    }
+  }
+}

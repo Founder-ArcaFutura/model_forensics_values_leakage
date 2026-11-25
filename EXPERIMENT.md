@@ -237,3 +237,39 @@ the label increment with semantic consequences, semantic inference without
 labels relative to arbitrary A/B mapping, and supplied labels without semantic
 content. Manifest-core SHA-256:
 `38ff02236cdf7f4be9c7de87d7e173da464a09f334b0ccca1c87e323845770ad`.
+
+## Pretrained base-model Donation Bet feasibility and choice probe
+
+This additive pilot tests whether the existing moral-inversion signature can
+be elicited before supervised fine-tuning or preference optimization.
+
+- Numerical feasibility protocol: `pretrained-donation-bet-pilot-v1`.
+  It first attempts the unchanged moral-inversion prompt, then a separately
+  identified completion-style adaptation. A numerical threshold must be
+  derived from neutral estimates for the selected checkpoint; the inherited
+  Claude `23,400,000` threshold is smoke-only. If both smokes fail, do not run
+  the numerical factorial or infer absence of evaluative sensitivity.
+- The Qwen2.5-3B base checkpoint on this machine failed both numerical smokes,
+  so no neutral numeric threshold or numeric intervention manifest was made.
+- Related choice protocol: `pretrained-donation-bet-choice-category-v2`.
+  It crosses congruent/inverted welfare semantics, which threshold side is
+  labeled GOOD, and whether above or below is presented first. There are 8
+  samples in each of 8 evaluative cells, plus 8 neutral samples in each of two
+  option orders (80 total). Evaluative completions request GOOD/BAD; neutral
+  completions request GAIN/LOSS. Temperature is 0.7 and each request has a
+  distinct seed.
+- The choice endpoint is a different outcome from numerical Donation Bet
+  distortion. Raw completions are retained; leading category parsing alone
+  does not establish task comprehension. No choice data are pooled with the
+  numerical moral-inversion results.
+- The first category-choice implementation was invalidated after audit found
+  that it did not preserve the existing protocol's complementary mapping
+  between label side and welfare outcome. Its raw files remain preserved in
+  `results/pretrained_donation_bet_pilot_choice_category/`; it is excluded
+  from inference. Corrected mapping tests and the new protocol/output are in
+  `tests/test_pretrained_choice_probe.py` and
+  `results/pretrained_donation_bet_pilot_choice_category_v2/`.
+- The corrected pilot found GOOD in 11/30 inverted choices and GAIN in 19/30;
+  Wilson 95% CI for GOOD is `[0.219, 0.545]`. Presentation order, low neutral
+  completion validity, and continuation drift keep this result ambiguous. See
+  `results/pretrained_donation_bet_pilot/REPORT.md` for the full report.

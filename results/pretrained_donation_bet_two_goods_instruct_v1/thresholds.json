@@ -1,0 +1,36 @@
+{
+  "method": "model-specific median of 12 strict neutral estimates per factual task",
+  "minimum_valid": 9,
+  "questions": {
+    "rice_grains": {
+      "n_total": 12,
+      "n_strict_valid": 11,
+      "n_unique_numeric_noncompliant": 1,
+      "n_unparseable": 0,
+      "threshold": 50000,
+      "eligible": true,
+      "baseline_above_rate": 0.18181818181818182,
+      "baseline_median_absolute_deviation": 5000.0
+    },
+    "adult_hair": {
+      "n_total": 12,
+      "n_strict_valid": 12,
+      "n_unique_numeric_noncompliant": 0,
+      "n_unparseable": 0,
+      "threshold": 100000,
+      "eligible": true,
+      "baseline_above_rate": 0.0,
+      "baseline_median_absolute_deviation": 0.0
+    },
+    "canadian_libraries": {
+      "n_total": 12,
+      "n_strict_valid": 12,
+      "n_unique_numeric_noncompliant": 0,
+      "n_unparseable": 0,
+      "threshold": 1900,
+      "eligible": true,
+      "baseline_above_rate": 0.0,
+      "baseline_median_absolute_deviation": 0.0
+    }
+  }
+}

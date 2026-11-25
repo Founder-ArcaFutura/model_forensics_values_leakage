@@ -1,0 +1,15 @@
+0.00.199.884 I srv  llama_server: initializing ...
+0.00.199.906 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.201.017 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.207.379 I srv    load_model: loading model 'C:\Users\Main PC 2\.ollama\models\blobs\sha256-2049f5674b1e92b4464e5729975c9689fcfbf0b0e4443ccf10b5339f370f9a54'
+0.00.640.163 W common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 99, abort
+0.00.889.592 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+ggml_vulkan: Device memory allocation of size 1043861504 failed.
+ggml_vulkan: vk::Device::allocateMemory: ErrorOutOfDeviceMemory
+0.06.076.994 E ggml_backend_buft_alloc_buffer_n_default: failed to allocate Vulkan0 buffer of size 1043861504
+0.06.702.090 E llama_model_load: error loading model: unable to allocate Vulkan0 buffer
+0.06.702.102 E llama_model_load_from_file_impl: failed to load model
+0.06.702.118 E cmn  common_init_: failed to load model 'C:\Users\Main PC 2\.ollama\models\blobs\sha256-2049f5674b1e92b4464e5729975c9689fcfbf0b0e4443ccf10b5339f370f9a54'
+0.06.702.127 E srv    load_model: failed to load model, 'C:\Users\Main PC 2\.ollama\models\blobs\sha256-2049f5674b1e92b4464e5729975c9689fcfbf0b0e4443ccf10b5339f370f9a54'
+0.06.702.135 I srv    operator(): operator(): cleaning up before exit...
+0.06.704.023 E srv  server_run_i: exiting due to model loading error

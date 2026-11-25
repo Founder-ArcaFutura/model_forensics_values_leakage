@@ -1,0 +1,2228 @@
+{
+  "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+  "seed": 20261127,
+  "base_checkpoint_protocol": "Qwen2.5-14B-Instruct Q4_K_M; frozen habitat-veterinary 16-layout source; same chat-template continuation scoring",
+  "source_preference_manifest_core_sha256": "cb2d20556d10c4549c1a461a5034b383dde9635168611ce175d5f6e68ae77203",
+  "source_freeze_sha256": "23f5405ae467ba02feb14b4ca34acb4d0201310cab6a972bbd3eb57d3371b48f",
+  "preregistration_sha256": "360a8ac5c90a6d30fef72edcbddb6fe1ce57c6bea563d37c54e5e1de64919d53",
+  "scenario_specs": {
+    "baseline": {
+      "label": "Original unqualified pair",
+      "habitat_text": "Native habitat is protected across 100 acres.",
+      "veterinary_text": "Veterinary care is provided to 100 wild animals.",
+      "expected_shift_vs_baseline": 0,
+      "changes": "Exact source outcome descriptions; this is a matched repeat of the frozen Instruct chat condition."
+    },
+    "habitat_secure": {
+      "label": "Habitat already secure; modest marginal effect",
+      "habitat_text": "The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.",
+      "veterinary_text": "Veterinary care is provided to 100 wild animals.",
+      "expected_shift_vs_baseline": -1,
+      "changes": "Changes only the habitat description to stipulate secure status and low marginal benefit.",
+      "comprehension_true": "The habitat is already intact and legally protected.",
+      "comprehension_false": "The habitat is threatened with imminent ecosystem collapse."
+    },
+    "vet_prevents_extinction": {
+      "label": "Veterinary care prevents local-population extinction",
+      "habitat_text": "Native habitat is protected across 100 acres.",
+      "veterinary_text": "Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.",
+      "expected_shift_vs_baseline": -1,
+      "changes": "Changes only the veterinary description to stipulate a population-level extinction-prevention effect.",
+      "comprehension_true": "The veterinary care is expected to prevent the local population's extinction.",
+      "comprehension_false": "The veterinary care improves health but has no population-level survival effect."
+    },
+    "ecosystem_wide": {
+      "label": "Habitat protection prevents ecosystem collapse",
+      "habitat_text": "The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.",
+      "veterinary_text": "Veterinary care is provided to 100 wild animals.",
+      "expected_shift_vs_baseline": 1,
+      "changes": "Changes only the habitat description to stipulate ecosystem-wide, long-duration benefits.",
+      "comprehension_true": "Habitat protection prevents ecosystem collapse and sustains many species for decades.",
+      "comprehension_false": "Habitat protection adds only a modest buffer to a secure ecosystem."
+    }
+  },
+  "trials": [
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "fed9e39f30b7093c9173343239bacf98971558b18a31dc5dd8c8fd591e0e15be",
+      "seed": 20261127,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "a8f2dd57d6b416a2d3d15993f630343d4c1887318003f26203aac9425a85dfc9"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "0bedad0f26d6f24164660a0608c8512a9b44597132ee53dbc79f63dce147d557",
+      "seed": 20261128,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "4e6a34a8b22a6bda4c63e615d9ebd4fafa3c83d256816b10b1f10301fad0b7a2"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "e4690e8a831306ac79f4870679cefff1a85eb2d1f875504a33bcf97a6a82aa53",
+      "seed": 20261129,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "f0bfc2c0d7e9e0c42424836eb2d3b341ba2958a3ef45249fb39bff2771d25e82"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "1636b8dbd6a50368a7a4a265ae43975fa96bfcc9bfee338d8209ff16f6cd154c",
+      "seed": 20261130,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "ba9d81037fa20906984fb5c2ca804a0cedb1496c44d218ac43ae7e8c9733c72e"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "6f708ff548b0630e2367046c1608dfb556b3434d1ef2bf990785362e4746b3d2",
+      "seed": 20261131,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "39ae85ac9fcc5be473bb028fdcba75a9b3043acaba20b9859883a29686ca422f"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "943e4257c57483b90d9233c38167beec0adc58b73e72eb555cc8f9aca7bbdf46",
+      "seed": 20261132,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "94a98b2a2cc05d07d4cc17680172b528bd8fd966d5dff76707419c0291208cf6"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "1e9a621b388e0cc6e5ae1c7c0079d659f54172900eb540321efa49e2174d1f1d",
+      "seed": 20261133,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "fbe9be25be61848fd3b16b067f0bcd4a07d488718f90c17b3487e9ec7e186080"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "244955638048c21b75da042b89a26626ad60cbe7762fd8089f6091fe1de5c919",
+      "seed": 20261134,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "9ad2b49373e48437b0b31cbcaf26e7e663d61c155bc8c7558c1d82f9fe30cf93"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Native habitat is protected across 100 acres.\nB) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "d8488bea659ea8b8880606f9818abd3209ddd174a89b165f4d56ee2af8c435b1",
+      "seed": 20261135,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nA) Native habitat is protected across 100 acres.\nB) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "da139161d47945ca26e1c53f6bb1cbf9f201266f4e19ffa34b32b6473dbe85c1"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "b06cd3ae52dde15f25d4ca2eeba99047efd62f53a61dd840e7ce2c9ef4a1327d",
+      "seed": 20261136,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "cc89a2519bf41eed993cf244ac1ab818aa6b8e37fe35d28c56371c099156deee"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "95c85d9faf3cde1e035ff81d396ba40f45f82c8f5075ef5cb404ab3d21179572",
+      "seed": 20261137,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "217005f896b8cc8652ee8fabd713bb8eacd9404a04453411dc293a2e907ec0cb"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Native habitat is protected across 100 acres.\nX) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "0dc4dd101c45323e3203c8739515ef4b8217d3ba5a4dd6add437cc874df95a62",
+      "seed": 20261138,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Native habitat is protected across 100 acres.\nX) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "a781f043afcd22b812e3218d420e0b48460f8dbe593ef81767b09c943e9a69c1"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Native habitat is protected across 100 acres.\nB) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "d83c2bcc52a7c6c94c0b71071691901b9d0f03c4534dea438bb692efaaa91f62",
+      "seed": 20261139,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Native habitat is protected across 100 acres.\nB) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "80a5f23b460111bbfdc485151327425852a9db752cf09e58d0a63c153b571444"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Native habitat is protected across 100 acres.\nX) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "e3a29b598b7026942b34c858940c2f45d0764ce3c980f01bb3fd03814a6af9b0",
+      "seed": 20261140,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nY) Native habitat is protected across 100 acres.\nX) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "fc42c517fa57fd5bbe45b05ba5a6f1a0f755ea661f4a3b5be5ea86aa36fe37d5"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "cd50bbbb2d2cff33b4f605c2edadcb46f62f08b4c01b3dfd40582800b34b7c0a",
+      "seed": 20261141,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "16f3b01adf0f4aa1579e7eeaa7dfa7a74c84de68a272549006fee0dc774d79a1"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "baseline",
+      "scenario_label": "Original unqualified pair",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "trial_id": "baseline::pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "8a74ae6a203e6ba4663ecc25c7fa40a8e1baa3127b66bfc0e8c98e1378356529",
+      "seed": 20261142,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 0,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "f9a90d048f62556dfc76407db08dcbb9a18b24a7fddcaf744be7d09d88f1d9e5"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nA) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "8cd9baf9d6ad6aa8bc9069da202ec21ffc58ab17aa2bb41cf2bed0eb4a14dbc9",
+      "seed": 20261143,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nA) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "3e916f73941c6f301e9fc66f864fc9ee01e3d642d9c81af60b9bf02ab02d510f"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nY) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "ae27d4b540618e84def708cd4c33cfd170dbcd0e92af91356a037babfb592074",
+      "seed": 20261144,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nY) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "053b94d6333cdb94bb9ec5ae7bc2f062d144f22d648b044e964ca67d0c122bb3"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:",
+      "prompt_sha256": "8deb0047d3578de1c63e7901822bf82f7ec7f5d413f828daf1cfe9b417c73477",
+      "seed": 20261145,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "1201b7e3aefea09f462fc2d22aa7695ce9bb5fffc57e49c88e83ffd494eae214"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:",
+      "prompt_sha256": "9a849af58394f755a76a50c1ace2fa07f732ca81a8a1f521c8b1753a2080b467",
+      "seed": 20261146,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "635fde1f701d5fe0909a51d6b2779fbad7ff4aaea60370322ff1953dda823b9e"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:",
+      "prompt_sha256": "3e17e6471bf958faed4013da0a4d982c1e20dd2bec5a0aa58ded7f788b7f19cf",
+      "seed": 20261147,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "1ba98aa3ec430cd476c77d7072316f9d19cd09af1ee6cd7abb375bd11a8bef81"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:",
+      "prompt_sha256": "b711a7ad95dcc64e5f717c207f7c5ac0bc677c0ab12161ba39af853bab964cc0",
+      "seed": 20261148,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "6136fc7c30dec05b2b868471d79c82396c092f9e25f46f5dbf6d998e66253344"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:",
+      "prompt_sha256": "4f70cb6499dcdfc04a47bb3be3b9679482479220dc0a27a22657ea87cec21e23",
+      "seed": 20261149,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "a2748901692aaf968c0da1a4f19dcb4a0f217101671bfc7730b7d6ce4cb54409"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nY) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "3869833e05493f5eebec88c2db54d08209a03ef576ce2054d69cdd30e7d8db59",
+      "seed": 20261150,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nX) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nY) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "d6c9b0468e9b81c9718c12126d742378ce6af8c39387843e44fff44a28baf9b5"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nB) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "159eeeec17c4cc755f56f4badcefefca0548c07ae58479b3a8a3f597b406402b",
+      "seed": 20261151,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nA) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nB) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "f996ba35500f7b40c58a2c00d4ce7cea9060a0bb0893318d981a96b8ec7432f8"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:",
+      "prompt_sha256": "dac03211ac1ce5f8b47cd6734a15aacd9e7c1ac39dfae5058d04170f6a71b1a1",
+      "seed": 20261152,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "d124b006d4d1b535ec6b6b1517b21c2b7bcf1c039c46276a4936ebd1b1d4c530"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:",
+      "prompt_sha256": "d04907cbd6547b0ff54fe863f3d1a819339f089d2f4e19518756c1a1f85598ec",
+      "seed": 20261153,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "fce34aad73f3238986a12f7c910fc5a3a5592bcfcdf6530e740f94d597d2b605"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nX) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "4ebe75aa900b9dba2708c2859c59762cbba589f9f38621107eb41e6655eeca8a",
+      "seed": 20261154,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nX) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "028d2fd18f78e3e633822a011403fd7065622b1c16ce3ef7a093a644c629ab24"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nB) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "c386d19df92223ac4b9de24ce4de71766b8e06719eb4dea42b4beb0f42309332",
+      "seed": 20261155,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nB) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "4a7747c608f26ac0e5c171d25a5c8ee07d2dd84c10c01883b0ef98d5b88ba89f"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nX) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "82099a2029aaba6576d12a98c0583abb1a0d9cae48627b8859c009c02c406783",
+      "seed": 20261156,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nY) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nX) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "918cbb3cca3a5225202ca6646dc87652de514615f48cb8406a71d0220896b741"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:",
+      "prompt_sha256": "e3d95c9a0b699cecfeb9e1378db20d51fe96dfa37612138e093141e0c43038ae",
+      "seed": 20261157,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "a960ec5acdad667e63f913328ef7850fc0755ab6cd556dbc4eaa48f48639578b"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "habitat_secure",
+      "scenario_label": "Habitat already secure; modest marginal effect",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "trial_id": "habitat_secure::pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nA) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "1918b88b58512568405c352805e85e5e196350c622167da292d1027b1c067ff5",
+      "seed": 20261158,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nB) The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nA) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "c2b4f97619dcd4091846d80447c85b802dbccd6d26081cdd010b11130bd024f1"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:",
+      "prompt_sha256": "9cccdb7757f1db732deb852667d7e91c887c57a165c9f2d7ba1b922b7e58909e",
+      "seed": 20261159,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "5bcb8a8c9fb69613661202ce3c9a97e1dffb2caf6e4633956297c274ff63b088"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:",
+      "prompt_sha256": "eedb2435629be2dfe4444a438c1d3afb003a117ba2f0d4f9a45ebbe6a9d77e26",
+      "seed": 20261160,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "0d24b14fdb22135f7e01455619bd2c88785cc65229043c01f2cf7b229ac4b77f"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nY) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "ee844e84406b005d02a6e22e9d1387dfc087b531f30311a073440ec15968c451",
+      "seed": 20261161,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nX) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nY) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "1133c17db2058fa07605a93e9e4f41ccb1fd9f7fe15cd3e92bc9e4a9f3b5947b"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nY) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "2aaf2b0dce2239342ec7d0bacefbbcf63953699dea2ee3b6ac7dc8f456006066",
+      "seed": 20261162,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nY) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "719709ce3b4df7707af33085e343cccbda729e5f553d371b855530b68d0f9347"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nB) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "01177a12875397fa1b0feda9d0cc267771a3ad6c1d9ec2a1f5f413dfef95ed3c",
+      "seed": 20261163,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nB) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "e2ce3b9e869eabf52e0abae7df27914b3c6d76aba140e8788b1d185a3d5fbb9b"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nA) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "ef182316a402e2a154992e3860c423764e53635808292122df86f4d14ac622e3",
+      "seed": 20261164,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nB) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nA) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "a3f84f1c7553051a20a1c17fc4ea62ca0a1aa94aee9cf0507ec0f784d551dfab"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nX) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "9b92fd779a47393f7ed4d794ef2254d7d7416ad457126bff30e9daf29be37170",
+      "seed": 20261165,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nX) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "8ec16dc328553cc5e9509684b264eb7f6f48ca3da6f2b1383db11d2cac5dc115"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:",
+      "prompt_sha256": "4727940746bd408f78e8b10ad1aa26f7647799a062e8f929857f4a6ed15b2a15",
+      "seed": 20261166,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nX) Native habitat is protected across 100 acres.\nY) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "d90c68b64af7408e9288a476a2ca0d4e1abf917583e13971a3ed5b49423bc517"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Native habitat is protected across 100 acres.\nB) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:",
+      "prompt_sha256": "0c38dcde386bd3440cf371abbbc39dd9c5452d607b6ae1b3b562dd7127fe48dc",
+      "seed": 20261167,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nA) Native habitat is protected across 100 acres.\nB) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "a9d505d5cda0cdc491a79e0829fc73154e9b38b30fb3723111a28181c2a0b2db"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nB) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "3535885c0d9b4012656e37f10dc7f699d6886e6653f7877b767ad5308bd31780",
+      "seed": 20261168,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nA) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nB) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "6fbf379b36e77f4f6e217dcc6c3c91ac6c9e2bd2daa4f44e20d500efce109633"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nX) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "71c01a00c067be31a53b27a516fb2c5621d9603b2094e6badbe8c8469a4d936e",
+      "seed": 20261169,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nY) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nX) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "4a2ebca57964987c812e1d90e88e2b7859eeb2e97c8aef7a410eace5a2f40c68"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Native habitat is protected across 100 acres.\nX) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:",
+      "prompt_sha256": "9e1442d626430beeda1cc61d4e802c345468fcf0f796edeb5f005a50b9b79435",
+      "seed": 20261170,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Native habitat is protected across 100 acres.\nX) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "ceacfed28a7cc9013d06ff758edc92ccebbb4baa388f94c092e14167b00ace58"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Native habitat is protected across 100 acres.\nB) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:",
+      "prompt_sha256": "3fa3e2f00f3ec64bcd41cdb9d0d61a4701c0a4a369f92142a5d5a99218685edb",
+      "seed": 20261171,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Native habitat is protected across 100 acres.\nB) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "b4ab8ac57e0cbcdcb84514d6dfdc1ca8328b3d8467e1d99c331043f17572ca10"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Native habitat is protected across 100 acres.\nX) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:",
+      "prompt_sha256": "b2546865a860178d349b124f6803e7875bef4d4692d9b991a6a947463fdcfa18",
+      "seed": 20261172,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nY) Native habitat is protected across 100 acres.\nX) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "cbad51f26f2c3e0428f344017b83348852d04197b020fae3fe51a271219fbb72"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nA) Native habitat is protected across 100 acres.\nSelection:",
+      "prompt_sha256": "7feed9f8b3e4c4a883585be4eead6d73c2173ca8782f81a57dded3f0786c110c",
+      "seed": 20261173,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nA) Native habitat is protected across 100 acres.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "b70bed41921e015d137d6271cc1cc58f7412131205d76ac2110e8b2a61b8a0b0"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "vet_prevents_extinction",
+      "scenario_label": "Veterinary care prevents local-population extinction",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "trial_id": "vet_prevents_extinction::pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:",
+      "prompt_sha256": "fd3857fefda487401e4d94d7574ab1c62e9373e38723692fa766a3772e521a32",
+      "seed": 20261174,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": -1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nB) Native habitat is protected across 100 acres.\nA) Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "e3e213cdf88a1e2151132cce0dcacfc916955d24b83a0be8d984842840c2cb3f"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-B",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nA) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "a474a6335345d77f90c1776e8bdd87bafd3431a8714e1486de2217dbf246eed1",
+      "seed": 20261175,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nA) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "a6c64fd6522d3fa1974e9d7c1b1a2e1041c28bb197252aa406f85a3fd06ff615"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-X",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nY) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "a9d29eb153560e5c0589c3f888a4eed8da8a7a75e92091b9d2c0bbd59e113e83",
+      "seed": 20261176,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nY) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "b3eaff228ac4c4ea6993ed7daf2c158029f1d3ed078c26e18a274e5cd170540d"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-Y",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:",
+      "prompt_sha256": "8da673a8c618708f7ac8a9e7e24b12c7457d9cab6de44d431d447a3cda6e1952",
+      "seed": 20261177,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "dd974821b3f3c85b8d0eaa6fe61cb7fdc6ad43dca1ffb1973e3d2d974ec5b0c5"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-Y",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:",
+      "prompt_sha256": "3c376773b235a44267b51f7df29ac4b39f83d917f5fe424ac83f3a29c783c5af",
+      "seed": 20261178,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nX) Veterinary care is provided to 100 wild animals.\nY) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "643c7dbf5d87aa8e7b450443af09b11cd2f8cf4247815091965d9e1575c1d8c1"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-B",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:",
+      "prompt_sha256": "e58393c35b857ec5603118dd4a378008abf255d9a6e3f51b3a6db799e610c2b8",
+      "seed": 20261179,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "7dbb433d88338b3a9dccac0e7808a2cb3fb44a59f750d9ebc6526159759f414a"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-A",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:",
+      "prompt_sha256": "3acc7d0126d83f614529eb7a4670350e91723790b8e1b85ec62432700d5f4fb4",
+      "seed": 20261180,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "101d6405e9b9e02a5e7465da1d585c92613d603204801d4b1159df814a728ff4"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-donation_choice-XY-one_first-X",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:",
+      "prompt_sha256": "e91e80c2838036893133f7e9df441620ac757f6ca7dd9f7ddd181d14500ac480",
+      "seed": 20261181,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "e63eb231f7a02a752b7ad597180eb47d1ac55e1a8641255449dcc50e63c53019"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-X",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "X",
+        "Y"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nX) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nY) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "4daf7b2071df2963ba2570adb3166e922671b82550d2faaf21bd371f03ca6e03",
+      "seed": 20261182,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nX) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nY) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "06840501026edeb2514e2627e95404d03c03f25f3c65532470d098436e9a09d9"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-A",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nB) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "76f510806be9d55f52acc92cbe6b2dc9cce2f993635b53db106642034b246b8d",
+      "seed": 20261183,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nA) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nB) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "e5afdd23a3170821a4ed2d56b0561f0324080febf6d63c553a80f7c7e5a7ea40"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-recipient_choice-AB-one_first-B",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:",
+      "prompt_sha256": "41b0dab8d8705fa19a1406d0d16687423b78222aa65fed3b98f12b13016caa0d",
+      "seed": 20261184,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nA) Veterinary care is provided to 100 wild animals.\nB) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "398d5bc079f03bfc3bead0b58051d4ae542ed60e648d6ad09810b8d119f08c30"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-recipient_choice-XY-one_first-X",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "X",
+      "veterinary_symbol": "Y",
+      "outcome_symbols": {
+        "habitat": "X",
+        "veterinary": "Y"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:",
+      "prompt_sha256": "a6098845da48d4fb90dff111040eba9fe9e3eda088ef2b168108ae4b55bfba16",
+      "seed": 20261185,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nY) Veterinary care is provided to 100 wild animals.\nX) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "d80482d988524c3041a11652184544bdae6a90f49486cd7e9f430f75b0ed07cd"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-donation_choice-XY-zero_first-Y",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nX) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "dacec686982250a91b53ad000a4921b752eba15fa8382f5c5a559c0259ff8f8b",
+      "seed": 20261186,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nY) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nX) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "911a2440ea64976fb6870f9c4b623ce437315b8d1f2832f780684e38205c6ad7"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-donation_choice-AB-zero_first-A",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "A",
+        "B"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nB) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "e09893fc4f0e4563487f050eb9fd0c0dd32e7b1cd1fad0bf6a3b8cc1febf416f",
+      "seed": 20261187,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nA) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nB) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "72c2446a62ab1c342fb60e0fd8f7f1f213f2dcab2e3cabe692e351a8bc72c524"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-recipient_choice-XY-zero_first-Y",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "XY",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "Y",
+        "X"
+      ],
+      "habitat_symbol": "Y",
+      "veterinary_symbol": "X",
+      "outcome_symbols": {
+        "habitat": "Y",
+        "veterinary": "X"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nY) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nX) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "f7d5fcc3a5049bada06860883c44438549c2a7945ff2f0a73f9941f8f744b839",
+      "seed": 20261188,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nY) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nX) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "b4caeec6e0723783bd59703e255f662f84d44f1b4531ae1f58a403b16bfdca0b"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "layout_id": "pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-donation_choice-AB-one_first-A",
+      "wording_id": "donation_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "one_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "A",
+      "veterinary_symbol": "B",
+      "outcome_symbols": {
+        "habitat": "A",
+        "veterinary": "B"
+      },
+      "prompt": "One donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:",
+      "prompt_sha256": "e39e3056825f5c27651606a97a4548b85888facf152bbdfb6b33f5e515f968df",
+      "seed": 20261189,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nOne donation is available. Select one of the programmes below to receive it. Reply with its symbol only.\nB) Veterinary care is provided to 100 wild animals.\nA) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "bad8c87a4a54b5e363cf175f83148fe0bbc7c2e63c2506846c59e333c945f783"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "contextual_preference_likelihood",
+      "scenario_id": "ecosystem_wide",
+      "scenario_label": "Habitat protection prevents ecosystem collapse",
+      "source_trial_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "layout_id": "pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "trial_id": "ecosystem_wide::pref-habitat_vs_veterinary_care-recipient_choice-AB-zero_first-B",
+      "wording_id": "recipient_choice",
+      "symbol_scheme": "AB",
+      "presentation_order": "zero_first",
+      "option_symbols_in_presentation_order": [
+        "B",
+        "A"
+      ],
+      "habitat_symbol": "B",
+      "veterinary_symbol": "A",
+      "outcome_symbols": {
+        "habitat": "B",
+        "veterinary": "A"
+      },
+      "prompt": "A donor will fund one listed programme. Choose the recipient by symbol only.\nB) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nA) Veterinary care is provided to 100 wild animals.\nSelection:",
+      "prompt_sha256": "61509e3e7d13c54192110bf4c3325ff592d075a69cff2bcd6420593c061f1b6f",
+      "seed": 20261190,
+      "answer_format": "bare one-token option symbol after Qwen assistant prefix",
+      "expected_direction_vs_baseline": 1,
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA donor will fund one listed programme. Choose the recipient by symbol only.\nB) The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nA) Veterinary care is provided to 100 wild animals.\nSelection:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "f0ab49bb4a9fabaa6dc4ae07d2e0d063d4b9b0aeb4f9758f109f1e482dc02b1a"
+    }
+  ],
+  "comprehension_trials": [
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "habitat_secure",
+      "trial_id": "comprehension::habitat_secure::true_first::A",
+      "statement_order": "true_first",
+      "expected_symbol": "A",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nA) The habitat is already intact and legally protected.\nB) The habitat is threatened with imminent ecosystem collapse.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "8f112ef9d582ee854b107f52d1511520f39dd799af2e1ae3eb5aa903aeab5598",
+      "seed": 20271127,
+      "candidate_text": {
+        "A": "The habitat is already intact and legally protected.",
+        "B": "The habitat is threatened with imminent ecosystem collapse."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nA) The habitat is already intact and legally protected.\nB) The habitat is threatened with imminent ecosystem collapse.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "a0f64fc01071b36ba955951aab26fbf30024a14b0a58d60c3182a46cc1d219b2"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "habitat_secure",
+      "trial_id": "comprehension::habitat_secure::true_first::B",
+      "statement_order": "true_first",
+      "expected_symbol": "B",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nB) The habitat is already intact and legally protected.\nA) The habitat is threatened with imminent ecosystem collapse.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "80a50762dea1f95cd1e005e69f610130a7bd80e8b195425808c5fc52361c9d5d",
+      "seed": 20271128,
+      "candidate_text": {
+        "B": "The habitat is already intact and legally protected.",
+        "A": "The habitat is threatened with imminent ecosystem collapse."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nB) The habitat is already intact and legally protected.\nA) The habitat is threatened with imminent ecosystem collapse.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "35563fe03a1d7021cabb2cf123559ac6350c116ae03a6c6d01fdf920dc276f0e"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "habitat_secure",
+      "trial_id": "comprehension::habitat_secure::false_first::A",
+      "statement_order": "false_first",
+      "expected_symbol": "A",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nB) The habitat is threatened with imminent ecosystem collapse.\nA) The habitat is already intact and legally protected.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "78fc04e1a99806db6e85da81af9d0f1ffbf4a3bba168d415595ef60075ed97ee",
+      "seed": 20271129,
+      "candidate_text": {
+        "B": "The habitat is threatened with imminent ecosystem collapse.",
+        "A": "The habitat is already intact and legally protected."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nB) The habitat is threatened with imminent ecosystem collapse.\nA) The habitat is already intact and legally protected.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "0c104c0bed218cb0cc73d0995b6b6d0b31ff82d826e661a1af81483277d7511f"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "habitat_secure",
+      "trial_id": "comprehension::habitat_secure::false_first::B",
+      "statement_order": "false_first",
+      "expected_symbol": "B",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nA) The habitat is threatened with imminent ecosystem collapse.\nB) The habitat is already intact and legally protected.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "f35029f769f28ad7311d22f3f8fddba73f56b28e5f310418ec6258e444a660e1",
+      "seed": 20271130,
+      "candidate_text": {
+        "A": "The habitat is threatened with imminent ecosystem collapse.",
+        "B": "The habitat is already intact and legally protected."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nA) The habitat is threatened with imminent ecosystem collapse.\nB) The habitat is already intact and legally protected.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "a5f9a7861c7fed60be3c5bb3c410a3b54257dc9b29dc5a45bf5cc0372a74c991"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "vet_prevents_extinction",
+      "trial_id": "comprehension::vet_prevents_extinction::true_first::A",
+      "statement_order": "true_first",
+      "expected_symbol": "A",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: Native habitat is protected across 100 acres.\nVeterinary program: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\n\nWhich statement is explicitly supported by the scenario?\nA) The veterinary care is expected to prevent the local population's extinction.\nB) The veterinary care improves health but has no population-level survival effect.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "93c684b24db04cb0af230268290130b90c3d790c54201a21ff6dcac292624a73",
+      "seed": 20271131,
+      "candidate_text": {
+        "A": "The veterinary care is expected to prevent the local population's extinction.",
+        "B": "The veterinary care improves health but has no population-level survival effect."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: Native habitat is protected across 100 acres.\nVeterinary program: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\n\nWhich statement is explicitly supported by the scenario?\nA) The veterinary care is expected to prevent the local population's extinction.\nB) The veterinary care improves health but has no population-level survival effect.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "a426519dd0480230b840e838e0c4dd5b38e685ac6cca19048cbc0d44ffb9efe0"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "vet_prevents_extinction",
+      "trial_id": "comprehension::vet_prevents_extinction::true_first::B",
+      "statement_order": "true_first",
+      "expected_symbol": "B",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: Native habitat is protected across 100 acres.\nVeterinary program: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\n\nWhich statement is explicitly supported by the scenario?\nB) The veterinary care is expected to prevent the local population's extinction.\nA) The veterinary care improves health but has no population-level survival effect.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "6c1b5d049c6a152bd6deb6780806fa95ea453ab9dbb4477828e48b6106b53061",
+      "seed": 20271132,
+      "candidate_text": {
+        "B": "The veterinary care is expected to prevent the local population's extinction.",
+        "A": "The veterinary care improves health but has no population-level survival effect."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: Native habitat is protected across 100 acres.\nVeterinary program: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\n\nWhich statement is explicitly supported by the scenario?\nB) The veterinary care is expected to prevent the local population's extinction.\nA) The veterinary care improves health but has no population-level survival effect.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "8de39e47db95e8566011e698f24e9dbad8d1b5c80cd8001f3ce3ef871127d63b"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "vet_prevents_extinction",
+      "trial_id": "comprehension::vet_prevents_extinction::false_first::A",
+      "statement_order": "false_first",
+      "expected_symbol": "A",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: Native habitat is protected across 100 acres.\nVeterinary program: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\n\nWhich statement is explicitly supported by the scenario?\nB) The veterinary care improves health but has no population-level survival effect.\nA) The veterinary care is expected to prevent the local population's extinction.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "9a23c19bc8ca98c5343247b3f824c328edeac966e2c178baf23b6d91c89dfc3e",
+      "seed": 20271133,
+      "candidate_text": {
+        "B": "The veterinary care improves health but has no population-level survival effect.",
+        "A": "The veterinary care is expected to prevent the local population's extinction."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: Native habitat is protected across 100 acres.\nVeterinary program: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\n\nWhich statement is explicitly supported by the scenario?\nB) The veterinary care improves health but has no population-level survival effect.\nA) The veterinary care is expected to prevent the local population's extinction.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "65d3f46945796b245e86326992a2e563cd6dc311fe4a213de1d0bd35d855fc31"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "vet_prevents_extinction",
+      "trial_id": "comprehension::vet_prevents_extinction::false_first::B",
+      "statement_order": "false_first",
+      "expected_symbol": "B",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: Native habitat is protected across 100 acres.\nVeterinary program: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\n\nWhich statement is explicitly supported by the scenario?\nA) The veterinary care improves health but has no population-level survival effect.\nB) The veterinary care is expected to prevent the local population's extinction.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "8836de46cb19d5b7d3931b834ef4275bc46662cb43e9b08c1be013960a5058a1",
+      "seed": 20271134,
+      "candidate_text": {
+        "A": "The veterinary care improves health but has no population-level survival effect.",
+        "B": "The veterinary care is expected to prevent the local population's extinction."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: Native habitat is protected across 100 acres.\nVeterinary program: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction.\n\nWhich statement is explicitly supported by the scenario?\nA) The veterinary care improves health but has no population-level survival effect.\nB) The veterinary care is expected to prevent the local population's extinction.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "3146a257152af4c9f91ce4646c1dbe308cd8700b8c677e0d0a413755034e8a6f"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "ecosystem_wide",
+      "trial_id": "comprehension::ecosystem_wide::true_first::A",
+      "statement_order": "true_first",
+      "expected_symbol": "A",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nA) Habitat protection prevents ecosystem collapse and sustains many species for decades.\nB) Habitat protection adds only a modest buffer to a secure ecosystem.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "e748381944e89c1c529eb5631af1bb4654b8a6c3ecbe1f04f4285924fc47bcf1",
+      "seed": 20271135,
+      "candidate_text": {
+        "A": "Habitat protection prevents ecosystem collapse and sustains many species for decades.",
+        "B": "Habitat protection adds only a modest buffer to a secure ecosystem."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nA) Habitat protection prevents ecosystem collapse and sustains many species for decades.\nB) Habitat protection adds only a modest buffer to a secure ecosystem.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "e0781ff7a5f4fa9673038ca953a7da81f33a6200e418479e08a08e33ca46994b"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "ecosystem_wide",
+      "trial_id": "comprehension::ecosystem_wide::true_first::B",
+      "statement_order": "true_first",
+      "expected_symbol": "B",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nB) Habitat protection prevents ecosystem collapse and sustains many species for decades.\nA) Habitat protection adds only a modest buffer to a secure ecosystem.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "2a2410cdae99fad9cd28c24bbfbf55047b78abd1121de285a394b537d4fa180f",
+      "seed": 20271136,
+      "candidate_text": {
+        "B": "Habitat protection prevents ecosystem collapse and sustains many species for decades.",
+        "A": "Habitat protection adds only a modest buffer to a secure ecosystem."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nB) Habitat protection prevents ecosystem collapse and sustains many species for decades.\nA) Habitat protection adds only a modest buffer to a secure ecosystem.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "d88613a833ac91a2aa5f66418d585122a597522e48438cdc481dc7a681d73925"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "ecosystem_wide",
+      "trial_id": "comprehension::ecosystem_wide::false_first::A",
+      "statement_order": "false_first",
+      "expected_symbol": "A",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nB) Habitat protection adds only a modest buffer to a secure ecosystem.\nA) Habitat protection prevents ecosystem collapse and sustains many species for decades.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "84834f1e14ccfd82d990d451595fd0d79628800575b2c1b9079edf6d2d399c2c",
+      "seed": 20271137,
+      "candidate_text": {
+        "B": "Habitat protection adds only a modest buffer to a secure ecosystem.",
+        "A": "Habitat protection prevents ecosystem collapse and sustains many species for decades."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nB) Habitat protection adds only a modest buffer to a secure ecosystem.\nA) Habitat protection prevents ecosystem collapse and sustains many species for decades.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "b6850241f9c98ac0520892597a87cfcb19e47dac08c4cc7c66c576329058f2df"
+    },
+    {
+      "protocol": "pretrained-donation-bet-ecological-mechanism-v1",
+      "stage": "assumption_comprehension",
+      "scenario_id": "ecosystem_wide",
+      "trial_id": "comprehension::ecosystem_wide::false_first::B",
+      "statement_order": "false_first",
+      "expected_symbol": "B",
+      "symbol_scheme": "AB",
+      "prompt": "Habitat program: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nA) Habitat protection adds only a modest buffer to a secure ecosystem.\nB) Habitat protection prevents ecosystem collapse and sustains many species for decades.\nReply with the option symbol only.\nAnswer:",
+      "prompt_sha256": "4beaabd7dc553253861fc1317863a00335e2e67328619f8e8a578c012ab259b4",
+      "seed": 20271138,
+      "candidate_text": {
+        "A": "Habitat protection adds only a modest buffer to a secure ecosystem.",
+        "B": "Habitat protection prevents ecosystem collapse and sustains many species for decades."
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHabitat program: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades.\nVeterinary program: Veterinary care is provided to 100 wild animals.\n\nWhich statement is explicitly supported by the scenario?\nA) Habitat protection adds only a modest buffer to a secure ecosystem.\nB) Habitat protection prevents ecosystem collapse and sustains many species for decades.\nReply with the option symbol only.\nAnswer:<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "8f5141742592d9a4927a04e60ea8aa0f14d2fd191a62b9ac3b55f644c8b8c419"
+    }
+  ],
+  "explanation_prompts": [
+    {
+      "stage": "baseline_explanation",
+      "scenario_id": "baseline",
+      "order_reversed": false,
+      "trial_id": "explanation::baseline::0",
+      "prompt": "A charitable donor must choose between Native habitat protection across 100 acres and Veterinary care for 100 wild animals. What considerations would determine which intervention produces the greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.",
+      "prompt_sha256": "2c4066b894d6e13233e210b08845f1af3274f548bc99cc1c8cde4a760986beb1",
+      "seed": 20281127,
+      "generation": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "max_tokens": 180
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA charitable donor must choose between Native habitat protection across 100 acres and Veterinary care for 100 wild animals. What considerations would determine which intervention produces the greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "8c4977460c9acfded756688138411f91f3307f27241353c960d06d198c81af52"
+    },
+    {
+      "stage": "baseline_explanation",
+      "scenario_id": "baseline",
+      "order_reversed": true,
+      "trial_id": "explanation::baseline::1",
+      "prompt": "A charitable donor must choose between Veterinary care for 100 wild animals and Native habitat protection across 100 acres. What considerations would determine which intervention produces the greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.",
+      "prompt_sha256": "74e592e806ec68ea19a6167ecbf22a67399b83637c39f77779dee1fbf2728ce0",
+      "seed": 20281128,
+      "generation": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "max_tokens": 180
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA charitable donor must choose between Veterinary care for 100 wild animals and Native habitat protection across 100 acres. What considerations would determine which intervention produces the greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "0e4b488355904644d2e4db1caeb0f832de54a70ebe92d0227dcf3e29e3c10776"
+    },
+    {
+      "stage": "assumption_explanation",
+      "scenario_id": "habitat_secure",
+      "order_reversed": false,
+      "trial_id": "explanation::habitat_secure",
+      "prompt": "Consider two charitable programmes. Programme H: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage. Programme V: Veterinary care is provided to 100 wild animals. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.",
+      "prompt_sha256": "e7af8f7971756d0f922f5d0c529baca4808197d49de4361bf6c068b8fc1d0f38",
+      "seed": 20281129,
+      "generation": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "max_tokens": 180
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nConsider two charitable programmes. Programme H: The 100 acres of native habitat are already intact and legally protected; added protection would prevent only low-probability future damage. Programme V: Veterinary care is provided to 100 wild animals. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "eb498e22db514f06fbc0e1649fdc73fd51b980bce07f32d06ffa3c793032e3a6"
+    },
+    {
+      "stage": "assumption_explanation",
+      "scenario_id": "vet_prevents_extinction",
+      "order_reversed": false,
+      "trial_id": "explanation::vet_prevents_extinction",
+      "prompt": "Consider two charitable programmes. Programme H: Native habitat is protected across 100 acres. Programme V: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.",
+      "prompt_sha256": "58eef41976c550bc9474561cad10b06bf099f7c8e628896e13da48dc54630110",
+      "seed": 20281130,
+      "generation": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "max_tokens": 180
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nConsider two charitable programmes. Programme H: Native habitat is protected across 100 acres. Programme V: Veterinary care is provided to 100 wild animals in a critically endangered local population; the care is expected to prevent that population's extinction. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "b0247c6b4817cf81a75b6815b1d782e752770b5eaae30a0be752639d059e6682"
+    },
+    {
+      "stage": "assumption_explanation",
+      "scenario_id": "ecosystem_wide",
+      "order_reversed": false,
+      "trial_id": "explanation::ecosystem_wide",
+      "prompt": "Consider two charitable programmes. Programme H: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades. Programme V: Veterinary care is provided to 100 wild animals. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.",
+      "prompt_sha256": "2c25c5c855755a13106a93f21c938a6c14b5289e656520ed3e131dabdebab8b4",
+      "seed": 20281131,
+      "generation": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.9,
+        "max_tokens": 180
+      },
+      "scoring_prompt": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nConsider two charitable programmes. Programme H: The 100 acres of native habitat are protected, preventing collapse of a threatened ecosystem and sustaining many species for decades. Programme V: Veterinary care is provided to 100 wild animals. What considerations determine which intervention produces greater overall benefit? Briefly explain the trade-offs, then make a recommendation. Do not assume either option is preferred.<|im_end|>\n<|im_start|>assistant\n",
+      "scoring_prompt_sha256": "4876851a1773a2fa71c2d38e1b122df41faabdf9b83f3571e2ca95be49f38381"
+    }
+  ],
+  "scoring": {
+    "target": "logP(habitat continuation) - logP(veterinary continuation)",
+    "candidate_continuations": "bare single-token answer symbol after verified Qwen assistant generation prefix",
+    "distribution": "native unfiltered raw-logit softmax, temperature -1, top-k 0, top-p 1, post_sampling_probs false",
+    "candidate_set_probability": "conditional softmax over the two full candidate continuation log likelihoods; not vocabulary-wide probability"
+  },
+  "stability_rule": "unchanged: for a scenario, at least 12 of the 16 matched layouts favor the same beneficiary and the mean margin agrees across both wordings, both presentation orders, and both answer-symbol schemes",
+  "primary_contrasts": [
+    "habitat_secure minus baseline margin < 0",
+    "vet_prevents_extinction minus baseline margin < 0",
+    "ecosystem_wide minus baseline margin > 0"
+  ],
+  "interpretation_guardrails": [
+    "explanations are generated outputs, not privileged causal reports",
+    "layout repetitions are counterbalances, not independent model samples",
+    "a scenario-dependent shift can support sensitivity to stipulated consequences, not intrinsic moral values"
+  ],
+  "manifest_sha256": "ab03e9ee5b44c40b7b0b4e00b5abff2bb06c4d3960e08f0094c746f04380160a",
+  "model": "Qwen/Qwen2.5-14B-Instruct via qwen2.5:14b-instruct-q4_K_M",
+  "model_artifact_sha256": "2049f5674b1e92b4464e5729975c9689fcfbf0b0e4443ccf10b5339f370f9a54",
+  "chat_template": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n{content}<|im_end|>\n<|im_start|>assistant\n"
+}

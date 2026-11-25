@@ -1,0 +1,79 @@
+{
+  "forced_choice_construct": "conditional choice between the two displayed beneficiaries, not spontaneous preference",
+  "format_freeze_sha256": "6e0c5cc3cb149c22ed5305907d05b4b7218f12f4994234371256ded4f20f1e59",
+  "freeze_sha256": "611d5b09d06e33c71cb730abd50a9dae25c042846e3aa11c41d6b8d7e4b582c1",
+  "frozen_at_utc": "2026-11-25T02:37:53.327533+00:00",
+  "manifest_core_sha256": "c16e8c3d4cf3c33043f20c8b92231a3d19620b26e0999f5ed87217e95634fdc6",
+  "manifest_sha256": "79cb596ae6e8e23da5bef705968883e6492b784612cd660d46ecff37e4bda84b",
+  "predeclared_primary_pair_id": "habitat_vs_veterinary_care",
+  "protocol": "claude-opus-4-8-structured-forced-choice-preference-v2",
+  "request_count": 64,
+  "requests_sha256": "e0b53454a0e2e5f814de1d9a3b88017b5d7b2bd4d0a536514e1fe8716d788a99",
+  "schema_neutrality": {
+    "both_prompt_symbols_allowed_each_trial": true,
+    "mapping_counts_by_pair_and_outcome": {
+      "flood_food_vs_housing": {
+        "outcome_0": {
+          "A": 4,
+          "B": 4,
+          "X": 4,
+          "Y": 4
+        },
+        "outcome_1": {
+          "A": 4,
+          "B": 4,
+          "X": 4,
+          "Y": 4
+        }
+      },
+      "habitat_vs_veterinary_care": {
+        "outcome_0": {
+          "A": 4,
+          "B": 4,
+          "X": 4,
+          "Y": 4
+        },
+        "outcome_1": {
+          "A": 4,
+          "B": 4,
+          "X": 4,
+          "Y": 4
+        }
+      },
+      "prevention_vs_treatment": {
+        "outcome_0": {
+          "A": 4,
+          "B": 4,
+          "X": 4,
+          "Y": 4
+        },
+        "outcome_1": {
+          "A": 4,
+          "B": 4,
+          "X": 4,
+          "Y": 4
+        }
+      },
+      "water_vs_education": {
+        "outcome_0": {
+          "A": 4,
+          "B": 4,
+          "X": 4,
+          "Y": 4
+        },
+        "outcome_1": {
+          "A": 4,
+          "B": 4,
+          "X": 4,
+          "Y": 4
+        }
+      }
+    },
+    "mapping_is_fully_counterbalanced": true,
+    "pass": true,
+    "same_schema_structure_all_trials": true,
+    "schema_contains_only_choice_symbol_enum": true,
+    "schema_includes_no_beneficiary_or_outcome_mapping": true
+  },
+  "stage": "preferences"
+}

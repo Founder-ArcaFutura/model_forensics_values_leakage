@@ -14,6 +14,8 @@ from .opaque_clause_control import create_opaque_manifest, step_opaque_control, 
 from .moral_inversion import create_inversion_manifest, step_inversion, analyze_inversion_results
 from .manifest import create_manifest
 from .runner import run_manifest
+from .pretrained_pilot import run_pilot as run_pretrained_pilot, run_smoke as run_pretrained_smoke
+from .pretrained_choice_probe import run_choice_pilot, run_choice_smoke
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -33,6 +35,19 @@ def build_parser() -> argparse.ArgumentParser:
     analyze = subparsers.add_parser("analyze", help="Parse and summarize raw JSONL")
     analyze.add_argument("--results", type=Path, required=True)
     analyze.add_argument("--out", type=Path, required=True)
+
+    pretrained_smoke = subparsers.add_parser("pretrained-smoke", help="Run unchanged-prompt base-model smoke")
+    pretrained_smoke.add_argument("--config", type=Path, required=True)
+    pretrained_smoke.add_argument("--out", type=Path, required=True)
+    pretrained_pilot = subparsers.add_parser("pretrained-pilot", help="Run the neutral-calibrated base-model pilot")
+    pretrained_pilot.add_argument("--config", type=Path, required=True)
+    pretrained_pilot.add_argument("--out", type=Path, required=True)
+    choice_smoke = subparsers.add_parser("pretrained-choice-smoke", help="Run one base-model choice-probe smoke")
+    choice_smoke.add_argument("--config", type=Path, required=True)
+    choice_smoke.add_argument("--out", type=Path, required=True)
+    choice_pilot = subparsers.add_parser("pretrained-choice-pilot", help="Run the counterbalanced base-model choice probe")
+    choice_pilot.add_argument("--config", type=Path, required=True)
+    choice_pilot.add_argument("--out", type=Path, required=True)
 
     anthropic_smoke = subparsers.add_parser(
         "anthropic-smoke", help="Run one synchronous two-turn Anthropic request-shape smoke"
@@ -143,6 +158,23 @@ def main() -> None:
         summary = analyze_results(args.results, args.out)
         print(f"Records analyzed: {summary['records_total']}")
         print(f"Primary contrast: {summary['primary_directional_contrast']['difference']}")
+    elif args.command == "pretrained-smoke":
+        result = run_pretrained_smoke(args.config, args.out)
+        print(f"Unchanged-prompt smoke: {result['status']}; valid estimate: {result['valid_estimate']}")
+        if result.get("estimate") is not None:
+            print(f"Estimate: {result['estimate']}")
+    elif args.command == "pretrained-pilot":
+        result = run_pretrained_pilot(args.config, args.out)
+        print(f"Pretrained pilot: {result['valid_estimates']}/{result['records_total']} valid estimates")
+        print(f"Neutral-derived threshold: {result['threshold']}")
+    elif args.command == "pretrained-choice-smoke":
+        result = run_choice_smoke(args.config, args.out)
+        print(f"Choice smoke: {result['status']}; valid choice: {result['choice_valid']}")
+        if result.get("choice"):
+            print(f"Choice: {result['choice']}")
+    elif args.command == "pretrained-choice-pilot":
+        result = run_choice_pilot(args.config, args.out)
+        print(f"Choice pilot complete: {result['valid_choices']}/{result['records_total']} valid choices")
     elif args.command == "anthropic-smoke":
         record = run_anthropic_smoke(args.manifest, args.out)
         print(f"Smoke trial: {record['trial_id']} {record['arm_id']} {record['status']}")

@@ -1,0 +1,232 @@
+{
+  "requests": [
+    {
+      "custom_id": "base-giraffe-011",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    {
+      "custom_id": "base-giraffe-008",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    {
+      "custom_id": "base-giraffe-006",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    {
+      "custom_id": "base-giraffe-010",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    {
+      "custom_id": "base-giraffe-002",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    {
+      "custom_id": "base-giraffe-009",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    {
+      "custom_id": "base-giraffe-004",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    {
+      "custom_id": "base-giraffe-012",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    {
+      "custom_id": "base-giraffe-003",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    {
+      "custom_id": "base-giraffe-005",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    {
+      "custom_id": "base-giraffe-007",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    },
+    {
+      "custom_id": "base-giraffe-001",
+      "params": {
+        "max_tokens": 2048,
+        "messages": [
+          {
+            "content": "I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number. Question: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.) So, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-opus-4-8",
+        "output_config": {
+          "effort": "low"
+        },
+        "thinking": {
+          "type": "adaptive"
+        }
+      }
+    }
+  ]
+}

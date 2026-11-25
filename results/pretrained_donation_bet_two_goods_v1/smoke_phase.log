@@ -1,0 +1,16 @@
+{
+  "records": 12,
+  "style_counts": {
+    "strict_completion": {
+      "strict_valid_n": 5,
+      "n": 6
+    },
+    "bare_answer": {
+      "strict_valid_n": 0,
+      "n": 6
+    }
+  },
+  "selected_style_by_preregistered_rule": "strict_completion",
+  "raw_sha256": "0c311b702a3ace292cc5470694d1242253a5ce0cf32839fc9d329e041b294225",
+  "selection_not_based_on_estimate_value": true
+}
