@@ -1,20 +1,22 @@
 {
   "batch_id": "msgbatch_01V2jrFeFLFMj98LzwgmvDZr",
-  "last_polled_at_utc": "2026-11-25T02:44:52.070171+00:00",
-  "last_processing_status": "in_progress",
+  "last_polled_at_utc": "2026-11-25T02:47:34.904959+00:00",
+  "last_processing_status": "ended",
   "last_request_counts": {
     "canceled": 0,
     "errored": 0,
     "expired": 0,
-    "processing": 64,
-    "succeeded": 0
+    "processing": 0,
+    "succeeded": 64
   },
   "manifest_core_sha256": "c16e8c3d4cf3c33043f20c8b92231a3d19620b26e0999f5ed87217e95634fdc6",
-  "phase": "submitted",
+  "phase": "retrieved",
   "prepared_at_utc": "2026-11-25T02:37:52.644893+00:00",
   "protocol": "claude-opus-4-8-structured-forced-choice-preference-v2",
+  "provider_results_sha256": "1367527fc4c524b31625770fb29d42a503877301e1bc5bc7ca169ff55badf35b",
   "request_count": 64,
   "request_sha256": "e0b53454a0e2e5f814de1d9a3b88017b5d7b2bd4d0a536514e1fe8716d788a99",
+  "retrieved_at_utc": "2026-11-25T02:47:42.926806+00:00",
   "stage": "preferences",
   "submission_started_at_utc": "2026-11-25T02:44:49.628918+00:00",
   "submitted_at_utc": "2026-11-25T02:44:50.898309+00:00"

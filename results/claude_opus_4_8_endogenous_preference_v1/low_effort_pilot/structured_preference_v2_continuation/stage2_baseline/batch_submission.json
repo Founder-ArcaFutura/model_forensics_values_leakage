@@ -1,0 +1,18 @@
+{
+  "archived_at": null,
+  "cancel_initiated_at": null,
+  "created_at": "2026-11-25T03:02:49.663312+00:00",
+  "ended_at": null,
+  "expires_at": "2026-11-26T03:02:49.663312+00:00",
+  "id": "msgbatch_012RavYCwf9RprpDu1WJH3vi",
+  "processing_status": "in_progress",
+  "request_counts": {
+    "canceled": 0,
+    "errored": 0,
+    "expired": 0,
+    "processing": 12,
+    "succeeded": 0
+  },
+  "results_url": null,
+  "type": "message_batch"
+}

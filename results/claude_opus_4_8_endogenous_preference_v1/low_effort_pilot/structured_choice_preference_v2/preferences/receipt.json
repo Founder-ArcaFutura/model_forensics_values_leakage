@@ -1,0 +1,27 @@
+{
+  "batch_id": "msgbatch_01V2jrFeFLFMj98LzwgmvDZr",
+  "manifest_core_sha256": "c16e8c3d4cf3c33043f20c8b92231a3d19620b26e0999f5ed87217e95634fdc6",
+  "manifest_sha256": "79cb596ae6e8e23da5bef705968883e6492b784612cd660d46ecff37e4bda84b",
+  "protocol": "claude-opus-4-8-structured-forced-choice-preference-v2",
+  "provider_results_sha256": "1367527fc4c524b31625770fb29d42a503877301e1bc5bc7ca169ff55badf35b",
+  "raw_sha256": "fed3f446422d54e730365fd064d5a73e7cdf9485a25ad5c97c4ec412e5e42ae8",
+  "requested_model": "claude-opus-4-8",
+  "retrieved_at_utc": "2026-11-25T02:47:42.926084+00:00",
+  "returned_models": {
+    "claude-opus-4-8": 64
+  },
+  "stage": "preferences",
+  "status_counts": {
+    "completed": 64
+  },
+  "stop_reasons": {
+    "end_turn": 64
+  },
+  "usage": {
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "input_tokens": 18656,
+    "output_tokens": 654
+  },
+  "valid_structured_choice_count": 64
+}

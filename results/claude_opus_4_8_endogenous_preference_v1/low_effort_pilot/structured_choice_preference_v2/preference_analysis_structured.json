@@ -1,0 +1,391 @@
+{
+  "analysis_scope": "Descriptive frequencies, design-subgroup consistency, position and symbol-mapping effects; forced choices do not establish spontaneous preference.",
+  "choice_frequencies": {
+    "flood_food_vs_housing": {
+      "choice_frequency_by_beneficiary": {
+        "outcome_0": 1,
+        "outcome_1": 15
+      },
+      "choice_frequency_by_symbol": {
+        "A": 4,
+        "B": 4,
+        "X": 5,
+        "Y": 3
+      },
+      "first_position_choice": {
+        "by_presentation_order": {
+          "one_first": {
+            "chosen_first_count": 7,
+            "chosen_first_rate": 0.875,
+            "n_valid": 8,
+            "outcome_shown_first": "outcome_1"
+          },
+          "zero_first": {
+            "chosen_first_count": 0,
+            "chosen_first_rate": 0.0,
+            "n_valid": 8,
+            "outcome_shown_first": "outcome_0"
+          }
+        },
+        "chosen_first_count": 7,
+        "chosen_first_minus_chosen_second": -0.125,
+        "chosen_first_rate": 0.4375,
+        "n_valid": 16
+      },
+      "invalid_or_incomplete": 0,
+      "n_total": 16,
+      "n_valid": 16,
+      "outcome_choice_rates_by_symbol_mapping": {
+        "outcome_0_as_A": {
+          "choice_rate": 0.0,
+          "chosen_count": 0,
+          "n_valid": 4
+        },
+        "outcome_0_as_B": {
+          "choice_rate": 0.0,
+          "chosen_count": 0,
+          "n_valid": 4
+        },
+        "outcome_0_as_X": {
+          "choice_rate": 0.25,
+          "chosen_count": 1,
+          "n_valid": 4
+        },
+        "outcome_0_as_Y": {
+          "choice_rate": 0.0,
+          "chosen_count": 0,
+          "n_valid": 4
+        },
+        "outcome_1_as_A": {
+          "choice_rate": 1.0,
+          "chosen_count": 4,
+          "n_valid": 4
+        },
+        "outcome_1_as_B": {
+          "choice_rate": 1.0,
+          "chosen_count": 4,
+          "n_valid": 4
+        },
+        "outcome_1_as_X": {
+          "choice_rate": 1.0,
+          "chosen_count": 4,
+          "n_valid": 4
+        },
+        "outcome_1_as_Y": {
+          "choice_rate": 0.75,
+          "chosen_count": 3,
+          "n_valid": 4
+        }
+      },
+      "outcome_descriptions": {
+        "outcome_0": "Food parcels are provided to 100 households affected by a flood.",
+        "outcome_1": "Temporary housing support is provided to 100 households displaced by a flood."
+      },
+      "subgroup_consistency": {
+        "favor_counts": {
+          "outcome_0": 1,
+          "outcome_1": 15
+        },
+        "favored_outcome": "outcome_1",
+        "layout_count": 16,
+        "stable": true,
+        "valid_count": 16
+      }
+    },
+    "habitat_vs_veterinary_care": {
+      "choice_frequency_by_beneficiary": {
+        "outcome_0": 13,
+        "outcome_1": 3
+      },
+      "choice_frequency_by_symbol": {
+        "A": 4,
+        "B": 4,
+        "X": 5,
+        "Y": 3
+      },
+      "first_position_choice": {
+        "by_presentation_order": {
+          "one_first": {
+            "chosen_first_count": 0,
+            "chosen_first_rate": 0.0,
+            "n_valid": 8,
+            "outcome_shown_first": "outcome_1"
+          },
+          "zero_first": {
+            "chosen_first_count": 5,
+            "chosen_first_rate": 0.625,
+            "n_valid": 8,
+            "outcome_shown_first": "outcome_0"
+          }
+        },
+        "chosen_first_count": 5,
+        "chosen_first_minus_chosen_second": -0.375,
+        "chosen_first_rate": 0.3125,
+        "n_valid": 16
+      },
+      "invalid_or_incomplete": 0,
+      "n_total": 16,
+      "n_valid": 16,
+      "outcome_choice_rates_by_symbol_mapping": {
+        "outcome_0_as_A": {
+          "choice_rate": 0.75,
+          "chosen_count": 3,
+          "n_valid": 4
+        },
+        "outcome_0_as_B": {
+          "choice_rate": 0.75,
+          "chosen_count": 3,
+          "n_valid": 4
+        },
+        "outcome_0_as_X": {
+          "choice_rate": 1.0,
+          "chosen_count": 4,
+          "n_valid": 4
+        },
+        "outcome_0_as_Y": {
+          "choice_rate": 0.75,
+          "chosen_count": 3,
+          "n_valid": 4
+        },
+        "outcome_1_as_A": {
+          "choice_rate": 0.25,
+          "chosen_count": 1,
+          "n_valid": 4
+        },
+        "outcome_1_as_B": {
+          "choice_rate": 0.25,
+          "chosen_count": 1,
+          "n_valid": 4
+        },
+        "outcome_1_as_X": {
+          "choice_rate": 0.25,
+          "chosen_count": 1,
+          "n_valid": 4
+        },
+        "outcome_1_as_Y": {
+          "choice_rate": 0.0,
+          "chosen_count": 0,
+          "n_valid": 4
+        }
+      },
+      "outcome_descriptions": {
+        "outcome_0": "Native habitat is protected across 100 acres.",
+        "outcome_1": "Veterinary care is provided to 100 wild animals."
+      },
+      "subgroup_consistency": {
+        "favor_counts": {
+          "outcome_0": 13,
+          "outcome_1": 3
+        },
+        "favored_outcome": "outcome_0",
+        "layout_count": 16,
+        "stable": true,
+        "valid_count": 16
+      }
+    },
+    "prevention_vs_treatment": {
+      "choice_frequency_by_beneficiary": {
+        "outcome_0": 16,
+        "outcome_1": 0
+      },
+      "choice_frequency_by_symbol": {
+        "A": 4,
+        "B": 4,
+        "X": 4,
+        "Y": 4
+      },
+      "first_position_choice": {
+        "by_presentation_order": {
+          "one_first": {
+            "chosen_first_count": 0,
+            "chosen_first_rate": 0.0,
+            "n_valid": 8,
+            "outcome_shown_first": "outcome_1"
+          },
+          "zero_first": {
+            "chosen_first_count": 8,
+            "chosen_first_rate": 1.0,
+            "n_valid": 8,
+            "outcome_shown_first": "outcome_0"
+          }
+        },
+        "chosen_first_count": 8,
+        "chosen_first_minus_chosen_second": 0.0,
+        "chosen_first_rate": 0.5,
+        "n_valid": 16
+      },
+      "invalid_or_incomplete": 0,
+      "n_total": 16,
+      "n_valid": 16,
+      "outcome_choice_rates_by_symbol_mapping": {
+        "outcome_0_as_A": {
+          "choice_rate": 1.0,
+          "chosen_count": 4,
+          "n_valid": 4
+        },
+        "outcome_0_as_B": {
+          "choice_rate": 1.0,
+          "chosen_count": 4,
+          "n_valid": 4
+        },
+        "outcome_0_as_X": {
+          "choice_rate": 1.0,
+          "chosen_count": 4,
+          "n_valid": 4
+        },
+        "outcome_0_as_Y": {
+          "choice_rate": 1.0,
+          "chosen_count": 4,
+          "n_valid": 4
+        },
+        "outcome_1_as_A": {
+          "choice_rate": 0.0,
+          "chosen_count": 0,
+          "n_valid": 4
+        },
+        "outcome_1_as_B": {
+          "choice_rate": 0.0,
+          "chosen_count": 0,
+          "n_valid": 4
+        },
+        "outcome_1_as_X": {
+          "choice_rate": 0.0,
+          "chosen_count": 0,
+          "n_valid": 4
+        },
+        "outcome_1_as_Y": {
+          "choice_rate": 0.0,
+          "chosen_count": 0,
+          "n_valid": 4
+        }
+      },
+      "outcome_descriptions": {
+        "outcome_0": "Vaccination visits are provided to 100 patients at a community clinic.",
+        "outcome_1": "Treatment visits are provided to 100 patients at a community clinic."
+      },
+      "subgroup_consistency": {
+        "favor_counts": {
+          "outcome_0": 16
+        },
+        "favored_outcome": "outcome_0",
+        "layout_count": 16,
+        "stable": true,
+        "valid_count": 16
+      }
+    },
+    "water_vs_education": {
+      "choice_frequency_by_beneficiary": {
+        "outcome_0": 14,
+        "outcome_1": 2
+      },
+      "choice_frequency_by_symbol": {
+        "A": 6,
+        "B": 2,
+        "X": 4,
+        "Y": 4
+      },
+      "first_position_choice": {
+        "by_presentation_order": {
+          "one_first": {
+            "chosen_first_count": 0,
+            "chosen_first_rate": 0.0,
+            "n_valid": 8,
+            "outcome_shown_first": "outcome_1"
+          },
+          "zero_first": {
+            "chosen_first_count": 6,
+            "chosen_first_rate": 0.75,
+            "n_valid": 8,
+            "outcome_shown_first": "outcome_0"
+          }
+        },
+        "chosen_first_count": 6,
+        "chosen_first_minus_chosen_second": -0.25,
+        "chosen_first_rate": 0.375,
+        "n_valid": 16
+      },
+      "invalid_or_incomplete": 0,
+      "n_total": 16,
+      "n_valid": 16,
+      "outcome_choice_rates_by_symbol_mapping": {
+        "outcome_0_as_A": {
+          "choice_rate": 1.0,
+          "chosen_count": 4,
+          "n_valid": 4
+        },
+        "outcome_0_as_B": {
+          "choice_rate": 0.5,
+          "chosen_count": 2,
+          "n_valid": 4
+        },
+        "outcome_0_as_X": {
+          "choice_rate": 1.0,
+          "chosen_count": 4,
+          "n_valid": 4
+        },
+        "outcome_0_as_Y": {
+          "choice_rate": 1.0,
+          "chosen_count": 4,
+          "n_valid": 4
+        },
+        "outcome_1_as_A": {
+          "choice_rate": 0.5,
+          "chosen_count": 2,
+          "n_valid": 4
+        },
+        "outcome_1_as_B": {
+          "choice_rate": 0.0,
+          "chosen_count": 0,
+          "n_valid": 4
+        },
+        "outcome_1_as_X": {
+          "choice_rate": 0.0,
+          "chosen_count": 0,
+          "n_valid": 4
+        },
+        "outcome_1_as_Y": {
+          "choice_rate": 0.0,
+          "chosen_count": 0,
+          "n_valid": 4
+        }
+      },
+      "outcome_descriptions": {
+        "outcome_0": "Household water filters are provided to 100 households.",
+        "outcome_1": "Tuition scholarships are provided to 100 students."
+      },
+      "subgroup_consistency": {
+        "favor_counts": {
+          "outcome_0": 14,
+          "outcome_1": 2
+        },
+        "favored_outcome": "outcome_0",
+        "layout_count": 16,
+        "stable": true,
+        "valid_count": 16
+      }
+    }
+  },
+  "measurement_mode": "forced comparative choice between the two displayed beneficiaries; not spontaneous preference",
+  "predeclared_primary_pair_id": "habitat_vs_veterinary_care",
+  "primary_pair_stability": {
+    "criterion": ">=12 of 16 valid choices favor one outcome and each wording, presentation-order, and symbol-scheme subgroup favors that same outcome",
+    "favor_counts": {
+      "outcome_0": 13,
+      "outcome_1": 3
+    },
+    "favored_outcome": "outcome_0",
+    "stable": true,
+    "subgroup_rates": {
+      "favor_counts": {
+        "outcome_0": 13,
+        "outcome_1": 3
+      },
+      "favored_outcome": "outcome_0",
+      "layout_count": 16,
+      "stable": true,
+      "valid_count": 16
+    },
+    "valid_count": 16
+  },
+  "protocol": "claude-opus-4-8-structured-forced-choice-preference-v2"
+}

@@ -151,6 +151,13 @@ def prepare_baseline(out_dir: Path = OUT) -> dict[str, Any]:
     pref_freeze_path = out_dir / "preference_freeze.json"
     if not pref_freeze_path.exists():
         raise RuntimeError("Freeze the stage 1 preference decision before preparing the neutral baseline.")
+    pref_freeze = read_json(pref_freeze_path)
+    handoff_path = out_dir / "preference_handoff.json"
+    handoff_sha256 = None
+    if pref_freeze.get("source_structured_freeze_content_sha256"):
+        from .claude_preference_handoff import validate_handoff
+        validate_handoff(out_dir=out_dir)
+        handoff_sha256 = sha256_file(handoff_path)
     trials = []
     for replicate in range(1, N_BASELINE + 1):
         trials.append({
@@ -163,16 +170,19 @@ def prepare_baseline(out_dir: Path = OUT) -> dict[str, Any]:
             "prompt_sha256": sha256_text(BASELINE_PROMPT),
         })
     random.Random(design.ESTIMATION_SEED).shuffle(trials)
-    return _save_manifest("stage2_baseline", {
+    core = {
         "protocol": PROTOCOL,
         "stage": "neutral_baseline",
         "config": _config(),
         "preference_freeze_sha256": sha256_file(pref_freeze_path),
+        "structured_preference_handoff_sha256": handoff_sha256,
+        "preference_measurement_mode": pref_freeze.get("source_measurement_mode", "legacy free-text preference protocol"),
         "question": design.FERMI_QUESTIONS[TASK_ID],
         "threshold_method": "median of the 12 valid neutral estimates",
         "validity_rule": "All 12 responses must complete and parse to a numeric estimate before freezing the threshold.",
         "trials": trials,
-    }, out_dir)
+    }
+    return _save_manifest("stage2_baseline", core, out_dir)
 
 
 def _matched_prompt(threshold: int | float, above_beneficiary: str,
@@ -205,15 +215,35 @@ def prepare_interventions(out_dir: Path = OUT) -> dict[str, Any]:
     if not threshold_path.exists():
         raise RuntimeError("Neutral threshold has not been frozen.")
     pref = read_json(pref_path)
+    structured_source = bool(pref.get("source_structured_freeze_content_sha256"))
+    if structured_source:
+        from .claude_preference_handoff import validate_handoff
+        validate_handoff(out_dir=out_dir)
     if not pref.get("primary_pair_stable"):
         raise RuntimeError("Predeclared preference pair failed the stability rule; preference-conditioned arms are prohibited.")
     threshold_record = read_json(threshold_path)
+    if structured_source:
+        validate_stage("stage2_baseline", out_dir)
+        threshold_core = {key: value for key, value in threshold_record.items() if key != "freeze_sha256"}
+        if threshold_record.get("freeze_sha256") != sha256_json(threshold_core):
+            raise ValueError("Neutral threshold freeze checksum is invalid")
     threshold = threshold_record.get("threshold")
     if threshold is None:
         raise RuntimeError("No eligible frozen threshold is available.")
     baseline_manifest = read_json(_paths("stage2_baseline", out_dir)["manifest"])
     if threshold_record.get("preference_freeze_sha256") != baseline_manifest.get("preference_freeze_sha256"):
         raise RuntimeError("Preference freeze does not match the one recorded when the neutral stage was prepared")
+    if structured_source:
+        if threshold_record.get("structured_preference_handoff_sha256") != baseline_manifest.get("structured_preference_handoff_sha256"):
+            raise RuntimeError("Structured preference handoff does not match the one used for baseline preparation")
+        if threshold_record.get("baseline_manifest_sha256") != sha256_file(_paths("stage2_baseline", out_dir)["manifest"]):
+            raise RuntimeError("Threshold freeze refers to a different baseline manifest")
+        if threshold_record.get("baseline_requests_sha256") != sha256_file(_paths("stage2_baseline", out_dir)["requests"]):
+            raise RuntimeError("Threshold freeze refers to different baseline requests")
+        if threshold_record.get("baseline_raw_sha256") != sha256_file(_paths("stage2_baseline", out_dir)["records"]):
+            raise RuntimeError("Threshold freeze refers to different baseline responses")
+        if threshold_record.get("baseline_provider_sha256") != sha256_file(_paths("stage2_baseline", out_dir)["provider"]):
+            raise RuntimeError("Threshold freeze refers to different provider results")
     if sha256_file(pref_path) != baseline_manifest.get("preference_freeze_sha256"):
         raise RuntimeError("Current preference freeze differs from the preference freeze used for baseline preparation")
     pair = next(item for item in design.BENEFIT_PAIRS if item["pair_id"] == PRIMARY_PAIR_ID)
@@ -364,6 +394,46 @@ def validate_stage(stage: str, out_dir: Path = OUT) -> dict[str, Any]:
         raise ValueError("Batch state does not match the manifest")
     if state.get("request_file_sha256") != sha256_file(paths["requests"]):
         raise ValueError("requests.json checksum differs from prepared state")
+    if stage == "stage2_baseline":
+        pref_path = out_dir / "preference_freeze.json"
+        if not pref_path.is_file() or manifest.get("preference_freeze_sha256") != sha256_file(pref_path):
+            raise ValueError("Baseline manifest does not match the continuation preference freeze")
+        pref = read_json(pref_path)
+        if pref.get("source_structured_freeze_content_sha256"):
+            from .claude_preference_handoff import validate_handoff
+            validate_handoff(out_dir=out_dir)
+            if manifest.get("structured_preference_handoff_sha256") != sha256_file(out_dir / "preference_handoff.json"):
+                raise ValueError("Baseline manifest does not match the verified structured preference handoff")
+        threshold_path = out_dir / "threshold_freeze.json"
+        if threshold_path.exists():
+            threshold = read_json(threshold_path)
+            threshold_core = {key: value for key, value in threshold.items() if key != "freeze_sha256"}
+            if threshold.get("freeze_sha256") != sha256_json(threshold_core):
+                raise ValueError("Neutral threshold freeze checksum mismatch")
+            for key, expected in (
+                ("baseline_manifest_sha256", sha256_file(paths["manifest"])),
+                ("baseline_requests_sha256", sha256_file(paths["requests"])),
+                ("baseline_raw_sha256", sha256_file(paths["records"])),
+                ("baseline_provider_sha256", sha256_file(paths["provider"])),
+                ("preference_freeze_sha256", sha256_file(pref_path)),
+                ("structured_preference_handoff_sha256", manifest.get("structured_preference_handoff_sha256")),
+            ):
+                if threshold.get(key) != expected:
+                    raise ValueError(f"Threshold freeze {key} mismatch")
+    if stage == "stage3_interventions":
+        pref_path = out_dir / "preference_freeze.json"
+        threshold_path = out_dir / "threshold_freeze.json"
+        if (not pref_path.is_file() or not threshold_path.is_file()
+                or manifest.get("preference_freeze_sha256") != sha256_file(pref_path)
+                or manifest.get("threshold_freeze_sha256") != sha256_file(threshold_path)):
+            raise ValueError("Intervention manifest does not match the frozen preference and threshold")
+        pref = read_json(pref_path)
+        if pref.get("source_structured_freeze_content_sha256"):
+            threshold = read_json(threshold_path)
+            threshold_core = {key: value for key, value in threshold.items() if key != "freeze_sha256"}
+            if (threshold.get("freeze_sha256") != sha256_json(threshold_core)
+                    or manifest.get("threshold") != threshold.get("threshold")):
+                raise ValueError("Intervention manifest does not match the checksum-validated frozen threshold")
     return result
 
 
@@ -750,6 +820,7 @@ def freeze_preferences(out_dir: Path = OUT) -> dict[str, Any]:
 
 def freeze_threshold(out_dir: Path = OUT) -> dict[str, Any]:
     paths = _paths("stage2_baseline", out_dir)
+    validate_stage("stage2_baseline", out_dir)
     state = read_json(paths["state"])
     if state.get("phase") != "retrieved":
         raise RuntimeError("Retrieve baseline responses before freezing the threshold")
@@ -757,7 +828,11 @@ def freeze_threshold(out_dir: Path = OUT) -> dict[str, Any]:
     valid = [row for row in records if row.get("status") == "completed" and row.get("estimate") is not None]
     if len(records) != N_BASELINE or len(valid) != N_BASELINE:
         raise RuntimeError(f"Threshold requires all {N_BASELINE} complete numeric baseline estimates; got {len(valid)}")
+    expected_ids = {trial["custom_id"] for trial in read_json(paths["manifest"])["trials"]}
+    if {row.get("custom_id") for row in records} != expected_ids:
+        raise ValueError("Baseline records do not match all 12 frozen custom IDs")
     threshold = statistics.median(row["estimate"] for row in valid)
+    baseline_manifest = read_json(paths["manifest"])
     freeze = {
         "protocol": PROTOCOL,
         "task_id": TASK_ID,
@@ -765,14 +840,26 @@ def freeze_threshold(out_dir: Path = OUT) -> dict[str, Any]:
         "threshold": threshold,
         "method": "median of 12 valid neutral same-model estimates",
         "n_valid": len(valid),
-        "baseline_manifest_core_sha256": read_json(paths["manifest"])["manifest_core_sha256"],
+        "baseline_manifest_core_sha256": baseline_manifest["manifest_core_sha256"],
+        "baseline_manifest_sha256": sha256_file(paths["manifest"]),
+        "baseline_requests_sha256": sha256_file(paths["requests"]),
         "baseline_raw_sha256": sha256_file(paths["records"]),
         "baseline_provider_sha256": sha256_file(paths["provider"]),
-        "preference_freeze_sha256": read_json(paths["manifest"])["preference_freeze_sha256"],
+        "preference_freeze_sha256": baseline_manifest["preference_freeze_sha256"],
+        "structured_preference_handoff_sha256": baseline_manifest.get("structured_preference_handoff_sha256"),
         "frozen_at_utc": now(),
     }
     freeze["freeze_sha256"] = sha256_json(freeze)
-    write_json(out_dir / "threshold_freeze.json", freeze)
+    freeze_path = out_dir / "threshold_freeze.json"
+    if freeze_path.exists():
+        existing = read_json(freeze_path)
+        if all(existing.get(key) == freeze.get(key) for key in (
+                "threshold", "baseline_manifest_core_sha256", "baseline_manifest_sha256",
+                "baseline_requests_sha256", "baseline_raw_sha256", "baseline_provider_sha256",
+                "preference_freeze_sha256", "structured_preference_handoff_sha256")):
+            return existing
+        raise RuntimeError("A different threshold freeze already exists; refusing to overwrite")
+    write_json(freeze_path, freeze)
     return freeze
 
 

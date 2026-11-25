@@ -1,0 +1,9 @@
+{
+  "manifest_core_sha256": "d26f9d8f4d4c88357c87a3ec169d9b88078b0de250d6f3d186c47e7228eb24d2",
+  "phase": "prepared",
+  "prepared_at_utc": "2026-11-25T03:05:53.867294+00:00",
+  "protocol": "claude-opus-4-8-low-effort-label-masking-pilot-v1",
+  "request_count": 72,
+  "request_file_sha256": "51a7f46dbc87e92d865a4b57535cdba9e26ee31a93ddca749d92b45e3f4e804a",
+  "stage": "stage3_interventions"
+}
